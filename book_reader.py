@@ -56,9 +56,7 @@ class book_reader():
                'work', 'worked', 'working', 'works', 'would', 'x', 'y', 'year', 'years', 'yet', 'you', 'young',
                'younger', 'youngest', 'your', 'yours', 'z']
         #my additions
-        self.stopwords += ['', '-', '–', '']
-        
-        print ("Running")
+        self.stopwords += ['', '-', '–']
         
     def main(self, book_file, h5_file): 
         h5store = pd.HDFStore(h5_file)
@@ -67,20 +65,12 @@ class book_reader():
         else:
             book_df = pd.read_hdf(h5_file, self.book_short_name)
         if self.generate_toc_df:
-            toc = self.process_toc2(rafo3r)
+            toc = self.process_toc(rafo3r)
         else:
-            toc = pd.read_hdf(h5_file, 'toc')
-            
-        now = str(dt.datetime.now())
-        now = now.replace(':','')
-        now = now.replace(' ','')
-        now = now.replace('-','')
-        now = now.replace('.','')
-        self.csv_dump(rafo3r,'rafo3r',now)
-        self.csv_dump(toc,'toc',now)
-        
+            toc = pd.read_hdf(h5_file, 'toc')        
         h5store.close()
-        print ("DONE")
+
+		return book_df, toc
     
     def de_possessive(self,word):
         if word.endswith("'s") or word.endswith("’s"):
@@ -125,97 +115,14 @@ class book_reader():
         for w, c in count.iteritems():
             book_df.loc[book_df['Words'] == w,'Occurance'] = c
 
+        book_df['Running Occurance'] = 0
+
+
         book_df.to_hdf(self.h5_file,self.book_short_name,format='table',append=False)
         
         return book_df
     
     def process_toc(self, rafo3r):
-        maj_section_nums = ['One', 'Two', 'Three', 'Four', 'Five', 'Six']
-        books = []
-        for b in maj_section_nums:
-            books.append('Book %s:'%(b))
-        
-        toc_ = [['B1', 'THE RISE OF ADOLF HITLER', 1],
-               ['Ch1', 'BIRTH OF THE THIRD REICH', 3],
-               ['Ch2', 'BIRTH OF THE NAZI PARTY', 27],
-               ['Ch3', 'VERSAILLES, WEIMAR AND THE BEER HALL PUTSCH',  49],
-               ['Ch4', 'THE MIND OF HITLER AND THE ROOTS OF THE THIRD REICH',  73],
-               ['B2', 'TRIUMPH AND CONSOLIDATION', 102],
-               ['Ch5', 'THE ROAD TO POWER: 1925-31',  103],
-               ['Ch6', 'THE LAST DAYS OF THE REPUBLIC 1931-33',  133],
-               ['Ch7', 'THE NAZIFICATION OF GERMANY: 1933-34',  167],
-               ['Ch8', 'LIFE IN THE THIRD REICH: 1933-37',  205],
-               ['B3', 'THE ROAD TO WAR', 245],
-               ['Ch9', 'THE FIRST STEPS: 1934-37',  247],
-               ['Ch10', 'STRANGE, FATEFUL INTERLUDE: THE FALL OF BLOMBERG, FRITSCH, NEURATH AND SCHACHT', 275],
-               ['Ch11', 'ANSCHLUSS: THE RAPE OF AUSTRIA', 287],
-               ['Ch12', 'THE ROAD TO MUNICH', 319],
-               ['Ch13', 'CZECHOSLOVAKIA CEASES TO EXIST', 383],
-               ['Ch14', 'THE TURN OF POLAND', 407],
-               ['Ch15', 'THE NAZI-SOVIET PACT', 459],
-               ['Ch16', 'THE LAST DAYS OF PEACE', 489],
-               ['Ch17', 'THE LAUNCHING OF WORLD WAR II', 535],
-               ['B4', 'WAR: EARLY VICTORIES AND THE TURNING POINT', 559],
-               ['Ch18', 'THE FALL OF POLAND', 561],
-               ['Ch19', 'SITZKRIEG IN THE WEST', 569],
-               ['Ch20', 'THE CONQUEST OF DENMARK AND NORWAY', 605],
-               ['Ch21', 'VICTORY IN THE WEST', 641],
-               ['Ch22', 'OPERATION SEA LION: THE THWARTED INVASION OF BRITAIN', 681],
-               ['Ch23', 'BARBAROSSA: THE TURN OF RUSSIA', 713],
-               ['Ch24', 'A TURN OF THE TIDE', 767],
-               ['Ch25', 'THE TURN OF THE UNITED STATES', 783],
-               ['Ch26', 'THE GREAT TURNING POINT: 1942 STALINGRAD AND EL ALAMEIN', 813],
-               ['B5', 'BEGINNING OF THE END', 841],
-               ['Ch27', 'THE NEW ORDER', 843],
-               ['Ch28', 'THE FALL OF MUSSOLINI', 895],
-               ['Ch29', 'THE ALLIED INVASION OF WESTERN EUROPE AND THE ATTEMPT TO KILL HITLER', 911],
-               ['B6', 'THE FALL OF THE THIRD REICH', 972],
-               ['Ch30', 'THE CONQUEST OF GERMANY', 973],
-               ['Ch31', 'GOETTERDAEMMERUNG: THE LAST DAYS OF THE THIRD REICH', 993],
-               ['Ch32', 'A BRIEF EPILOGUE', 1023],
-               ['Ch33', 'AFTERWORD', 1027]]
-        
-        toc = pd.DataFrame(toc_)
-        toc = toc.set_index(toc[0])
-        del toc[0]
-        toc.columns = ['Section Title', 'Page Num']
-        toc.index.name = 'Section Num'
-        
-        toc['Location'] = 0
-        
-        
-        for iter1 in toc.iterrows():
-            sec_title = iter1[1]['Section Title'].lower()
-            k = []
-            k = re.split(self.re_splitter, sec_title)
-            L = len(k)
-        
-            section_id = iter1[0]
-            phrase = None
-            if section_id.startswith('Ch'):
-                phrase = ['chapter', section_id[2:]]
-            elif section_id.startswith('B'):
-                phrase = ['book', maj_section_nums[int(section_id[1:]) - 1].lower(),'','','']
-        
-        
-            sec_title = ' '.join(k)
-            sec_title = ' '.join(phrase) + ' ' + sec_title
-            for iter2 in rafo3r.iterrows():
-                if iter2[0] >= (len(rafo3r) - len(phrase) - L + 1): break
-                test_string_list = []
-                for i in range(L+len(phrase)):
-                    test_string_list.append(rafo3r.at[iter2[0] + i, 'Words'])
-                test_string = ' '.join(test_string_list)
-                if test_string == sec_title:
-                    toc.at[iter1[0],'Location'] = iter2[0]
-                    print (sec_title + " match: " + str(iter2[0]))
-                    break          
-        
-        toc.to_hdf(self.h5_file,'toc',format='table',append=False)
-        
-        return toc
-    
-    def process_toc2(self, rafo3r):
         maj_section_nums = ['One', 'Two', 'Three', 'Four', 'Five', 'Six']
         books = []
         for b in maj_section_nums:
@@ -305,8 +212,9 @@ class book_reader():
     
 if __name__ == "__main__":
     generate_book_df = False
-    generate_toc_df = True
-    my_reader = book_reader('rafo3r', generate_book_df, generate_toc_df)
+    generate_toc_df = False
+	book_short_name = 'rafo3r'
+    my_reader = book_reader(book_short_name, generate_book_df, generate_toc_df)
 
     book_file = 'rafo3r.txt'
     h5_file = 'rafo3r.h5'
@@ -315,8 +223,17 @@ if __name__ == "__main__":
     #book_file = os.getcwd() + os.sep + 'rafo3r' + os.sep + 'rafo3r.txt'
     #h5_file = os.getcwd() + os.sep + 'rafo3r' + os.sep + 'rafo3r.h5'    
     
-    my_reader.main(book_file, h5_file)
+    rafo3r, toc = my_reader.main(book_file, h5_file)
     
+	now = str(dt.datetime.now())
+	now = now.replace(':','')
+	now = now.replace(' ','')
+	now = now.replace('-','')
+	now = now.replace('.','')
+	self.csv_dump(rafo3r,'rafo3r',now)
+	self.csv_dump(toc,'toc',now)
+	
+	
     #TODO: Add column to book df that is ocucrances of word up to that point
     #TODO: https://github.com/amueller/word_cloud
     
