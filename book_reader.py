@@ -61,16 +61,16 @@ class book_reader():
     def main(self, book_file, h5_file): 
         h5store = pd.HDFStore(h5_file)
         if self.generate_book_df:
-            book_df = self.generate_book_df(book_file)
+            book_df = self.process_book(book_file, h5_file)
         else:
             book_df = pd.read_hdf(h5_file, self.book_short_name)
         if self.generate_toc_df:
-            toc = self.process_toc(rafo3r)
+            toc = self.process_toc(book_df, h5_file)
         else:
             toc = pd.read_hdf(h5_file, 'toc')        
         h5store.close()
 
-		return book_df, toc
+        return book_df, toc
     
     def de_possessive(self,word):
         if word.endswith("'s") or word.endswith("’s"):
@@ -96,7 +96,7 @@ class book_reader():
         file_name = file_name_extra1 + '_' + file_name_extra2 + '.csv'
         df.to_csv(file_name)
     
-    def generate_book_df(self, book_file):        
+    def process_book(self, book_file, h5_file):        
         book_list = open(book_file, 'r', encoding='utf-8').read()
         
         lst = re.split(self.re_splitter, book_list)
@@ -109,20 +109,19 @@ class book_reader():
         book_df.rename(columns={0: 'Words'}, inplace=True)
         book_df['Stop Word'] = book_df['Words'].apply(self.is_stop_word)
         count = book_df['Words'][book_df['Stop Word'] == False].value_counts(sort=True)
-
         
         book_df['Occurance'] = 0
+        book_df['Running Occurance'] = 0
         for w, c in count.iteritems():
             book_df.loc[book_df['Words'] == w,'Occurance'] = c
+            book_df.loc[book_df['Words'] == w,'Running Occurance'] = list(range(1,c+1))
 
-        book_df['Running Occurance'] = 0
 
-
-        book_df.to_hdf(self.h5_file,self.book_short_name,format='table',append=False)
+        book_df.to_hdf(h5_file,self.book_short_name,format='table',append=False)
         
         return book_df
     
-    def process_toc(self, rafo3r):
+    def process_toc(self, book_df, h5_file):
         maj_section_nums = ['One', 'Two', 'Three', 'Four', 'Five', 'Six']
         books = []
         for b in maj_section_nums:
@@ -176,7 +175,7 @@ class book_reader():
         
         toc['Location'] = 0
             
-        iterator = rafo3r.iterrows()
+        iterator = book_df.iterrows()
         for iter1 in toc.iterrows():
             sec_title = iter1[1]['Section Title'].lower()
             k = []
@@ -193,27 +192,26 @@ class book_reader():
             sec_title = ' '.join(k)
             sec_title = ' '.join(phrase) + ' ' + sec_title
             iter2 = next(iterator)
-            if iter2[0] >= (len(rafo3r) - len(phrase) - L + 1): break
+            if iter2[0] >= (len(book_df) - len(phrase) - L + 1): break
             
             test_string = None
             while test_string != sec_title: 
                 test_string_list = []
                 for i in range(L+len(phrase)):
-                    test_string_list.append(rafo3r.at[iter2[0] + i, 'Words'])
+                    test_string_list.append(book_df.at[iter2[0] + i, 'Words'])
                 test_string = ' '.join(test_string_list)
                 iter2 = next(iterator)
             else:
-                toc.at[iter1[0],'Location'] = iter2[0] - 1
-                #print (sec_title + " match: " + str(iter2[0] - 1))    
+                toc.at[iter1[0],'Location'] = iter2[0] - 1  
         
-        toc.to_hdf(self.h5_file,'toc',format='table',append=False)
+        toc.to_hdf(h5_file,'toc',format='table',append=False)
         
         return toc
     
 if __name__ == "__main__":
     generate_book_df = False
     generate_toc_df = False
-	book_short_name = 'rafo3r'
+    book_short_name = 'rafo3r'
     my_reader = book_reader(book_short_name, generate_book_df, generate_toc_df)
 
     book_file = 'rafo3r.txt'
@@ -225,15 +223,12 @@ if __name__ == "__main__":
     
     rafo3r, toc = my_reader.main(book_file, h5_file)
     
-	now = str(dt.datetime.now())
-	now = now.replace(':','')
-	now = now.replace(' ','')
-	now = now.replace('-','')
-	now = now.replace('.','')
-	self.csv_dump(rafo3r,'rafo3r',now)
-	self.csv_dump(toc,'toc',now)
-	
-	
-    #TODO: Add column to book df that is ocucrances of word up to that point
-    #TODO: https://github.com/amueller/word_cloud
+    now = str(dt.datetime.now())
+    now = now.replace(':','')
+    now = now.replace(' ','')
+    now = now.replace('-','')
+    now = now.replace('.','')
+    my_reader.csv_dump(rafo3r,'rafo3r',now)
+    my_reader.csv_dump(toc,'toc',now)
+    
     
