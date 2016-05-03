@@ -1,14 +1,16 @@
 # -*- coding: utf-8 -*-
 import pandas as pd
+import numpy as np
 import os
 import re
 import datetime as dt
 
 class book_reader():
     
-    def __init__(self, book_short_name, generate_book_df = False, generate_toc_df = False):
+    def __init__(self, book_short_name, generate_book_df = False, generate_toc_df = False, generate_pivots = False):
         self.generate_book_df = generate_book_df
         self.generate_toc_df = generate_toc_df
+        self.generate_pivots = generate_pivots
         self.re_splitter = r'[;,.?!"”()\]\[\*:\s\n]\s*'
         self.book_short_name = book_short_name
 		
@@ -67,10 +69,17 @@ class book_reader():
         if self.generate_toc_df:
             toc = self.process_toc(book_df, h5_file)
         else:
-            toc = pd.read_hdf(h5_file, 'toc')        
+            toc = pd.read_hdf(h5_file, 'toc')   
+        if self.generate_book_df or self.generate_toc_df: #if either one
+            book_df = self.chapter_marker(h5_file)
+        if self.generate_pivots:
+            p1, p2 = self.make_pivots(h5_file)
+        else:
+            p1 = pd.read_hdf(h5_file, self.book_short_name+'_pivot1')
+            p2 = pd.read_hdf(h5_file, self.book_short_name+'_pivot2')
         h5store.close()
 
-        return book_df, toc
+        return book_df, toc, p1, p2
     
     def de_possessive(self,word):
         if word.endswith("'s") or word.endswith("’s"):
@@ -108,15 +117,15 @@ class book_reader():
         lst = list(map(self.de_possessive,lst))
     
         book_df = pd.DataFrame(lst)
-        book_df.rename(columns={0: 'Words'}, inplace=True)
-        book_df['Stop Word'] = book_df['Words'].apply(self.is_stop_word)
-        count = book_df['Words'][book_df['Stop Word'] == False].value_counts(sort=True)
+        book_df.rename(columns={0: 'Word'}, inplace=True)
+        book_df['Stop Word'] = book_df['Word'].apply(self.is_stop_word)
+        count = book_df['Word'][book_df['Stop Word'] == False].value_counts(sort=True)
         
-        book_df['Occurance'] = 0
-        book_df['Running Occurance'] = 0
+        book_df['Count'] = 0
+        book_df['Running Count'] = 0
         for w, c in count.iteritems():
-            book_df.loc[book_df['Words'] == w,'Occurance'] = c
-            book_df.loc[book_df['Words'] == w,'Running Occurance'] = list(range(1,c+1))
+            book_df.loc[book_df['Word'] == w,'Count'] = c
+            book_df.loc[book_df['Word'] == w,'Running Count'] = list(range(1,c+1))
 
 
         book_df.to_hdf(h5_file,self.book_short_name,format='table',append=False)
@@ -200,7 +209,7 @@ class book_reader():
             while test_string != sec_title: 
                 test_string_list = []
                 for i in range(L+len(phrase)):
-                    test_string_list.append(book_df.at[iter2[0] + i, 'Words'])
+                    test_string_list.append(book_df.at[iter2[0] + i, 'Word'])
                 test_string = ' '.join(test_string_list)
                 iter2 = next(iterator)
             else:
@@ -210,16 +219,35 @@ class book_reader():
         
         return toc
         
-        def chapter_marker(self, h5_file):
-            book_df = pd.read_hdf(h5_file, self.book_short_name)
-            toc_df = pd.read_hdf(h5_file, 'toc')
-            cm_np = np.zeros(len(book_df), 2)
-            for index, row in book_df.iteritems():
-                
-                cm_np[index,0] = 
-                cm_np[index,1] = 
-            
-            
+    def chapter_marker(self, h5_file):
+        book_df = pd.read_hdf(h5_file, self.book_short_name)
+        toc = pd.read_hdf(h5_file, 'toc')
+        toc_books = toc[toc.index.str.startswith("B")]
+        toc_chapters = toc[toc.index.str.startswith("Ch")]
+        book_df['Book'] = np.searchsorted(toc_books['Location'], book_df['Position']) + 1
+        book_df['Chapter'] = np.searchsorted(toc_chapters['Location'], book_df['Position']) + 1
+        book_df.to_hdf(h5_file,self.book_short_name,format='table',append=False)
+        return book_df
+        
+    def make_pivots(self,h5_file):
+        book_df = pd.read_hdf(h5_file, self.book_short_name)
+        def _start_loc(x):
+            return int(100 * min(x) / len(book_df))
+        def _end_loc(x):
+            return int(100 * max(x) / len(book_df))
+        book_df_pt = book_df[book_df['Stop Word'] == False].pivot_table(values='Position', 
+                    aggfunc=[len,_start_loc,_end_loc], index='Word')
+        book_df_pt.sort_values('len',ascending=False,inplace=True)
+        book_df_pt.rename(columns={'len': 'Count'}, inplace=True)
+        
+        book_df_pt2 = rafo3r[rafo3r['Stop Word'] == False].pivot_table(values='Position', 
+                     aggfunc=[len], index=['Word','Book','Chapter'])
+        book_df_pt2.sort_values('len',ascending=False,inplace=True)
+        book_df_pt2.rename(columns={'len': 'Count'}, inplace=True)
+
+        book_df_pt.to_hdf(h5_file,self.book_short_name + '_pivot1',format='table',append=False)
+        book_df_pt2.to_hdf(h5_file,self.book_short_name + '_pivot2',format='table',append=False)
+        return book_df_pt, book_df_pt2     
     
 if __name__ == "__main__":
     generate_book_df = False
