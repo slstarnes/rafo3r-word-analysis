@@ -87,7 +87,9 @@ class book_reader():
         return word
     
     def is_stop_word(self,word):
-        if word in self.stopwords:
+        if word.startswith('$'):
+            return True
+        elif word in self.stopwords:
             return True
         else:
             return False
@@ -207,6 +209,17 @@ class book_reader():
         toc.to_hdf(h5_file,'toc',format='table',append=False)
         
         return toc
+        
+        def chapter_marker(self, h5_file):
+            book_df = pd.read_hdf(h5_file, self.book_short_name)
+            toc_df = pd.read_hdf(h5_file, 'toc')
+            cm_np = np.zeros(len(book_df), 2)
+            for index, row in book_df.iteritems():
+                
+                cm_np[index,0] = 
+                cm_np[index,1] = 
+            
+            
     
 if __name__ == "__main__":
     generate_book_df = False

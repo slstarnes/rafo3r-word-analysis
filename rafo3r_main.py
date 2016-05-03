@@ -31,5 +31,5 @@ now = now.replace('.','')
 #my_reader.csv_dump(rafo3r,'rafo3r',now)
 #my_reader.csv_dump(toc,'toc',now)
 
-rafo3r_viz = bv.book_viz(rafo3r, toc)
-rafo3r_viz.scat()
+#rafo3r_viz = bv.book_viz(rafo3r, toc)
+#rafo3r_viz.scat()
