@@ -126,7 +126,7 @@ class book_reader():
         for w, c in count.iteritems():
             book_df.loc[book_df['Word'] == w,'Count'] = c
             book_df.loc[book_df['Word'] == w,'Running Count'] = list(range(1,c+1))
-
+        book_df['Position'] = book_df.index
 
         book_df.to_hdf(h5_file,self.book_short_name,format='table',append=False)
         
