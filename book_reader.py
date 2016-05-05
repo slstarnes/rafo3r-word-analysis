@@ -240,7 +240,7 @@ class book_reader():
         book_df_pt.sort_values('len',ascending=False,inplace=True)
         book_df_pt.rename(columns={'len': 'Count'}, inplace=True)
         
-        book_df_pt2 = rafo3r[rafo3r['Stop Word'] == False].pivot_table(values='Position', 
+        book_df_pt2 = book_df[book_df['Stop Word'] == False].pivot_table(values='Position', 
                      aggfunc=[len], index=['Word','Book','Chapter'])
         book_df_pt2.sort_values('len',ascending=False,inplace=True)
         book_df_pt2.rename(columns={'len': 'Count'}, inplace=True)
