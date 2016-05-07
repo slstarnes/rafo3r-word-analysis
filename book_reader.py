@@ -11,7 +11,7 @@ class book_reader():
         self.generate_book_df = generate_book_df
         self.generate_toc_df = generate_toc_df
         self.generate_pivots = generate_pivots
-        self.re_splitter = r'[;,.?!"”()\]\[\*:\s\n]\s*'
+        self.re_splitter = r'[;,.?†‡!"”()\]\[\*:\s\n]\s*'
         self.book_short_name = book_short_name
 		
         #Stopwords from http://www.lextek.com/manuals/onix/stopwords1.html
@@ -61,22 +61,27 @@ class book_reader():
         self.stopwords += ['', '-', '–']
         
     def main(self, book_file, h5_file): 
+        print ('Starting')
         h5store = pd.HDFStore(h5_file)
         if self.generate_book_df:
             book_df = self.process_book(book_file, h5_file)
         else:
             book_df = pd.read_hdf(h5_file, self.book_short_name)
+        print ('Book processed')
         if self.generate_toc_df:
             toc = self.process_toc(book_df, h5_file)
         else:
             toc = pd.read_hdf(h5_file, 'toc')   
+        print ('TOC processed')
         if self.generate_book_df or self.generate_toc_df: #if either one
             book_df = self.chapter_marker(h5_file)
+        print ('Chapter Markers made')
         if self.generate_pivots:
             p1, p2 = self.make_pivots(h5_file)
         else:
             p1 = pd.read_hdf(h5_file, self.book_short_name+'_pivot1')
             p2 = pd.read_hdf(h5_file, self.book_short_name+'_pivot2')
+        print ('Pivots processed')        
         h5store.close()
 
         return book_df, toc, p1, p2
@@ -108,15 +113,16 @@ class book_reader():
         df.to_csv(file_name)
     
     def process_book(self, book_file, h5_file):        
-        book_list = open(book_file, 'r', encoding='utf-8').read()
+        bk = open(book_file, 'r', encoding='utf-8').read()
         
-        lst = re.split(self.re_splitter, book_list)
+        book_list = re.split(self.re_splitter, bk)
     
-        lst = list(map(lambda s:s.lower(), lst))
-        lst = list(map(self.de_quote,lst))
-        lst = list(map(self.de_possessive,lst))
+        book_list = list(filter(None, book_list)) # remove empty strings
+        book_list = list(map(lambda s:s.lower(), book_list))
+        book_list = list(map(self.de_quote,book_list))
+        book_list = list(map(self.de_possessive,book_list))
     
-        book_df = pd.DataFrame(lst)
+        book_df = pd.DataFrame(book_list)
         book_df.rename(columns={0: 'Word'}, inplace=True)
         book_df['Stop Word'] = book_df['Word'].apply(self.is_stop_word)
         count = book_df['Word'][book_df['Stop Word'] == False].value_counts(sort=True)
