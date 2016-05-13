@@ -58,7 +58,7 @@ class book_reader():
                'work', 'worked', 'working', 'works', 'would', 'x', 'y', 'year', 'years', 'yet', 'you', 'young',
                'younger', 'youngest', 'your', 'yours', 'z']
         #my additions
-        self.stopwords += ['', '-', '–']
+        self.stopwords += ['', '-', '–','‡','†']
         
     def main(self, book_file, h5_file): 
         print ('Starting')
@@ -136,6 +136,11 @@ class book_reader():
 
         book_df.to_hdf(h5_file,self.book_short_name,format='table',append=False)
         
+        #simpler way
+        #occurances = rafo3r.groupby('Word').size()
+        #mega_words = occurances.index[occurances >= 1000]
+        #rafo3r.index = rafo3r['Word']
+        
         return book_df
     
     def process_toc(self, book_df, h5_file):
@@ -172,7 +177,7 @@ class book_reader():
                ['Ch22', 'OPERATION SEA LION: THE THWARTED INVASION OF BRITAIN', 681],
                ['Ch23', 'BARBAROSSA: THE TURN OF RUSSIA', 713],
                ['Ch24', 'A TURN OF THE TIDE', 767],
-               ['Ch25', 'THE TURN OF THE UNITED STATES', 783],
+               ['Ch25', 'THE TURN OF THE UNITED_STATES', 783],
                ['Ch26', 'THE GREAT TURNING POINT: 1942 STALINGRAD AND EL ALAMEIN', 813],
                ['B5', 'BEGINNING OF THE END', 841],
                ['Ch27', 'THE NEW ORDER', 843],
@@ -192,34 +197,47 @@ class book_reader():
         
         toc['Location'] = 0
             
-        iterator = book_df.iterrows()
-        for iter1 in toc.iterrows():
-            sec_title = iter1[1]['Section Title'].lower()
-            k = []
-            k = re.split(self.re_splitter, sec_title)
-            L = len(k)
+        book_df_iterator = book_df.iterrows()
+        for toc_row in toc.iterrows():
+            section_title = toc_row[1]['Section Title'].lower()
+            section_title_split = re.split(self.re_splitter, section_title)
 
-            section_id = iter1[0]
+            section_id = toc_row[0]
             phrase = None
             if section_id.startswith('Ch'):
                 phrase = ['chapter', section_id[2:]]
             elif section_id.startswith('B'):
-                phrase = ['book', maj_section_nums[int(section_id[1:]) - 1].lower(),'','','']
+                phrase = ['book', maj_section_nums[int(section_id[1:]) - 1].lower()]
 
-            sec_title = ' '.join(k)
-            sec_title = ' '.join(phrase) + ' ' + sec_title
-            iter2 = next(iterator)
-            if iter2[0] >= (len(book_df) - len(phrase) - L + 1): break
+            section_title = ' '.join(section_title_split)
+            section_title = ' '.join(phrase) + ' ' + section_title
+
+            book_row = next(book_df_iterator)
+            book_row_index = book_row[0]
+            
+            if book_row_index >= (len(book_df) - len(phrase) - len(section_title_split) + 1): break
             
             test_string = None
-            while test_string != sec_title: 
+            while test_string != section_title: 
                 test_string_list = []
-                for i in range(L+len(phrase)):
-                    test_string_list.append(book_df.at[iter2[0] + i, 'Word'])
+                for i in range(len(section_title_split) + len(phrase)):
+                    if book_row_index + i < len(book_df):
+                        test_string_list.append(book_df.at[book_row_index + i, 'Word'])
                 test_string = ' '.join(test_string_list)
-                iter2 = next(iterator)
+                try:
+                    book_row = next(book_df_iterator)
+                    book_row_index = book_row[0]
+                except StopIteration:
+                    #you have reached the end of the book, but you havent matched
+                    #all of the sections. 
+                    #restart at the top of the book and move to the next section
+                    print ('Error. No matches found for %s'%section_id)
+                    book_df_iterator = book_df.iterrows() #reset to top of book
+                    break # move to the next toc_row
+                
             else:
-                toc.at[iter1[0],'Location'] = iter2[0] - 1  
+                #found the match for this section start
+                toc.at[section_id,'Location'] = book_row_index - 1  
         
         toc.to_hdf(h5_file,'toc',format='table',append=False)
         
@@ -253,6 +271,8 @@ class book_reader():
 
         book_df_pt.to_hdf(h5_file,self.book_short_name + '_pivot1',format='table',append=False)
         book_df_pt2.to_hdf(h5_file,self.book_short_name + '_pivot2',format='table',append=False)
+        #TODO: There is a bug in this file that needs to be fixed. Around row 79117 there is a dupe
+        #of h*tler for ch. 1. THere can only be 1 of a word/chapter pair. 
         return book_df_pt, book_df_pt2     
     
 if __name__ == "__main__":
