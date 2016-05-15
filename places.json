@@ -1,76 +1,177 @@
 {
 	"germany":
 		[
-			"german",
 			"berlin",
-			"germans",
 			"munich",
 			"nuremberg",
-			"germanic"
+			"brunswick",
+			"lippe",
+			"leipzig",
+			"potsdam",
+			"berchtesgaden",
+			"frankfurt",
+			"oldenburg",
+			"bayreuth",
+			"bavaria",
+			"bamberg",
+			"dresden",
+			"duesseldorf",
+			"franconia",
+			"koenigsberg",
+			"jena"
 		],
 	"austria":
 		[
-			"austrian",
 			"vienna",
-			"austrians",
-			"linz"
+			"linz",
+			"fischlham",
+			"doellersheim",
+			"klagenfurt"
 		],
 	"britain":
 		[
-			"british",
 			"england",
-			"english",
 			"london",
 			"ireland",
-			"whales"
+			"wales",
+			"glasgow"
 		],
 	"poland":
 		[
-			"polish",
-			"warsaw"
-
+			"warsaw",
+			"danzig",
+			"pomerania"
 		],
 	"france":
 		[
-			"french",
 			"paris",
-			"frenchman",
-			"frenchmen"
+			"versailles"
 		],
-	"russia":
+	"soviet_union":
 		[
-			"soviet",
-			"russian",
+			"russia",
 			"moscow",
-			"russians",
-			"stalingrad"
+			"stalingrad",
+			"leningrad",
+			"u.s.s.r"
 		],
 	"united_states":
 		[
 			"america",
-			"american",
-			"americans"
+			"u.s.",
+			"u.s.a.",
+			"washington"
 		],
 	"italy":
 		[
-			"italian"
+			"rome"
 		],
 	"czechoslovakia":
 		[
-			"czechs",
-			"czech",
-			"prague",
-			"czechoslovak"
+			"prague"
 		],
 	"norway":
-		["norwegian"],
+		[
+			"oslo"
+		],
 	"denmark":
 		["copenhagen"],
 	"hungary":
 		["budapest"],
 	"slovakia":[],
 	"japan":
-		["japanese"],
-	"belgium":[],
-	"sweeden":[]
+		[
+			"tokyo"
+		],
+	"belgium":
+		[
+			"antwerp",
+			"brussels"
+		],
+	"romania":
+		[
+			"bucharest"
+		],
+	"sweeden":[],
+	"albania":[],
+	"balkans":[],
+	"beelitz":[],
+	"bohemia":[],
+	"bolivia":[],
+	"bonn":[],
+	"brandenburg":[],
+	"braunau":[],
+	"brighton":[],
+	"bristol":[],
+	"bulgaria":[],
+	"canada":[],
+	"china":[],
+	"coburg":[],
+	"cologne":[],
+	"compiegne":[],
+	"cornwall":[],
+	"egypt":
+		[
+			"cairo"
+		],
+	"estonia":[],
+	"finland":[],
+	"freiburg":[],
+	"gardone":[],
+	"greece":[],
+	"hamburg":[],
+	"hanover":[],
+	"iceland":
+		[
+			"reykjavik"
+		],
+	"india":[],
+	"innsbruck":[],
+	"israel":[],
+	"krefeld":[],
+	"lambach":[],
+	"latvia":[],
+	"luxembourg":[],
+	"macedonia":[],
+	"spain":
+		[
+			"madrid"
+		],
+	"netherlands":
+		[
+			"amsterdam",
+			"holland",
+			"rotterdam"
+		],
+	"palestine":[],
+	"portsmouth":[],
+	"portugal":
+		[
+			"lisbon"
+		],
+	"prussia":[],
+	"salzburg":[],
+	"scandinavia":[],
+	"spital":[],
+	"sweden":
+		[
+			"stockholm"
+		],
+	"switzerland":
+		[
+			"geneva"
+		],
+	"syria":[],
+	"troy":[],
+	"turkey":[],
+	"yugoslavia":[],
+	"brest":[],
+	"dachau":[],
+	"auschwitz":[],
+	"treblinka":[],
+	"buchenwald":[],
+	"sachsenhausen":[],
+	"mauthausen":[],
+	"ravensbrueck":[],
+	"natzweiler":[]
 }
