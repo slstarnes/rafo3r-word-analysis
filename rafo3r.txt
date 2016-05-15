@@ -2902,7 +2902,7 @@ Rosenberg and Scheubner-Richter. The latter, who had ennobled himself with
 his wife's name and called himself Max Erwin von Scheubner-Richter, was a
 dubious character who, like Rosenberg, had spent most of his life in the Russian
 Baltic provinces and after the war made his way with other refugees from the
-Soviet Union to Munich, where he joined the Nazi Party and became one of
+Soviet_Union to Munich, where he joined the Nazi Party and became one of
 Hitler's close confidants.
 On November 4, Germany's Memorial Day (Totengedenktag) would be observed by a military parade in the heart of Munich, and it had been announced in
 the press that not only the popular Crown Prince Rupprecht but Kahr, Lossow
@@ -8475,7 +8475,7 @@ pose of welcoming the advent of a second fascist power, had not in fact been ent
 so much stronger than Italy might soon put the Duce in the shade. A rabidly
 Pan-German Reich would have designs on Austria and the Balkans, where the
 Italian dictator had already staked out his claims. The hostility toward Nazi
-Germany of the Soviet Union, which had been republican Germany's one friend
+Germany of the Soviet_Union, which had been republican Germany's one friend
 in the years since 1921, was obvious. The Third Reich was indeed friendless in
 a hostile world. And it was disarmed, or relatively so in comparison with its
 highly armed neighbors.
@@ -9433,7 +9433,7 @@ parties for the foreign visitors – the Propaganda Minister's "Italian Night" o
 the Pfaueninsel near Wannsee gathered more than a thousand guests at dinner
 in a scene that resembled the Arabian Nights. The visitors, especially those from
 England and America, were greatly impressed by what they saw: apparently a
-*Also, in contrast to the Soviet Union, Nazi Germany permitted all but a few thousand of
+*Also, in contrast to the Soviet_Union, Nazi Germany permitted all but a few thousand of
 its citizens who were in the black book of the secret police to travel abroad, though this was
 severely curtailed by currency restrictions because of the country's lack of foreign exchange.
 However, the currency restrictions were no more stringent than those for British citizens after
@@ -11261,7 +11261,7 @@ in Vienna, like the Beer Hall Putsch in Munich in 1923, had been premature.
 Germany was not yet militarily strong enough to back up such a venture by
 force. It was too isolated diplomatically. Even Fascist Italy had joined Britain
 and France in insisting on Austria's continued independence. Moreover, the
-Soviet Union was showing interest for the first time in joining the West in an
+Soviet_Union was showing interest for the first time in joining the West in an
 Eastern Locarno which would discourage any moves of Germany in the East.
 In the autumn it joined the League of Nations. The prospects for dividing the
 Great Powers seemed dimmer than ever throughout the crucial year of 1934. All
@@ -11660,7 +11660,7 @@ All through the winter of 1935-36 Hitler bided his time. France and Britain,
 he could not help but note, were preoccupied with stopping Italy's aggression
 in Abyssinia, but Mussolini seemed to be getting by with it. Despite its muchpublicized sanctions, the League of Nations was proving itself impotent to halt a
 determined aggressor. In Paris the French Parliament seemed to be in no hurry
-to ratify the pact with the Soviet Union; the growing sentiment in the Right
+to ratify the pact with the Soviet_Union; the growing sentiment in the Right
 was all against it. Apparently Hitler thought there was a good chance of the
 French Chamber or Senate rejecting the alliance with Moscow. In that case he
 would have to look for another excuse for Schulung. But the pact came before
@@ -11992,10 +11992,10 @@ On the surface this pact seemed to be nothing more than a propaganda trick by
 which Germany and Japan could win world support by exploiting the universal
 dislike for Communism and the general distrust of the Comintern. But in this
 treaty too there was a secret protocol, specifically directed against Russia. In
-case of an unprovoked attack by the Soviet Union against Germany or Japan,
+case of an unprovoked attack by the Soviet_Union against Germany or Japan,
 the two nations agreed to consult on what measures to take "to safeguard their
 common interests" and also to "take no measures which would tend to ease the
-situation of the Soviet Union." It was also agreed that neither nation would
+situation of the Soviet_Union." It was also agreed that neither nation would
 make any political treaties with Russia contrary to the spirit of the agreement
 without mutual consent.264
 It would not be very long before Germany broke the agreement and accused
@@ -12322,7 +12322,7 @@ Hitler then outlined some of the advantages of the "annexation of Czechoslovakia
 additional foodstuffs for five to six million Germans in the Reich, and manpower
 for twelve new Army divisions.
 He had forgotten to mention what Italy and Russia might do, and he now
-returned to them. He doubted whether the Soviet Union would intervene, "in
+returned to them. He doubted whether the Soviet_Union would intervene, "in
 view of Japan's attitude." Italy would not object "to the elimination of the
 Czechs" but it was still a question as to her attitude if Austria was also taken.
 It depended "essentially on whether the Duce were still alive."
@@ -13268,7 +13268,7 @@ preparations.298
 General Jodl was not exaggerating. Before the threat of armed invasion President Miklas gave in and on the last day of grace, February 15, Schuschnigg formally advised Ambassador von Papen that the Berchtesgaden agreement would
 be carried out before February 18. On February 16 the Austrian government
 announced a general amnesty for Nazis, including those convicted in the murder
-of Dollfuss, and made public the reorganized cabinet, in which Arthur SeyssInquart was named Minister of Security. The next day this Nazi Minister hurried
+of Dollfuss, and made public the reorganized cabinet, in which Arthur Seyss-Inquart was named Minister of Security. The next day this Nazi Minister hurried
 off to Berlin to see Hitler and receive his orders.
 Seyss-Inquart, the first of the quislings, was a pleasant-mannered, intelligent
 young Viennese lawyer who since 1918 had been possessed with a burning desire
@@ -13281,7 +13281,7 @@ an Anschluss by affirming that "German Austria is a component part of the
 296
 German Republic." The victorious Allies had not allowed it and by the time
 Hitler came to power in 1933 there was no doubt that the majority of Austrians
-were against their little country's joining with Nazi Germany. But to SeyssInquart, as he said at his trial in Nuremberg, the Nazis stood unflinchingly
+were against their little country's joining with Nazi Germany. But to Seyss-Inquart, as he said at his trial in Nuremberg, the Nazis stood unflinchingly
 for the Anschluss and for this reason he gave them his support. He did not
 join the party and took no part in its rowdy excesses. He played the role,
 rather, of a respectable front for the Austrian Nazis, and after the July 1936
@@ -13737,7 +13737,7 @@ set objectives to be reached by exerting all forces to the full as quickly as po
 Adolf Hitler."312"
 †Actually, Seyss-Inquart tried until long after midnight to get Hitler to call off the German
 invasion. A German Foreign Office memorandum reveals that at 2:10 A.M. on March 12
-General Muff telephoned Berlin and stated that on the instructions of Chancellor SeyssInquart he was requesting that "the alerted troops should remain on, but not cross, the
+General Muff telephoned Berlin and stated that on the instructions of Chancellor Seyss-Inquart he was requesting that "the alerted troops should remain on, but not cross, the
 border." Keppler also came on the telephone to support the request. General Muff, a decent
 man and an officer of the old school, seems to have been embarrassed by his role in Vienna.
 When he was informed by Berlin that Hitler declined to halt his troops he replied that he
@@ -14194,7 +14194,7 @@ France if the French were called upon to implement their obligation's under the
 Franco-Czech pact. This forthright statement eased Hitler's problems considerably. He now knew that Britain would also stand by when he took on his next
 victim. If Britain held back would not France also? As his secret papers of the
 next few months make clear, he was sure of it. And he knew that, by the terms
-of the Russian pacts with France and Czechoslovakia, the Soviet Union was not
+of the Russian pacts with France and Czechoslovakia, the Soviet_Union was not
 obliged to come to the aid of the Czechs until the French moved first. Such
 knowledge was all that he needed to enable him to go ahead at once with his
 plans.
@@ -15061,7 +15061,7 @@ areas separated from Czechoslovakia providing it was done after a plebiscite
 and "not interrupted by forcible measures on the part of Germany."350 All this
 must have been pleasing for Hitler to hear. The news from Moscow also was
 not bad. By the end of June Friedrich Werner Count von der Schulenburg, the
-German ambassador to Russia, was advising Berlin that the Soviet Union was
+German ambassador to Russia, was advising Berlin that the Soviet_Union was
 "hardly likely to march in defense of a bourgeois state," i.e., Czechoslovakia.351
 By August 3, Ribbentrop was informing the major German diplomatic missions
 abroad that there was little fear of intervention over Czechoslovakia by Britain,
@@ -15631,7 +15631,7 @@ with his cabinet, party leaders and the Army High Command. They had shown
 courage in the face of enemy threats but they began to crumble at the desertion
 of their friends and allies. What about Russia? As it happened, the Soviet
 Foreign Commissar, Litvinov, was making a speech that very day at Geneva
-reiterating that the Soviet Union would stand by its treaty with Czechoslovakia.
+reiterating that the Soviet_Union would stand by its treaty with Czechoslovakia.
 Benes called in the Russian minister in Prague, who backed up what his Foreign
 Commissar had said. Alas for the Czechs, they realized that the pact with
 Russia called for the Soviets to come to their aid on condition that France did
@@ -16168,7 +16168,7 @@ that it would be difficult to exclude other powers from participating in such a
 conference.393 The "other powers" were Russia, which had a pact of mutual
 assistance with Prague, and Czechoslovakia. Chamberlain had returned from
 Godesberg convinced – quite correctly – that Hitler would never consent to any
-meeting which included the Soviet Union. Nor did the Prime Minister himself
+meeting which included the Soviet_Union. Nor did the Prime Minister himself
 desire the presence of the Russians. Though it was obvious to the smallest mind
 in Britain that in case of war with Germany, Soviet participation on the side
 of the West would be of immense value, as Churchill repeatedly tried to point
@@ -17093,7 +17093,7 @@ wanted, his trips to Berchtesgaden and Godesberg and finally the fateful journey
 to Munich rescued Hitler from his limb and strengthened his position in Europe,
 in Germany, in the Army, beyond anything that could have been imagined a
 few weeks before. It also added immeasurably to the power of the Third Reich
-vis-a-vis the Western democracies and the Soviet Union.
+vis-a-vis the Western democracies and the Soviet_Union.
 For France, Munich was a disaster, and it is beyond understanding that
 this was not fully realized in Paris. Her military position in Europe was destroyed. Because her Army, when the Reich was fully mobilized, could never
 be much more than half the size of that of Germany, which had nearly twice
@@ -17108,7 +17108,7 @@ in her written word? What value now were alliances with France? The answer
 in Warsaw, Bucharest and Belgrade was: Not much; and there was a scramble
 in these capitals to make the best deal possible, while there was still time, with
 the Nazi conqueror.
-And if not a scramble, there was a stir in Moscow. Though the Soviet Union
+And if not a scramble, there was a stir in Moscow. Though the Soviet_Union
 was militarily allied to both Czechoslovakia and France, the French government
 had gone along with Germany and Britain, without protest, in excluding Russia
 from Munich. It was a snub which Stalin did not forget and which was to cost
@@ -17120,7 +17120,7 @@ Union would "reconsider her foreign policy," become less friendly to her ally
 France and "more positive" toward Germany. As a matter of fact, the German
 THE ROAD TO MUNICH 381
 diplomat thought that "the present circumstances offer favorable opportunities
-for a new and wider German economic agreement with the Soviet Union."422
+for a new and wider German economic agreement with the Soviet_Union."422
 This is the first mention in the secret German archives of a change in the wind
 that now began to stir, however faintly, over Berlin and Moscow and which,
 within a year, would have momentous consequences.
@@ -18375,14 +18375,14 @@ before, were driven by some fateful flaw in their national character toward self
 own worst enemies. As long as Danzig and the Corridor existed as they were,
 there could be no lasting peace between Poland and Nazi Germany. Nor was
 Poland strong enough to afford the luxury of being at odds with both her giant
-neighbors, Russia and Germany. Her relations with the Soviet Union had been
+neighbors, Russia and Germany. Her relations with the Soviet_Union had been
 uniformly bad since 1920, when Poland had attacked Russia, already weakened
 by the World War and the civil war, and a savage conflict had followed.†
 Seizing an opportunity to gain the friendship of a country so stoutly antiRussian and at the same time to detach her from Geneva and Paris, thus undermining the system of Versailles, Hitler had taken the initiative in bringing
 about the Polish-German pact of 1934. It was not a popular move in Germany. The German Army, which had been pro-Russian and anti-Polish since
 the days of Seeckt, resented it. But it served Hitler admirably for the time
 *See above, p. 188.
-†As a result of that war, Poland pushed its eastern boundary 150 miles east of the ethnographic Curzon Line, at the expense of the Soviet Union – a frontier which transferred four
+†As a result of that war, Poland pushed its eastern boundary 150 miles east of the ethnographic Curzon Line, at the expense of the Soviet_Union – a frontier which transferred four
 and a half million Ukrainians and one and a half million White Russians to Polish rule. Thus
 Poland's western and eastern borders were unacceptable to Germany and Russia respectively
 – a fact which seems to have been lost sight of in the Western democracies when Berlin and
@@ -18400,7 +18400,7 @@ Reichstag on January 30, 1939, Hitler spoke in warm terms of "the friendship
 between Germany and Poland" and declared that it was "one of the reassuring
 factors in the political life in Europe," Ribbentrop had talked with more frankness when he paid a state visit to Warsaw four days before. He again raised
 with Beck the question of Hitler's demands concerning Danzig and communications through the Corridor, insisting that they were "extremely moderate."
-But neither on these questions nor on his insistence that Poland join the AntiComintern Pact against the Soviet Union did the German Foreign Minister get
+But neither on these questions nor on his insistence that Poland join the AntiComintern Pact against the Soviet_Union did the German Foreign Minister get
 a satisfactory answer.469 Colonel Beck was becoming wary of his friends. As
 a matter of fact, he was beginning to squirm. On February 26, the German
 ambassador in Warsaw informed Berlin that Beck had taken the initiative in
@@ -18418,14 +18418,14 @@ by the German Army. Its military position had overnight become untenable.
 March 21, 1939, is a day to be remembered in the story of Europe's march
 toward war.
 There was intense diplomatic activity that day in Berlin, Warsaw and London. The President of the French Republic, accompanied by Foreign Minister
-Bonnet, arrived in the British capital for a state visit. To the French Chamberlain suggested that their two countries join Poland and the Soviet Union in
+Bonnet, arrived in the British capital for a state visit. To the French Chamberlain suggested that their two countries join Poland and the Soviet_Union in
 a formal declaration stating that the four nations would consult immediately
 about steps to halt further aggression in Europe. Three days before, Litvinov
 had proposed – as he had just a year before, after the Anschluss – a European
 conference, this time of France, Britain, Poland, Russia, Rumania and Turkey,
 which would join together to stop Hitler. But the British Prime Minister had
 found the idea "premature." He was highly distrustful of Moscow and thought
-a "declaration" by the four powers, including the Soviet Union, was as far as he
+a "declaration" by the four powers, including the Soviet_Union, was as far as he
 could go.*
 His proposal was presented to Beck in Warsaw by the British ambassador
 *"I must confess," Chamberlain wrote in a private letter on March 26, "to the most
@@ -18436,7 +18436,7 @@ and suspected by many of the smaller states, notably by Poland, Rumania and Finl
 412
 on the same day, March 21, and received a somewhat cool reception, as far as
 including the Russians was concerned. The Polish Foreign Minister was even
-more distrustful of the Soviet Union than Chamberlain and, moreover, shared
+more distrustful of the Soviet_Union than Chamberlain and, moreover, shared
 the Prime Minister's views about the worthlessness of Russian military aid. He
 was to hold these views, unflinchingly, right up to the moment of disaster.
 But the most fateful event of this day of March 21 for Poland took place in
@@ -18595,7 +18595,7 @@ On the evening of March 30, Kennard presented to Beck an Anglo-French
 proposal for mutual-assistance pacts in case of German aggression.* But even
 *In the telegram of instructions to Kennard 481 it was made clear that Russia was to be
 left out in the cold. "It is becoming clear," it said, "that our attempts to consolidate the
-situation will be frustrated if the Soviet Union is openly associated with the initiation of the
+situation will be frustrated if the Soviet_Union is openly associated with the initiation of the
 scheme. Recent telegrams from a number of His Majesty's Missions abroad have warned us
 that the inclusion of Russia would not only jeopardize the success of our constructive effort
 but also tend to consolidate the relations of the parties to the Anti-Comintern Pact, as well
@@ -19031,14 +19031,14 @@ demands and the other is obliged to accept those demands unaltered,
 are not negotiations.
 THE INTERVENTION OF RUSSIA: I
 In his speech to the Reichstag on April 28, Hitler had omitted his customary
-attack on the Soviet Union. There was not a word about Russia. Colonel Beck,
+attack on the Soviet_Union. There was not a word about Russia. Colonel Beck,
 in his reply, had mentioned "various other hints" made by Germany "which
 went much further than the subjects of discussion" and reserved the right "to
 return to this matter, if necessary" – a veiled but obvious reference to Germany's
 previous efforts to induce Poland to join the Anti-Comintern Pact against Russia, Though Beck did not know it, nor did Chamberlain, those anti-Russian
 efforts were now being abandoned. Fresh ideas were beginning to germinate
 in Berlin and Moscow. It is difficult to ascertain exactly when the first moves
-were made in the two capitals toward an understanding between Nazi Germany and the Soviet Union which was to lead to such immense consequences
+were made in the two capitals toward an understanding between Nazi Germany and the Soviet_Union which was to lead to such immense consequences
 for the world. One of the first slight changes in the wind, as has already been
 426
 noted,* took place as far back as October 3, 1938, four days after Munich, when
@@ -19065,13 +19065,13 @@ downs experienced in negotiating a renewal. The two sides were highly suspicious
 Germany's crack economic troubleshooter, Julius Schnurre.
 Shortly after the New Year, the Soviet ambassador in Berlin, Alexei
 Merekalov, made one of his infrequent trips to the Wilhelmstrasse to inform
-it "of the Soviet Union's desire to begin a new era in German-Soviet economic
+it "of the Soviet_Union's desire to begin a new era in German-Soviet economic
 relations." And for a few weeks there were promising talks, but by February
 1939 they had pretty much broken down, ostensibly over whether the main
 negotiations should be conducted in Moscow or Berlin. But the real reason
 was revealed in a memorandum of the director of the Economic Policy Department of the German Foreign Office on March 11, 1939: Though Germany was
 hungry for Russia's raw materials and Goering was constantly demanding that
-they be obtained, the Reich simply could not supply the Soviet Union with the
+they be obtained, the Reich simply could not supply the Soviet_Union with the
 goods which would have to be exchanged. The director thought the "rupture
 of negotiations" was "extremely regrettable in view of Germany's raw-materials
 position."493
@@ -19098,7 +19098,7 @@ economic relations with all countries.
 2. . . . Not to let our country be drawn into conflict by warmongers, whose custom it is to let others pull their chestnuts out
 of the fire.494
 This was a plain warning from the man who made all the ultimate decisions
-in Russia that the Soviet Union did not intend to be maneuvered into a war
+in Russia that the Soviet_Union did not intend to be maneuvered into a war
 with Nazi Germany in order to spare Britain and France; and if it was ignored
 in London, it was at least noticed in Berlin.*
 Still, it is evident from Stalin's speech and from the various diplomatic exchanges which shortly took place that Soviet foreign policy, while cautious, was
@@ -19107,20 +19107,20 @@ on March 15, the Russian government proposed, as we have seen, † a six-power
 conference to discuss means of preventing further aggression, and Chamberlain
 turned it down as "premature." ‡ That was on March 18. Two days later an
 official communique in Moscow, which the German ambassador there hurriedly
-wired to Berlin, denied that the Soviet Union had offered Poland and Rumania
+wired to Berlin, denied that the Soviet_Union had offered Poland and Rumania
 assistance "in the event of their becoming the victims of aggression." Reason:
 "Neither Poland nor Rumania had approached the Soviet government for assistance or informed [it] of any danger threatening them."497
 *Though an Associated Press dispatch from Moscow (published in the New York Times
 March 12) reported that Stalin's condemnation of efforts to embroil Russia in a war with
 Germany had led to talk in diplomatic circles in Moscow of the possibility of a rapprochement
-between the Soviet Union and Germany, Sir William Seeds, the British ambassador, apparently
+between the Soviet_Union and Germany, Sir William Seeds, the British ambassador, apparently
 did not participate in any such talk. In his dispatch reporting Stalin's speech Seeds made no
 mention of such a possibility. One Western diplomat, Joseph E. Davies, former American
 ambassador in Moscow, who was now stationed in Brussels, did draw the proper conclusions
 from Stalin's speech. "It is a most significant statement," he noted in his diary on March
 II. "It bears the earmarks of a definite warning to the British and French governments that
 the Soviets are getting tired of 'nonrealistic' opposition to the aggressors. This . . . is really
-ominous for the negotiations . . . between the British Foreign Office and the Soviet Union. It
+ominous for the negotiations . . . between the British Foreign Office and the Soviet_Union. It
 certainly is the most significant danger signal that I have yet seen." On March 21 he wrote to
 Senator Key Pittman: ". . . Hitler is making a desperate effort to alienate Stalin from France
 and Britain. Unless the British and French wake up, I am afraid he will succeed."495
@@ -19136,7 +19136,7 @@ security" and that it had decided the fate of Litvinov.496
 The British government's unilateral guarantee of Poland of March 31 may
 have helped to convince Stalin that Great Britain preferred an alliance with the
 Poles to one with the Russians and that Chamberlain was intent, as he had
-been at the time of Munich, on keeping the Soviet Union out of the European
+been at the time of Munich, on keeping the Soviet_Union out of the European
 concert of powers.498
 In this situation the Germans and Italians began to glimpse certain opportunities. Goering, who now had an important influence on Hitler in foreign affairs,
 saw Mussolini in Rome on April 16 and called the Duce's attention to Stalin's
@@ -19146,7 +19146,7 @@ be used as cannon fodder for the capitalist powers." He said he "would ask the
 Fuehrer whether it would not be possible to put out feelers cautiously to Russia . . . with a view to rapprochement." And he reminded Mussolini that there
 had been "absolutely no mention of Russia in the Fuehrer's latest speeches."
 The Duce, according to the confidential German memorandum of the meeting,
-warmly welcomed the idea of a rapprochement of the Axis Powers with the Soviet Union. The Italian dictator too had sensed a change in Moscow; he thought
+warmly welcomed the idea of a rapprochement of the Axis Powers with the Soviet_Union. The Italian dictator too had sensed a change in Moscow; he thought
 a rapprochement could be "effected with comparative ease."
 The object [said Mussolini] would be to induce Russia to react coolly
 and unfavorably to Britain's efforts at encirclement, on the lines of
@@ -19159,7 +19159,7 @@ too.
 On the very day of this discussion between Goering and Mussolini, April
 16, the Soviet Foreign Commissar received the British ambassador in Moscow
 and made a formal proposal for a triple pact of mutual assistance between Great
-Britain, France and the Soviet Union. It called for a military convention between
+Britain, France and the Soviet_Union. It called for a military convention between
 the three powers to enforce the pact and a guarantee by the signatories, to be
 joined by Poland, if it desired, of all the nations in Central and Eastern Europe
 which felt themselves menaced by Nazi Germany. It was Litvinov's last bid for
@@ -19206,7 +19206,7 @@ Since Litvinov had received the British Ambassador as recently as
 May 2 and had even been mentioned in the press yesterday as a guest
 of honor at the parade, it seems that his dismissal must be due to
 a spontaneous decision by Stalin. . . . At the last Party Congress
-Stalin urged caution lest the Soviet Union be dragged into conflicts.
+Stalin urged caution lest the Soviet_Union be dragged into conflicts.
 Molotov, who is not a Jew, has the reputation of being the "most
 intimate friend and closest collaborator" of Stalin. His appointment
 is obviously intended to provide a guarantee that foreign policy will
@@ -19217,7 +19217,7 @@ of seeking Russian security against Nazi Germany by a military alliance with
 Great Britain and France. Chamberlain's hesitations about such an alliance
 were fatal to the Russian Foreign Commissar. In Stalin's judgment – and his
 was the only one which counted in Moscow – Litvinov's policies had failed.
-Moreover, they threatened to land the Soviet Union in a war with Germany
+Moreover, they threatened to land the Soviet_Union in a war with Germany
 which the Western democracies might well contrive to stay out of. It was time,
 430
 Stalin concluded, to try a new tack. * If Chamberlain could appease Hitler,
@@ -19230,7 +19230,7 @@ he conferred with Dr. Julius Schnurre, the German Foreign Office expert on
 East European economic affairs.
 Astakhov touched upon the dismissal of Litvinov [Schnurre reported]
 and tried . . . to learn whether this event would cause a change in our
-attitude toward the Soviet Union. He stressed the great importance
+attitude toward the Soviet_Union. He stressed the great importance
 of the personality of Molotov, who was by no means a specialist in
 foreign policy but who would have all the greater importance for
 future Soviet foreign policy.502
@@ -19244,8 +19244,8 @@ It is not surprising, then, that the Russians intensified their approach to the
 Germans. On May 17 Astakhov again saw Schnurre at the Foreign Office and
 after discussing problems of trade turned to larger matters.
 Astakhov stated [Schnurre reported] that there were no conflicts
-in foreign policy between Germany and the Soviet Union and that
-therefore there was no reason for any enmity between the two countries. It was true that in the Soviet Union there was a distinct feeling
+in foreign policy between Germany and the Soviet_Union and that
+therefore there was no reason for any enmity between the two countries. It was true that in the Soviet_Union there was a distinct feeling
 of being menaced by Germany. It would undoubtedly be possible to
 eliminate this feeling of being menaced and the distrust in Moscow
 . . . In reply to my incidental question he commented on the AngloSoviet negotiations to the effect that, as they stood at the moment,
@@ -19303,7 +19303,7 @@ wished to avoid war for at least three years. To the Italian's surprise, Ribbent
 agreed that Germany wished to keep the peace for that long too. In fact, Ciano
 found the German Foreign Minister "for the first time" in a "pleasantly calm
 state of mind." They reviewed the situation in Europe, agreed on improving
-Axis relations with the Soviet Union and adjourned for a gala dinner.
+Axis relations with the Soviet_Union and adjourned for a gala dinner.
 When after dinner Mussolini telephoned to see how the talks had gone, and
 Ciano replied that they had gone well, the Duce had a sudden brain storm. He
 asked his son-in-law to release to the press a communique saying that Germany
@@ -19416,7 +19416,7 @@ Schmundt minutes that this happened or that anyone in the select audience
 even dared to ask a question to straighten matters out.
 Hitler next turned to Russia. "It is not ruled out," he said, "that Russia
 might disinterest herself in the destruction of Poland." On the other hand, if
-the Soviet Union allied herself to Britain and France, that "would lead me to
+the Soviet_Union allied herself to Britain and France, that "would lead me to
 attack England and France with a few devastating blows." That would mean
 committing the same mistake Wilhelm II made in 1914, but though in this
 lecture Hitler drew several lessons from the World War he did not draw this
@@ -19608,7 +19608,7 @@ castigated the Western democracies for their hesitation and declared that if
 they were serious in joining Russia to stop aggression they must get down to
 brass tacks and come to an agreement on three main points:
 1. Conclude a tripartite mutual-assistance pact of a purely defensive character.
-2. Guarantee the states of Central and Eastern Europe, including all European states bordering on the Soviet Union.
+2. Guarantee the states of Central and Eastern Europe, including all European states bordering on the Soviet_Union.
 3. Conclude a definite agreement on the form and scope of the immediate and
 effective aid to be afforded each other and the smaller states threatened
 by aggression.
@@ -19635,7 +19635,7 @@ But Hitler, having fixed September 1 for his attack on Poland, could not
 afford to sit tight. On or about May 25, Weizsaecker and Friedrich Gaus, director of the Legal Department of the German Foreign Office, were summoned to
 Ribbentrop's country house at Sonnenburg and, according to Gaus's affidavit
 submitted at Nuremberg,† informed that the Fuehrer wanted "to establish more
-tolerable relations between Germany and the Soviet Union." Draft instructions
+tolerable relations between Germany and the Soviet_Union." Draft instructions
 to Schulenburg were drawn up by Ribbentrop outlining in considerable detail the
 new line he was to take with Molotov, whom he was asked to see "as soon as possible." This draft is among the captured German Foreign Office documents.519
 It was shown to Hitler, according to a notation on the document, on May
@@ -19647,7 +19647,7 @@ A real opposition of interests in foreign affairs does not exist between
 Germany and Soviet Russia . . . The time has come to consider
 a pacification and normalization of German-Soviet Russian foreign
 relations . . . The Italo-German alliance is not directed against the
-Soviet Union. It is exclusively directed against the Anglo-French
+Soviet_Union. It is exclusively directed against the Anglo-French
 combination . . .
 If against our wishes it should come to hostilities with Poland, we
 are firmly convinced that even this need not in any way lead to a
@@ -19664,7 +19664,7 @@ this is done – we would take Russian interests into account as far as
 possible.
 Next the danger to Russia of an alliance with Great Britain was to be pointed
 up.
-We are unable to see what could really induce the Soviet Union to
+We are unable to see what could really induce the Soviet_Union to
 play an active part in the game of the British policy of encirclement
 . . . This would mean Russia undertaking a one-sided liability without any really valuable British quid pro quo . . . Britain is by no
 means in a position to offer Russia a really valuable quid pro quo, no
@@ -19672,7 +19672,7 @@ matter how the treaties may be formulated. All assistance in Europe
 is rendered impossible by the West Wall . . . We are therefore convinced that Britain will once more remain faithful to her traditional
 policy of letting other powers pull her chestnuts out of the fire.
 Schulenburg also was to emphasize that Germany had "no aggressive intentions against Russia." Finally, he was instructed to tell Molotov that Germany
-was ready to discuss with the Soviet Union not only economic questions but "a
+was ready to discuss with the Soviet_Union not only economic questions but "a
 return to normal in political relations."
 Hitler thought the draft went too far and ordered it held up. The Fuehrer,
 according to Gaus, had been impressed by Chamberlain's optimistic statement
@@ -19683,7 +19683,7 @@ decided that for the time being a more cautious approach would be best.
 The backing and filling which took place in the Fuehrer's mind during the last
 week of May is documented in the captured German Foreign Office papers. On
 or about the twenty-fifth – the exact day is not quite certain – he had suddenly
-come out for pushing talks with the Soviet Union in order to thwart the AngloRussian negotiations. Schulenburg was to see Molotov at once for that purpose.
+come out for pushing talks with the Soviet_Union in order to thwart the AngloRussian negotiations. Schulenburg was to see Molotov at once for that purpose.
 But Ribbentrop's instructions to him, which were shown Hitler on the twentysixth, were never sent. The Fuehrer canceled them. That evening Weizsaecker
 wired Schulenburg advising him to maintain an "attitude of complete reserve –
 you personally should not make any move until further notice."520
@@ -19717,9 +19717,9 @@ Cautious as both men were, the Germans were encouraged. At 10:40 o'clock
 that evening of May 30 Weizsaecker got off a "most urgent" telegram 522 to
 Schulenburg in Moscow:
 Contrary to the tactics hitherto planned we have now, after all,
-decided to make a certain degree of contact with the Soviet Union.*
+decided to make a certain degree of contact with the Soviet_Union.*
 It may have been that a long secret memorandum which Mussolini penned to
-Hitler on May 30 strengthened the Fuehrer's resolve to turn to the Soviet Union,
+Hitler on May 30 strengthened the Fuehrer's resolve to turn to the Soviet_Union,
 however cautiously. As the summer commenced, the Duce's doubts mounted
 as to the advisability of an early conflict. He was convinced, he wrote Hitler,
 that "war between the plutocratic, self-seeking conservative nations" and the
@@ -19742,7 +19742,7 @@ Germans, in pressing for a trade agreement, wished to torpedo the Russian
 *In Nazi-Soviet Relations, a volume of German Foreign Office documents on that subject
 published by the U.S. State Department in 1949, the English translation of the telegram
 came out much stronger. The key sentence was given as: "We have now decided to undertake
-definite negotiations with the Soviet Union." This has led many historians, including Churchill,
+definite negotiations with the Soviet_Union." This has led many historians, including Churchill,
 to conclude that this telegram of May 30 marked the decisive turning point in Hitler's efforts
 to make a deal with Moscow. That turning point came later. As Weizsaecker pointed out in
 the May 30 postscript to his letter to Schulenburg, the German approach, which Hitler had
@@ -19784,7 +19784,7 @@ in the political field enough has been said until further instructions
 and that for the moment the talks should not be taken up again by
 us.
 *To try to forestall an Anglo-French-Russian guarantee of Latvia and Estonia, which
-bordered on the Soviet Union, Germany had hastily signed nonaggression pacts with these
+bordered on the Soviet_Union, Germany had hastily signed nonaggression pacts with these
 two Baltic States on June 7. Even before this, on May 31, Germany had pushed through a
 similar pact with Denmark, which, considering recent events, appears to have given the Danes
 an astonishing sense of security.
@@ -19828,7 +19828,7 @@ Anglo-French meetings with Molotov, his appearance had little effect on the
 course of Anglo-Soviet negotiations. A fortnight later, on June 29, Russian
 suspicion and irritation was publicly displayed in an article in Pravda by Andrei
 Zhdanov under the headline, "British and French Governments Do Not Want
-a Treaty on the Basis of Equality for the Soviet Union." Though purporting
+a Treaty on the Basis of Equality for the Soviet_Union." Though purporting
 to write "as a private individual and not committing the Soviet Government,"
 Zhdanov was not only a member of the Politburo and president of the Foreign
 Affairs Committee of the Soviet Parliament but, as Schuienburg emphasized to
@@ -19981,7 +19981,7 @@ not conduct it like the Germany of Wilhelm II, who had always had
 scruples about the full use of every weapon, and that he would fight
 without mercy up to the extreme limit.538
 Against whom? Against Poland certainly. Against Britain and France, if
-necessary. Against Russia too? With regard to the Soviet Union, Hitler had
+necessary. Against Russia too? With regard to the Soviet_Union, Hitler had
 finally made up his mind.
 THE INTERVENTION OF RUSSIA: III
 A fresh initiative had come from the Russians.
@@ -20011,18 +20011,18 @@ the meeting, "the Russians stayed until about 12:30 A.M." and talked "in a
 very lively and interested manner about the political and economic problems of
 interest to us."
 Astakhov, with the warm approval of Babarin, declared that a SovietGerman political rapprochement corresponded to the vital interests of the two
-countries. In Moscow, he said, they had never quite understood why Nazi Germany had been so antagonistic to the Soviet Union. The German diplomat, in
+countries. In Moscow, he said, they had never quite understood why Nazi Germany had been so antagonistic to the Soviet_Union. The German diplomat, in
 response, explained that "German policy in the East had now taken an entirely
 different course."
 *See above, p. 442.
 448
-On our part there could be no question of menacing the Soviet Union.
+On our part there could be no question of menacing the Soviet_Union.
 Our aims were in an entirely different direction . . . German policy
 was aimed at Britain . . . I could imagine a far-reaching arrangement of mutual interests with due consideration for vital Russian
 problems.
 However, this possibility would be barred the moment the Soviet
 Union aligned itself with Britain against Germany. The time for an
-understanding between Germany and the Soviet Union was opportune now, but would no longer be so after the conclusion of a pact
+understanding between Germany and the Soviet_Union was opportune now, but would no longer be so after the conclusion of a pact
 with London.
 What could Britain offer Russia? At best, participation in a European war and the hostility of Germany. What could we offer against
 this? Neutrality and keeping out of a possible European conflict
@@ -20091,7 +20091,7 @@ as the mutual-assistance pact itself. The Western Powers, which did not think
 highly of Russia's military prowess,* tried to put Molotov off. They would only
 agree to starting staff talks after the political agreement had been signed. But
 the Russians were adamant. When the British tried to strike a bargain, offering
-on July 17 to begin staff conversations at once if the Soviet Union would yield
+on July 17 to begin staff conversations at once if the Soviet_Union would yield
 on its insistence on signing political and military agreements simultaneously and
 also – for good measure – accept the British definition of "indirect aggression,"
 Molotov answered with a blunt rejection. Unless the French and British agreed
@@ -20153,7 +20153,7 @@ Major General Heywood.
 War, 1939, based largely on the British Foreign Office documents. See p. 482.
 THE TURN OF POLAND 451
 little doubt that, by the beginning of August, Chamberlain and Halifax had
-almost given up hope of reaching an agreement with the Soviet Union to stop
+almost given up hope of reaching an agreement with the Soviet_Union to stop
 Hitler but thought that if they stretched out the staff negotiations in Moscow
 this might somehow deter the German dictator from taking, during the next
 four weeks, the fatal step toward war.*
@@ -20234,7 +20234,7 @@ after midnight 556 that in a talk lasting an hour and a quarter Molotov had
 no doubt of that. For after Schulenburg had reiterated Germany's view that
 no differences existed between the two countries "from the Baltic to the Black
 Sea" and reaffirmed the German wish to "come to an understanding," the unbending Russian Minister enumerated some of the hostile acts that the Reich
-had committed against the Soviet Union: the Anti-Comintern Pact, support of
+had committed against the Soviet_Union: the Anti-Comintern Pact, support of
 Japan against Russia and the exclusion of the Soviets from Munich.
 "How," asked Molotov, "could the new German statements be reconciled
 with these three points? Proofs of a changed attitude of the German Government were for the present still lacking."
@@ -20417,7 +20417,7 @@ their belief that peace could be maintained "through normal diplomatic negotiati
 chief European nations but that out of deference to "the Fuehrer's misgivings"
 he would settle for ordinary diplomatic negotiations.
 Hitler did not, the first day, turn down completely the idea of a conference
-but reminded Ciano that "Russia could no longer be excluded from future meetings of the powers." This was the first mention of the Soviet Union but it was
+but reminded Ciano that "Russia could no longer be excluded from future meetings of the powers." This was the first mention of the Soviet_Union but it was
 not the last.
 Finally when Ciano tried to pin his host down as to the date of the attack
 on Poland Hitler replied that because of the autumn rains, which would render
@@ -20498,7 +20498,7 @@ Monday, August 14, was another crucial day. While Ambassador von der
 Schulenburg, who obviously had not yet been taken fully into the confidence
 of Hitler and Ribbentrop, was writing Weizsaecker from Moscow advising him
 that Molotov was "a strange man and a difficult character" and that "I am still
-of the opinion that any hasty measures in our relations with the Soviet Union
+of the opinion that any hasty measures in our relations with the Soviet_Union
 should be avoided," he was being sent a "most urgent" telegram from Berlin.568
 It came from Ribbentrop and it was dispatched from the Wilhelmstrasse (the
 Foreign Minister was still at Fuschl) at 10:53 P.M. on August 14. It directed the
@@ -20550,7 +20550,7 @@ THE NAZI-SOVIET PACT 461
 he spoke of the necessity of "clarifying jointly territorial questions of Eastern
 Europe."
 Germany was ready to divide up Eastern Europe, including Poland, with
-the Soviet Union. This was a bid which Britain and France could not – and,
+the Soviet_Union. This was a bid which Britain and France could not – and,
 obviously, if they could, would not – match. And having made it, Hitler, apparently confident that it would not be turned down, once more – on the same
 day, August 14 – called in the commanders in chief of his armed forces to listen
 to him lecture on the plans and prospects for war.
@@ -20602,7 +20602,7 @@ fronts. But he told them enough to whet their appetite for more.
 "Russia," he said, "is not in the least disposed to pull chestnuts out of the
 fire." He explained the "loose contacts" with Moscow which had started with
 the trade negotiations. He was now considering whether "a negotiator should go
-to Moscow and whether this should be a prominent figure." The Soviet Union,
+to Moscow and whether this should be a prominent figure." The Soviet_Union,
 he declared, felt under no obligation to the West. The Russians understood the
 destruction of Poland. They were interested in a "delimitation of spheres of
 interest." The Fuehrer was "inclined to meet them halfway."
@@ -20768,7 +20768,7 @@ Ambassador von der Schulenburg saw Molotov at 8 P.M. on August 15 and,
 as instructed, read to him Ribbentrop's urgent telegram stating that the Reich
 Foreign Minister was prepared to come to Moscow to settle Soviet-German relations. According to a "most urgent, secret" telegram which the German envoy
 got off to Berlin later that night, the Soviet Foreign Commissar received the
-information "with the greatest interest" and "warmly welcomed German intentions of improving relations with the Soviet Union." However, expert diplomatic
+information "with the greatest interest" and "warmly welcomed German intentions of improving relations with the Soviet_Union." However, expert diplomatic
 poker player that he was, Molotov gave no sign of being in a hurry. Such a trip
 *S.S. Oberfuehrer Dr. Mehlhorn, who administered the S.D. under Heydrich. Schellenberg, in his memoirs (The Labyrinth, pp. 48-50), recounts that Mehlhorn told him on August
 26 that he had been put in charge of staging the faked attack at Gleiwitz but that Mehlhorn
@@ -20808,10 +20808,10 @@ Weizsaecker in Berlin with instructions to wire it "most urgent" to Moscow
 immediately.578
 The Nazi dictator accepted the Soviet suggestions unconditionally. Schulenburg was directed by Ribbentrop to see Molotov again and inform him
 that Germany is prepared to conclude a nonaggression pact with
-the Soviet Union and, if the Soviet Government so desire, one which
+the Soviet_Union and, if the Soviet Government so desire, one which
 would be undenounceable for a term of twenty-five years. Further,
 Germany is ready to guarantee the Baltic States jointly with the
-Soviet Union. Finally, Germany is prepared to exercise influence for
+Soviet_Union. Finally, Germany is prepared to exercise influence for
 an improvement and consolidation of Russian-Japanese relations.
 All pretense was now dropped that the Reich government was not in a hurry
 to conclude a deal with Moscow.
@@ -20854,14 +20854,14 @@ to the Reich Foreign Minister's first communication of August 15.
 Beginning acidly with a reminder of the Nazi government's previous hostility
 to Soviet Russia, it explained "that until very recently the Soviet Government
 have proceeded on the assumption that the German Government are seeking
-occasion for clashes with the Soviet Union . . . Not to mention the fact that
+occasion for clashes with the Soviet_Union . . . Not to mention the fact that
 the German Government, by means of the so-called Anti-Comintern Pact, were
 endeavoring to create, and have created, the united front of a number of States
-against the Soviet Union." It was for this reason, the note explained, that Russia
+against the Soviet_Union." It was for this reason, the note explained, that Russia
 "was participating in the organization of a defensive front against [German]
 aggression."
 If, however [the note continued], the German Government now undertake a change from the old policy in the direction of a serious
-improvement in political relations with the Soviet Union, the Soviet
+improvement in political relations with the Soviet_Union, the Soviet
 468
 Government can only welcome such a change, and are, for their part,
 prepared to revise their policy in the sense of a serious improvement
@@ -21025,7 +21025,7 @@ instructed the ambassador to hand it to Molotov "at once."
 M. STALIN, MOSCOW,
 I sincerely welcome the signing of the new German-Soviet Commercial Agreement as the first step in the reshaping of German-Soviet
 relations.*
-The conclusion of a nonaggression pact with the Soviet Union means
+The conclusion of a nonaggression pact with the Soviet_Union means
 to me the establishment of German policy for a long time. Germany
 thereby resumes a political course that was beneficial to both States
 during bygone centuries . . .
@@ -21263,7 +21263,7 @@ The next day, the twenty-third, after a meeting of the OKW section chiefs,
 General Haider noted in his diary: "Y Day definitely set for the 26th (Saturday)."
 ALLIED STALEMATE IN MOSCOW
 By the middle of August the military conversations in Moscow between the
-Western democracies and the Soviet Union had come to a virtual standstill – and
+Western democracies and the Soviet_Union had come to a virtual standstill – and
 for this the intransigence of the Poles was largely to blame. The Anglo-French
 military missions, it will be remembered, after taking a slow boat to Leningrad,
 had arrived in Moscow on August 11, exactly one week after the frustrated Mr.
@@ -21312,7 +21312,7 @@ now
 raised the fundamental problem, on which the military talks will
 succeed or fail and which has indeed been at the bottom of all our
 difficulties since the very beginning of the political conversations,
-namely, how to reach any useful agreement with the Soviet Union
+namely, how to reach any useful agreement with the Soviet_Union
 as long as this country's neighbors maintain a sort of boycott which
 is only to be broken . . . when it is too late.
 If the question came up – and how could it help coming up? – Admiral
@@ -21470,7 +21470,7 @@ no information.
 But neither the questions nor the answers had by this time any reality –
 They were being put too late. Ribbentrop was already on his way toe Moscow.
 The trip had been announced publicly the night before, and also its purpose:
-to conclude a nonaggression pact between Nazi Germany and the Soviet Union.
+to conclude a nonaggression pact between Nazi Germany and the Soviet_Union.
 Voroshilov, who seems to have developed a genuine liking for the French
 General, tried gently to let him know that their contacts were about to end.
 I fear one thing [Voroshilov said]. The French and English sides have
@@ -21491,7 +21491,7 @@ Soviet Military Delegation cannot picture to itself how the governments and gene
 RIBBENTROP IN MOSCOW: AUGUST 23, 1939
 Those "certain political events" now took place.
 Armed with full powers in writing from Hitler to conclude a nonaggression
-treaty "and other agreements" with the Soviet Union, which would become
+treaty "and other agreements" with the Soviet_Union, which would become
 effective as soon as they were signed, Ribbentrop set off by plane for Moscow
 on August 22. The large German party spent the night at Koenigsberg in East
 Prussia, where the Nazi Foreign Minister, according to Dr. Schmidt, worked
@@ -21501,7 +21501,7 @@ The two large Condor transport planes carrying the German delegation arrived in 
 Ribbentrop hurried off to the Kremlin to confront the Soviet dictator and his
 Foreign Commissar. This first meeting lasted three hours and, as Ribbentrop
 advised Hitler by "most urgent" wire, it went well for the Germans.598 Judging
-by the Foreign Minister's dispatch, there was no trouble at all in reaching agreement on the terms of a nonaggression pact which would keep the Soviet Union
+by the Foreign Minister's dispatch, there was no trouble at all in reaching agreement on the terms of a nonaggression pact which would keep the Soviet_Union
 out of Hitler's war. In fact the only difficulty, he reported, was a distinctly minor
 one concerning the division of spoils. The Russians, he said, were demanding
 that Germany recognize the small ports of Libau and Windau in Latvia "as being in their sphere of interest." Since all of Latvia was to be placed on the Soviet
@@ -21522,7 +21522,7 @@ dictator and the Nazi Foreign Minister, who was now on his best behavior, found
 themselves at once in accord. The British military mission in Moscow, Stalin
 confided to his guest, "had never told the Soviet government what it really
 wanted." Ribbentrop responded by emphasizing that Britain had always tried
-to disrupt good relations between Germany and the Soviet Union. "England is
+to disrupt good relations between Germany and the Soviet_Union. "England is
 weak," he boasted, "and wants to let others fight for her presumptuous claim
 to world dominion."
 "Stalin eagerly concurred," says the German memorandum, and he remarked: "If England dominated the world, that was due to the stupidity of
@@ -21562,12 +21562,12 @@ Pact, the new era of German-Russian relations, and to the German
 nation.
 The Reich Foreign Minister in turn proposed a toast to M. Stalin,
 toasts to the Soviet Government, and to a favorable development of
-relations between Germany and the Soviet Union.
+relations between Germany and the Soviet_Union.
 And yet despite such warm exchanges between those who until recently
 had been such mortal enemies, Stalin appears to have had mental reservations
 about the Nazis' keeping the pact. As Ribbentrop was leaving, he took him
 aside and said, "The Soviet Government take the new pact very seriously. He
-could guarantee on his word of honor that the Soviet Union would not betray
+could guarantee on his word of honor that the Soviet_Union would not betray
 its partner."
 What had the new partners signed?
 The published treaty carried an undertaking that neither power would attack
@@ -21579,11 +21579,11 @@ whatsoever which is aimed directly or indirectly at the other Party."*
 Molotov handed Schulenburg on August 19 and which Hitler, in his telegram to Stalin, said he
 484
 Thus Hitler got what he specifically wanted: an immediate agreement by
-the Soviet Union not to join Britain and France if they honored their treaty
+the Soviet_Union not to join Britain and France if they honored their treaty
 obligations to come to the aid of Poland in case she were attacked.* The price
 he paid was set down in the "Secret Additional Protocol"
 To the treaty:
-On the occasion of the signature of the Nonaggression Treaty between Germany and the Soviet Union the undersigned plenipotentiaries discussed in strictly confidential conversations the question
+On the occasion of the signature of the Nonaggression Treaty between Germany and the Soviet_Union the undersigned plenipotentiaries discussed in strictly confidential conversations the question
 of the delimitation of their respective spheres of interest in Eastern
 Europe.
 1. In the event of a territorial and political transformation in
@@ -21602,7 +21602,7 @@ Once again Germany and Russia, as in the days of the German kings and
 Russian emperors, had agreed to partition Poland. And Hitler had given Stalin
 a free hand in the eastern Baltic.
 Finally, in Southeastern Europe, the Russians emphasized their interest in
-Bessarabia, which the Soviet Union had lost to Rumania in 1919, and the Germans declared their disinterest in this territory – a concession Ribbentrop later
+Bessarabia, which the Soviet_Union had lost to Rumania in 1919, and the Germans declared their disinterest in this territory – a concession Ribbentrop later
 was to regret.
 "This protocol," the document concluded, "will be treated by both parties
 as strictly secret."602
@@ -21688,7 +21688,7 @@ democracies had retreated; when Hitler defied them by declaring conscription
 in 1935, when he occupied the Rhineland in 1936, when he took Austria in 1938
 and in the same year demanded and got the Sudetenland; and they had sat by
 weakly when he occupied the rest of Czechoslovakia in March 1939. With the
-Soviet Union on their side, they still might have dissuaded the German dictator
+Soviet_Union on their side, they still might have dissuaded the German dictator
 from launching war or, if that failed, have fairly quickly defeated him in an
 armed conflict. But they had allowed this last opportunity to slip out of their
 hands. †
@@ -21724,7 +21724,7 @@ with instructions to repeat it to Molotov, which the ambassador did on August 16
 Diplomatic Papers, 1939, I, pp. 296-99.)
 THE NAZI-SOVIET PACT 487
 aggression. Now he had made himself an accessory to it. The Kremlin could
-argue, as it did, that the Soviet Union had only done what Britain and France
+argue, as it did, that the Soviet_Union had only done what Britain and France
 had done the year before at Munich: bought peace and the time to rearm
 against Germany at the expense of a small state. If Chamberlain was right and
 honorable in appeasing Hitler in September 1938 by sacrificing Czechoslovakia,
@@ -21738,7 +21738,7 @@ say, as they did, that they were only repossessing territories which had been
 taken away from them at the end of the First World War. But the peoples of
 these lands were not Russian and had shown no desire to return to Russia. Only
 force, which the Soviets had' eschewed in the heyday of Litvinov, could make
-them return. Since joining the League of Nations the Soviet Union had built
+them return. Since joining the League of Nations the Soviet_Union had built
 up a certain moral force as the champion of peace and the leading opponent of
 fascist aggression. Now that moral capital had been utterly dissipated. Above
 all, by assenting to a shoddy deal with Nazi Germany, Stalin had given the
@@ -21847,7 +21847,7 @@ On the morning of August 25, Hitler, who on the previous day had returned
 to Berlin to welcome Ribbentrop back from Moscow and receive a firsthand
 report on the Russians, got off a letter to Mussolini. It contained a belated
 explanation as to why he had not been able to keep his Axis partner informed
-of his negotiations with the Soviet Union. (He had "no idea," he said, that they
+of his negotiations with the Soviet_Union. (He had "no idea," he said, that they
 would go so far so fast.) And he declared that the Russo-German pact "must
 be regarded as the greatest possible gain for the Axis."
 But the real purpose of the letter, whose text is among the captured documents, was to warn the Duce that a German attack on Poland was liable to take
@@ -22004,7 +22004,7 @@ was issued. No official record of this has been found in the German documents.
 *There was a secret protocol to this treaty which stated that the "European Power"
 mentioned in Article I, whose aggression would bring about mutual military assistance, was
 Germany. This saved the British government from the disastrous step of having to declare
-war on the Soviet Union when the Red Army, in cahoots with the Germans, invaded eastern
+war on the Soviet_Union when the Red Army, in cahoots with the Germans, invaded eastern
 Poland.
 †Germany did not observe summer time, as did Great Britain. Therefore the one-hour
 difference in time between Berlin and London was canceled out.
@@ -22357,7 +22357,7 @@ called on him again on Sunday, August 27, and, according to his own account,
 Powers and the tribulation we would face." Keitel, with unaccustomed courage,
 showed the material to Hitler, who replied that he did not share General
 Thomas' "anxiety over the danger of a world war, especially since he had now
-got the Soviet Union on his side."624
+got the Soviet_Union on his side."624
 Thus ended the attempts of the "conspirators" to prevent Hitler from launching World War II, except for the feeble last-minute efforts of Dr. Schacht, of
 which the canny financier made much in his own defense at the Nuremberg trial.
 On his return from India in August he wrote letters to Hitler, Goering and
@@ -23065,7 +23065,7 @@ in writing for the first time: return of Danzig and the Corridor, and the safegu
 Germany, the communication continued, could no longer share the British
 view that a solution could be reached by direct negotiations with Poland. However, "solely" to please the British government and in the interests of AngloGerman friendship, Germany was ready "to accept the British proposal and
 enter into direct negotiations" with Poland. "In the event of a territorial rearrangement in Poland," the German government could not give guarantees
-without the agreement of the Soviet Union. (The British government, of course,
+without the agreement of the Soviet_Union. (The British government, of course,
 did not know of the secret protocol of the Nazi-Soviet Pact dividing up Poland.)
 "For the rest, in making these proposals," the note declared, "the German Government never had any intention of touching Poland's vital interests or questioning the existence of an independent Polish State."
 And then, at the very end, came the trap.
@@ -24817,7 +24817,7 @@ of Poland. At 6:50 P.M., Ribbentrop got off a "most urgent" telegram to the
 embassy in Moscow. It was marked "Top Secret" and began; "Exclusive for the
 Ambassador. For the Head of Mission or his representative personally. Special
 security handling. To be decoded by himself. Most secret."
-In the greatest of secrecy the Germans invited the Soviet Union to join in
+In the greatest of secrecy the Germans invited the Soviet_Union to join in
 the attack on Poland!
 We definitely expect to have beaten the Polish Army decisively in
 a few weeks. We should then keep the territory that was fixed at
@@ -24826,17 +24826,17 @@ German sphere of interest under military occupation. We should
 naturally, however, for military reasons, have to continue to take
 action against such Polish military forces as are at that time located
 in the Polish territory belonging to the Russian sphere of interest.
-Please discuss this at once with Molotov and see if the Soviet Union
+Please discuss this at once with Molotov and see if the Soviet_Union
 does not consider it desirable for Russian forces to move at the proper
 time against Polish forces in the Russian sphere of interest and for
 their part to occupy this territory. In our estimation this would
 be not only a relief for us, but also be in the sense of the Moscow
 agreements and in the Soviet interest as well.723
-That such a cynical move by the Soviet Union would be a "relief' to Hitler
+That such a cynical move by the Soviet_Union would be a "relief' to Hitler
 and Ribbentrop is obvious. It would not only avoid misunderstandings and
 friction between the Germans and the Russians in dividing up the spoils but
 would take some of the onus of the Nazi aggression in Poland off Germany and
-place it on the Soviet Union. If they shared the booty, why should they not
+place it on the Soviet_Union. If they shared the booty, why should they not
 share the blame?
 The most gloomy German of any consequence in Berlin that Sunday noon
 after it became known that Britain was in the war was Grand Admiral Erich
@@ -24957,14 +24957,14 @@ Warsaw."727
 THE FALL OF POLAND 563
 On September 10, Molotov and Ambassador von der Schulenburg got into
 a fine snafu. After declaring that the Soviet government had been taken "completely by surprise by the unexpectedly rapid German military successes" and
-that the Soviet Union was consequently in "a difficult situation," the Foreign
+that the Soviet_Union was consequently in "a difficult situation," the Foreign
 Commissar touched on the excuse which the Kremlin would have to give for its
 own aggression in Poland. This was, as Schulenburg wired Berlin "most urgent"
 and "top secret,"
 that Poland was falling apart and that it was necessary for the Soviet
 Union, in consequence, to come to the aid of the Ukrainians and
 the White Russians "threatened" by Germany. This argument [said
-Molotov] was necessary to make the intervention of the Soviet Union
+Molotov] was necessary to make the intervention of the Soviet_Union
 plausible to the masses and at the same time avoid giving the Soviet
 Union the appearance of an aggressor.
 Furthermore, Molotov complained that General von Brauchitsch had just
@@ -24989,7 +24989,7 @@ for their attack on Poland.730
 This was done the next evening and two dispatches of Schulenburg, which
 are among the captured German papers, telling how it was done give a revealing
 picture of the Kremlin's deceit.
-I saw Molotov at 6 P.M. [Schulenburg wired on September 16]. Molotov declared that military intervention by the Soviet Union was imminent – perhaps even tomorrow or the day after. Stalin was at
+I saw Molotov at 6 P.M. [Schulenburg wired on September 16]. Molotov declared that military intervention by the Soviet_Union was imminent – perhaps even tomorrow or the day after. Stalin was at
 present in consultation with the military leaders . . .
 Molotov added that . . . the Soviet Government intended to justify
 its procedure as follows: The Polish State had disintegrated and
@@ -25003,7 +25003,7 @@ Molotov conceded that the proposed argument of the Soviet Government contained a
 asked us in view of the difficult situation of the Soviet Government
 not to stumble over this piece of straw. The Soviet Government
 unfortunately saw no possibility of any other motivation, since the
-Soviet Union had heretofore not bothered about the plight of its minorities in Poland and had to justify abroad, in some way or other,
+Soviet_Union had heretofore not bothered about the plight of its minorities in Poland and had to justify abroad, in some way or other,
 its present intervention.731
 At 5:20 P.M. on September 17, Schulenburg got off another "most urgent"
 and "top secret" wire to Berlin.
@@ -25015,7 +25015,7 @@ Russian dictator "with the utmost readiness" altered the text.732
 Thus it was that on the shabby pretext that because Poland had ceased
 to exist and therefore the Polish-Soviet nonaggression pact had also ceased to
 exist and because it was necessary to protect its own interests and those of
-the Ukrainian and White Russian minorities, the Soviet Union trampled over
+the Ukrainian and White Russian minorities, the Soviet_Union trampled over
 a prostrate Poland beginning on the morning of September 17. To add insult
 to injury the Polish ambassador in Moscow was informed that Russia would
 maintain strict neutrality in the Polish conflict! The next day, September 18,
@@ -25073,7 +25073,7 @@ residual Poland. He proposed that from the territory to the east of
 the demarcation line, all the Province of Warsaw which extends to
 the Bug should be added to our share. In return we should waive
 our claim to Lithuania.
-Stalin . . . added that if we consented, the Soviet Union would immediately take up the solution of the problem of the Baltic countries
+Stalin . . . added that if we consented, the Soviet_Union would immediately take up the solution of the problem of the Baltic countries
 in accordance with the [secret] Protocol of August 23, and expected
 in this matter the unstinting support of the German Government.
 Stalin expressly indicated Estonia, Latvia and Lithuania, but did
@@ -25089,12 +25089,12 @@ history had taught: that the Poles would never peacefully submit to the loss of
 their independence. Let them be a headache for the Germans, not the Russians!
 In the meantime he would get the Baltic States, which had been taken from
 Russia after the First World War and whose geographical position offered the
-Soviet Union great protection against surprise attack by his German ally.
+Soviet_Union great protection against surprise attack by his German ally.
 Ribbentrop arrived by plane in Moscow for the second time at 6 P.M. on
 September 28, and before proceeding to the Kremlin he had time to read two
 telegrams from Berlin which apprised him of what the Russians were up to. They
 were messages forwarded from the German minister at Tallinn, who reported
-that the Estonian government had just informed him that the Soviet Union
+that the Estonian government had just informed him that the Soviet_Union
 had demanded, "under the gravest threat of imminent attack," military and
 air bases in Estonia.738 Later that night, after a long conference with Stalin
 and Molotov, Ribbentrop wired Hitler that "this very night" a pact was being
@@ -25153,7 +25153,7 @@ In the secret protocol of September 28† Hitler and Stalin agreed to institute 
 Poland a regime of terror designed to brutally suppress Polish freedom, culture
 and national life.
 Hitler fought and won the war in Poland, but the greater winner was Stalin,
-whose troops scarcely fired a shot.‡ The Soviet Union got nearly half of Poland
+whose troops scarcely fired a shot.‡ The Soviet_Union got nearly half of Poland
 and a stranglehold on the Baltic States. It blocked Germany more solidly than
 ever from two of its main long-term objectives: Ukrainian wheat and Rumanian
 oil, both badly needed if Germany was to survive the British blockade. Even
@@ -25161,7 +25161,7 @@ Poland's oil region of Borislav-Drogobycz, which Hitler desired, was claimed
 successfully by Stalin, who graciously agreed to sell the Germans the equivalent
 of the area's annual production.
 Why did Hitler pay such a high price to the Russians? It is true that he had
-agreed to it in August in order to keep the Soviet Union out of the Allied camp
+agreed to it in August in order to keep the Soviet_Union out of the Allied camp
 and out of the war. But he had never been a stickler for keeping agreements
 and now, with Poland conquered by an incomparable feat of German arms, he
 might have been expected to welsh, as the Army urged, on the August 23 pact.
@@ -26497,7 +26497,7 @@ of the Baltic as the price of his pact with Stalin, forced to hurriedly evacuate
 the German families who had lived there for centuries, he now had to officially
 condone Russia's unprovoked attack on a little country which had close ties with
 Germany and whose very independence as a non-Communist nation had been
-won from the Soviet Union largely by the intervention of regular German troops
+won from the Soviet_Union largely by the intervention of regular German troops
 in 1918.* It was a bitter pill to swallow, but he swallowed it. Strict instructions
 were given to German diplomatic missions abroad and to the German press and
 radio to support Russia's aggression and avoid expressing any sympathy with
@@ -26530,7 +26530,7 @@ Italo-German relations but it hit a vulnerable target: the Fuehrer's honeymoon
 with Soviet Russia, which was beginning to get on the nerves of both parties.
 It had enabled him to launch his war and destroy Poland. It had even given
 him other benefits. The captured German papers reveal, for instance, one of
-the best-kept secrets of the war: the Soviet Union's help in providing ports on
+the best-kept secrets of the war: the Soviet_Union's help in providing ports on
 the Arctic, the Black Sea and the Pacific through which Germany could import
 badly needed raw materials otherwise shut off by the British blockade.
 On November 10, 1939, Molotov even agreed to the Soviet government's paying the freight charges on all such goods carried over the Russian railways.787
@@ -26566,7 +26566,7 @@ long and detailed memoranda of three memorable meetings with the awesome
 Soviet dictator, who had a grasp of detail that stunned the Germans. Stalin,
 they found, could not be bluffed or cheated but could be terribly demanding,
 and at times, as Dr. Schnurre, one of the Nazi negotiators, reported to Berlin,
-he "became quite agitated." The Soviet Union, Stalin reminded the Germans,
+he "became quite agitated." The Soviet_Union, Stalin reminded the Germans,
 had "rendered a very great service to Germany [and] had made enemies by
 rendering this assistance."
 In return it expected some consideration from Berlin. At one conference at
@@ -26584,7 +26584,7 @@ satisfying the Russian demands."790
 600
 mentioned the total price of 300 million Reichsmarks for airplanes
 and the German valuation of the cruiser Luetzow at 150 million RM.
-One should not take advantage of the Soviet Union's good nature.793
+One should not take advantage of the Soviet_Union's good nature.793
 On February 11, 1940, an intricate trade agreement was finally signed in
 Moscow providing for an exchange of goods, during the ensuing eighteen months,
 of a minimum worth of 640 million Reichsmarks. This was in addition to the
@@ -26662,13 +26662,13 @@ one in Berlin that winter, with few presents exchanged, Spartan food, the menfol
 everyone grumbling about the war, the food and the cold.
 There was an exchange of Christmas greetings between Hitler and Stalin.
 Best wishes [Hitler wired] for your personal well-being as well as for
-the prosperous future of the peoples of the friendly Soviet Union.
+the prosperous future of the peoples of the friendly Soviet_Union.
 To which Stalin replied:
 *The day before the scuttling Goebbels had made the German press play up a faked
 dispatch from Montevideo saying the Graf Spee had suffered only "superficial damage" and
 that British reports that it had been severely crippled were "pure lies."
 602
-The friendship of the peoples of Germany and the Soviet Union,
+The friendship of the peoples of Germany and the Soviet_Union,
 cemented by blood, has every reason to be lasting and firm.
 In Berlin Ambassador von Hassell used the holidays to confer with his fellow
 conspirators, Popitz, Goerdeler and General Beck, and on December 30 recorded
@@ -28312,7 +28312,7 @@ casualties; those of the Norwegians, French and British were slightly less than
 *The Swedes, caught between Russia in Finland and the Baltic countries and Germany
 in possession of adjoining Denmark and Norway, meditated and decided there was no choice
 except to cling to their precarious neutrality and go down fighting if they were attacked. They
-had placated the Soviet Union by refusing to allow Allied troops transit to Finland, and now
+had placated the Soviet_Union by refusing to allow Allied troops transit to Finland, and now
 under great pressure they placated Germany. Though Sweden had sent an impressive stock
 of arms to Finland, it refused to sell Norway either arms or gasoline when it was attacked.
 All through April the Germans demanded that Sweden allow the transit of troops to Narvik
@@ -31569,7 +31569,7 @@ The Foreign Commissar had something else to say, and this did not sound
 quite so pleasant in German ears. He informed the German envoy, as the latter
 wired Berlin "most urgent," of "the Soviet action against the Baltic States,"
 adding – and one can almost see the gleam in Molotov's eyes – "that it had become necessary to put an end to all the intrigues by which England and France
-had tried to sow discord and mistrust between Germany and the Soviet Union
+had tried to sow discord and mistrust between Germany and the Soviet_Union
 in the Baltic States."936 To put an end to such "discord" the Soviet government, Molotov added, had dispatched "special emissaries" to the three Baltic
 countries. They were, in fact, three of Stalin's best hatchetmen: Dekanozov,
 who was sent to Lithuania; Vishinsky, to Latvia; Zhdanov, to Estonia.
@@ -31591,7 +31591,7 @@ even more cynical. The press having been suppressed, the political leaders
 arrested and all parties but the Communist declared illegal, "elections" were
 staged by the Russians in all three countries on July 14, and after the respective
 parliaments thus "elected" had voted for the incorporation of their lands into
-the Soviet Union, the Supreme Soviet (Parliament) of Russia "admitted" them
+the Soviet_Union, the Supreme Soviet (Parliament) of Russia "admitted" them
 into the motherland: Lithuania on August 3, Latvia on August 5, Estonia on
 August 6.
 Adolf Hitler was humiliated, but, busy as he was trying to organize the
@@ -31651,7 +31651,7 @@ was so grateful for its contents that he told the Soviet government he "greatly
 appreciated this information." Cripps had pressed Stalin, the memorandum said,
 for his attitude on this principal question, among others:
 The British Government was convinced that Germany was striving
-for hegemony in Europe . . . This was dangerous to the Soviet Union
+for hegemony in Europe . . . This was dangerous to the Soviet_Union
 as well as England. Therefore both countries ought to agree on a
 common policy of self-protection against Germany and on the reestablishment of the European balance of power . . .
 Stalin's answers are given as follows:
@@ -31660,19 +31660,19 @@ Europe and still less any danger that Europe might be engulfed by
 Germany. Stalin observed the policy of Germany, and knew several
 leading German statesmen well. He had not discovered any desire
 on their part to engulf European countries. Stalin was not of the
-opinion that German military successes menaced the Soviet Union
+opinion that German military successes menaced the Soviet_Union
 and her friendly relations with Germany . . . 939
 Such staggering smugness, such abysmal ignorance leave one breathless. The
 Russian tyrant did not know, of course, the secrets of Hitler's turgid mind, but
 the Fuehrer's past behavior, his known ambitions and the unexpectedly rapid
 Nazi conquests ought to have been enough to warn him of the dire danger the
-Soviet Union was now in. But, incomprehensibly, they were not enough.
+Soviet_Union was now in. But, incomprehensibly, they were not enough.
 716
 From the captured Nazi documents and from the testimony of many leading
 German figures in the great drama that was being played over the vast expanse
 of Western Europe that year, it is plain that at the very moment of Stalin's
 monumental complacency Hitler had in fact been mulling over in his mind the
-idea of turning on the Soviet Union and destroying her.
+idea of turning on the Soviet_Union and destroying her.
 The basic idea went back much further, at least fifteen years – to Mein
 Kampf.
 And so we National Socialists [Hitler wrote] take up where we broke
@@ -31743,7 +31743,7 @@ in Russia is destroyed then it will be destroyed for America too because elimina
 in the Far East.
 The more he thought of it the more convinced he was, Hitler said, that
 Britain's stubborn determination to continue the war was due to its counting
-on the Soviet Union.
+on the Soviet_Union.
 Something strange [he explained] has happened in Britain! The
 British were already completely down.* Now they are back on their
 feet. Intercepted conversations. Russia unpleasantly disturbed by
@@ -31817,7 +31817,7 @@ So that the armed services should not rest on their laurels after the great
 victories of the summer, Hitler issued on November 12, 1940, a comprehensive
 top-secret directive outlining new military tasks all over Europe and beyond.
 We shall come back to some of them. What concerns us here is that portion
-dealing with the Soviet Union.
+dealing with the Soviet_Union.
 Political discussions have been initiated with the aim of clarifying
 Russia's attitude for the time being. Irrespective of the results of
 these discussions, all preparations for the East which have already
@@ -31939,7 +31939,7 @@ the United_States, though America was not specifically mentioned, only defined. 
 I wrote in my diary that day in Berlin, the most significant thing about the pact was that
 it meant that Hitler was now reconciled to a long war. Ciano, who signed the pact for Italy,
 came to the same conclusion (Ciano Diaries, p. 296). Also, despite the disclaimer, the pact
-was, and was meant to be, a warning to the Soviet Union.
+was, and was meant to be, a warning to the Soviet_Union.
 722
 Molotov "incidentally" that a German "military mission" was being sent to
 Rumania and after receiving Molotov's skeptical reaction to this further news
@@ -31959,7 +31959,7 @@ personally his views regarding the future molding of relations between our two
 countries"?
 Ribbentrop gave a sly hint what those views were: nothing less than dividing
 up the world among the four totalitarian powers.
-It appears to be the mission of the Four Powers [he said] – the Soviet Union,
+It appears to be the mission of the Four Powers [he said] – the Soviet_Union,
 Italy, Japan and Germany – to adopt a long-range policy . . . by delimitation of
 their interests on a world-wide scale.
 The emphasis is Ribbentrop's.
@@ -32065,7 +32065,7 @@ evasively," and Hitler was not satisfied.
 "There must be no war in the Baltic," Hitler insisted. "It would put a heavy
 strain on German-Russian relations," a threat which he added to a moment
 later by saying that such a strain might bring "unforeseeable consequences."
-What more did the Soviet Union want in Finland, anyway? Hitler wanted to
+What more did the Soviet_Union want in Finland, anyway? Hitler wanted to
 know, and his visitor answered that it wanted a "settlement on the same scale
 as in Bessarabia" – which meant outright annexation. Hitler's reaction to this
 must have perturbed even the imperturbable Russian, who hastened to ask the
@@ -32152,15 +32152,15 @@ guns fired away ineffectively at them, the slippery Nazi Foreign Minister tried
 one last time to take the Russians in. Out of his pocket he pulled a draft of
 an agreement which, in substance, transformed the Tripartite Pact into a fourpower pact, with Russia as the fourth member. Molotov listened patiently while
 Ribbentrop read it through.
-Article II was the core. In it Germany, Italy, Japan and the Soviet Union
+Article II was the core. In it Germany, Italy, Japan and the Soviet_Union
 undertook "to respect each other's natural spheres of influence." Any disputes
 concerning them would be settled "in an amicable way." The two fascist countries and Japan agreed to "recognize the present extent of the possessions of the
-Soviet Union and will respect it." All four countries, in Article III, agreed not
+Soviet_Union and will respect it." All four countries, in Article III, agreed not
 to join or support any combination "directed against one of the Four Powers."
 The agreement itself, Ribbentrop proposed, would be made public, but not,
 of course, its secret protocols, which he next proceeded to read. The most
 important one defined each country's "territorial aspirations." Russia's was to
-"center south of the national territory of the Soviet Union in the direction of
+"center south of the national territory of the Soviet_Union in the direction of
 the Indian Ocean."
 Molotov did not rise to the bait. The proposed treaty was obviously an
 attempt to divert Russia from its historic pressure westward, down the Baltic,
@@ -32169,9 +32169,9 @@ it would clash with the greedy designs of Germany and Italy. The U.S.S.R. was
 not, at least at the moment, interested in the Indian Ocean, which lay far away.
 What it was interested in at the moment, Molotov replied, was Europe and the
 Turkish Straits. "Consequently," he added, "paper agreements will not suffice
-for the Soviet Union; she would have to insist on effective guarantees of her
+for the Soviet_Union; she would have to insist on effective guarantees of her
 security."
-The questions which interested the Soviet Union [he elaborated] concerned not only Turkey but Bulgaria . . . But the fate of Rumania
+The questions which interested the Soviet_Union [he elaborated] concerned not only Turkey but Bulgaria . . . But the fate of Rumania
 and Hungary was also of interest to the U.S.S.R. and could not be
 immaterial to her under any circumstances. It would further interest
 the Soviet Government to learn what the Axis contemplated with
@@ -32186,7 +32186,7 @@ Ribbentrop, who felt himself being buried under the avalanche of questions –
 for at this point Molotov said he would "appreciate it" if his guest made answer
 to them – protested that he was being "interrogated too closely."
 He could only repeat again and again [he replied weakly] that the
-decisive question was whether the Soviet Union was prepared and
+decisive question was whether the Soviet_Union was prepared and
 in a position to co-operate with us in the great liquidation of the
 British Empire.
 Molotov was ready with a cutting retort. Hilger duly noted it in the
@@ -32207,15 +32207,15 @@ scarcely two weeks after Molotov had returned from Germany, he informed the
 German ambassador in Moscow that Russia was prepared to join the four-power
 pact, subject to the following conditions:
 1. That German troops are immediately withdrawn from Finland,
-which . . . belongs to the Soviet Union's sphere of influence . . .
+which . . . belongs to the Soviet_Union's sphere of influence . . .
 2. That within the next few months the security of the Soviet
 Union in the Straits is assured by the conclusion of a mutualassistance pact between the U.S.S.R. and Bulgaria . . . and
 by the establishment of a base for land and naval forces by the
-Soviet Union within range of the Bosporus and the Dardanelles
+Soviet_Union within range of the Bosporus and the Dardanelles
 by means of a long-term lease.
 3. That the area south of Batum and Baku in the general direction
 of the Persian Gulf is recognized as the center of the aspirations
-of the Soviet Union.
+of the Soviet_Union.
 *Molotov's parting shot is given by Churchill, to whom it was related by Stalin later in
 the war. (Churchill, Their Finest Hour, p. 586.)
 728
@@ -32234,7 +32234,7 @@ as the center of "aspirations" for the U.S.S.R.
 become unbearable for Russia. Therefore: she must be brought to her knees as
 soon as possible."967
 The great cold-blooded Nazi blackmailer had met his match, and the realization infuriated him. At the beginning of December he told Haider to bring
-him the Army General Staff's plan for the onslaught on the Soviet Union. On
+him the Army General Staff's plan for the onslaught on the Soviet_Union. On
 December 5 Haider and Brauchitsch dutifully brought it to him, and at the
 end of a four-hour conference he approved it. Both the captured OKW War
 Diary and Haider's own confidential journal contain a report on this crucial
@@ -32313,7 +32313,7 @@ told that the plan was merely for "precaution, in case Russia should change her
 previous attitude toward us." And Hitler instructed that the number of officers
 in the secret "be kept as small as possible. Otherwise the danger exists that
 our preparations will become known and the gravest political and military disadvantages result." There is no evidence that the generals in the Army's High
-Command objected to Hitler's decision to turn on the Soviet Union, whose loyal
+Command objected to Hitler's decision to turn on the Soviet_Union, whose loyal
 fulfillment of the pact with Germany had made possible their victories in Poland
 and the West. Later Haider would write derisively of "Hitler's Russian adventure" and claim the Army leaders were against it from the beginning.970 But
 there is not a word in his voluminous diary entries for December 1940 which
@@ -33012,7 +33012,7 @@ to launch an offensive against the Suez Canal and eventually oust
 the British finally from their position between the Mediterranean
 and the Persian Gulf cannot be decided until Operation Barbarossa
 is completed.
-The destruction of the Soviet Union came first; all else must wait. This, we
+The destruction of the Soviet_Union came first; all else must wait. This, we
 can now see, was a staggering blunder. At this moment, the end of May 1941,
 Hitler, with the use of only a fraction of his forces, could have dealt the British
 Empire a crushing blow, perhaps a fatal one. No one realized this better than
@@ -33165,7 +33165,7 @@ future will hold very hard years in store for the Russians.1013
 Very hard years indeed, since the Germans were deliberately planning to
 starve to death millions of them!
 Goering, who had been placed in charge of the economic exploitation of the
-Soviet Union, made this even clearer than Rosenberg did. In a long directive
+Soviet_Union, made this even clearer than Rosenberg did. In a long directive
 of May 23, 1941, his Economic Staff, East, laid it down that the surplus food
 from Russia's black-earth belt in the south must not be diverted to the people
 in the industrial areas, where, in any case, the industries would be destroyed.
@@ -33200,7 +33200,7 @@ Heinrich Himmler, the mild-faced ex-chicken farmer, also sat at his desk at S.S.
 headquarters in Berlin those days, gazing through his pince-nez at plans for the
 massacre of other millions in a quicker and more violent way.
 Well pleased with the labors of his busy minions, both military and civilian,
-in planning the onslaught on the Soviet Union, her destruction, her exploitation
+in planning the onslaught on the Soviet_Union, her destruction, her exploitation
 and the mass murder of her citizenry, Hitler on April 30 set the date for the
 attack – June 22 – made his victory speech in the Reichstag on May 4 and then
 retired to his favorite haunt, the Berghof above Berchtesgaden, where he could
@@ -33344,13 +33344,13 @@ adolescence, this was heady stuff and no doubt helped impel Hess to undertake
 his weird mission to England.
 At Nuremberg one of the British prosecutors suggested still another reason:
 that Hess flew to England to try to arrange a peace settlement so that Germany
-would have only a one-front war to fight when she attacked the Soviet Union.
+would have only a one-front war to fight when she attacked the Soviet_Union.
 The Russian prosecutor told the tribunal that he was sure of it. And so was
 Joseph Stalin, whose mighty suspicions at this critical time seem to have been
 concentrated not on Germany, as they should have been, but on Great Britain.
 The arrival of Hess in Scotland convinced him that there was some deep plot
 being hatched between Churchill and Hitler which would give Germany the
-same freedom to strike the Soviet Union which the Russian dictator had given
+same freedom to strike the Soviet_Union which the Russian dictator had given
 her to assault Poland and the West. When three years later the British Prime
 Minister, then on his second visit to Moscow, tried to convince Stalin of the
 truth, he simply did not believe it. It is fairly clear from the interrogations
@@ -33420,7 +33420,7 @@ he was a German, and then said to him: "We will remain friends
 with you – through thick and thin!"1024
 Three days later the German charge in Moscow, Tippelskirch, wired Berlin
 stressing that the demonstration at the station showed Stalin's friendliness toward Germany and that this was especially important "in view of the persistently circulating rumors of an imminent conflict between Germany and the
-Soviet Union."1025 The day before, Tippelskirch had informed Berlin that the
+Soviet_Union."1025 The day before, Tippelskirch had informed Berlin that the
 Kremlin had accepted "unconditionally," after months of wrangling, the German proposals for the settlement of the border between the two countries from
 the Igorka River to the Baltic Sea. "The compliant attitude of the Soviet Government," he said, "seems very remarkable."1026 In view of what was brewing
 in Berlin, it surely was.
@@ -33469,7 +33469,7 @@ events in Serbia . . . What devil had possessed the Russians," he asked, "to
 conclude the friendship pact with Yugoslavia?"* He did not believe, it was true,
 he said, that "Russia could be brought to attack Germany." Nevertheless, he
 concluded, he was obliged "to be careful." Hitler did not tell his ambassador to
-the Soviet Union what plans he had in store for that country, and Schulenburg,
+the Soviet_Union what plans he had in store for that country, and Schulenburg,
 an honest, decent German of the old school, remained ignorant of them to the
 last.
 Stalin, too, but not of the signs, or of the warnings, of what Hitler was up to.
@@ -33495,14 +33495,14 @@ unfortunate" and had tried, unsuccessfully, to argue the Russians into at least 
 signing of the treaty.1029
 756
 intention of the Stalin Government are calculated . . . to relieve the
-tension between the Soviet Union and Germany and to create a better atmosphere for the future. We must bear in mind that Stalin
-personally has always advocated a friendly relationship between Germany and the Soviet Union.1031
-Though Stalin had long been the absolute dictator of the Soviet Union this
+tension between the Soviet_Union and Germany and to create a better atmosphere for the future. We must bear in mind that Stalin
+personally has always advocated a friendly relationship between Germany and the Soviet_Union.1031
+Though Stalin had long been the absolute dictator of the Soviet_Union this
 was the first mention by Schulenburg in his dispatches of the term "Stalin Government." There was good reason. On May 6 Stalin had personally taken over
 as Chairman of the Council of People's Commissars, or Prime Minister, replacing Molotov, who remained as Foreign Commissar. This was the first time the
 all-powerful secretary of the Communist Party had taken government office and
 the general world reaction was that it meant the situation had become so serious
-for the Soviet Union, especially in its relations with Nazi Germany, that only
+for the Soviet_Union, especially in its relations with Nazi Germany, that only
 Stalin could deal with it as the nominal as well as the actual head of government. This interpretation was obvious, but there was another which was not
 so clear but which the astute German ambassador in Moscow promptly pointed
 out to Berlin.
@@ -33512,7 +33512,7 @@ In my opinion [Schulenburg said] it may be assumed with certainty
 that Stalin has set himself a foreign-policy goal of overwhelming
 importance . . . which he hopes to attain by his personal efforts. I
 firmly believe that in an international situation which he considers
-serious, Stalin has set himself the goal of preserving the Soviet Union
+serious, Stalin has set himself the goal of preserving the Soviet_Union
 from a conflict with Germany."1032
 Did the crafty Soviet dictator not realize by now – the middle of May 1941
 – that this was an impossible goal, that there was nothing, short of an abject
@@ -33548,7 +33548,7 @@ had sent a confidential report to the State Department stating that he had
 learned from trustworthy German sources that Hitler was making plans to attack
 Russia in the spring. It was a long and detailed message, outlining the General
 Staff plan of attack (which proved to be quite accurate) and the preparations
-being made for the economic exploitation of the Soviet Union, once it was
+being made for the economic exploitation of the Soviet_Union, once it was
 conquered.*
 Secretary of State Cordell Hull thought at first that Woods had been victim
 of a German "plant." He called in J. Edgar Hoover. The F.B.I. head read the
@@ -33578,7 +33578,7 @@ still doubt that he did. But Cordell Hull has confirmed it in his memoirs and di
 the details. Woods, the late Secretary of State relates, had a German friend, an anti-Nazi,
 who had contacts high in the ministries, the Reichsbank and the Nazi Party. As early as
 August 1940, this friend informed Woods of conferences taking place at Hitler's headquarters
-concerning preparations for an attack on the Soviet Union. From then on this informant kept
+concerning preparations for an attack on the Soviet_Union. From then on this informant kept
 the commercial attache au courant of what was transpiring both at the General Staff and
 among those planning the economic spoliation of Russia. To avoid detection, Woods met his
 informant in various movie houses in Berlin and in the darkness received scribbled notes from
@@ -33609,7 +33609,7 @@ not been let in on the secret, added in his dispatch that it was "manifestly
 absurd."
 Molotov must have thought so too. A month later, on May 22, he received
 Schulenburg to discuss various matters. "He was as amiable, self-assured and
-well-informed as ever," the ambassador reported to Berlin, and again emphasized that Stalin and Molotov, "the two strongest men in the Soviet Union,"
+well-informed as ever," the ambassador reported to Berlin, and again emphasized that Stalin and Molotov, "the two strongest men in the Soviet_Union,"
 were striving "above all" to avoid a conflict with Germany.1039
 On one point the usually perspicacious ambassador couldn't have been more
 wrong. Molotov, at this juncture, was certainly not "well-informed." But neither
@@ -33620,9 +33620,9 @@ fell. Molotov called in Schulenburg that evening and handed him the text of a
 Tass statement which, he said, was being broadcast that very night and published in the newspapers the next morning.1040 Blaming Cripps personally for
 the "widespread rumors of 'an impending war between the U.S.S.R. and Germany' in the English and foreign press," this official statement of the Soviet
 government branded them as an "obvious absurdity . . . a clumsy propaganda
-maneuver of the forces arrayed against the Soviet Union and Germany." It
+maneuver of the forces arrayed against the Soviet_Union and Germany." It
 added:
-In the opinion of Soviet circles the rumors of the intention of Germany . . . to launch an attack against the Soviet Union are completely without foundation.
+In the opinion of Soviet circles the rumors of the intention of Germany . . . to launch an attack against the Soviet_Union are completely without foundation.
 Even the recent German troop movements from the Balkans to the Soviet
 frontiers were explained in the communiqué as "having no connection with
 Soviet-German relations." As for the rumors saying that Russia would attack
@@ -33701,7 +33701,7 @@ instructed the Soviet ambassador in Berlin to bring to the attention of Ribbentr
 urgent telegram to the Wilhelmstrasse that same night:
 There were a number of indications [Molotov had told him] that
 the German Government was dissatisfied with the Soviet Government. Rumors were even current that a war was impending between
-Germany and the Soviet Union . . . The Soviet Government was unable to understand the reasons for Germany's dissatisfaction . . . He
+Germany and the Soviet_Union . . . The Soviet Government was unable to understand the reasons for Germany's dissatisfaction . . . He
 would appreciate it if I could tell him what had brought about the
 present situation in German-Soviet relations.
 I replied [Schulenburg added] that I could not answer his questions,
@@ -33741,7 +33741,7 @@ the Reich.
 Reports received the last few days [it went on] eliminate the last
 remaining doubts as to the aggressive character of this Russian concentration . . . In addition, there are reports from England regarding
 the negotiations of Ambassador Cripps for still closer political and
-military collaboration between England and the Soviet Union.
+military collaboration between England and the Soviet_Union.
 To sum up, the Government of the Reich declares, therefore, that
 the Soviet Government, contrary to the obligations it assumed,
 1. has not only continued, but even intensified its attempts to
@@ -33754,7 +33754,7 @@ German Armed Forces to oppose this threat with all the means
 at their disposal.1045
 "Please do not enter into any discussion of this communication," Ribbentrop
 advised his ambassador at the end. What could the shaken and disillusioned
-Schulenburg, who had devoted the best years of his life to improving GermanRussian relations and who knew that the attack on the Soviet Union was unprovoked and without justification, say? Arriving back at the Kremlin just as
+Schulenburg, who had devoted the best years of his life to improving GermanRussian relations and who knew that the attack on the Soviet_Union was unprovoked and without justification, say? Arriving back at the Kremlin just as
 762
 dawn was breaking, he contented himself with reading the German declaration.*
 Molotov, stunned at last, listened in silence to the end and then said:
@@ -33878,7 +33878,7 @@ Finally Hitler described his great feeling of relief at having finally made up
 his mind.
 . . . Let me say one more thing, Duce. Since I struggled through
 to this decision, I again feel spiritually free. The partnership with
-the Soviet Union, in spite of the complete sincerity of our efforts to
+the Soviet_Union, in spite of the complete sincerity of our efforts to
 bring about a final conciliation, was nevertheless often very irksome
 to me, for in some way or other it seemed to me to be a break
 with my whole origin, my concepts and my former obligations. I am
@@ -33895,7 +33895,7 @@ by a message from his Axis partner, and he resented it. "Not even I disturb
 my servants at night," Mussolini fretted to Ciano, "but the Germans make me
 jump out of bed at any hour without the least consideration."1048 Nevertheless,
 as soon as Mussolini had rubbed the sleep from his eyes he gave orders for an
-immediate declaration of war on the Soviet Union. He was now completely a
+immediate declaration of war on the Soviet_Union. He was now completely a
 prisoner of the Germans. He knew it and resented it. "I hope for only one
 thing," he told Ciano, "that in this war in the East the Germans lose a lot
 of feathers."1049 Still, he realized that his own future now depended wholly on
@@ -33973,7 +33973,7 @@ food is one which cannot and should not be solved by us. In this war
 for existence we have no interest in keeping even part of this great
 city's population.*1053
 That same week, on October 3, Hitler returned to Berlin and in an address
-to the German people proclaimed the collapse of the Soviet Union. "I declare
+to the German people proclaimed the collapse of the Soviet_Union. "I declare
 today, and I declare it without any reservation," he said, "that the enemy in
 the East has been struck down and will never rise again . . . Behind our troops
 there already lies a territory twice the size of the German Reich when I came
@@ -34010,7 +34010,7 @@ camps for Russian prisoners they have begun to eat each other." (Ciano's Diploma
 pp. 464-65.)
 †Not as premature, however, as the warnings of the American General Staff, which in
 July had confidentially informed American editors and Washington correspondents that the
-collapse of the Soviet Union was only a matter of a few weeks. It is not surprising that the
+collapse of the Soviet_Union was only a matter of a few weeks. It is not surprising that the
 declarations of Hitler and Dr. Dietrich early in October 1941 were widely believed in the
 United_States and Britain as well as in Germany and elsewhere.
 A TURN OF THE TIDE 769
@@ -34187,7 +34187,7 @@ the Leningrad front. But it was not until the beginning of October that the
 armored forces could be brought back, refitted and made ready. On October
 2 the great offensive was finally launched. "Typhoon" was the code name. A
 mighty wind, a cyclone, was to hit the Russians, destroy their last fighting forces
-before Moscow and bring the Soviet Union tumbling down.
+before Moscow and bring the Soviet_Union tumbling down.
 But here again the Nazi dictator became a victim of his megalomania. Taking the Russian capital before winter came was not enough. He gave orders that
 Field Marshal von Leeb in the north was at the same time to capture Leningrad,
 make contact with the Finns beyond the city and drive on and cut the Murmansk railway. Also, at the same time, Rundstedt was to clear the Black Sea
@@ -34363,7 +34363,7 @@ compared the situation to the Battle of the Marne, "where the last battalion
 thrown in decided the battle." Despite increased enemy resistance Bock told the
 General Staff Chief he believed "everything was attainable." By the last day of
 November he was literally throwing in his last battalion. The final all-out attack
-on the heart of the Soviet Union was set for the next day, December 1,1941.
+on the heart of the Soviet_Union was set for the next day, December 1,1941.
 It stumbled on a steely resistance. The greatest tank force ever concentrated
 on one front: General Hoepner's Fourth Tank Group and General Hermann
 Hoth's Third Tank Group just north of Moscow and driving south, Guderian's
@@ -34623,7 +34623,7 @@ end of May.
 Further goals for next year must remain open. They will depend
 on the capacity of our railroads. The question of later building an
 "East Wall" also remains open.
-No East Wall would be necessary if the Soviet Union were to be
+No East Wall would be necessary if the Soviet_Union were to be
 destroyed. Haider seems to have mulled over that as he listened to
 the Supreme Commander go on.
 On the whole [he concluded] one gets the impression that Hitler
@@ -34795,7 +34795,7 @@ Though Hitler had laid it down that Matsuoka must not be told about
 the impending German attack on Russia – a necessary precaution to keep the
 news from leaking out, but nevertheless, as we shall see, one that would have
 disastrous consequences for Germany – Ribbentrop did drop several broad hints.
-Relations with the Soviet Union, he told his visitor, were correct but not very
+Relations with the Soviet_Union, he told his visitor, were correct but not very
 friendly. Moreover, should Russia threaten Germany, "the Fuehrer would crush
 Russia." The Fuehrer was convinced, he added, that if it came to war "there
 would be in a few months no more Russia."
@@ -34807,7 +34807,7 @@ official lunch which he was supposed to tender the distinguished visitor.
 In the afternoon Hitler, having determined to smash another country
 (Yugoslavia), worked on the Japanese Foreign Minister. "England has already lost the war," he began. "It is only a matter of having the intelligence to
 admit it." Still, the British were grasping at two straws: Russia and America.
-Toward the Soviet Union Hitler was more circumspect than Ribbentrop had
+Toward the Soviet_Union Hitler was more circumspect than Ribbentrop had
 been. He did not believe, he said, that the danger of a war with Russia would
 arise. After all, Germany had some 160 to 170 divisions "for defense against
 Russia." As to the United_States:
@@ -34873,7 +34873,7 @@ on April 4, a German guarantee that if Russia attacked Japan "Germany would
 strike immediately." He wanted to give this assurance, he said, "so that Japan
 could push southward toward Singapore without fear of any complications with
 Russia." When Matsuoka finally admitted that while in Moscow on his way to
-Berlin he himself had proposed a nonaggression pact with the Soviet Union and
+Berlin he himself had proposed a nonaggression pact with the Soviet_Union and
 hinted that the Russians were favorably inclined toward it, Ribbentrop's mind
 again became somewhat of a blank. He merely advised that Matsuoka handle
 the problem in a "superficial way."
@@ -34970,7 +34970,7 @@ time for their completion."1084
 With Japan stubbornly refusing to help pull Hitler's chestnuts out of the
 fire in Russia – the Japanese had their own chestnuts roasting – it became all
 the more important to Germany that the United_States be kept out of the war
-until the Soviet Union had been conquered, as the Fuehrer was confident that
+until the Soviet_Union had been conquered, as the Fuehrer was confident that
 summer of 1941 it would be before winter came.
 The German Navy had long chafed under the restraints which Hitler had
 imposed on its efforts to curtail American shipments to Britain and to cope
@@ -34998,7 +34998,7 @@ project and, according to Raeder's confidential notes,1086 replied:
 The Fuehrer is still in favor of occupying the Azores in order to be
 able to operate long-range bombers from there against the U.S.A.
 The occasion for this may arise by autumn.*
-After the fall of the Soviet Union, that is. The turn of the United_States
+After the fall of the Soviet_Union, that is. The turn of the United_States
 would come then. He put this clearly to Raeder when the Admiral saw him
 just two months later, on July 25, when the offensive in Russia was in full
 swing. "After the Eastern campaign," Raeder notes him as saying, "he reserves
@@ -35163,7 +35163,7 @@ in the rear, until they had secured their own rear by destroying the United_Stat
 Pacific Fleet. True, the Nazi conqueror had promised Matsuoka that Germany
 would go to war with America if Japan did, but Matsuoka was no longer in the
 government, and, besides, Hitler had constantly nagged the Japanese to avoid a
-direct conflict with America and concentrate on Britain and the Soviet Union,
+direct conflict with America and concentrate on Britain and the Soviet_Union,
 whose resistance was preventing him from winning the war. It did not dawn on
 the Nazi rulers that Japan might give first priority to a direct challenge to the
 United_States.
@@ -35200,7 +35200,7 @@ When, in spite of this, they continued, the Germans switched to a new maneuver
 of trying to induce the Japanese to make as a condition for their continuation
 that the United_States abandon its aid to Britain and its hostile policies toward
 Germany.1099
-That was in May. The summer brought a change. In July Hitler was concerned mainly with badgering Japan into attacking the Soviet Union, and that
+That was in May. The summer brought a change. In July Hitler was concerned mainly with badgering Japan into attacking the Soviet_Union, and that
 month Secretary Hull broke off the talks with Nomura because the Japanese had
 invaded French Indochina. They were resumed toward the middle of August
 when the Japanese government proposed a personal meeting between Premier
@@ -35262,7 +35262,7 @@ Tokyo asking Germany to sign a treaty in which the two nations would agree
 not to conclude a separate peace with common enemies. Just which enemies the
 Japanese meant was not clear, but the Nazi Foreign Minister obviously hoped
 that Russia was the first of them. He agreed "in principle" to the proposal, apparently in the comforting belief that Japan at last was about to honor its vague
-promises to hit the Soviet Union in Siberia. This was most welcome and timely,
+promises to hit the Soviet_Union in Siberia. This was most welcome and timely,
 for the resistance of the Red Army on the broad front was becoming formidable
 and the Russian winter was setting in – much earlier than had been anticipated.
 A Japanese attack on Vladivostok and the Pacific maritime provinces might
@@ -35465,7 +35465,7 @@ Germans enough to inform them of the blow against the United_States which
 would fall the next day. But they were more worried than ever that Hitler
 would refrain from giving his guarantee unless Japan agreed to take on not
 THE TURN OF THE UNITED_STATES 801
-only the United_States and Great Britain but the Soviet Union as well. In
+only the United_States and Great Britain but the Soviet_Union as well. In
 this predicament Togo got off a long message to Ambassador Oshima in Berlin
 urging him to somehow stall the Germans on the Russian matter and not to give
 in unless it became absolutely necessary. Deluded though they were about their
@@ -35980,7 +35980,7 @@ they thought, which would leave Germany a major power and, perhaps, with
 at least some of Hitler's gains, such as Austria, the Sudetenland and western
 Poland.
 These thoughts had been very much in their minds at the end of the summer
-of 1941, even when the prospect of destroying the Soviet Union was still good.
+of 1941, even when the prospect of destroying the Soviet_Union was still good.
 The text of the Atlantic Charter, which Churchill and Roosevelt had drawn up
 on August 19, had come as a heavy blow to them, especially Point 8, which
 had stipulated that Germany would have to be disarmed after the war pending
@@ -36216,7 +36216,7 @@ allies – or, rather, satellites – for additional troops. During the winter G
 Keitel had scurried off to Budapest and Bucharest to drum up Hungarian and
 Rumanian soldiers – whole divisions of them – for the coming summer. Goering
 and finally Hitler himself appealed to Mussolini for Italian formations.
-Goering arrived in Rome at the end of January 1942 to line up Italian reinforcements for Russia, assuring Mussolini that the Soviet Union would be defeated in 1942 and that Great Britain would lay down her arms in 1943. Ciano
+Goering arrived in Rome at the end of January 1942 to line up Italian reinforcements for Russia, assuring Mussolini that the Soviet_Union would be defeated in 1942 and that Great Britain would lay down her arms in 1943. Ciano
 found the fat, bemedaled Reich Marshal insufferable. "As usual he is bloated
 and overbearing," the Italian Foreign Minister noted in his diary on February
 2. Two days later:
@@ -37329,7 +37329,7 @@ and the deputy leader of the Political Department of Rosenberg's newly created
 Ministry for the Occupied Eastern Territories. In a bitter confidential report
 to his superiors on October 25, 1942, Brautigam dared to pinpoint the Nazi
 mistakes in Russia.
-In the Soviet Union we found on our arrival a population weary of
+In the Soviet_Union we found on our arrival a population weary of
 Bolshevism, which waited longingly for new slogans holding out the
 prospect of a better future for them. It was Germany's duty to find
 such slogans, but they remained unuttered. The population greeted
@@ -37374,7 +37374,7 @@ made a formal diplomatic protest against the "extermination" of Russian POWs, an
 of the following year he made another protest against the German slave labor program.
 †See above, pp. 746-749.
 THE NEW ORDER 847
-that a large slice of the Soviet Union would soon be within grasp, Hitler convoked
+that a large slice of the Soviet_Union would soon be within grasp, Hitler convoked
 Goering, Keitel, Rosenberg, Bormann and Lammers (the last, head of the Reich
 Chancellery) to his headquarters in East Prussia to remind them of his aims in
 the newly conquered land. At last his goal so clearly stated in Mein Kampf of
@@ -37774,7 +37774,7 @@ New Order would have meant the rule of the German master race over a vast
 slave empire stretching from the Atlantic to the Ural mountains. To be sure,
 the Slavs in the East would have fared the worst.
 As Hitler emphasized in July 1941, scarcely a month after he had attacked
-the Soviet Union, his plans for its occupation constituted "a final settlement."
+the Soviet_Union, his plans for its occupation constituted "a final settlement."
 A year later, at the high tide of his Russian conquests, he admonished his aides:
 As for the ridiculous hundred million Slavs, we will mold the best of
 them to the shape that suits us, and we will isolate the rest of them in
@@ -45369,7 +45369,7 @@ from so many tight fixes, was still imprinted on his wizened face.
 Neurath, Hitler's first Foreign Minister, a German of the old school, with few
 convictions and little integrity, seemed utterly broken. Not Speer, who made
 the most straightforward impression of all and who during the long trial spoke
-honestly and with no attempt to shirk his responsibility and his guilt. SeyssInquart, the Austrian quisling, was in the dock, as were Jodl and the two Grand
+honestly and with no attempt to shirk his responsibility and his guilt. Seyss-Inquart, the Austrian quisling, was in the dock, as were Jodl and the two Grand
 Admirals, Raeder and Doenitz – the latter, the successor to the Fuehrer, looking
 in his store suit for all the world like a shoe clerk. There was Kaltenbrunner, the
 bloody successor of "Hangman Heydrich," who on the stand would deny all his
