@@ -6,14 +6,14 @@ import re
 import datetime as dt
 
 class book_reader():
-    
+
     def __init__(self, book_short_name, generate_book_df = False, generate_toc_df = False, generate_pivots = False):
         self.generate_book_df = generate_book_df
         self.generate_toc_df = generate_toc_df
         self.generate_pivots = generate_pivots
         self.re_splitter = r'[;,.?†‡!"”()\]\[\*:\s\n]\s*'
         self.book_short_name = book_short_name
-		
+
         #Stopwords from http://www.lextek.com/manuals/onix/stopwords1.html
         self.stopwords = ['a', ' about', 'above', 'across', 'after', 'again', 'against', 'all', 'almost',
                'alone', 'along', 'already', 'also', 'although', 'always', 'among', 'an', 'and',
@@ -59,8 +59,8 @@ class book_reader():
                'younger', 'youngest', 'your', 'yours', 'z']
         #my additions
         self.stopwords += ['', '-', '–','‡','†']
-        
-    def main(self, book_file, h5_file): 
+
+    def main(self, book_file, h5_file):
         print ('Starting')
         h5store = pd.HDFStore(h5_file)
         if self.generate_book_df:
@@ -71,7 +71,7 @@ class book_reader():
         if self.generate_toc_df:
             toc = self.process_toc(book_df, h5_file)
         else:
-            toc = pd.read_hdf(h5_file, 'toc')   
+            toc = pd.read_hdf(h5_file, 'toc')
         print ('TOC processed')
         if self.generate_book_df or self.generate_toc_df: #if either one
             book_df = self.chapter_marker(h5_file)
@@ -81,25 +81,25 @@ class book_reader():
         else:
             p1 = pd.read_hdf(h5_file, self.book_short_name+'_pivot1')
             p2 = pd.read_hdf(h5_file, self.book_short_name+'_pivot2')
-        print ('Pivots processed')        
+        print ('Pivots processed')
         h5store.close()
 
         return book_df, toc, p1, p2
-    
+
     def de_possessive(self,word):
         if word.endswith("'s") or word.endswith("’s"):
             word = word[:-2]
         elif word.endswith("'") or word.endswith("’"):
             word = word[:-1]
         return word
-    
+
     def de_quote(self,word):
         if word.startswith('"') or word.startswith('”') or word.startswith("'") or word.startswith("’"):
             word = word[1:]
         if word.endswith('"') or word.endswith('”') or word.endswith("'") or word.endswith("’"):
             word = word[:-1]
         return word
-    
+
     def is_stop_word(self,word):
         if word.startswith('$'):
             return True
@@ -111,22 +111,22 @@ class book_reader():
     def csv_dump(self, df, file_name_extra1, file_name_extra2):
         file_name = file_name_extra1 + '_' + file_name_extra2 + '.csv'
         df.to_csv(file_name)
-    
-    def process_book(self, book_file, h5_file):        
+
+    def process_book(self, book_file, h5_file):
         bk = open(book_file, 'r', encoding='utf-8').read()
-        
+
         book_list = re.split(self.re_splitter, bk)
-    
+
         book_list = list(filter(None, book_list)) # remove empty strings
         book_list = list(map(lambda s:s.lower(), book_list))
         book_list = list(map(self.de_quote,book_list))
         book_list = list(map(self.de_possessive,book_list))
-    
+
         book_df = pd.DataFrame(book_list)
         book_df.rename(columns={0: 'Word'}, inplace=True)
         book_df['Stop Word'] = book_df['Word'].apply(self.is_stop_word)
         count = book_df['Word'][book_df['Stop Word'] == False].value_counts(sort=True)
-        
+
         book_df['Count'] = 0
         book_df['Running Count'] = 0
         for w, c in count.iteritems():
@@ -135,20 +135,20 @@ class book_reader():
         book_df['Position'] = book_df.index
 
         book_df.to_hdf(h5_file,self.book_short_name,format='table',append=False)
-        
+
         #simpler way
         #occurances = rafo3r.groupby('Word').size()
         #mega_words = occurances.index[occurances >= 1000]
         #rafo3r.index = rafo3r['Word']
-        
+
         return book_df
-    
+
     def process_toc(self, book_df, h5_file):
         maj_section_nums = ['One', 'Two', 'Three', 'Four', 'Five', 'Six']
         books = []
         for b in maj_section_nums:
             books.append('Book %s:'%(b))
-        
+
         toc_ = [['B1', 'THE RISE OF ADOLF HITLER', 1],
                ['Ch1', 'BIRTH OF THE THIRD REICH', 3],
                ['Ch2', 'BIRTH OF THE NAZI PARTY', 27],
@@ -188,15 +188,15 @@ class book_reader():
                ['Ch31', 'GOETTERDAEMMERUNG: THE LAST DAYS OF THE THIRD REICH', 993],
                ['Ch32', 'A BRIEF EPILOGUE', 1023],
                ['Ch33', 'AFTERWORD', 1027]]
-        
+
         toc = pd.DataFrame(toc_)
         toc = toc.set_index(toc[0])
         del toc[0]
         toc.columns = ['Section Title', 'Page Num']
         toc.index.name = 'Section Num'
-        
+
         toc['Location'] = 0
-            
+
         book_df_iterator = book_df.iterrows()
         for toc_row in toc.iterrows():
             section_title = toc_row[1]['Section Title'].lower()
@@ -214,11 +214,11 @@ class book_reader():
 
             book_row = next(book_df_iterator)
             book_row_index = book_row[0]
-            
+
             if book_row_index >= (len(book_df) - len(phrase) - len(section_title_split) + 1): break
-            
+
             test_string = None
-            while test_string != section_title: 
+            while test_string != section_title:
                 test_string_list = []
                 for i in range(len(section_title_split) + len(phrase)):
                     if book_row_index + i < len(book_df):
@@ -229,20 +229,20 @@ class book_reader():
                     book_row_index = book_row[0]
                 except StopIteration:
                     #you have reached the end of the book, but you havent matched
-                    #all of the sections. 
+                    #all of the sections.
                     #restart at the top of the book and move to the next section
                     print ('Error. No matches found for %s'%section_id)
                     book_df_iterator = book_df.iterrows() #reset to top of book
                     break # move to the next toc_row
-                
+
             else:
                 #found the match for this section start
-                toc.at[section_id,'Location'] = book_row_index - 1  
-        
+                toc.at[section_id,'Location'] = book_row_index - 1
+
         toc.to_hdf(h5_file,'toc',format='table',append=False)
-        
+
         return toc
-        
+
     def chapter_marker(self, h5_file):
         book_df = pd.read_hdf(h5_file, self.book_short_name)
         toc = pd.read_hdf(h5_file, 'toc')
@@ -252,19 +252,19 @@ class book_reader():
         book_df['Chapter'] = np.searchsorted(toc_chapters['Location'], book_df['Position']) + 1
         book_df.to_hdf(h5_file,self.book_short_name,format='table',append=False)
         return book_df
-        
+
     def make_pivots(self,h5_file):
         book_df = pd.read_hdf(h5_file, self.book_short_name)
         def _start_loc(x):
             return int(100 * min(x) / len(book_df))
         def _end_loc(x):
             return int(100 * max(x) / len(book_df))
-        book_df_pt = book_df[book_df['Stop Word'] == False].pivot_table(values='Position', 
+        book_df_pt = book_df[book_df['Stop Word'] == False].pivot_table(values='Position',
                     aggfunc=[len,_start_loc,_end_loc], index='Word')
         book_df_pt.sort_values('len',ascending=False,inplace=True)
         book_df_pt.rename(columns={'len': 'Count'}, inplace=True)
-        
-        book_df_pt2 = book_df[book_df['Stop Word'] == False].pivot_table(values='Position', 
+
+        book_df_pt2 = book_df[book_df['Stop Word'] == False].pivot_table(values='Position',
                      aggfunc=[len], index=['Word','Book','Chapter'])
         book_df_pt2.sort_values('len',ascending=False,inplace=True)
         book_df_pt2.rename(columns={'len': 'Count'}, inplace=True)
@@ -272,9 +272,9 @@ class book_reader():
         book_df_pt.to_hdf(h5_file,self.book_short_name + '_pivot1',format='table',append=False)
         book_df_pt2.to_hdf(h5_file,self.book_short_name + '_pivot2',format='table',append=False)
         #TODO: There is a bug in this file that needs to be fixed. Around row 79117 there is a dupe
-        #of h*tler for ch. 1. THere can only be 1 of a word/chapter pair. 
-        return book_df_pt, book_df_pt2     
-    
+        #of h*tler for ch. 1. THere can only be 1 of a word/chapter pair.
+        return book_df_pt, book_df_pt2
+
 if __name__ == "__main__":
     generate_book_df = False
     generate_toc_df = False
@@ -283,13 +283,13 @@ if __name__ == "__main__":
 
     book_file = 'rafo3r.txt'
     h5_file = 'rafo3r.h5'
-    
+
     #if running on pythonanywhere
     #book_file = os.getcwd() + os.sep + 'rafo3r' + os.sep + 'rafo3r.txt'
-    #h5_file = os.getcwd() + os.sep + 'rafo3r' + os.sep + 'rafo3r.h5'    
-    
+    #h5_file = os.getcwd() + os.sep + 'rafo3r' + os.sep + 'rafo3r.h5'
+
     rafo3r, toc = my_reader.main(book_file, h5_file)
-    
+
     now = str(dt.datetime.now())
     now = now.replace(':','')
     now = now.replace(' ','')
@@ -297,5 +297,3 @@ if __name__ == "__main__":
     now = now.replace('.','')
     my_reader.csv_dump(rafo3r,'rafo3r',now)
     my_reader.csv_dump(toc,'toc',now)
-    
-    

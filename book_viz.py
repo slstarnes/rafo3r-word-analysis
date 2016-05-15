@@ -10,13 +10,9 @@ import plotly.graph_objs as go
 import pandas as pd
 import plotly.tools as tls
 import json
-import cufflinks as cf
 
 
-	
 #TODO: https://github.com/amueller/word_cloud
-#TODO: charecters over pages
-#TODO: places over pages
 #TODO: time over pages (month/year)
 #TODO: Groupby for organizing book?
 
@@ -35,11 +31,11 @@ class book_viz():
         self.book_pivot2 = p2
         self.places_json = places_json
         self.people_json = people_json
-        
+
     def scat(self):
         germany = self.book_file[self.book_file['Word'] == 'germany']
         print (germany.head())
-        data = [go.Scatter(x= germany.index, 
+        data = [go.Scatter(x= germany.index,
                            y=germany['Running Count'],
                            name='Germany')]
         layout = go.Layout(title='scatter plot with pandas',
@@ -47,7 +43,7 @@ class book_viz():
 
         url = py.plot(data, filename='pandas/basic-line-plot')
         print (url)
-        
+
     def places_vs_chapters(self):
         plotter_df = pd.DataFrame()
         num_chapters = max(self.book_pivot2.reset_index()['Chapter'])
