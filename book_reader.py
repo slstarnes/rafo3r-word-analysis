@@ -214,19 +214,21 @@ class book_reader():
 
             book_row = next(book_df_iterator)
             book_row_index = book_row[0]
+            book_position = book_row[1]['Position']
 
             if book_row_index >= (len(book_df) - len(phrase) - len(section_title_split) + 1): break
 
-            test_string = None
-            while test_string != section_title:
-                test_string_list = []
+            string_for_testing = None
+            while string_for_testing != section_title:
+                string_for_testing_list = []
                 for i in range(len(section_title_split) + len(phrase)):
                     if book_row_index + i < len(book_df):
-                        test_string_list.append(book_df.at[book_row_index + i, 'Word'])
-                test_string = ' '.join(test_string_list)
+                        string_for_testing_list.append(book_df.at[book_row_index + i, 'Word'])
+                string_for_testing = ' '.join(string_for_testing_list)
                 try:
                     book_row = next(book_df_iterator)
                     book_row_index = book_row[0]
+                    book_position = book_row[1]['Position']
                 except StopIteration:
                     #you have reached the end of the book, but you havent matched
                     #all of the sections.
@@ -237,7 +239,7 @@ class book_reader():
 
             else:
                 #found the match for this section start
-                toc.at[section_id,'Location'] = book_row_index - 1
+                toc.at[section_id,'Location'] = book_position - 1
 
         toc.to_hdf(h5_file,'toc',format='table',append=False)
 
@@ -248,8 +250,10 @@ class book_reader():
         toc = pd.read_hdf(h5_file, 'toc')
         toc_books = toc[toc.index.str.startswith("B")]
         toc_chapters = toc[toc.index.str.startswith("Ch")]
-        book_df['Book'] = np.searchsorted(toc_books['Location'], book_df['Position']) + 1
-        book_df['Chapter'] = np.searchsorted(toc_chapters['Location'], book_df['Position']) + 1
+        book_df['Book'] = np.searchsorted(toc_books['Location'], book_df['Position'])
+        book_df['Chapter'] = np.searchsorted(toc_chapters['Location'], book_df['Position'])
+        #as of 5/15, book column becomes 1 at pos 2483 wheres "book | one | " starts 2482
+        #chapter col becomes 1 at 2491 whereas chapter 1 starts on 2490
         book_df.to_hdf(h5_file,self.book_short_name,format='table',append=False)
         return book_df
 
@@ -273,7 +277,20 @@ class book_reader():
         book_df_pt2.to_hdf(h5_file,self.book_short_name + '_pivot2',format='table',append=False)
         #TODO: There is a bug in this file that needs to be fixed. Around row 79117 there is a dupe
         #of h*tler for ch. 1. THere can only be 1 of a word/chapter pair.
+        #book df, position 2488 - hitler shows up as ch. 1, book 2
         return book_df_pt, book_df_pt2
+
+    def make_ents(self,book_file):
+        import spacy
+        # Load English tokenizer, tagger, parser, NER and word vectors
+        nlp = spacy.load('en')
+        book_nlp = nlp(book_file) #this creates a spacy.tokens.doc.Doc object
+        book_ents = list(book_nlp.ents)
+
+        ents_lists = []
+        for ent in book_ents:
+            ents_lists.append([ent.label, ent.label_,ent.orth_,ent.string])
+        return pd.DataFrame(rafo3r_ents_lists,columns=['Label ID', 'Label', 'Orth', 'String'])
 
 if __name__ == "__main__":
     generate_book_df = False
