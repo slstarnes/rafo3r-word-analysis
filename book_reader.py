@@ -278,6 +278,8 @@ class book_reader():
         #TODO: There is a bug in this file that needs to be fixed. Around row 79117 there is a dupe
         #of h*tler for ch. 1. THere can only be 1 of a word/chapter pair.
         #book df, position 2488 - hitler shows up as ch. 1, book 2
+        #one option is simply to remove dupes and keep first one. it seems that all
+        #dupes have a count of 1 for the second one
         return book_df_pt, book_df_pt2
 
     def make_ents(self,book_file):

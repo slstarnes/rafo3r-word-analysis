@@ -9,6 +9,7 @@ import plotly.plotly as py
 import plotly.graph_objs as go
 import pandas as pd
 import plotly.tools as tls
+from plotly.tools import FigureFactory as FF
 import json
 
 book_file = None
@@ -45,7 +46,7 @@ class book_viz():
         return name.replace('_',' ').title()
 
     def _count_within_range(self, book_df, word, v0, v):
-        return len(book_df[book_df['Position'] >= v][book_df['Position'] < v0][book_df['Word'] == word])
+        return len(book_df[book_df['Position'] >= v0][book_df['Position'] < v][book_df['Word'] == word])
 
     def word_vs_range_df_maker(self, book_df, word_json, break_point = 10000, min_count_req = 400):
         peak = len(book_df)
@@ -156,9 +157,8 @@ class book_viz():
         places_wordcloud.to_file(places_cloud_file)
         people_wordcloud.to_file(people_cloud_file)
 
-    def places_vs_chapters(self):
-        places_vs_chapter_df = self.word_vs_chapter_df_maker(self.book_pivot2, self.places_json, self.ch_list, 400)
-        c = 256 / len(places_vs_chapter_df.columns)
+    def places_vs_chapters(self, places_vs_chapter_df):
+        c = 255 / len(places_vs_chapter_df.columns)
         new_col_names = list(map(self._col_clean, list(places_vs_chapter_df.columns)))
 
         url = py.plot(dict(data=[{
@@ -177,9 +177,8 @@ class book_viz():
                                        yaxis = dict(title = 'Word Count'))), filename='plotly/places_vs_chapter')
         return url
 
-    def people_vs_chapters(self):
-        people_vs_chapter_df = self.word_vs_chapter_df_maker(self.book_pivot2, self.people_json, self.ch_list, 100)
-        c = 256 / len(people_vs_chapter_df.columns)
+    def people_vs_chapters(self, people_vs_chapter_df):
+        c = 255 / len(people_vs_chapter_df.columns)
         new_col_names = list(map(self._col_clean, list(people_vs_chapter_df.columns)))
 
         url = py.plot(dict(data=[{
@@ -198,8 +197,7 @@ class book_viz():
                                        yaxis = dict(title = 'Word Count'))), filename='plotly/people_vs_chapter')
         return url
 
-    def places_vs_range(self):
-        places_vs_range_df = self.word_vs_range_df_maker(self.book, self.places_json, 10000, 300)
+    def places_vs_range(self, places_vs_range_df):
         c = 256 / len(places_vs_range_df.columns)
         new_col_names = list(map(self._col_clean, list(places_vs_range_df.columns)))
 
@@ -209,7 +207,7 @@ class book_viz():
                            'name': new_col_names[i],
                            'fill' : 'tonexty',
                            'line' : dict(color = ('rgb(%i, %i, 100)'%(int(c * i),int(255 - c * i)))),
-                           }  for i, col in enumerate(people_vs_chapter_df.columns)],
+                           }  for i, col in enumerate(places_vs_range_df.columns)],
                            layout=dict(title = 'RaFo3R Places vs 10k Words',
                                        dragmode = 'zoom',
                                        xaxis = dict(title = 'Per 10k Words',
@@ -217,8 +215,7 @@ class book_viz():
                                        yaxis = dict(title = 'Word Count'))), filename='plotly/places_vs_range')
         return url
 
-    def people_vs_range(self):
-        people_vs_range_df = self.word_vs_range_df_maker(self.book, self.people_json, 10000, 100)
+    def people_vs_range(self, people_vs_range_df):
         c = 256 / len(people_vs_range_df.columns)
         new_col_names = list(map(self._col_clean, list(people_vs_range_df.columns)))
 
@@ -228,7 +225,7 @@ class book_viz():
                            'name': new_col_names[i],
                            'fill' : 'tonexty',
                            'line' : dict(color = ('rgb(%i, %i, 100)'%(int(c * i),int(255 - c * i)))),
-                           }  for i, col in enumerate(people_vs_chapter_df.columns)],
+                           }  for i, col in enumerate(people_vs_range_df.columns)],
                            layout=dict(title = 'RaFo3R People vs 10k Words',
                                        dragmode = 'zoom',
                                        xaxis = dict(title = 'Per 10k Words',
@@ -236,8 +233,7 @@ class book_viz():
                                        yaxis = dict(title = 'Word Count'))), filename='plotly/people_vs_range')
         return url
 
-    def people_table(self):
-        people_vs_range_df = self.word_vs_range_df_maker(self.book, self.people_json, 10000, 100)
+    def people_table(self, people_vs_chapter_df):
         top_words = []
         ch_range = range(1,self.num_chapters)
 
