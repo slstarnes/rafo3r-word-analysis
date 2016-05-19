@@ -11,6 +11,9 @@ import pandas as pd
 import plotly.tools as tls
 from plotly.tools import FigureFactory as FF
 import json
+from itertools import chain
+from wordcloud import WordCloud, get_single_color_func
+import random
 
 book_file = None
 toc = None
@@ -123,27 +126,30 @@ class book_viz():
     #     plotter_df.columns = plotter_df.columns.droplevel(0)
     #     return plotter_df
 
-    def grey_color_func(word, font_size, position, orientation, random_state=None, **kwargs):
+    def grey_color_func(self, word, font_size, position, orientation,
+                        random_state=None, **kwargs):
+        print ('grey')
         return "hsl(0, 0%%, %d%%)" % random.randint(60, 100)
 
     def make_word_clouds(self):
-        from itertools import chain
-        people_list = (list(people_json.keys()) +
-                       (list(chain.from_iterable(people_json.values()))))
-        places_list = (list(places_json.keys()) +
-                       (list(chain.from_iterable(places_json.values()))))
+        book_df = self.book
+
+        people_list = (list(self.people_json.keys()) +
+                       (list(chain.from_iterable(self.people_json.values()))))
+        places_list = (list(self.places_json.keys()) +
+                       (list(chain.from_iterable(self.places_json.values()))))
 
         assert len(people_list) == len(set(people_list))
         assert len(places_list) == len(set(places_list))
         assert list(set(people_list) & set(places_list)) == []
 
-        from wordcloud import WordCloud, get_single_color_func
-
-        book_full_list = list(self.book['Word'])
-        book_people = list(rafo3r['Word'][rafo3r['Word'].isin(list(people_json.keys()))]
-                           [rafo3r['Count']>1].apply(lambda x: x.title()))
-        book_places = list(rafo3r['Word'][rafo3r['Word'].isin(places_list)]
-                           [rafo3r['Count']>1].apply(lambda x: x.title().replace('_','')))
+        book_full_list = list(book_df['Word'])
+        book_people = list(book_df['Word'][book_df['Word'].
+                           isin(list(self.people_json.keys()))]
+                           [book_df['Count'] > 1].apply(lambda x: x.title()))
+        book_places = list(book_df['Word'][book_df['Word'].isin(places_list)]
+                           [book_df['Count'] > 1].apply(
+                                        lambda x: x.title().replace('_','')))
 
         book_wordcloud = WordCloud(width=1280,
                                    height=960,
@@ -154,15 +160,19 @@ class book_viz():
                                    get_single_color_func('darkred'),
                                    stopwords=self.stopwords).generate(
                                               ' '.join(book_full_list))
-        places_wordcloud = WordCloud(width = 1280, height = 960, max_words = 200,min_font_size = 8,
-                                     max_font_size = 150,color_func = get_single_color_func('lightsteelblue'),
+        places_wordcloud = WordCloud(width=1280, height=960,
+                                     max_words=200, min_font_size=8,
+                                     max_font_size=150, color_func=
+                                     get_single_color_func('lightsteelblue'),
                                      stopwords = self.stopwords).generate(' '.join(book_places))
-        people_wordcloud = WordCloud(width = 1280, height = 960, max_words = 300,min_font_size = 8,
-                              max_font_size = 100,color_func = get_single_color_func('darkred'),
-                              stopwords = self.stopwords).generate(' '.join(book_people))
+        people_wordcloud = WordCloud(width=1280, height=960,
+                                     max_words=300, min_font_size=8,
+                                     max_font_size=100,
+                                     color_func = get_single_color_func('darkred'),
+                                     stopwords = self.stopwords).generate(' '.join(book_people))
 
 
-        #book_wordcloud.recolor(color_func=grey_color_func, random_state=3))
+        people_wordcloud.recolor(color_func=self.grey_color_func, random_state=3)
 
         full_cloud_file = "full_cloud.png"
         places_cloud_file = "places_cloud.png"

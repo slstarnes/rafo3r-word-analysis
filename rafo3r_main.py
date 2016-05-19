@@ -69,50 +69,12 @@ rafo3r_viz = bv.book_viz(rafo3r, toc, rafo3r_pivot1, rafo3r_pivot2,
                          places_vs_range_df, people_vs_range_df,
                          places_json, people_json, rafo3r_reader.stopwords)
 
-#########################################
-#TODO: move this df making to _reader.
-# import pandas as pd
-# print('places_vs_chapters')
-# if False:
-#     places_vs_chapter_df = rafo3r_viz.word_vs_chapter_df_maker(rafo3r_pivot2, places_json, rafo3r_viz.ch_list, 400)
-#     places_vs_chapter_df.to_hdf(h5_file,'places_vs_chapter',format='table',append=False)
-# else:
-#     places_vs_chapter_df = pd.read_hdf(h5_file,'places_vs_chapter')
-
-# print('people_vs_chapters')
-# if False:
-#     people_vs_chapter_df = rafo3r_viz.word_vs_chapter_df_maker(rafo3r_pivot2, people_json, rafo3r_viz.ch_list, 100)
-#     people_vs_chapter_df.to_hdf(h5_file,'people_vs_chapter',format='table',append=False)
-# else:
-#     people_vs_chapter_df = pd.read_hdf(h5_file,'people_vs_chapter')
-
-# print('places_vs_range')
-# if False:
-#     places_vs_range_df = rafo3r_viz.word_vs_range_df_maker(rafo3r, places_json, 10000, 300)
-#     places_vs_range_df.to_hdf(h5_file,'places_vs_range',format='table',append=False)
-# else:
-#     places_vs_range_df = pd.read_hdf(h5_file,'places_vs_range')
-
-# print('people_vs_range')
-# if False:
-#     people_vs_range_df = rafo3r_viz.word_vs_range_df_maker(rafo3r, people_json, 10000, 100)
-#     people_vs_range_df.to_hdf(h5_file,'people_vs_range',format='table',append=False)
-# else:
-#     people_vs_range_df = pd.read_hdf(h5_file,'people_vs_range')
-
-if True:
-    now = str(dt.datetime.now())
-    now = now.replace(':', '')
-    now = now.replace(' ', '')
-    now = now.replace('-', '')
-    now = now.replace('.', '')
-
-#########################################
-
 ####print(rafo3r_viz.places_vs_chapters(places_vs_chapter_df))
 ####print(rafo3r_viz.people_vs_chapters(people_vs_chapter_df))
 #TODO: https://plot.ly/~yg2bsm/32/rafo3r-places-vs-10k-words/ shows no data
 ####print(rafo3r_viz.places_vs_range(places_vs_range_df))
 ####print(rafo3r_viz.people_vs_range(people_vs_range_df))
 #TODO: https://plot.ly/%7Eyg2bsm/40/ (from table below) doesnt even load a graph
-print(rafo3r_viz.people_table(people_vs_chapter_df))
+#print(rafo3r_viz.people_table(people_vs_chapter_df))
+
+rafo3r_viz.make_word_clouds()
