@@ -1,46 +1,47 @@
 {
 	"germany":
 		[
-			"berlin",
-			"munich",
-			"nuremberg",
-			"brunswick",
-			"lippe",
-			"leipzig",
-			"potsdam",
-			"berchtesgaden",
-			"frankfurt",
-			"oldenburg",
-			"bayreuth",
-			"bavaria",
 			"bamberg",
+			"bavaria",
+			"bayreuth",
+			"berchtesgaden",
+			"berlin",
+			"brunswick",
 			"dresden",
 			"duesseldorf",
 			"franconia",
+			"frankfurt",
+			"hamburg",
+			"jena",
 			"koenigsberg",
-			"jena"
+			"leipzig",
+			"lippe",
+			"munich",
+			"nuremberg",
+			"oldenburg",
+			"potsdam"
 		],
 	"austria":
 		[
-			"vienna",
-			"linz",
-			"fischlham",
 			"doellersheim",
-			"klagenfurt"
+			"fischlham",
+			"klagenfurt",
+			"linz",
+			"vienna"
 		],
 	"britain":
 		[
 			"england",
-			"london",
+			"glasgow",
 			"ireland",
-			"wales",
-			"glasgow"
+			"london",
+			"wales"
 		],
 	"poland":
 		[
-			"warsaw",
 			"danzig",
-			"pomerania"
+			"pomerania",
+			"warsaw"
 		],
 	"france":
 		[
@@ -49,10 +50,10 @@
 		],
 	"soviet_union":
 		[
-			"russia",
-			"moscow",
-			"stalingrad",
 			"leningrad",
+			"moscow",
+			"russia",
+			"stalingrad",
 			"u.s.s.r"
 		],
 	"united_states":
@@ -75,9 +76,13 @@
 			"oslo"
 		],
 	"denmark":
-		["copenhagen"],
+		[
+			"copenhagen"
+		],
 	"hungary":
-		["budapest"],
+		[
+			"budapest"
+		],
 	"slovakia":[],
 	"japan":
 		[
@@ -92,7 +97,6 @@
 		[
 			"bucharest"
 		],
-	"sweeden":[],
 	"albania":[],
 	"balkans":[],
 	"beelitz":[],
@@ -110,6 +114,7 @@
 	"cologne":[],
 	"compiegne":[],
 	"cornwall":[],
+	"sweeden":[],
 	"egypt":
 		[
 			"cairo"
@@ -119,7 +124,6 @@
 	"freiburg":[],
 	"gardone":[],
 	"greece":[],
-	"hamburg":[],
 	"hanover":[],
 	"iceland":
 		[

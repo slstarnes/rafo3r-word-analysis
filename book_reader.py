@@ -1,106 +1,125 @@
 # -*- coding: utf-8 -*-
 import pandas as pd
 import numpy as np
-import os
 import re
 import datetime as dt
 
+
 class book_reader():
 
-    def __init__(self, book_short_name, generate_book_df = False, generate_toc_df = False, generate_pivots = False):
+    def __init__(self,
+                 book_short_name,
+                 generate_book_df=False,
+                 generate_toc_df=False,
+                 generate_pivots=False,
+                 generate_places_vs_chapter=False,
+                 generate_people_vs_chapter=False,
+                 generate_places_vs_range=False,
+                 generate_people_vs_range=False,
+                 places_json=[],
+                 people_json=[]):
+        self.book_short_name = book_short_name
         self.generate_book_df = generate_book_df
         self.generate_toc_df = generate_toc_df
         self.generate_pivots = generate_pivots
+        self.generate_places_vs_chapter = generate_places_vs_chapter
+        self.generate_people_vs_chapter = generate_people_vs_chapter
+        self.generate_places_vs_range = generate_places_vs_range
+        self.generate_people_vs_range = generate_people_vs_range
+        self.places_json = places_json
+        self.people_json = people_json
         self.re_splitter = r'[;,.?†‡!"”()\]\[\*:\s\n]\s*'
-        self.book_short_name = book_short_name
 
         #Stopwords from http://www.lextek.com/manuals/onix/stopwords1.html
-        self.stopwords = ['a', ' about', 'above', 'across', 'after', 'again', 'against', 'all', 'almost',
-               'alone', 'along', 'already', 'also', 'although', 'always', 'among', 'an', 'and',
-               'another', 'any', 'anybody', 'anyone', 'anything', 'anywhere', 'are', 'area', 'areas',
-               'around', 'as', 'ask', 'asked', 'asking', 'asks', 'at', 'away', 'b', 'back', 'backed',
-               'backing', 'backs', 'be', 'became', 'because', 'become', 'becomes', 'been', 'before',
-               'began', 'behind', 'being', 'beings', 'best', 'better', 'between', 'big', 'both', 'but',
-               'by', 'c', 'came', 'can', 'cannot', 'case', 'cases', 'certain', 'certainly', 'clear',
-               'clearly', 'come', 'could', 'd', 'did', 'differ', 'different', 'differently', 'do',
-               'does', 'done', 'down', 'down', 'downed', 'downing', 'downs', 'during', 'e', 'each',
-               'early', 'either', 'end', 'ended', 'ending', 'ends', 'enough', 'even', 'evenly', 'ever',
-               'every', 'everybody', 'everyone', 'everything', 'everywhere', 'f', 'face', 'faces', 'fact',
-               'facts', 'far', 'felt', 'few', 'find', 'finds', 'first', 'for', 'four', 'from', 'full',
-               'fully', 'further', 'furthered', 'furthering', 'furthers', 'g', 'gave', 'general', 'generally',
-               'get', 'gets', 'give', 'given', 'gives', 'go', 'going', 'good', 'goods', 'got', 'great',
-               'greater', 'greatest', 'group', 'grouped', 'grouping', 'groups', 'h', 'had', 'has', 'have',
-               'having', 'he', 'her', 'here', 'herself', 'high', 'high', 'high', 'higher', 'highest', 'him',
-               'himself', 'his', 'how', 'however', 'i', 'if', 'important', 'in', 'interest', 'interested',
-               'interesting', 'interests', 'into', 'is', 'it', 'its', 'itself', 'j', 'just', 'k', 'keep',
-               'keeps', 'kind', 'knew', 'know', 'known', 'knows', 'l', 'large', 'largely', 'last', 'later',
-               'latest', 'least', 'less', 'let', 'lets', 'like', 'likely', 'long', 'longer', 'longest', 'm',
-               'made', 'make', 'making', 'man', 'many', 'may', 'me', 'member', 'members', 'men', 'might',
-               'more', 'most', 'mostly', 'mr', 'mrs', 'much', 'must', 'my', 'myself', 'n', 'necessary',
-               'need', 'needed', 'needing', 'needs', 'never', 'new', 'new', 'newer', 'newest', 'next',
-               'no', 'nobody', 'non', 'noone', 'not', 'nothing', 'now', 'nowhere', 'number', 'numbers',
-               'o', 'of', 'off', 'often', 'old', 'older', 'oldest', 'on', 'once', 'one', 'only', 'open',
-               'opened', 'opening', 'opens', 'or', 'order', 'ordered', 'ordering', 'orders', 'other',
-               'others', 'our', 'out', 'over', 'p', 'part', 'parted', 'parting', 'parts', 'per', 'perhaps',
-               'place', 'places', 'point', 'pointed', 'pointing', 'points', 'possible', 'present', 'presented',
-               'presenting', 'presents', 'problem', 'problems', 'put', 'puts', 'q', 'quite', 'r', 'rather',
-               'really', 'right', 'right', 'room', 'rooms', 's', 'said', 'same', 'saw', 'say', 'says', 'second',
-               'seconds', 'see', 'seem', 'seemed', 'seeming', 'seems', 'sees', 'several', 'shall', 'she',
-               'should', 'show', 'showed', 'showing', 'shows', 'side', 'sides', 'since', 'small', 'smaller',
-               'smallest', 'so', 'some', 'somebody', 'someone', 'something', 'somewhere', 'state', 'states',
-               'still', 'still', 'such', 'sure', 't', 'take', 'taken', 'than', 'that', 'the', 'their', 'them',
-               'then', 'there', 'therefore', 'these', 'they', 'thing', 'things', 'think', 'thinks', 'this',
-               'those', 'though', 'thought', 'thoughts', 'three', 'through', 'thus', 'to', 'today', 'together',
-               'too', 'took', 'toward', 'turn', 'turned', 'turning', 'turns', 'two', 'u', 'under', 'until',
-               'up', 'upon', 'us', 'use', 'used', 'uses', 'v', 'very', 'w', 'want', 'wanted', 'wanting',
-               'wants', 'was', 'way', 'ways', 'we', 'well', 'wells', 'went', 'were', 'what', 'when', 'where',
-               'whether', 'which', 'while', 'who', 'whole', 'whose', 'why', 'will', 'with', 'within', 'without',
-               'work', 'worked', 'working', 'works', 'would', 'x', 'y', 'year', 'years', 'yet', 'you', 'young',
-               'younger', 'youngest', 'your', 'yours', 'z']
+        #and github.com/amueller/word_cloud/blob/master/wordcloud/stopwords
+        self.stopwords = list(set([x.strip()
+                             for x in open('stopwords').read().split('\n')]))
         #my additions
         self.stopwords += ['', '-', '–','‡','†']
 
     def main(self, book_file, h5_file):
-        print ('Starting')
-        h5store = pd.HDFStore(h5_file)
+
+        print('Starting')
         if self.generate_book_df:
             book_df = self.process_book(book_file, h5_file)
         else:
             book_df = pd.read_hdf(h5_file, self.book_short_name)
-        print ('Book processed')
+        print('Book processed')
         if self.generate_toc_df:
             toc = self.process_toc(book_df, h5_file)
         else:
             toc = pd.read_hdf(h5_file, 'toc')
-        print ('TOC processed')
-        if self.generate_book_df or self.generate_toc_df: #if either one
+        print('TOC processed')
+        if self.generate_book_df or self.generate_toc_df:  ##if either one
             book_df = self.chapter_marker(h5_file)
-        print ('Chapter Markers made')
+        print('Chapter Markers made')
         if self.generate_pivots:
             p1, p2 = self.make_pivots(h5_file)
         else:
-            p1 = pd.read_hdf(h5_file, self.book_short_name+'_pivot1')
-            p2 = pd.read_hdf(h5_file, self.book_short_name+'_pivot2')
-        print ('Pivots processed')
-        h5store.close()
+            p1 = pd.read_hdf(h5_file, self.book_short_name + '_pivot1')
+            p2 = pd.read_hdf(h5_file, self.book_short_name + '_pivot2')
+        print('Pivots processed')
 
-        return book_df, toc, p1, p2
+        num_chapters = max(p2.reset_index()['Chapter'])
+        ch_list = list(range(1, num_chapters + 1))
 
-    def de_possessive(self,word):
+        if self.generate_places_vs_chapter:
+            plvc = self.word_vs_chapter_df_maker(h5_file,
+                                                 self.places_json,
+                                                 'places_vs_chapter',
+                                                 ch_list,
+                                                 400)
+        else:
+            plvc = pd.read_hdf(h5_file, 'places_vs_chapter')
+
+        if self.generate_people_vs_chapter:
+            pevc = self.word_vs_chapter_df_maker(h5_file,
+                                                 self.people_json,
+                                                 'people_vs_chapter',
+                                                 ch_list,
+                                                 100)
+        else:
+            pevc = pd.read_hdf(h5_file, 'people_vs_chapter')
+
+        print('places_vs_range')
+        if self.generate_places_vs_range:
+            plvr = self.word_vs_range_df_maker(h5_file,
+                                               self.places_json,
+                                               'places_vs_range',
+                                               10000,
+                                               300)
+        else:
+            plvr = pd.read_hdf(h5_file, 'places_vs_range')
+
+        print('people_vs_range')
+        if self.generate_people_vs_range:
+            pevr = self.word_vs_range_df_maker(h5_file,
+                                               self.people_json,
+                                               'people_vs_range',
+                                               10000,
+                                               100)
+        else:
+            pevr = pd.read_hdf(h5_file, 'people_vs_range')
+
+        return [book_df, toc, p1, p2, plvc, pevc, plvr, pevr]
+
+    def _de_possessive(self, word):
         if word.endswith("'s") or word.endswith("’s"):
             word = word[:-2]
         elif word.endswith("'") or word.endswith("’"):
             word = word[:-1]
         return word
 
-    def de_quote(self,word):
-        if word.startswith('"') or word.startswith('”') or word.startswith("'") or word.startswith("’"):
+    def _de_quote(self, word):
+        if (word.startswith('"') or word.startswith('”') or
+            word.startswith("'") or word.startswith("’")):
             word = word[1:]
-        if word.endswith('"') or word.endswith('”') or word.endswith("'") or word.endswith("’"):
+        if (word.endswith('"') or word.endswith('”') or
+            word.endswith("'") or word.endswith("’")):
             word = word[:-1]
         return word
 
-    def is_stop_word(self,word):
+    def _is_stop_word(self, word):
         if word.startswith('$'):
             return True
         elif word in self.stopwords:
@@ -117,24 +136,29 @@ class book_reader():
 
         book_list = re.split(self.re_splitter, bk)
 
-        book_list = list(filter(None, book_list)) # remove empty strings
-        book_list = list(map(lambda s:s.lower(), book_list))
-        book_list = list(map(self.de_quote,book_list))
-        book_list = list(map(self.de_possessive,book_list))
+        book_list = list(filter(None, book_list))  ## remove empty strings
+        book_list = list(map(lambda s: s.lower(), book_list))
+        book_list = list(map(self._de_quote, book_list))
+        book_list = list(map(self._de_possessive, book_list))
 
         book_df = pd.DataFrame(book_list)
         book_df.rename(columns={0: 'Word'}, inplace=True)
-        book_df['Stop Word'] = book_df['Word'].apply(self.is_stop_word)
-        count = book_df['Word'][book_df['Stop Word'] == False].value_counts(sort=True)
+        book_df['Stop Word'] = book_df['Word'].apply(self._is_stop_word)
+        count = book_df['Word'][book_df['Stop Word'] ==
+                                False].value_counts(sort=True)
 
         book_df['Count'] = 0
         book_df['Running Count'] = 0
         for w, c in count.iteritems():
-            book_df.loc[book_df['Word'] == w,'Count'] = c
-            book_df.loc[book_df['Word'] == w,'Running Count'] = list(range(1,c+1))
+            book_df.loc[book_df['Word'] == w, 'Count'] = c
+            book_df.loc[book_df['Word'] ==
+                                w, 'Running Count'] = list(range(1,c+1))
         book_df['Position'] = book_df.index
 
-        book_df.to_hdf(h5_file,self.book_short_name,format='table',append=False)
+        book_df.to_hdf(h5_file,
+                       self.book_short_name,
+                       format='table',
+                       append=False)
 
         #simpler way
         #occurances = rafo3r.groupby('Word').size()
@@ -147,7 +171,7 @@ class book_reader():
         maj_section_nums = ['One', 'Two', 'Three', 'Four', 'Five', 'Six']
         books = []
         for b in maj_section_nums:
-            books.append('Book %s:'%(b))
+            books.append('Book %s: '%(b))
 
         toc_ = [['B1', 'THE RISE OF ADOLF HITLER', 1],
                ['Ch1', 'BIRTH OF THE THIRD REICH', 3],
@@ -207,7 +231,8 @@ class book_reader():
             if section_id.startswith('Ch'):
                 phrase = ['chapter', section_id[2:]]
             elif section_id.startswith('B'):
-                phrase = ['book', maj_section_nums[int(section_id[1:]) - 1].lower()]
+                phrase = ['book',
+                          maj_section_nums[int(section_id[1:]) - 1].lower()]
 
             section_title = ' '.join(section_title_split)
             section_title = ' '.join(phrase) + ' ' + section_title
@@ -216,14 +241,18 @@ class book_reader():
             book_row_index = book_row[0]
             book_position = book_row[1]['Position']
 
-            if book_row_index >= (len(book_df) - len(phrase) - len(section_title_split) + 1): break
+            if book_row_index >= (len(book_df) - len(phrase) -
+                                  len(section_title_split) + 1):
+                break
 
             string_for_testing = None
             while string_for_testing != section_title:
                 string_for_testing_list = []
                 for i in range(len(section_title_split) + len(phrase)):
                     if book_row_index + i < len(book_df):
-                        string_for_testing_list.append(book_df.at[book_row_index + i, 'Word'])
+                        string_for_testing_list.append(book_df.at
+                                                       [book_row_index + i,
+                                                       'Word'])
                 string_for_testing = ' '.join(string_for_testing_list)
                 try:
                     book_row = next(book_df_iterator)
@@ -233,16 +262,15 @@ class book_reader():
                     #you have reached the end of the book, but you havent matched
                     #all of the sections.
                     #restart at the top of the book and move to the next section
-                    print ('Error. No matches found for %s'%section_id)
+                    print('Error. No matches found for %s'%section_id)
                     book_df_iterator = book_df.iterrows() #reset to top of book
                     break # move to the next toc_row
 
             else:
                 #found the match for this section start
-                toc.at[section_id,'Location'] = book_position - 1
+                toc.at[section_id, 'Location'] = book_position - 1
 
-        toc.to_hdf(h5_file,'toc',format='table',append=False)
-
+        toc.to_hdf(h5_file, 'toc', format='table', append=False)
         return toc
 
     def chapter_marker(self, h5_file):
@@ -250,11 +278,14 @@ class book_reader():
         toc = pd.read_hdf(h5_file, 'toc')
         toc_books = toc[toc.index.str.startswith("B")]
         toc_chapters = toc[toc.index.str.startswith("Ch")]
-        book_df['Book'] = np.searchsorted(toc_books['Location'], book_df['Position'])
-        book_df['Chapter'] = np.searchsorted(toc_chapters['Location'], book_df['Position'])
+        book_df['Book'] = np.searchsorted(toc_books['Location'],
+                                          book_df['Position'])
+        book_df['Chapter'] = np.searchsorted(toc_chapters['Location'],
+                                             book_df['Position'])
         #as of 5/15, book column becomes 1 at pos 2483 wheres "book | one | " starts 2482
         #chapter col becomes 1 at 2491 whereas chapter 1 starts on 2490
-        book_df.to_hdf(h5_file,self.book_short_name,format='table',append=False)
+        book_df.to_hdf(h5_file, self.book_short_name,
+                       format='table', append=False)
         return book_df
 
     def make_pivots(self,h5_file):
@@ -263,18 +294,26 @@ class book_reader():
             return int(100 * min(x) / len(book_df))
         def _end_loc(x):
             return int(100 * max(x) / len(book_df))
-        book_df_pt = book_df[book_df['Stop Word'] == False].pivot_table(values='Position',
-                    aggfunc=[len,_start_loc,_end_loc], index='Word')
-        book_df_pt.sort_values('len',ascending=False,inplace=True)
+        book_df_pt = book_df[book_df['Stop Word'] == False].pivot_table(
+                                            values='Position',
+                                            aggfunc=[len,_start_loc,_end_loc],
+                                            index='Word')
+        book_df_pt.sort_values('len',ascending=False, inplace=True)
         book_df_pt.rename(columns={'len': 'Count'}, inplace=True)
 
-        book_df_pt2 = book_df[book_df['Stop Word'] == False].pivot_table(values='Position',
-                     aggfunc=[len], index=['Word','Book','Chapter'])
+        book_df_pt2 = book_df[book_df['Stop Word'] == False].pivot_table(
+                                             values='Position',
+                                             aggfunc=[len],
+                                             index=['Word','Book','Chapter'])
         book_df_pt2.sort_values('len',ascending=False,inplace=True)
         book_df_pt2.rename(columns={'len': 'Count'}, inplace=True)
 
-        book_df_pt.to_hdf(h5_file,self.book_short_name + '_pivot1',format='table',append=False)
-        book_df_pt2.to_hdf(h5_file,self.book_short_name + '_pivot2',format='table',append=False)
+        book_df_pt.to_hdf(h5_file, self.book_short_name + '_pivot1',
+                          format='table',
+                          append=False)
+        book_df_pt2.to_hdf(h5_file, self.book_short_name + '_pivot2',
+                           format='table',
+                           append=False)
         #TODO: There is a bug in this file that needs to be fixed. Around row 79117 there is a dupe
         #of h*tler for ch. 1. THere can only be 1 of a word/chapter pair.
         #book df, position 2488 - hitler shows up as ch. 1, book 2
@@ -282,7 +321,7 @@ class book_reader():
         #dupes have a count of 1 for the second one
         return book_df_pt, book_df_pt2
 
-    def make_ents(self,book_file):
+    def make_ents(self, book_file):
         import spacy
         # Load English tokenizer, tagger, parser, NER and word vectors
         nlp = spacy.load('en')
@@ -293,6 +332,93 @@ class book_reader():
         for ent in book_ents:
             ents_lists.append([ent.label, ent.label_,ent.orth_,ent.string])
         return pd.DataFrame(rafo3r_ents_lists,columns=['Label ID', 'Label', 'Orth', 'String'])
+
+    def _count_within_range(self, book_df, word, v0, v):
+        return len(book_df[book_df['Position'] >= v0][book_df['Position'] < v][book_df['Word'] == word])
+
+    def word_vs_range_df_maker(self, h5_file, word_json, h5_store_name,
+                               break_point=10000, min_count_req=400):
+        book_df = pd.read_hdf(h5_file, self.book_short_name)
+        peak = len(book_df)
+        broken_list = list(range(0, peak,break_point))
+        broken_list.pop(0)#remove 0
+        if broken_list[-1] != peak:
+            broken_list.append(peak)
+        plotter_df = pd.DataFrame()
+        for word_main in word_json:
+            these_words = word_json[word_main]
+            for i, v in enumerate(broken_list):
+                if i == 0:
+                    v0 = 0
+                else:
+                    v0 = broken_list[i - 1]
+                plotter_df.loc[str(v), word_main] = self._count_within_range(
+                                                            book_df,
+                                                            word_main,
+                                                            v0,v)
+                for word_sub in these_words:
+                    plotter_df.loc[str(v),
+                                   word_main] += self._count_within_range(
+                                                              book_df,
+                                                              word_sub,
+                                                              v0,v)
+        plotter_df = plotter_df.drop(plotter_df.sum(axis=0)
+                                     [plotter_df.sum(axis=0) <
+                                      min_count_req].index, axis=1)
+        plotter_df.to_hdf(h5_file, h5_store_name, format='table', append=False)
+        return plotter_df
+
+    #using pivot2, create a new dataframe with words (subset based on places from json) as columns and chapter (counts)
+    #as rows.
+    def word_vs_chapter_df_maker(self, h5_file, word_json, h5_store_name,
+                                 ch_list, min_count_req=400):
+        bp2 = pd.read_hdf(h5_file, self.book_short_name + '_pivot2')
+
+        #######
+        #TODO
+        #remove this once you fix bug in pivot maker
+        #print('P1',bp2.head())
+        bp2.index = bp2.index.droplevel(1)
+        bp2 = bp2[~bp2.index.duplicated(keep='first')]
+        #print('P2',bp2.head())
+        #######
+
+        plotter_df = pd.DataFrame()
+        for word_main in word_json:
+            other_words = word_json[word_main]
+            s = 'Word == "%s"' % (word_main)
+            master_df = bp2.query(s).reset_index().set_index('Chapter')
+            master_df = master_df.reindex(ch_list).fillna(0)
+            master_df['Word'] = word_main
+            master_df.sort_index(inplace=True)
+            try:
+                del master_df['Book']
+            except:
+                #remove this try once you fix the issue that lets you remove the stuff at start.
+                #issue is that you remove book up there so you cant delete it here.
+                pass
+            for word_sub in other_words:
+                s = 'Word == "%s"' % (word_sub)
+                minor_df = bp2.query(s).reset_index().set_index('Chapter')
+                minor_df = minor_df.reindex(ch_list).fillna(0)
+                minor_df.sort_index(inplace=True)
+                try:
+                    del minor_df['Book']
+                except:
+                    #remove this try once you fix the issue that lets you remove the stuff at start.
+                    #issue is that you remove book up there so you cant delete it here.
+                    pass
+                master_df['Count'] = master_df['Count'] + minor_df['Count']
+            plotter_df = pd.concat([plotter_df, master_df])
+        plotter_df = plotter_df.reset_index()
+        plotter_df.set_index(['Chapter', 'Word'], inplace=True)
+        plotter_df = plotter_df.unstack(level=1)
+        plotter_df = plotter_df.drop(plotter_df.sum(axis=0)
+                                     [plotter_df.sum(axis=0) <
+                                      min_count_req].index, axis=1)
+        plotter_df.columns = plotter_df.columns.droplevel(0)
+        plotter_df.to_hdf(h5_file, h5_store_name, format='table', append=False)
+        return plotter_df
 
 if __name__ == "__main__":
     generate_book_df = False
@@ -310,9 +436,9 @@ if __name__ == "__main__":
     rafo3r, toc = my_reader.main(book_file, h5_file)
 
     now = str(dt.datetime.now())
-    now = now.replace(':','')
-    now = now.replace(' ','')
-    now = now.replace('-','')
-    now = now.replace('.','')
-    my_reader.csv_dump(rafo3r,'rafo3r',now)
-    my_reader.csv_dump(toc,'toc',now)
+    now = now.replace(':', '')
+    now = now.replace(' ', '')
+    now = now.replace('-', '')
+    now = now.replace('.', '')
+    my_reader.csv_dump(rafo3r, 'rafo3r', now)
+    my_reader.csv_dump(toc, 'toc', now)
