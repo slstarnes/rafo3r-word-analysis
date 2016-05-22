@@ -12,10 +12,10 @@ class book_reader():
                  generate_book_df=False,
                  generate_toc_df=False,
                  generate_pivots=False,
-                 generate_places_vs_chapter=False,
-                 generate_people_vs_chapter=False,
-                 generate_places_vs_range=False,
-                 generate_people_vs_range=False,
+                 generate_places_vs_chapter=True,
+                 generate_people_vs_chapter=True,
+                 generate_places_vs_range=True,
+                 generate_people_vs_range=True,
                  places_json=[],
                  people_json=[]):
         self.book_short_name = book_short_name
@@ -50,15 +50,19 @@ class book_reader():
         else:
             toc = pd.read_hdf(h5_file, 'toc')
         print('TOC processed')
-        if self.generate_book_df or self.generate_toc_df:  ##if either one
+        if self.generate_book_df or self.generate_toc_df: ##if either one
             book_df = self.chapter_marker(h5_file)
-        print('Chapter Markers made')
+        print('Chapter markers made')
         if self.generate_pivots:
-            p1, p2 = self.make_pivots(h5_file)
+            p1, p2, p3 = self.make_pivots(h5_file)
         else:
-            p1 = pd.read_hdf(h5_file, self.book_short_name + '_pivot1')
-            p2 = pd.read_hdf(h5_file, self.book_short_name + '_pivot2')
-        print('Pivots processed')
+            p1 = pd.read_hdf(h5_file, self.book_short_name +
+                             '_word_vs_count_pivot')
+            p2 = pd.read_hdf(h5_file, self.book_short_name +
+                             '_wordchapter_vs_count_pivot')
+            p3 = pd.read_hdf(h5_file, self.book_short_name +
+                             '_wordbook_vs_count_pivot')
+        print('Pivots made')
 
         num_chapters = max(p2.reset_index()['Chapter'])
         ch_list = list(range(1, num_chapters + 1))
@@ -68,40 +72,42 @@ class book_reader():
                                                  self.places_json,
                                                  'places_vs_chapter',
                                                  ch_list,
-                                                 400)
+                                                 max_words=12)
         else:
             plvc = pd.read_hdf(h5_file, 'places_vs_chapter')
+        print('Places v Chapter made')
 
         if self.generate_people_vs_chapter:
             pevc = self.word_vs_chapter_df_maker(h5_file,
                                                  self.people_json,
                                                  'people_vs_chapter',
                                                  ch_list,
-                                                 100)
+                                                 max_words=100)
         else:
             pevc = pd.read_hdf(h5_file, 'people_vs_chapter')
+        print('People v Chapter made')
 
-        print('places_vs_range')
         if self.generate_places_vs_range:
             plvr = self.word_vs_range_df_maker(h5_file,
                                                self.places_json,
                                                'places_vs_range',
                                                10000,
-                                               300)
+                                               max_words=12)
         else:
             plvr = pd.read_hdf(h5_file, 'places_vs_range')
+        print('Places v Range made')
 
-        print('people_vs_range')
         if self.generate_people_vs_range:
             pevr = self.word_vs_range_df_maker(h5_file,
                                                self.people_json,
                                                'people_vs_range',
                                                10000,
-                                               100)
+                                               max_words=12)
         else:
             pevr = pd.read_hdf(h5_file, 'people_vs_range')
+        print('People v Range made')
 
-        return [book_df, toc, p1, p2, plvc, pevc, plvr, pevr]
+        return [book_df, toc, p1, p2, p3, plvc, pevc, plvr, pevr]
 
     def _de_possessive(self, word):
         if word.endswith("'s") or word.endswith("’s"):
@@ -135,18 +141,15 @@ class book_reader():
         bk = open(book_file, 'r', encoding='utf-8').read()
 
         book_list = re.split(self.re_splitter, bk)
-
         book_list = list(filter(None, book_list))  ## remove empty strings
         book_list = list(map(lambda s: s.lower(), book_list))
         book_list = list(map(self._de_quote, book_list))
         book_list = list(map(self._de_possessive, book_list))
-
         book_df = pd.DataFrame(book_list)
         book_df.rename(columns={0: 'Word'}, inplace=True)
         book_df['Stop Word'] = book_df['Word'].apply(self._is_stop_word)
         count = book_df['Word'][book_df['Stop Word'] ==
                                 False].value_counts(sort=True)
-
         book_df['Count'] = 0
         book_df['Running Count'] = 0
         for w, c in count.iteritems():
@@ -154,7 +157,6 @@ class book_reader():
             book_df.loc[book_df['Word'] ==
                                 w, 'Running Count'] = list(range(1,c+1))
         book_df['Position'] = book_df.index
-
         book_df.to_hdf(h5_file,
                        self.book_short_name,
                        format='table',
@@ -282,44 +284,51 @@ class book_reader():
                                           book_df['Position'])
         book_df['Chapter'] = np.searchsorted(toc_chapters['Location'],
                                              book_df['Position'])
-        #as of 5/15, book column becomes 1 at pos 2483 wheres "book | one | " starts 2482
-        #chapter col becomes 1 at 2491 whereas chapter 1 starts on 2490
         book_df.to_hdf(h5_file, self.book_short_name,
                        format='table', append=False)
         return book_df
 
     def make_pivots(self,h5_file):
         book_df = pd.read_hdf(h5_file, self.book_short_name)
-        def _start_loc(x):
-            return int(100 * min(x) / len(book_df))
-        def _end_loc(x):
-            return int(100 * max(x) / len(book_df))
-        book_df_pt = book_df[book_df['Stop Word'] == False].pivot_table(
-                                            values='Position',
-                                            aggfunc=[len,_start_loc,_end_loc],
-                                            index='Word')
-        book_df_pt.sort_values('len',ascending=False, inplace=True)
-        book_df_pt.rename(columns={'len': 'Count'}, inplace=True)
 
-        book_df_pt2 = book_df[book_df['Stop Word'] == False].pivot_table(
+        book_df_wordvscount_pt = book_df[book_df['Stop Word'] == False].pivot_table(
+                                            values='Position',
+                                            aggfunc=[len],
+                                            index='Word')
+        book_df_wordvscount_pt.sort_values('len',ascending=False, inplace=True)
+        book_df_wordvscount_pt.rename(columns={'len': 'Count'}, inplace=True)
+
+        book_df_wordchaptervscount_pt = book_df[book_df['Stop Word'] == False].pivot_table(
                                              values='Position',
                                              aggfunc=[len],
-                                             index=['Word','Book','Chapter'])
-        book_df_pt2.sort_values('len',ascending=False,inplace=True)
-        book_df_pt2.rename(columns={'len': 'Count'}, inplace=True)
+                                             index=['Word','Chapter'])
+        book_df_wordchaptervscount_pt.sort_values('len',ascending=False, inplace=True)
+        book_df_wordchaptervscount_pt.rename(columns={'len': 'Count'}, inplace=True)
 
-        book_df_pt.to_hdf(h5_file, self.book_short_name + '_pivot1',
+        book_df_wordbookvscount_pt = book_df[book_df['Stop Word'] == False].pivot_table(
+                                             values='Position',
+                                             aggfunc=[len],
+                                             index=['Word','Book'])
+        book_df_wordbookvscount_pt.sort_values('len',ascending=False, inplace=True)
+        book_df_wordbookvscount_pt.rename(columns={'len': 'Count'}, inplace=True)
+
+        book_df_wordvscount_pt.to_hdf(h5_file, self.book_short_name +
+                                      '_word_vs_count_pivot',
                           format='table',
                           append=False)
-        book_df_pt2.to_hdf(h5_file, self.book_short_name + '_pivot2',
+        book_df_wordchaptervscount_pt.to_hdf(h5_file, self.book_short_name +
+                                             '_wordchapter_vs_count_pivot',
                            format='table',
                            append=False)
-        #TODO: There is a bug in this file that needs to be fixed. Around row 79117 there is a dupe
-        #of h*tler for ch. 1. THere can only be 1 of a word/chapter pair.
-        #book df, position 2488 - hitler shows up as ch. 1, book 2
-        #one option is simply to remove dupes and keep first one. it seems that all
-        #dupes have a count of 1 for the second one
-        return book_df_pt, book_df_pt2
+        book_df_wordbookvscount_pt.to_hdf(h5_file, self.book_short_name +
+                                          '_wordbook_vs_count_pivot',
+                           format='table',
+                           append=False)
+
+        return book_df_wordvscount_pt, \
+               book_df_wordchaptervscount_pt, \
+               book_df_wordbookvscount_pt
+
 
     def make_ents(self, book_file):
         import spacy
@@ -331,14 +340,28 @@ class book_reader():
         ents_lists = []
         for ent in book_ents:
             ents_lists.append([ent.label, ent.label_,ent.orth_,ent.string])
-        return pd.DataFrame(rafo3r_ents_lists,columns=['Label ID', 'Label', 'Orth', 'String'])
+        return pd.DataFrame(rafo3r_ents_lists,
+                            columns=['Label ID', 'Label', 'Orth', 'String'])
 
     def _count_within_range(self, book_df, word, v0, v):
-        return len(book_df[book_df['Position'] >= v0][book_df['Position'] < v][book_df['Word'] == word])
+        return len(book_df[book_df['Position'] >= v0]
+                   [book_df['Position'] < v][book_df['Word'] == word])
 
     def word_vs_range_df_maker(self, h5_file, word_json, h5_store_name,
-                               break_point=10000, min_count_req=400):
+                               break_point=10000, min_count_req=400,
+                               max_words=0):
         book_df = pd.read_hdf(h5_file, self.book_short_name)
+
+        wvc_pivot = pd.read_hdf(h5_file, self.book_short_name +
+                                '_word_vs_count_pivot')
+        word_list = list(word_json.keys())
+        if max_words > 0:
+            good_list = (wvc_pivot[wvc_pivot.index.isin(word_list)].
+                         sort_values('Count')[-max_words:].index.values)
+        else:
+            good_list = (wvc_pivot[wvc_pivot.index.isin(word_list)][
+                         wvc_pivot['Count'] >= min_count_req].index.values)
+
         peak = len(book_df)
         broken_list = list(range(0, peak,break_point))
         broken_list.pop(0)#remove 0
@@ -346,6 +369,8 @@ class book_reader():
             broken_list.append(peak)
         plotter_df = pd.DataFrame()
         for word_main in word_json:
+            if word_main not in good_list:
+                continue
             these_words = word_json[word_main]
             for i, v in enumerate(broken_list):
                 if i == 0:
@@ -355,67 +380,80 @@ class book_reader():
                 plotter_df.loc[str(v), word_main] = self._count_within_range(
                                                             book_df,
                                                             word_main,
-                                                            v0,v)
+                                                            v0, v)
                 for word_sub in these_words:
                     plotter_df.loc[str(v),
                                    word_main] += self._count_within_range(
                                                               book_df,
                                                               word_sub,
-                                                              v0,v)
-        plotter_df = plotter_df.drop(plotter_df.sum(axis=0)
-                                     [plotter_df.sum(axis=0) <
-                                      min_count_req].index, axis=1)
-        plotter_df.to_hdf(h5_file, h5_store_name, format='table', append=False)
+                                                              v0, v)
+        if max_words == 0:
+            plotter_df = plotter_df.drop(plotter_df.sum(axis=0)
+                                         [plotter_df.sum(axis=0) <
+                                          min_count_req].index, axis=1)
+            #sort columns by total word count
+            plotter_df = plotter_df[plotter_df.sum(axis=0).sort_values(ascending=False).index]
+        else:
+            plotter_df = plotter_df[list(plotter_df.sum(axis=0).
+                                         sort_values(ascending=False)
+                                         [-max_words:].index)]
+
+        plotter_df.to_hdf(h5_file, h5_store_name,format='table', append=False)
+
         return plotter_df
 
-    #using pivot2, create a new dataframe with words (subset based on places from json) as columns and chapter (counts)
-    #as rows.
+    #using word/chapter vs count pivot, create a new dataframe with words
+    #(subset based on places from json) as columns and chapter (counts) as rows
     def word_vs_chapter_df_maker(self, h5_file, word_json, h5_store_name,
-                                 ch_list, min_count_req=400):
-        bp2 = pd.read_hdf(h5_file, self.book_short_name + '_pivot2')
+                                 ch_list, min_count_req=400, max_words=0):
+        wcvc_pivot = pd.read_hdf(h5_file, self.book_short_name +
+                                 '_wordchapter_vs_count_pivot')
 
-        #######
-        #TODO
-        #remove this once you fix bug in pivot maker
-        #print('P1',bp2.head())
-        bp2.index = bp2.index.droplevel(1)
-        bp2 = bp2[~bp2.index.duplicated(keep='first')]
-        #print('P2',bp2.head())
-        #######
+        wvc_pivot = pd.read_hdf(h5_file, self.book_short_name +
+                                '_word_vs_count_pivot')
+
+        #shorten the json to the minimum needed per inputs
+        word_list = list(word_json.keys())
+        if max_words > 0:
+            good_list = (wvc_pivot[wvc_pivot.index.isin(word_list)].
+                         sort_values('Count')[-max_words:].index.values)
+        else:
+            good_list = (wvc_pivot[wvc_pivot.index.isin(word_list)][
+                         wvc_pivot['Count'] >= min_count_req].index.values)
 
         plotter_df = pd.DataFrame()
         for word_main in word_json:
+            if word_main not in good_list:
+                continue
             other_words = word_json[word_main]
             s = 'Word == "%s"' % (word_main)
-            master_df = bp2.query(s).reset_index().set_index('Chapter')
+            master_df = wcvc_pivot.query(s).reset_index().set_index('Chapter')
+
+            #ensure that all chapters are present for each word
             master_df = master_df.reindex(ch_list).fillna(0)
             master_df['Word'] = word_main
+
             master_df.sort_index(inplace=True)
-            try:
-                del master_df['Book']
-            except:
-                #remove this try once you fix the issue that lets you remove the stuff at start.
-                #issue is that you remove book up there so you cant delete it here.
-                pass
+
             for word_sub in other_words:
                 s = 'Word == "%s"' % (word_sub)
-                minor_df = bp2.query(s).reset_index().set_index('Chapter')
+                minor_df = wcvc_pivot.query(s).reset_index().set_index('Chapter')
                 minor_df = minor_df.reindex(ch_list).fillna(0)
                 minor_df.sort_index(inplace=True)
-                try:
-                    del minor_df['Book']
-                except:
-                    #remove this try once you fix the issue that lets you remove the stuff at start.
-                    #issue is that you remove book up there so you cant delete it here.
-                    pass
                 master_df['Count'] = master_df['Count'] + minor_df['Count']
             plotter_df = pd.concat([plotter_df, master_df])
         plotter_df = plotter_df.reset_index()
         plotter_df.set_index(['Chapter', 'Word'], inplace=True)
         plotter_df = plotter_df.unstack(level=1)
-        plotter_df = plotter_df.drop(plotter_df.sum(axis=0)
-                                     [plotter_df.sum(axis=0) <
-                                      min_count_req].index, axis=1)
+        if max_words == 0:
+            plotter_df = plotter_df.drop(plotter_df.sum(axis=0)
+                                         [plotter_df.sum(axis=0) <
+                                          min_count_req].index, axis=1)
+            #sort columns by total word count
+            plotter_df = plotter_df[plotter_df.sum(axis=0).sort_values(ascending=False).index]
+        else:
+            plotter_df = plotter_df[list(plotter_df.sum(axis=0).sort_values(ascending=False)
+                                         [-max_words:].index)]
         plotter_df.columns = plotter_df.columns.droplevel(0)
         plotter_df.to_hdf(h5_file, h5_store_name, format='table', append=False)
         return plotter_df

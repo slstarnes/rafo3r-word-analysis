@@ -11,6 +11,12 @@ import datetime as dt
 import os
 import json
 
+#TODO at the end:
+#https://plot.ly/python/zoom-events/
+#use JS to add a zoom capability
+#and there is this...
+#https://plot.ly/python/dropdowns/
+
 generate_book_df = False
 generate_toc_df = False
 generate_pivots = False
@@ -37,13 +43,16 @@ h5_file = 'rafo3r.h5'
 #book_file = os.getcwd() + os.sep + 'rafo3r' + os.sep + 'rafo3r.txt'
 #h5_file = os.getcwd() + os.sep + 'rafo3r' + os.sep + 'rafo3r.h5'
 
-rafo3r, toc, rafo3r_pivot1, rafo3r_pivot2, \
-people_vs_chapter_df, places_vs_chapter_df, \
-people_vs_range_df, places_vs_range_df = rafo3r_reader.main(book_file, h5_file)
-
-
-
-#book_df, toc, p1, p2, plvc, pevc, plvr, pevr
+returned_list = rafo3r_reader.main(book_file, h5_file)
+rafo3r = returned_list[0]
+toc = returned_list[1]
+rafo3r_wordvscount_pivot = returned_list[2]
+rafo3r_wordchaptervscount_pivot = returned_list[3]
+rafo3r_wordbookvscount_pivot = returned_list[4]
+places_vs_chapter_df = returned_list[5]
+people_vs_chapter_df = returned_list[6]
+places_vs_range_df = returned_list[7]
+people_vs_range_df = returned_list[8]
 
 if generate_ents:
     rafo3r_reader.make_ents(book_file).to_csv(book_short_name + '_ents.csv')
@@ -56,25 +65,37 @@ if generate_csvs:
     now = now.replace('.', '')
     rafo3r_reader.csv_dump(rafo3r, 'rafo3r', now)
     rafo3r_reader.csv_dump(toc, 'toc', now)
-    rafo3r_reader.csv_dump(rafo3r_pivot1, 'pivot1', now)
-    rafo3r_reader.csv_dump(rafo3r_pivot2, 'pivot2', now)
-    rafo3r_reader.csv_dump(places_vs_chapter_df, 'places_vs_chapter', now)
-    rafo3r_reader.csv_dump(people_vs_chapter_df, 'people_vs_chapter', now)
-    rafo3r_reader.csv_dump(places_vs_range_df, 'places_vs_range', now)
-    rafo3r_reader.csv_dump(people_vs_range_df, 'people_vs_range', now)
+    rafo3r_reader.csv_dump(rafo3r_wordvscount_pivot,
+                           'word_vs_count_pivot', now)
+    rafo3r_reader.csv_dump(rafo3r_wordchaptervscount_pivot,
+                           'wordchapter_vs_count_pivot', now)
+    rafo3r_reader.csv_dump(rafo3r_wordbookvscount_pivot,
+                           'wordbook_vs_count_pivot', now)
+    rafo3r_reader.csv_dump(places_vs_chapter_df,
+                           'places_vs_chapter', now)
+    rafo3r_reader.csv_dump(people_vs_chapter_df,
+                           'people_vs_chapter', now)
+    rafo3r_reader.csv_dump(places_vs_range_df,
+                           'places_vs_range', now)
+    rafo3r_reader.csv_dump(people_vs_range_df,
+                           'people_vs_range', now)
 
-
-rafo3r_viz = bv.book_viz(rafo3r, toc, rafo3r_pivot1, rafo3r_pivot2,
+rafo3r_viz = bv.book_viz(rafo3r, toc, rafo3r_wordvscount_pivot,
+                         rafo3r_wordchaptervscount_pivot,
+                         rafo3r_wordbookvscount_pivot,
                          places_vs_chapter_df, people_vs_chapter_df,
                          places_vs_range_df, people_vs_range_df,
                          places_json, people_json, rafo3r_reader.stopwords)
 
-####print(rafo3r_viz.places_vs_chapters(places_vs_chapter_df))
-####print(rafo3r_viz.people_vs_chapters(people_vs_chapter_df))
+#print(rafo3r_viz.places_vs_chapters_graph(places_vs_chapter_df, 5,
+#                                          drop_top_word=True))
+#print(rafo3r_viz.people_vs_chapters_graph(people_vs_chapter_df, 5,
+#                                          drop_top_word=True))
 #TODO: https://plot.ly/~yg2bsm/32/rafo3r-places-vs-10k-words/ shows no data
-####print(rafo3r_viz.places_vs_range(places_vs_range_df))
-####print(rafo3r_viz.people_vs_range(people_vs_range_df))
+#print(rafo3r_viz.places_vs_range_graph(places_vs_range_df, 5,
+#                                       drop_top_word=True))
+#print(rafo3r_viz.people_vs_range_graph(people_vs_range_df, 5,
+#                                       drop_top_word=True))
 #TODO: https://plot.ly/%7Eyg2bsm/40/ (from table below) doesnt even load a graph
-#print(rafo3r_viz.people_table(people_vs_chapter_df))
-
-rafo3r_viz.make_word_clouds()
+#print(rafo3r_viz.people_table(people_vs_chapter_df, 7))
+#rafo3r_viz.make_word_clouds()
