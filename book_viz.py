@@ -60,7 +60,6 @@ class book_viz():
 
     def grey_color_func(self, word, font_size, position, orientation,
                         random_state=None, **kwargs):
-        print ('grey')
         return "hsl(0, 0%%, %d%%)" % random.randint(60, 100)
 
     def make_word_clouds(self):
