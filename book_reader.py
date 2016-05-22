@@ -125,6 +125,20 @@ class book_reader():
             word = word[:-1]
         return word
 
+    def _capitalization(self, word):
+        if word.isdigit() or word.replace('.','').isdigit():
+            return 'numeric'
+        if re.match(r'^\$[0-9]*\.?[0-9]*', word):
+            return 'currency'
+        if word.isupper() or word.replace("'","").isupper():
+            return 'upper'
+        if word.istitle() or word.replace("'","").istitle():
+            return 'title'
+        if word.islower() or word.replace("'","").islower():
+            return 'lower'
+        else:
+            return ''
+
     def _is_stop_word(self, word):
         if word.startswith('$'):
             return True
@@ -142,6 +156,7 @@ class book_reader():
 
         book_list = re.split(self.re_splitter, bk)
         book_list = list(filter(None, book_list))  ## remove empty strings
+        capitalization = list(map(self._capitalization, book_list))
         book_list = list(map(lambda s: s.lower(), book_list))
         book_list = list(map(self._de_quote, book_list))
         book_list = list(map(self._de_possessive, book_list))
@@ -150,13 +165,14 @@ class book_reader():
         book_df['Stop Word'] = book_df['Word'].apply(self._is_stop_word)
         count = book_df['Word'][book_df['Stop Word'] ==
                                 False].value_counts(sort=True)
+        book_df['Capitalization'] = capitalization
         book_df['Count'] = 0
         book_df['Running Count'] = 0
         for w, c in count.iteritems():
             book_df.loc[book_df['Word'] == w, 'Count'] = c
             book_df.loc[book_df['Word'] ==
                                 w, 'Running Count'] = list(range(1,c+1))
-        book_df['Position'] = book_df.index
+        book_df['Position'] = book_df.index + 1
         book_df.to_hdf(h5_file,
                        self.book_short_name,
                        format='table',
@@ -370,7 +386,7 @@ class book_reader():
         plotter_df = pd.DataFrame()
         for word_main in word_json:
             if word_main not in good_list:
-                continue
+                continue #restart for loop with new word
             these_words = word_json[word_main]
             for i, v in enumerate(broken_list):
                 if i == 0:
