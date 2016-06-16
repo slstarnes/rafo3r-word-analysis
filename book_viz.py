@@ -90,7 +90,7 @@ class book_viz():
                                    min_font_size=8,
                                    max_font_size=100,
                                    color_func=get_single_color_func('darkred'),
-                                   stopwords=self.stopwords).generate(
+                                   stopwords=self.stopwords).generate(''
                                    ' '.join(book_full_list))
         places_wordcloud = WordCloud(width=1280, height=960,
                                      max_words=200, min_font_size=8,
@@ -135,14 +135,31 @@ class book_viz():
         new_col_names = list(map(self._col_clean,
                                  list(places_vs_chapter_df.columns)))
 
+
+        #potential pallett:
+        #3: [(230, 84, 0), (116, 32, 104), (35, 68, 131), (12, 99, 124),
+        #(1, 137, 130), (71, 100, 117), (80, 84, 77)],
+
         url = py.plot(dict(data=[{
                            'x': places_vs_chapter_df.index,
                            'y': places_vs_chapter_df[col],
                            'name': new_col_names[i],
                            'fill': 'tonexty',
+                           #make visibility "legend only" for most of the traces
+                           #consider not filling in the traces
+                           #consider using a color pallet (maybe steal from that dude
+                           #on wordcloud)
+                           #consider smoothign
+                           #graph #1 word, but default off.
+                           #visible:"legendonly",
+                           #fill:"none",
+
                            'line': dict(color=('rgb(%i, %i, 100)' %
                                               (int(c * i),
-                                              int(255 - c * i)))),
+                                              int(255 - c * i)))
+                                        #width=4,
+                                        #smoothing=0.6
+                                        ),
                    } for i, col in enumerate(places_vs_chapter_df.columns)],
                            layout=dict(title='RaFo3R Places vs Chapter',
                                    dragmode='zoom',
@@ -202,15 +219,13 @@ class book_viz():
                                                                  False)
                                                      [:words_on_graph].index)]
 
-        #remove last chapter (aftword)
-        places_vs_range_df = places_vs_range_df[:-1]
-
-        c = 256 / len(places_vs_range_df.columns)
+        c = 255 / len(places_vs_range_df.columns)
         new_col_names = list(map(self._col_clean,
                                  list(places_vs_range_df.columns)))
 
         url = py.plot(dict(data=[{
-                           'x': list(places_vs_range_df.index).insert(0, '0'),
+                           #'x': list(places_vs_range_df.index).insert(0, '0'),
+                           'x': places_vs_range_df.index,
                            'y': places_vs_range_df[col],
                            'name': new_col_names[i],
                            'fill' : 'tonexty',
@@ -236,15 +251,13 @@ class book_viz():
                                                 sort_values(ascending=False)
                                                 [:words_on_graph].index)]
 
-        #remove last chapter (aftword)
-        people_vs_range_df = people_vs_range_df[:-1]
-
-        c = 256 / len(people_vs_range_df.columns)
+        c = 255 / len(people_vs_range_df.columns)
         new_col_names = list(map(self._col_clean,
                                  list(people_vs_range_df.columns)))
 
         url = py.plot(dict(data=[{
-                           'x': list(people_vs_range_df.index).insert(0, '0'),
+                           #'x': list(people_vs_range_df.index).insert(0, '0'),
+                           'x': people_vs_range_df.index,
                            'y': people_vs_range_df[col],
                            'name': new_col_names[i],
                            'fill': 'tonexty',
@@ -281,5 +294,57 @@ class book_viz():
         return url
 
     def word_cloud_matrix():
-        #https://plot.ly/python/map-subplots-and-small-multiples/
-        pass
+        book_df = self.book
+        people_list = (list(self.people_json.keys()) +
+                       (list(chain.from_iterable(self.people_json.values()))))
+        places_list = (list(self.places_json.keys()) +
+                       (list(chain.from_iterable(self.places_json.values()))))
+
+        assert len(people_list) == len(set(people_list))
+        assert len(places_list) == len(set(places_list))
+        assert list(set(people_list) & set(places_list)) == []
+
+        book_full_list = list(book_df['Word'])
+        book_people = list(book_df['Word']
+                           [book_df['Word'].isin(list
+                                                 (self.people_json.keys()))]
+                           [book_df['Count'] > 1].apply(lambda x: x.title()))
+        book_places = list(book_df['Word']
+                           [book_df['Word'].isin(places_list)]
+                           [book_df['Count'] > 1].apply(
+                           lambda x: x.title().replace('_', '')))
+
+        for i, col in enumerate(people_vs_range_df.columns):
+            ##need to use the toc to extract the words (using the ' '.join)
+            ##for each chapter to make 33 little pictures...
+
+            book_wordcloud = WordCloud(width=80,
+                                       height=80,
+                                       max_words=300,
+                                       min_font_size=8,
+                                       max_font_size=100,
+                                       color_func=get_single_color_func('darkred'),
+                                       stopwords=self.stopwords).generate(
+                                       ' '.join(book_full_list))
+            places_wordcloud = WordCloud(width=1280, height=960,
+                                         max_words=200, min_font_size=8,
+                                         max_font_size=150,
+                                         color_func=get_single_color_func(
+                                                                'lightsteelblue'),
+                                         stopwords=self.stopwords).generate(
+                                         ' '.join(book_places))
+            people_wordcloud = WordCloud(width=1280, height=960,
+                                         max_words=300, min_font_size=8,
+                                         max_font_size=100,
+                                         color_func=get_single_color_func('darkred'),
+                                         stopwords = self.stopwords).generate(
+                                         ' '.join(book_people))
+
+            people_wordcloud.recolor(color_func=self.grey_color_func)
+
+            #full_cloud_file = "full_cloud.png"
+            #places_cloud_file = "places_cloud.png"
+            #people_cloud_file = "people_cloud.png"
+            #book_wordcloud.to_file(full_cloud_file)
+            #places_wordcloud.to_file(places_cloud_file)
+            #people_wordcloud.to_file(people_cloud_file)
