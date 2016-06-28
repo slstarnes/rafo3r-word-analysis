@@ -16,7 +16,6 @@ import random
 book_file = None
 toc = None
 
-
 class book_viz():
     def __init__(self, book, toc, wordvscount_pivot, wordchaptervscount_pivot,
                  wordbookvscount_pivot, places_vs_chapter_df,
@@ -121,9 +120,81 @@ class book_viz():
         places_wordcloud.to_file(places_cloud_file)
         people_wordcloud.to_file(people_cloud_file)
 
-    ##I HAVE UPDATED THE below function. need to test it. if it works then roll updates
+
+    def book_grapher(self, df, words_on_graph, entity_type, book_split_type):
+        df = df[list(df.sum(axis=0).sort_values(ascending=False)
+                     [:words_on_graph].index)]
+        if book_split_type == 'chapter':
+          #remove last chapter (aftword)
+          if df[-1:].index == 33:
+            df = df[:-1]
+
+        #set which items are hidden
+        visibility_list = []
+        for i in range(len(df.columns)):
+            if i == 0:
+                visibility_list.append('legendonly')
+            elif 1 <= i <= 4:
+                visibility_list.append('true')
+            else:
+                visibility_list.append('legendonly')
+
+        colors = self.colors
+        color_list = []
+        for i in range(len(df.columns)):
+            index = i - (len(colors) * int(i/len(colors)))
+            this_color = colors[index]
+            color_list.append('rgb(%i, %i, %i)'%(this_color[0],
+                                                 this_color[1],
+                                                 this_color[2]))
+
+        new_col_names = list(map(self._col_clean, list(df.columns)))
+
+        if entity_type == 'place':
+          s1 = 'Places'
+        elif entity_type == 'person':
+          s1 = 'People'
+        else:
+          raise ValueError('Bad entity_type')
+
+        if book_split_type == 'chapter':
+          s2 = 'Chapter'
+          tickvals = list(range(2, 36, 2))
+        elif book_split_type == 'percent':
+          s2 = 'Percent'
+          tickvals = None
+        else:
+          raise ValueError('Bad entity_type')
+
+        plot_title = 'RaFo3R %s vs %s'%(s1,s2)
+        file_name = 'plotly/%s_vs_%s'%(s1.lower(),s2.lower())
+
+        url = py.plot(dict(data=[{
+                           'x': df.index,
+                           'y': df[col],
+                           'name': new_col_names[i],
+                           'visible': visibility_list[i],
+                           'fill': 'none',
+                           'line': dict(color=(color_list[i]),
+                                        width=4,
+                                        smoothing=.8,
+                                        shape="spline"),
+                   } for i, col in enumerate(df.columns)],
+                           layout=dict(title=plot_title,
+                                   #dragmode='zoom',
+                                   xaxis=dict(title=s2,
+                                              tickvals=tickvals,
+                                              tickmode='array',
+                                              rangeslider=dict(thickness=0.2)),
+                                   yaxis=dict(title='Word Count'))),
+                      filename=file_name)
+        return url
+
+    ##I HAVE UPDATED THE below function and it works. if it works then roll updates
     #for other 3 functions. they work to combine them. and migrate "10k words"
     #to percent.
+    #I have made the above func and it works with both the chapter dfs.
+    #next need to test it with the range dfs.
     def places_vs_chapters_graph(self, places_vs_chapter_df, words_on_graph):
 #        if drop_top_word:
 #            places_vs_chapter_df.drop(places_vs_chapter_df[
