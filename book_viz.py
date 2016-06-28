@@ -36,6 +36,12 @@ class book_viz():
         self.places_json = places_json
         self.people_json = people_json
         self.stopwords = stopwords
+        self.colors = [(191, 184, 162), (78, 77, 74), (148, 186, 101),
+                       (153, 0, 0), (12, 99, 124), (39, 144, 176),
+                       (230, 84, 0), (35, 68, 131),
+                       (177, 140, 29), (116, 32, 104), (1, 137, 130),
+                       (86, 87, 114), (163, 30, 57), (71, 100, 117),
+                       (107, 121, 140), (235, 104, 37)]
 
     def scat(self):
         germany = self.book_file[self.book_file['Word'] == 'germany']
@@ -115,13 +121,17 @@ class book_viz():
         places_wordcloud.to_file(places_cloud_file)
         people_wordcloud.to_file(people_cloud_file)
 
-    def places_vs_chapters_graph(self, places_vs_chapter_df, words_on_graph,
-                                 drop_top_word=False):
-        if drop_top_word:
-            places_vs_chapter_df.drop(places_vs_chapter_df[
-                                      list(places_vs_chapter_df.sum(axis=0).
-                                      sort_values(ascending=False).index)].
-                                      columns[[0]], axis=1, inplace=True)
+    ##I HAVE UPDATED THE below function. need to test it. if it works then roll updates
+    #for other 3 functions. they work to combine them. and migrate "10k words"
+    #to percent.
+    def places_vs_chapters_graph(self, places_vs_chapter_df, words_on_graph):
+#        if drop_top_word:
+#            places_vs_chapter_df.drop(places_vs_chapter_df[
+#                                      list(places_vs_chapter_df.sum(axis=0).
+#                                      sort_values(ascending=False).index)].
+#                                      columns[[0]], axis=1, inplace=True)
+        #select the columns with largest count, select number of columns
+        #equal to words_on_graph
         places_vs_chapter_df = places_vs_chapter_df[list(places_vs_chapter_df.
                                                          sum(axis=0).
                                                          sort_values(ascending=
@@ -129,40 +139,44 @@ class book_viz():
                                                          [:words_on_graph].index)]
 
         #remove last chapter (aftword)
-        places_vs_chapter_df = places_vs_chapter_df[:-1]
+        if places_vs_chapter_df[-1:].index == 33:
+          places_vs_chapter_df = places_vs_chapter_df[:-1]
 
-        c = 255 / len(places_vs_chapter_df.columns)
+        #set which items are hidden
+        visibility_list = []
+        for i in range(len(places_vs_chapter_df.columns)):
+            if i == 0:
+                visibility_list.append('legendonly')
+            elif 1 <= i <= 4:
+                visibility_list.append('true')
+            else:
+                visibility_list.append('legendonly')
+
+        colors = self.colors
+        color_list = []
+        for i in range(len(places_vs_chapter_df.columns)):
+            index = i - (len(colors) * int(i/len(colors)))
+            this_color = colors[index]
+            color_list.append('rgb(%i, %i, %i)'%(this_color[0],
+                                                 this_color[1],
+                                                 this_color[2]))
+
         new_col_names = list(map(self._col_clean,
                                  list(places_vs_chapter_df.columns)))
-
-
-        #potential pallett:
-        #3: [(230, 84, 0), (116, 32, 104), (35, 68, 131), (12, 99, 124),
-        #(1, 137, 130), (71, 100, 117), (80, 84, 77)],
 
         url = py.plot(dict(data=[{
                            'x': places_vs_chapter_df.index,
                            'y': places_vs_chapter_df[col],
                            'name': new_col_names[i],
-                           'fill': 'tonexty',
-                           #make visibility "legend only" for most of the traces
-                           #consider not filling in the traces
-                           #consider using a color pallet (maybe steal from that dude
-                           #on wordcloud)
-                           #consider smoothign
-                           #graph #1 word, but default off.
-                           #visible:"legendonly",
-                           #fill:"none",
-
-                           'line': dict(color=('rgb(%i, %i, 100)' %
-                                              (int(c * i),
-                                              int(255 - c * i)))
-                                        #width=4,
-                                        #smoothing=0.6
-                                        ),
+                           'visible': visibility_list[i],
+                           'fill': 'none',
+                           'line': dict(color=(color_list[i]),
+                                        width=4,
+                                        smoothing=.8,
+                                        shape="spline"),
                    } for i, col in enumerate(places_vs_chapter_df.columns)],
                            layout=dict(title='RaFo3R Places vs Chapter',
-                                   dragmode='zoom',
+                                   #dragmode='zoom',
                                    xaxis=dict(title='Chapter',
                                               tickvals=list(range(2, 36, 2)),
                                               tickmode='array',
