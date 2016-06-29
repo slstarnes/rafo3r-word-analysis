@@ -42,18 +42,18 @@ class book_viz():
                        (86, 87, 114), (163, 30, 57), (71, 100, 117),
                        (107, 121, 140), (235, 104, 37)]
 
-    def scat(self):
-        germany = self.book_file[self.book_file['Word'] == 'germany']
-        print (germany.head())
-        data = [go.Scatter(x= germany.index,
-                           y=germany['Running Count'],
-                           name='Germany')]
-        layout = go.Layout(title='scatter plot with pandas',
-                           yaxis=dict(title='random distribution'),
-                           xaxis=dict(title='linspace'))
+    # def scat(self):
+    #     germany = self.book_file[self.book_file['Word'] == 'germany']
+    #     print (germany.head())
+    #     data = [go.Scatter(x= germany.index,
+    #                        y=germany['Running Count'],
+    #                        name='Germany')]
+    #     layout = go.Layout(title='scatter plot with pandas',
+    #                        yaxis=dict(title='random distribution'),
+    #                        xaxis=dict(title='linspace'))
 
-        url = py.plot(data, filename='pandas/basic-line-plot')
-        print (url)
+    #     url = py.plot(data, filename='pandas/basic-line-plot')
+    #     print (url)
 
     def _col_clean(self, name):
         return name.replace('_', ' ').title()
@@ -121,10 +121,10 @@ class book_viz():
         people_wordcloud.to_file(people_cloud_file)
 
 
-    def book_grapher(self, df, words_on_graph, entity_type, book_split_type):
+    def book_grapher(self, df, words_on_graph, entity_type, chapter_split):
         df = df[list(df.sum(axis=0).sort_values(ascending=False)
                      [:words_on_graph].index)]
-        if book_split_type == 'chapter':
+        if chapter_split:
           #remove last chapter (aftword)
           if df[-1:].index == 33:
             df = df[:-1]
@@ -157,14 +157,16 @@ class book_viz():
         else:
           raise ValueError('Bad entity_type')
 
-        if book_split_type == 'chapter':
+        if chapter_split:
           s2 = 'Chapter'
-          tickvals = list(range(2, 36, 2))
-        elif book_split_type == 'percent':
-          s2 = 'Percent'
-          tickvals = None
+          xaxis=dict(title=s2,
+                     tickvals=list(range(2, 36, 2)),
+                     tickmode='array',
+                     rangeslider=dict(thickness=0.2))
         else:
-          raise ValueError('Bad entity_type')
+          s2 = 'Percentage'
+          xaxis=dict(title=s2,
+                     rangeslider=dict(thickness=0.2))
 
         plot_title = 'RaFo3R %s vs %s'%(s1,s2)
         file_name = 'plotly/%s_vs_%s'%(s1.lower(),s2.lower())
@@ -181,197 +183,33 @@ class book_viz():
                                         shape="spline"),
                    } for i, col in enumerate(df.columns)],
                            layout=dict(title=plot_title,
-                                   #dragmode='zoom',
-                                   xaxis=dict(title=s2,
-                                              tickvals=tickvals,
-                                              tickmode='array',
-                                              rangeslider=dict(thickness=0.2)),
+                                   #autosize=False,
+                                   #width=1800,
+                                   #height=600,
+                                   xaxis=xaxis,
                                    yaxis=dict(title='Word Count'))),
                       filename=file_name)
         return url
 
-    ##I HAVE UPDATED THE below function and it works. if it works then roll updates
-    #for other 3 functions. they work to combine them. and migrate "10k words"
-    #to percent.
-    #I have made the above func and it works with both the chapter dfs.
-    #next need to test it with the range dfs.
-    def places_vs_chapters_graph(self, places_vs_chapter_df, words_on_graph):
-#        if drop_top_word:
-#            places_vs_chapter_df.drop(places_vs_chapter_df[
-#                                      list(places_vs_chapter_df.sum(axis=0).
-#                                      sort_values(ascending=False).index)].
-#                                      columns[[0]], axis=1, inplace=True)
-        #select the columns with largest count, select number of columns
-        #equal to words_on_graph
-        places_vs_chapter_df = places_vs_chapter_df[list(places_vs_chapter_df.
-                                                         sum(axis=0).
-                                                         sort_values(ascending=
-                                                                     False)
-                                                         [:words_on_graph].index)]
-
-        #remove last chapter (aftword)
-        if places_vs_chapter_df[-1:].index == 33:
-          places_vs_chapter_df = places_vs_chapter_df[:-1]
-
-        #set which items are hidden
-        visibility_list = []
-        for i in range(len(places_vs_chapter_df.columns)):
-            if i == 0:
-                visibility_list.append('legendonly')
-            elif 1 <= i <= 4:
-                visibility_list.append('true')
-            else:
-                visibility_list.append('legendonly')
-
-        colors = self.colors
-        color_list = []
-        for i in range(len(places_vs_chapter_df.columns)):
-            index = i - (len(colors) * int(i/len(colors)))
-            this_color = colors[index]
-            color_list.append('rgb(%i, %i, %i)'%(this_color[0],
-                                                 this_color[1],
-                                                 this_color[2]))
-
-        new_col_names = list(map(self._col_clean,
-                                 list(places_vs_chapter_df.columns)))
-
-        url = py.plot(dict(data=[{
-                           'x': places_vs_chapter_df.index,
-                           'y': places_vs_chapter_df[col],
-                           'name': new_col_names[i],
-                           'visible': visibility_list[i],
-                           'fill': 'none',
-                           'line': dict(color=(color_list[i]),
-                                        width=4,
-                                        smoothing=.8,
-                                        shape="spline"),
-                   } for i, col in enumerate(places_vs_chapter_df.columns)],
-                           layout=dict(title='RaFo3R Places vs Chapter',
-                                   #dragmode='zoom',
-                                   xaxis=dict(title='Chapter',
-                                              tickvals=list(range(2, 36, 2)),
-                                              tickmode='array',
-                                              rangeslider=dict(thickness=0.2)),
-                                   yaxis=dict(title='Word Count'))),
-                      filename='plotly/places_vs_chapter')
-        return url
-
-    def people_vs_chapters_graph(self, people_vs_chapter_df, words_on_graph,
-                                 drop_top_word=False):
-        if drop_top_word:
-            people_vs_chapter_df.drop(people_vs_chapter_df[
-                                       list(people_vs_chapter_df.sum(axis=0).
-                                       sort_values(ascending=False).index)].
-                                       columns[[0]], axis=1, inplace=True)
-        people_vs_chapter_df = people_vs_chapter_df[list(people_vs_chapter_df.
-                                                     sum(axis=0).
-                                                     sort_values(ascending=
-                                                                 False)
-                                                     [:words_on_graph].index)]
-        #remove last chapter (aftword)
-        people_vs_chapter_df = people_vs_chapter_df[:-1]
-
-        c = 255 / len(people_vs_chapter_df.columns)
-        new_col_names = list(map(self._col_clean,
-                                 list(people_vs_chapter_df.columns)))
-
-        url = py.plot(dict(data=[{
-                           'x': people_vs_chapter_df.index,
-                           'y': people_vs_chapter_df[col],
-                           'name': new_col_names[i],
-                           'fill': 'tonexty',
-                           'line': dict(color=('rgb(%i, %i, 100)'%(int(c * i),int(255 - c * i)))),
-                           } for i, col in enumerate(people_vs_chapter_df.columns)],
-                           layout=dict(title = 'RaFo3R People vs Chapter',
-                                       dragmode = 'zoom',
-                                       xaxis = dict(title = 'Chapter',
-                                                    tickvals = list(range(2,36,2)),
-                                                    tickmode = 'array',
-                                                    rangeslider = dict(thickness=0.2)),
-                                       yaxis = dict(title = 'Word Count'))), filename='plotly/people_vs_chapter')
-        return url
-
-    def places_vs_range_graph(self, places_vs_range_df, words_on_graph,
-                              drop_top_word=False):
-        if drop_top_word:
-            places_vs_range_df.drop(places_vs_range_df[
-                                    list(places_vs_range_df.sum(axis=0).
-                                         sort_values(ascending=False).index)].
-                                    columns[[0]], axis=1, inplace=True)
-        places_vs_range_df = places_vs_range_df[list(places_vs_range_df.
-                                                     sum(axis=0).
-                                                     sort_values(ascending=
-                                                                 False)
-                                                     [:words_on_graph].index)]
-
-        c = 255 / len(places_vs_range_df.columns)
-        new_col_names = list(map(self._col_clean,
-                                 list(places_vs_range_df.columns)))
-
-        url = py.plot(dict(data=[{
-                           #'x': list(places_vs_range_df.index).insert(0, '0'),
-                           'x': places_vs_range_df.index,
-                           'y': places_vs_range_df[col],
-                           'name': new_col_names[i],
-                           'fill' : 'tonexty',
-                           'line' : dict(color = ('rgb(%i, %i, 100)' %
-                                                  (int(c * i),int(255 - c * i)))),
-                           }  for i, col in enumerate(places_vs_range_df.columns)],
-                           layout=dict(title = 'RaFo3R Places vs 10k Words',
-                                       dragmode = 'zoom',
-                                       xaxis = dict(title = 'Per 10k Words',
-                                                    rangeslider = dict(thickness=0.20)),
-                                       yaxis = dict(title = 'Word Count'))), filename='plotly/places_vs_range')
-        return url
-
-    def people_vs_range_graph(self, people_vs_range_df, words_on_graph,
-                              drop_top_word=False):
-        if drop_top_word:
-            people_vs_range_df.drop(people_vs_range_df[
-                                    list(people_vs_range_df.sum(axis=0).
-                                    sort_values(ascending=False).index)].
-                                    columns[[0]], axis=1, inplace=True)
-        people_vs_range_df = people_vs_range_df[list(people_vs_range_df.
-                                                sum(axis=0).
-                                                sort_values(ascending=False)
-                                                [:words_on_graph].index)]
-
-        c = 255 / len(people_vs_range_df.columns)
-        new_col_names = list(map(self._col_clean,
-                                 list(people_vs_range_df.columns)))
-
-        url = py.plot(dict(data=[{
-                           #'x': list(people_vs_range_df.index).insert(0, '0'),
-                           'x': people_vs_range_df.index,
-                           'y': people_vs_range_df[col],
-                           'name': new_col_names[i],
-                           'fill': 'tonexty',
-                           'line': dict(color=('rgb(%i, %i, 100)' %
-                                              (int(c * i),
-                                               int(255 - c * i)))),
-                      } for i, col in enumerate(people_vs_range_df.columns)],
-                            layout=dict(title = 'RaFo3R People vs 10k Words',
-                                    dragmode = 'zoom',
-                                    xaxis = dict(title = 'Per 10k Words',
-                                        rangeslider = dict(thickness=0.20)),
-                                        yaxis = dict(title = 'Word Count'))),
-                            filename='plotly/people_vs_range')
-        return url
-
-    def people_table(self, people_vs_chapter_df, num_top_words):
+    def people_table(self, df, num_top_words):
         top_words = []
 
-        num_chapters = max(people_vs_chapter_df.index)
+        num_chapters = max(df.index)
         ch_list = list(range(1, num_chapters + 1))
+        #remove last chapter (aftword)
+        if ch_list[-1] == 33:
+            ch_list = ch_list[:-1]
+        assert (len(ch_list) == 32)
 
         for i in ch_list:
-            top_words.append(list(people_vs_chapter_df.loc[i].
+            top_words.append(list(df.loc[i].
                                   sort_values(ascending=False)
                                   [:num_top_words].index))
         top_words_df = pd.DataFrame(top_words, index=ch_list,
                                     columns=list(range(1, num_top_words + 1)))
+        top_words_df = top_words_df.applymap(lambda x: x.title())
         ###
-        top_words_df.to_csv('top_words_df.csv')
+        #top_words_df.to_csv('top_words_df.csv')
         ###
 
         url = py.plot(FF.create_table(top_words_df, index=True),
