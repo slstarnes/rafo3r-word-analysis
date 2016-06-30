@@ -68,7 +68,7 @@ class book_viz():
         return "hsl(0, 0%%, %d%%)" % random.randint(60, 100)
 
     def make_word_clouds(self):
-        book_df = self.book
+        book_df = self.book.copy()
 
         people_list = (list(self.people_json.keys()) +
                        (list(chain.from_iterable(self.people_json.values()))))
@@ -121,7 +121,8 @@ class book_viz():
         people_wordcloud.to_file(people_cloud_file)
 
 
-    def book_grapher(self, df, words_on_graph, entity_type, chapter_split):
+    def book_grapher(self, df, words_on_graph, entity_type, chapter_split,
+                     ipython = False):
         df = df[list(df.sum(axis=0).sort_values(ascending=False)
                      [:words_on_graph].index)]
         if chapter_split:
@@ -171,24 +172,45 @@ class book_viz():
         plot_title = 'RaFo3R %s vs %s'%(s1,s2)
         file_name = 'plotly/%s_vs_%s'%(s1.lower(),s2.lower())
 
-        url = py.plot(dict(data=[{
-                           'x': df.index,
-                           'y': df[col],
-                           'name': new_col_names[i],
-                           'visible': visibility_list[i],
-                           'fill': 'none',
-                           'line': dict(color=(color_list[i]),
-                                        width=4,
-                                        smoothing=.8,
-                                        shape="spline"),
-                   } for i, col in enumerate(df.columns)],
-                           layout=dict(title=plot_title,
-                                   #autosize=False,
-                                   #width=1800,
-                                   #height=600,
-                                   xaxis=xaxis,
-                                   yaxis=dict(title='Word Count'))),
-                      filename=file_name)
+        if not ipython:
+          url = py.plot(dict(data=[{
+                             'x': df.index,
+                             'y': df[col],
+                             'name': new_col_names[i],
+                             'visible': visibility_list[i],
+                             'fill': 'none',
+                             'line': dict(color=(color_list[i]),
+                                          width=4,
+                                          smoothing=.8,
+                                          shape="spline"),
+                     } for i, col in enumerate(df.columns)],
+                             layout=dict(title=plot_title,
+                                     #autosize=False,
+                                     #width=1800,
+                                     #height=600,
+                                     xaxis=xaxis,
+                                     yaxis=dict(title='Word Count'))),
+                        filename=file_name)
+        else:
+          py.iplot(dict(data=[{
+                             'x': df.index,
+                             'y': df[col],
+                             'name': new_col_names[i],
+                             'visible': visibility_list[i],
+                             'fill': 'none',
+                             'line': dict(color=(color_list[i]),
+                                          width=4,
+                                          smoothing=.8,
+                                          shape="spline"),
+                     } for i, col in enumerate(df.columns)],
+                             layout=dict(title=plot_title,
+                                     #autosize=False,
+                                     #width=1800,
+                                     #height=600,
+                                     xaxis=xaxis,
+                                     yaxis=dict(title='Word Count'))),
+                        filename=file_name)
+          url = 'ipython'
         return url
 
     def people_table(self, df, num_top_words):
@@ -208,16 +230,13 @@ class book_viz():
         top_words_df = pd.DataFrame(top_words, index=ch_list,
                                     columns=list(range(1, num_top_words + 1)))
         top_words_df = top_words_df.applymap(lambda x: x.title())
-        ###
-        #top_words_df.to_csv('top_words_df.csv')
-        ###
 
         url = py.plot(FF.create_table(top_words_df, index=True),
                       filename='plotly/top_people_table')
         return url
 
     def word_cloud_matrix():
-        book_df = self.book
+        book_df = self.book.copy()
         people_list = (list(self.people_json.keys()) +
                        (list(chain.from_iterable(self.people_json.values()))))
         places_list = (list(self.places_json.keys()) +
@@ -271,3 +290,42 @@ class book_viz():
             #book_wordcloud.to_file(full_cloud_file)
             #places_wordcloud.to_file(places_cloud_file)
             #people_wordcloud.to_file(people_cloud_file)
+
+    def matrix_cloud_maker(img_per_side=(1,1), image_inches=1,dpi=96, book_dict=[],
+                           file_name=''):
+        #assumes a list of dicts in the following format:
+            #[{section_num : book_list_for_section},{section_num : book_list_for_section},...]
+        width = (img_per_side[0] * image_inches) + (0.025 * (img_per_side[0]-1))
+        height = (img_per_side[1] * image_inches) + (0.025 * (img_per_side[1]-1))
+        print (width, height)
+        print (width*dpi, height*dpi)
+        print (img_per_side[0],img_per_side[1])
+        fig = plt.figure(figsize=(width,height), dpi=dpi)
+        fig.set_figwidth(width)
+        fig.set_figheight(height)
+        ax = [fig.add_subplot(img_per_side[0],img_per_side[1],i+1) for i in range(len(book_dict))]
+        print(dir(ax))
+        #for it in iterable:
+        for num, book_list in book_dict.items():
+            i = num - 1
+            #book_list = list(book_df['Word'][book_df[col_to_iterate] == it])
+            book_wordcloud = WordCloud(width=image_inches * dpi,
+                                       height=image_inches * dpi,
+                                       #max_words=300,
+                                       min_font_size=8,
+                                       #max_font_size=100,
+                                       color_func=get_single_color_func('darkred'),
+                                       stopwords=rafo3r_reader.stopwords).generate(
+                                       ' '.join(book_list))
+            #ax[i].set_xticklabels([])
+            #ax[i].set_yticklabels([])
+            ax[i].axis('off')
+            #ax[i].set_xticks([])
+            #need to turn off ticks
+            ax[i].set_aspect('equal')
+            book_wordcloud.recolor(color_func=grey_color_func)
+            ax[i].imshow(book_wordcloud.to_image())
+        fig.subplots_adjust(wspace=0.025, hspace=0.025)
+        plt.savefig(file_name, dpi=dpi)
+        plt.close(fig)
+        print ('done')
