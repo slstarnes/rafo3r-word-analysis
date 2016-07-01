@@ -12,6 +12,10 @@ from plotly.tools import FigureFactory as FF
 from itertools import chain
 from wordcloud import WordCloud, get_single_color_func
 import random
+import PIL
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+import matplotlib.gridspec as gridspec
 
 book_file = None
 toc = None
@@ -28,10 +32,10 @@ class book_viz():
         self.wordvscount_pivot = wordvscount_pivot
         self.wordchaptervscount_pivot = wordchaptervscount_pivot
         self.wordbookvscount_pivot = wordbookvscount_pivot
-        #self.places_vs_chapter = places_vs_chapter_df
-        #self.people_vs_chapter = places_vs_chapter_df
-        #self.places_vs_range = places_vs_chapter_df
-        #self.places_vs_chapter = places_vs_chapter_df
+        self.places_vs_chapter = places_vs_chapter_df
+        self.people_vs_chapter = places_vs_chapter_df
+        self.places_vs_range = places_vs_chapter_df
+        self.places_vs_chapter = places_vs_chapter_df
         self.places_json = places_json
         self.people_json = people_json
         self.stopwords = stopwords
@@ -41,6 +45,13 @@ class book_viz():
                        (177, 140, 29), (116, 32, 104), (1, 137, 130),
                        (86, 87, 114), (163, 30, 57), (71, 100, 117),
                        (107, 121, 140), (235, 104, 37)]
+        self.ch_list = list(range(1, max(self.places_vs_chapter.index) + 1))
+        #remove last chapter (aftword)
+        if self.ch_list[-1] == 33:
+            self.ch_list = self.ch_list[:-1]
+        assert (len(self.ch_list) == 32)
+        self.word_cloud_init()
+
 
     # def scat(self):
     #     germany = self.book_file[self.book_file['Word'] == 'germany']
@@ -62,64 +73,6 @@ class book_viz():
         return len(book_df[book_df['Position'] >=
                    v0][book_df['Position'] <
                    v][book_df['Word'] == word])
-
-    def grey_color_func(self, word, font_size, position, orientation,
-                        random_state=None, **kwargs):
-        return "hsl(0, 0%%, %d%%)" % random.randint(60, 100)
-
-    def make_word_clouds(self):
-        book_df = self.book.copy()
-
-        people_list = (list(self.people_json.keys()) +
-                       (list(chain.from_iterable(self.people_json.values()))))
-        places_list = (list(self.places_json.keys()) +
-                       (list(chain.from_iterable(self.places_json.values()))))
-
-        assert len(people_list) == len(set(people_list))
-        assert len(places_list) == len(set(places_list))
-        assert list(set(people_list) & set(places_list)) == []
-
-        book_full_list = list(book_df['Word'])
-        book_people = list(book_df['Word']
-                           [book_df['Word'].isin(list
-                                                 (self.people_json.keys()))]
-                           [book_df['Count'] > 1].apply(lambda x: x.title()))
-        book_places = list(book_df['Word']
-                           [book_df['Word'].isin(places_list)]
-                           [book_df['Count'] > 1].apply(
-                           lambda x: x.title().replace('_', '')))
-
-        book_wordcloud = WordCloud(width=1280,
-                                   height=960,
-                                   max_words=300,
-                                   min_font_size=8,
-                                   max_font_size=100,
-                                   color_func=get_single_color_func('darkred'),
-                                   stopwords=self.stopwords).generate(''
-                                   ' '.join(book_full_list))
-        places_wordcloud = WordCloud(width=1280, height=960,
-                                     max_words=200, min_font_size=8,
-                                     max_font_size=150,
-                                     color_func=get_single_color_func(
-                                                            'lightsteelblue'),
-                                     stopwords=self.stopwords).generate(
-                                     ' '.join(book_places))
-        people_wordcloud = WordCloud(width=1280, height=960,
-                                     max_words=300, min_font_size=8,
-                                     max_font_size=100,
-                                     color_func=get_single_color_func('darkred'),
-                                     stopwords = self.stopwords).generate(
-                                     ' '.join(book_people))
-
-        people_wordcloud.recolor(color_func=self.grey_color_func)
-
-        full_cloud_file = "full_cloud.png"
-        places_cloud_file = "places_cloud.png"
-        people_cloud_file = "people_cloud.png"
-        book_wordcloud.to_file(full_cloud_file)
-        places_wordcloud.to_file(places_cloud_file)
-        people_wordcloud.to_file(people_cloud_file)
-
 
     def book_grapher(self, df, words_on_graph, entity_type, chapter_split,
                      ipython = False):
@@ -191,8 +144,9 @@ class book_viz():
                                      xaxis=xaxis,
                                      yaxis=dict(title='Word Count'))),
                         filename=file_name)
+          return url
         else:
-          py.iplot(dict(data=[{
+          this_plot = py.iplot(dict(data=[{
                              'x': df.index,
                              'y': df[col],
                              'name': new_col_names[i],
@@ -210,24 +164,16 @@ class book_viz():
                                      xaxis=xaxis,
                                      yaxis=dict(title='Word Count'))),
                         filename=file_name)
-          url = 'ipython'
-        return url
+          return this_plot
 
     def people_table(self, df, num_top_words):
         top_words = []
 
-        num_chapters = max(df.index)
-        ch_list = list(range(1, num_chapters + 1))
-        #remove last chapter (aftword)
-        if ch_list[-1] == 33:
-            ch_list = ch_list[:-1]
-        assert (len(ch_list) == 32)
-
-        for i in ch_list:
+        for i in self.ch_list:
             top_words.append(list(df.loc[i].
                                   sort_values(ascending=False)
                                   [:num_top_words].index))
-        top_words_df = pd.DataFrame(top_words, index=ch_list,
+        top_words_df = pd.DataFrame(top_words, index=self.ch_list,
                                     columns=list(range(1, num_top_words + 1)))
         top_words_df = top_words_df.applymap(lambda x: x.title())
 
@@ -235,26 +181,104 @@ class book_viz():
                       filename='plotly/top_people_table')
         return url
 
-    def word_cloud_matrix():
-        book_df = self.book.copy()
-        people_list = (list(self.people_json.keys()) +
+    def word_cloud_init(self):
+        self.people_list = (list(self.people_json.keys()) +
                        (list(chain.from_iterable(self.people_json.values()))))
-        places_list = (list(self.places_json.keys()) +
+        self.places_list = (list(self.places_json.keys()) +
                        (list(chain.from_iterable(self.places_json.values()))))
 
-        assert len(people_list) == len(set(people_list))
-        assert len(places_list) == len(set(places_list))
-        assert list(set(people_list) & set(places_list)) == []
+        assert len(self.people_list) == len(set(self.people_list))
+        assert len(self.places_list) == len(set(self.places_list))
+        assert list(set(self.people_list) & set(self.places_list)) == []
 
-        book_full_list = list(book_df['Word'])
-        book_people = list(book_df['Word']
-                           [book_df['Word'].isin(list
+        self.book_full_list = list(self.book['Word'])
+        self.book_people = list(self.book['Word']
+                           [self.book['Word'].isin(list
                                                  (self.people_json.keys()))]
-                           [book_df['Count'] > 1].apply(lambda x: x.title()))
-        book_places = list(book_df['Word']
-                           [book_df['Word'].isin(places_list)]
-                           [book_df['Count'] > 1].apply(
+                           [self.book['Count'] > 1].apply(lambda x: x.title()))
+        self.book_places = list(self.book['Word']
+                           [self.book['Word'].isin(self.places_list)]
+                           [self.book['Count'] > 1].apply(
                            lambda x: x.title().replace('_', '')))
+
+        book_people_df = self.book.copy()
+        book_people_df = book_people_df[book_people_df['Word'].isin(
+                    list(self.people_json.keys()))][self.book['Count'] > 1]
+        book_people_df['Word'] = book_people_df['Word'].apply(
+                                                        lambda x: x.title())
+
+        book_places_df = self.book.copy()
+        book_places_df = book_places_df[self.book['Word'].isin(
+                            self.places_list)][self.book['Count'] > 1]
+        book_places_df['Word'] = book_places_df['Word'].apply(
+                                        lambda x: x.title().replace('_', ''))
+
+        self.book_full_dict = {}
+        self.book_people_dict = {}
+        self.book_places_dict = {}
+
+        for ch in self.ch_list:
+            self.book_full_dict[ch] = list(self.book['Word']
+                                      [self.book['Chapter'] == ch])
+            self.book_people_dict[ch] = list(book_people_df['Word']
+                                        [book_people_df['Chapter'] == ch])
+            self.book_places_dict[ch] = list(book_places_df['Word']
+                                        [book_places_df['Chapter'] == ch])
+
+    def _grey_color_func(self, word, font_size, position, orientation,
+                        random_state=None, **kwargs):
+        return "hsl(0, 0%%, %d%%)" % random.randint(60, 100)
+
+    def make_word_clouds(self):
+        book_df = self.book.copy()
+
+        people_list = self.people_list
+        places_list = self.places_list
+
+        book_full_list = self.book_full_list
+        book_people = self.book_people
+        book_places = self.book_places
+
+        book_wordcloud = WordCloud(width=1280,
+                                   height=960,
+                                   max_words=300,
+                                   min_font_size=8,
+                                   max_font_size=100,
+                                   color_func=get_single_color_func('darkred'),
+                                   stopwords=self.stopwords).generate(''
+                                   ' '.join(book_full_list))
+        places_wordcloud = WordCloud(width=1280, height=960,
+                                     max_words=200, min_font_size=8,
+                                     max_font_size=150,
+                                     color_func=get_single_color_func(
+                                                            'lightsteelblue'),
+                                     stopwords=self.stopwords).generate(
+                                     ' '.join(book_places))
+        people_wordcloud = WordCloud(width=1280, height=960,
+                                     max_words=300, min_font_size=8,
+                                     max_font_size=100,
+                                     color_func=get_single_color_func('darkred'),
+                                     stopwords = self.stopwords).generate(
+                                     ' '.join(book_people))
+
+        people_wordcloud.recolor(color_func=self._grey_color_func)
+
+        full_cloud_file = "full_cloud.png"
+        places_cloud_file = "places_cloud.png"
+        people_cloud_file = "people_cloud.png"
+        book_wordcloud.to_file(full_cloud_file)
+        places_wordcloud.to_file(places_cloud_file)
+        people_wordcloud.to_file(people_cloud_file)
+
+    def word_cloud_matrix(self):
+        book_df = self.book.copy()
+
+        people_list = self.people_list
+        places_list = self.places_list
+
+        book_full_list = self.book_full_list
+        book_people = self.book_people
+        book_places = self.book_places
 
         for i, col in enumerate(people_vs_range_df.columns):
             ##need to use the toc to extract the words (using the ' '.join)
@@ -282,7 +306,7 @@ class book_viz():
                                          stopwords = self.stopwords).generate(
                                          ' '.join(book_people))
 
-            people_wordcloud.recolor(color_func=self.grey_color_func)
+            people_wordcloud.recolor(color_func=self._grey_color_func)
 
             #full_cloud_file = "full_cloud.png"
             #places_cloud_file = "places_cloud.png"
@@ -291,20 +315,24 @@ class book_viz():
             #places_wordcloud.to_file(places_cloud_file)
             #people_wordcloud.to_file(people_cloud_file)
 
-    def matrix_cloud_maker(img_per_side=(1,1), image_inches=1,dpi=96, book_dict=[],
-                           file_name=''):
+    def matrix_cloud_maker(self, img_per_side=(1,1), image_inches=1, dpi=96,
+                           book_dict=[], file_name=''):
         #assumes a list of dicts in the following format:
             #[{section_num : book_list_for_section},{section_num : book_list_for_section},...]
-        width = (img_per_side[0] * image_inches) + (0.025 * (img_per_side[0]-1))
-        height = (img_per_side[1] * image_inches) + (0.025 * (img_per_side[1]-1))
-        print (width, height)
-        print (width*dpi, height*dpi)
-        print (img_per_side[0],img_per_side[1])
+        width = ((img_per_side[0] * image_inches) +
+                 (0.025 * (img_per_side[0]-1)))
+        height = ((img_per_side[1] * image_inches) +
+                  (0.025 * (img_per_side[1]-1)))
+        #print (width, height)
+        #print (width*dpi, height*dpi)
+        #print (img_per_side[0],img_per_side[1])
         fig = plt.figure(figsize=(width,height), dpi=dpi)
         fig.set_figwidth(width)
         fig.set_figheight(height)
-        ax = [fig.add_subplot(img_per_side[0],img_per_side[1],i+1) for i in range(len(book_dict))]
-        print(dir(ax))
+        ax = [fig.add_subplot(img_per_side[0],
+                              img_per_side[1],
+                              i+1) for i in range(len(book_dict))]
+        #print(dir(ax))
         #for it in iterable:
         for num, book_list in book_dict.items():
             i = num - 1
@@ -315,7 +343,7 @@ class book_viz():
                                        min_font_size=8,
                                        #max_font_size=100,
                                        color_func=get_single_color_func('darkred'),
-                                       stopwords=rafo3r_reader.stopwords).generate(
+                                       stopwords=self.stopwords).generate(
                                        ' '.join(book_list))
             #ax[i].set_xticklabels([])
             #ax[i].set_yticklabels([])
@@ -323,7 +351,7 @@ class book_viz():
             #ax[i].set_xticks([])
             #need to turn off ticks
             ax[i].set_aspect('equal')
-            book_wordcloud.recolor(color_func=grey_color_func)
+            book_wordcloud.recolor(color_func=self._grey_color_func)
             ax[i].imshow(book_wordcloud.to_image())
         fig.subplots_adjust(wspace=0.025, hspace=0.025)
         plt.savefig(file_name, dpi=dpi)

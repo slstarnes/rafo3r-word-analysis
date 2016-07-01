@@ -12,10 +12,10 @@ class book_reader():
                  generate_book_df=False,
                  generate_toc_df=False,
                  generate_pivots=False,
-                 generate_places_vs_chapter=True,
-                 generate_people_vs_chapter=True,
-                 generate_places_vs_range=True,
-                 generate_people_vs_range=True,
+                 generate_places_vs_chapter=False,
+                 generate_people_vs_chapter=False,
+                 generate_places_vs_range=False,
+                 generate_people_vs_range=False,
                  places_json=[],
                  people_json=[]):
         self.book_short_name = book_short_name
@@ -72,7 +72,7 @@ class book_reader():
                                                  self.places_json,
                                                  'places_vs_chapter',
                                                  ch_list,
-                                                 max_words=12)
+                                                 max_words=20)
         else:
             plvc = pd.read_hdf(h5_file, 'places_vs_chapter')
         print('Places v Chapter made')
@@ -92,7 +92,7 @@ class book_reader():
                                                self.places_json,
                                                'places_vs_range',
                                                10000,
-                                               max_words=12)
+                                               max_words=20)
         else:
             plvr = pd.read_hdf(h5_file, 'places_vs_range')
         print('Places v Range made')
@@ -102,7 +102,7 @@ class book_reader():
                                                self.people_json,
                                                'people_vs_range',
                                                10000,
-                                               max_words=12)
+                                               max_words=20)
         else:
             pevr = pd.read_hdf(h5_file, 'people_vs_range')
         print('People v Range made')
@@ -403,12 +403,21 @@ class book_reader():
                                                               book_df,
                                                               word_sub,
                                                               v0, v)
+
+        #Calculate location as percentage and set as index
+        plotter_df['Percentage'] = list(plotter_df.index)
+        plotter_df.index = plotter_df['Percentage'].apply(
+                                      lambda x:format(100 * int(x) /
+                                      max(book_df['Position']), '.2f'))
+        del plotter_df['Percentage']
+
         if max_words == 0:
             plotter_df = plotter_df.drop(plotter_df.sum(axis=0)
                                          [plotter_df.sum(axis=0) <
                                           min_count_req].index, axis=1)
             #sort columns by total word count
-            plotter_df = plotter_df[plotter_df.sum(axis=0).sort_values(ascending=False).index]
+            plotter_df = plotter_df[plotter_df.sum(axis=0).sort_values(
+                                                   ascending=False).index]
         else:
             plotter_df = plotter_df[list(plotter_df.sum(axis=0).
                                          sort_values(ascending=False)
@@ -475,24 +484,25 @@ class book_reader():
         return plotter_df
 
 if __name__ == "__main__":
-    generate_book_df = False
-    generate_toc_df = False
-    book_short_name = 'rafo3r'
-    my_reader = book_reader(book_short_name, generate_book_df, generate_toc_df)
+  pass
+    # generate_book_df = False
+    # generate_toc_df = False
+    # book_short_name = 'rafo3r'
+    # my_reader = book_reader(book_short_name, generate_book_df, generate_toc_df)
 
-    book_file = 'rafo3r.txt'
-    h5_file = 'rafo3r.h5'
+    # book_file = 'rafo3r.txt'
+    # h5_file = 'rafo3r.h5'
 
-    #if running on pythonanywhere
-    #book_file = os.getcwd() + os.sep + 'rafo3r' + os.sep + 'rafo3r.txt'
-    #h5_file = os.getcwd() + os.sep + 'rafo3r' + os.sep + 'rafo3r.h5'
+    # #if running on pythonanywhere
+    # #book_file = os.getcwd() + os.sep + 'rafo3r' + os.sep + 'rafo3r.txt'
+    # #h5_file = os.getcwd() + os.sep + 'rafo3r' + os.sep + 'rafo3r.h5'
 
-    rafo3r, toc = my_reader.main(book_file, h5_file)
+    # rafo3r, toc = my_reader.main(book_file, h5_file)
 
-    now = str(dt.datetime.now())
-    now = now.replace(':', '')
-    now = now.replace(' ', '')
-    now = now.replace('-', '')
-    now = now.replace('.', '')
-    my_reader.csv_dump(rafo3r, 'rafo3r', now)
-    my_reader.csv_dump(toc, 'toc', now)
+    # now = str(dt.datetime.now())
+    # now = now.replace(':', '')
+    # now = now.replace(' ', '')
+    # now = now.replace('-', '')
+    # now = now.replace('.', '')
+    # my_reader.csv_dump(rafo3r, 'rafo3r', now)
+    # my_reader.csv_dump(toc, 'toc', now)

@@ -23,7 +23,7 @@ generate_pivots = False
 generate_places_vs_chapter = False
 generate_people_vs_chapter = False
 generate_places_vs_range = False
-generate_people_vs_range = False
+generate_people_vs_range = True
 generate_csvs = False
 generate_ents = False
 book_short_name = 'rafo3r'
@@ -87,15 +87,25 @@ rafo3r_viz = bv.book_viz(rafo3r, toc, rafo3r_wordvscount_pivot,
                          places_vs_range_df, people_vs_range_df,
                          places_json, people_json, rafo3r_reader.stopwords)
 
-#print(rafo3r_viz.places_vs_chapters_graph(places_vs_chapter_df, 5,
-#                                          drop_top_word=True))
-#print(rafo3r_viz.people_vs_chapters_graph(people_vs_chapter_df, 5,
-#                                          drop_top_word=True))
-#TODO: https://plot.ly/~yg2bsm/32/rafo3r-places-vs-10k-words/ shows no data
-#print(rafo3r_viz.places_vs_range_graph(places_vs_range_df, 5,
-#                                       drop_top_word=True))
-#print(rafo3r_viz.people_vs_range_graph(people_vs_range_df, 5,
-#                                       drop_top_word=True))
-#TODO: https://plot.ly/%7Eyg2bsm/40/ (from table below) doesnt even load a graph
+
+#print (rafo3r_viz.book_grapher(places_vs_chapter_df, 10, 'place', True))
+#print (rafo3r_viz.book_grapher(people_vs_chapter_df, 10, 'person', True))
+#print (rafo3r_viz.book_grapher(places_vs_range_df, 10, 'place', False))
+#print (rafo3r_viz.book_grapher(people_vs_range_df, 10, 'person', False))
 #print(rafo3r_viz.people_table(people_vs_chapter_df, 7))
-#rafo3r_viz.make_word_clouds()
+# rafo3r_viz.make_word_clouds()
+
+
+rafo3r_viz.matrix_cloud_maker(img_per_side = (6,6), image_inches = 3,
+                              dpi = 400,
+                              book_dict = rafo3r_viz.book_full_dict,
+                              file_name = 'rafo3r_matrix_cloud-2.png')
+# rafo3r_viz.matrix_cloud_maker(img_per_side = (6,6), image_inches = 3,
+#                               dpi = 400,
+#                               book_dict = rafo3r_viz.book_people_dict,
+#                               file_name = 'rafo3r_people_matrix_cloud-2.png')
+# rafo3r_viz.matrix_cloud_maker(img_per_side = (6,6), image_inches = 3,
+#                               dpi = 400,
+#                               book_dict = rafo3r_viz.book_places_dict,
+#                               file_name = 'rafo3r_places_matrix_cloud-2.png')
+
