@@ -123,7 +123,7 @@ class book_viz():
                      rangeslider=dict(thickness=0.2))
 
         plot_title = 'RaFo3R %s vs %s'%(s1,s2)
-        file_name = 'plotly/%s_vs_%s'%(s1.lower(),s2.lower())
+        file_name = 'rafo3r/%s_vs_%s'%(s1.lower(),s2.lower())
 
         if not ipython:
           url = py.plot(dict(data=[{
@@ -229,7 +229,8 @@ class book_viz():
                         random_state=None, **kwargs):
         return "hsl(0, 0%%, %d%%)" % random.randint(60, 100)
 
-    def make_word_clouds(self):
+    def make_word_clouds(self, full_cloud_filename, places_cloud_filename,
+                         people_cloud_filename):
         book_df = self.book.copy()
 
         people_list = self.people_list
@@ -263,12 +264,9 @@ class book_viz():
 
         people_wordcloud.recolor(color_func=self._grey_color_func)
 
-        full_cloud_file = "full_cloud.png"
-        places_cloud_file = "places_cloud.png"
-        people_cloud_file = "people_cloud.png"
-        book_wordcloud.to_file(full_cloud_file)
-        places_wordcloud.to_file(places_cloud_file)
-        people_wordcloud.to_file(people_cloud_file)
+        book_wordcloud.to_file(full_cloud_filename)
+        places_wordcloud.to_file(places_cloud_filename)
+        people_wordcloud.to_file(people_cloud_filename)
 
     def word_cloud_matrix(self):
         book_df = self.book.copy()
@@ -323,20 +321,14 @@ class book_viz():
                  (0.025 * (img_per_side[0]-1)))
         height = ((img_per_side[1] * image_inches) +
                   (0.025 * (img_per_side[1]-1)))
-        #print (width, height)
-        #print (width*dpi, height*dpi)
-        #print (img_per_side[0],img_per_side[1])
         fig = plt.figure(figsize=(width,height), dpi=dpi)
         fig.set_figwidth(width)
         fig.set_figheight(height)
         ax = [fig.add_subplot(img_per_side[0],
                               img_per_side[1],
                               i+1) for i in range(len(book_dict))]
-        #print(dir(ax))
-        #for it in iterable:
         for num, book_list in book_dict.items():
             i = num - 1
-            #book_list = list(book_df['Word'][book_df[col_to_iterate] == it])
             book_wordcloud = WordCloud(width=image_inches * dpi,
                                        height=image_inches * dpi,
                                        #max_words=300,
@@ -356,4 +348,3 @@ class book_viz():
         fig.subplots_adjust(wspace=0.025, hspace=0.025)
         plt.savefig(file_name, dpi=dpi)
         plt.close(fig)
-        print ('done')

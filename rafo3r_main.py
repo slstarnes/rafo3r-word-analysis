@@ -23,7 +23,7 @@ generate_pivots = False
 generate_places_vs_chapter = False
 generate_people_vs_chapter = False
 generate_places_vs_range = False
-generate_people_vs_range = True
+generate_people_vs_range = False
 generate_csvs = False
 generate_ents = False
 book_short_name = 'rafo3r'
@@ -93,19 +93,21 @@ rafo3r_viz = bv.book_viz(rafo3r, toc, rafo3r_wordvscount_pivot,
 #print (rafo3r_viz.book_grapher(places_vs_range_df, 10, 'place', False))
 #print (rafo3r_viz.book_grapher(people_vs_range_df, 10, 'person', False))
 #print(rafo3r_viz.people_table(people_vs_chapter_df, 7))
-# rafo3r_viz.make_word_clouds()
 
+rafo3r_viz.make_word_clouds("rafo3r_full_cloud.png",
+                            "rafo3r_places_cloud.png",
+                            "rafo3r_people_cloud.png")
 
 rafo3r_viz.matrix_cloud_maker(img_per_side = (6,6), image_inches = 3,
                               dpi = 400,
                               book_dict = rafo3r_viz.book_full_dict,
-                              file_name = 'rafo3r_matrix_cloud-2.png')
-# rafo3r_viz.matrix_cloud_maker(img_per_side = (6,6), image_inches = 3,
-#                               dpi = 400,
-#                               book_dict = rafo3r_viz.book_people_dict,
-#                               file_name = 'rafo3r_people_matrix_cloud-2.png')
-# rafo3r_viz.matrix_cloud_maker(img_per_side = (6,6), image_inches = 3,
-#                               dpi = 400,
-#                               book_dict = rafo3r_viz.book_places_dict,
-#                               file_name = 'rafo3r_places_matrix_cloud-2.png')
+                              file_name = 'rafo3r_matrix_cloud.png')
+rafo3r_viz.matrix_cloud_maker(img_per_side = (6,6), image_inches = 3,
+                              dpi = 400,
+                              book_dict = rafo3r_viz.book_people_dict,
+                              file_name = 'rafo3r_people_matrix_cloud.png')
+rafo3r_viz.matrix_cloud_maker(img_per_side = (6,6), image_inches = 3,
+                              dpi = 400,
+                              book_dict = rafo3r_viz.book_places_dict,
+                              file_name = 'rafo3r_places_matrix_cloud.png')
 
