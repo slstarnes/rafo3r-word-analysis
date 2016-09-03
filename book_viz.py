@@ -75,22 +75,31 @@ class book_viz():
                    v][book_df['Word'] == word])
 
     def book_grapher(self, df, words_on_graph, entity_type, chapter_split,
-                     ipython = False):
+                     chapter_markers = None, ipython = False):
         df = df[list(df.sum(axis=0).sort_values(ascending=False)
                      [:words_on_graph].index)]
         if chapter_split:
           #remove last chapter (aftword)
           if df[-1:].index == 33:
             df = df[:-1]
+        else:
+          if chapter_markers != None:
+            pass
+            #TODO: add this logic
 
         #set which items are hidden
         visibility_list = []
         for i in range(len(df.columns)):
             if i == 0:
+                #for specific data the 1st element is quite large compared to
+                #the rest, so this hides it so everything else doesn't appear
+                #to be ~0.
                 visibility_list.append('legendonly')
             elif 1 <= i <= 4:
                 visibility_list.append('true')
             else:
+                #4 lines seems to be a good number to show by default. this
+                #hides the rest
                 visibility_list.append('legendonly')
 
         colors = self.colors
@@ -125,13 +134,13 @@ class book_viz():
         plot_title = 'RaFo3R %s vs %s'%(s1,s2)
         file_name = 'plotly/%s_vs_%s'%(s1.lower(),s2.lower())
 
-        if not ipython:
-          url = py.plot(dict(data=[{
+        plotly_dict = dict(data=[{
                              'x': df.index,
                              'y': df[col],
                              'name': new_col_names[i],
                              'visible': visibility_list[i],
                              'fill': 'none',
+                             'hoverinfo': 'y+name',
                              'line': dict(color=(color_list[i]),
                                           width=4,
                                           smoothing=.8,
@@ -142,28 +151,23 @@ class book_viz():
                                      #width=1800,
                                      #height=600,
                                      xaxis=xaxis,
-                                     yaxis=dict(title='Word Count'))),
-                        filename=file_name)
+                                     yaxis=dict(title='Word Count')))
+
+        def opacity_lookup(i):
+            #if i is divisible by 5, then opacity is 1 (solid line)
+            #and if not then opacity <1 (transparant line)
+            if i % 5 == 0:
+                return 1
+            else:
+                return 0.4
+
+        #plotly_dict.append()
+
+        if not ipython:
+          url = py.plot(plotly_dict, filename=file_name)
           return url
         else:
-          this_plot = py.iplot(dict(data=[{
-                             'x': df.index,
-                             'y': df[col],
-                             'name': new_col_names[i],
-                             'visible': visibility_list[i],
-                             'fill': 'none',
-                             'line': dict(color=(color_list[i]),
-                                          width=4,
-                                          smoothing=.8,
-                                          shape="spline"),
-                     } for i, col in enumerate(df.columns)],
-                             layout=dict(title=plot_title,
-                                     #autosize=False,
-                                     #width=1800,
-                                     #height=600,
-                                     xaxis=xaxis,
-                                     yaxis=dict(title='Word Count'))),
-                        filename=file_name)
+          this_plot = py.iplot(plotly_dict, filename=file_name)
           return this_plot
 
     def people_table(self, df, num_top_words, ipython = False):
