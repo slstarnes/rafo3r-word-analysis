@@ -8,6 +8,7 @@ Created on Fri Apr 29 15:34:16 2016
 import plotly.plotly as py
 import plotly.graph_objs as go
 import pandas as pd
+import numpy as np
 from plotly.tools import FigureFactory as FF
 from itertools import chain
 from wordcloud import WordCloud, get_single_color_func
@@ -16,6 +17,7 @@ import PIL
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import matplotlib.gridspec as gridspec
+import re
 
 book_file = None
 toc = None
@@ -153,14 +155,6 @@ class book_viz():
                                      xaxis=xaxis,
                                      yaxis=dict(title='Word Count')))
 
-        def opacity_lookup(i):
-            #if i is divisible by 5, then opacity is 1 (solid line)
-            #and if not then opacity <1 (transparant line)
-            if i % 5 == 0:
-                return 1
-            else:
-                return 0.4
-
         #plotly_dict.append()
 
         if not ipython:
@@ -190,6 +184,98 @@ class book_viz():
                         filename='plotly/top_people_table')
           return this_plot
 
+    def chapter_vs_year(self, file_name, ipython = False):
+      def year_finder(s):
+        if not re.search(r'^19(3[3-9]|4[0-5])$', s) == None:
+          return s
+        else:
+          return None
+
+      def opacity_lookup(i):
+        #if i is divisible by 5, then opacity is 1 (solid line)
+        #and if not then opacity <1 (semi-transparant line)
+        if i % 5 == 0:
+            return 1
+        else:
+            return 0.4
+
+      book = self.book.copy()
+      end_pos = max(book['Position'])
+      book['Word'] = book['Word'].apply(year_finder)
+      book = book[book['Word'].notnull()]
+      toc = self.toc
+      toc_chapters = toc[toc.index.str.startswith("Ch")]
+      toc_chapters['Chapter'] = pd.Series(toc_chapters.
+                                          index).apply(lambda x:
+                                          int(x.replace('Ch',''))).values
+      toc_chapters['Loc as %'] = 100 * toc_chapters['Location'] / end_pos
+      trace0= [go.Scatter(
+                  x= (100* book['Position'] / end_pos),
+                  y= book['Word'],
+                  mode= 'markers',
+                  hoverinfo= 'y',
+                  marker= dict(size= 12,
+                              line= dict(width=1),
+                              color= 'darkred',
+                              symbol= 'diamond-wide' ,
+                              opacity= 0.2
+                             )
+                  )]
+
+      for i, row in toc_chapters.iterrows():
+          if row['Chapter'] % 5 == 0:
+              #if number is mult of 5, then
+              #show chapter number on graph
+              trace0.append(go.Scatter(
+                          x=[row['Loc as %']],
+                          y=[1946.5],
+                          text=[row['Chapter']],
+                          mode='text',
+                          hoverinfo= 'none',
+                          textfont=dict(size=12,
+                                        color='darkred')))
+
+      trace0.append(go.Scatter(
+                  x=[5],
+                  y=[1946.5],
+                  text=['Chapter:'],
+                  mode='text',
+                  hoverinfo= 'none',
+                  textfont=dict(size=12,
+                                color='darkred')))
+
+      layout= go.Layout(
+          title= "Occurrences of Specific Years",
+          xaxis= dict(
+              title= 'Book Location (Percentage)',
+              zeroline= False,
+              showline= False),
+          yaxis=dict(
+              title= 'Year',
+              zeroline= False,
+              showline= False),
+          showlegend= False,
+          shapes=[dict(
+                  type= 'line',
+                  x0= row['Loc as %'],
+                  y0= 1932,
+                  x1= row['Loc as %'],
+                  y1= 1946,
+                  opacity= opacity_lookup(row['Chapter']),
+                  layer= 'above',
+                  line= dict(
+                      color= 'darkred',
+                      dash= 'solid',
+                      width= 1)
+                  ) for i, row in toc_chapters.iterrows()])
+      fig= go.Figure(data=trace0, layout=layout)
+
+      if not ipython:
+        url = py.plot(fig, filename=file_name)
+        return url
+      else:
+        this_plot = py.iplot(fig, filename=file_name)
+        return this_plot
 
     def word_cloud_init(self):
         self.people_list = (list(self.people_json.keys()) +
