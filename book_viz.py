@@ -284,14 +284,15 @@ class book_viz():
                            lambda x: x.title().replace('_', '')))
 
         book_people_df = self.book.copy()
-        book_people_df = book_people_df[book_people_df['Word'].isin(
-                    list(self.people_json.keys()))][self.book['Count'] > 1]
+        book_people_df = book_people_df.where(book_people_df['Word'].isin(
+                    list(self.people_json.keys()))).where(
+                    book_people_df['Count'] > 1).dropna()
         book_people_df['Word'] = book_people_df['Word'].apply(
                                                         lambda x: x.title())
 
         book_places_df = self.book.copy()
-        book_places_df = book_places_df[self.book['Word'].isin(
-                            self.places_list)][self.book['Count'] > 1]
+        book_places_df = book_places_df.where(book_people_df['Word'].isin(
+                 self.places_list)).where(book_places_df['Count'] > 1).dropna()
         book_places_df['Word'] = book_places_df['Word'].apply(
                                         lambda x: x.title().replace('_', ''))
 
