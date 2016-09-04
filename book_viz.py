@@ -184,13 +184,8 @@ class book_viz():
                         filename='plotly/top_people_table')
           return this_plot
 
-    def chapter_vs_year(self, file_name, ipython = False):
-      def year_finder(s):
-        if not re.search(r'^19(3[3-9]|4[0-5])$', s) == None:
-          return s
-        else:
-          return None
-
+    def delineator_vs_occurance(self, toc_delineator, book_occurance,
+                                file_name, ipython = False):
       def opacity_lookup(i):
         #if i is divisible by 5, then opacity is 1 (solid line)
         #and if not then opacity <1 (semi-transparant line)
@@ -199,19 +194,10 @@ class book_viz():
         else:
             return 0.4
 
-      book = self.book.copy()
-      end_pos = max(book['Position'])
-      book['Word'] = book['Word'].apply(year_finder)
-      book = book[book['Word'].notnull()]
-      toc = self.toc
-      toc_chapters = toc[toc.index.str.startswith("Ch")]
-      toc_chapters['Chapter'] = pd.Series(toc_chapters.
-                                          index).apply(lambda x:
-                                          int(x.replace('Ch',''))).values
-      toc_chapters['Loc as %'] = 100 * toc_chapters['Location'] / end_pos
+      end_pos = max(self.book['Position'])
       trace0= [go.Scatter(
-                  x= (100* book['Position'] / end_pos),
-                  y= book['Word'],
+                  x= (100* book_occurance['Position'] / end_pos),
+                  y= book_occurance['Word'],
                   mode= 'markers',
                   hoverinfo= 'y',
                   marker= dict(size= 12,
@@ -222,7 +208,7 @@ class book_viz():
                              )
                   )]
 
-      for i, row in toc_chapters.iterrows():
+      for i, row in toc_delineator.iterrows():
           if row['Chapter'] % 5 == 0:
               #if number is mult of 5, then
               #show chapter number on graph
@@ -267,7 +253,7 @@ class book_viz():
                       color= 'darkred',
                       dash= 'solid',
                       width= 1)
-                  ) for i, row in toc_chapters.iterrows()])
+                  ) for i, row in toc_delineator.iterrows()])
       fig= go.Figure(data=trace0, layout=layout)
 
       if not ipython:

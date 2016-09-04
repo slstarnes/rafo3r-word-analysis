@@ -92,7 +92,8 @@ rafo3r_viz = bv.book_viz(rafo3r, toc, rafo3r_wordvscount_pivot,
 #print (rafo3r_viz.book_grapher(people_vs_chapter_df, 10, 'person', True))
 #print (rafo3r_viz.book_grapher(places_vs_range_df, 10, 'place', False))
 #print (rafo3r_viz.book_grapher(people_vs_range_df, 10, 'person', False))
-#print(rafo3r_viz.people_table(people_vs_chapter_df, 7))
+#print (rafo3r_viz.people_table(people_vs_chapter_df, 7))
+
 
 rafo3r_viz.make_word_clouds("rafo3r_full_cloud.png",
                             "rafo3r_places_cloud.png",
@@ -111,3 +112,22 @@ rafo3r_viz.matrix_cloud_maker(img_per_side = (6,6), image_inches = 3,
                               book_dict = rafo3r_viz.book_places_dict,
                               file_name = 'rafo3r_places_matrix_cloud.png')
 
+def year_finder(s):
+  if not re.search(r'^19(3[3-9]|4[0-5])$', s) == None:
+    return s
+  else:
+    return None
+
+years_in_book = self.rafo3r.copy()
+end_pos = max(years_in_book['Position'])
+years_in_book['Word'] = years_in_book['Word'].apply(year_finder)
+years_in_book = years_in_book[years_in_book['Word'].notnull()]
+#toc = self.toc
+toc_chapters = toc[toc.index.str.startswith("Ch")]
+toc_chapters['Chapter'] = pd.Series(toc_chapters.
+                                    index).apply(lambda x:
+                                    int(x.replace('Ch',''))).values
+toc_chapters['Loc as %'] = 100 * toc_chapters['Location'] / end_pos
+
+print (rafo3r_viz.delineator_vs_occurance(toc_chapters, years_in_book,
+                                          'chapter_vs_year', False))
