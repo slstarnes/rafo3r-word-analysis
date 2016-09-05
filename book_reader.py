@@ -355,8 +355,9 @@ class book_reader():
                             columns=['Label ID', 'Label', 'Orth', 'String'])
 
     def _count_within_range(self, book_df, word, v0, v):
-        return len(book_df[book_df['Position'] >= v0]
-                   [book_df['Position'] < v][book_df['Word'] == word])
+        return len(book_df.where(book_df['Position'] >= v0).
+                   where(book_df['Position'] < v).
+                   where(book_df['Word'] == word).dropna())
 
     def word_vs_range_df_maker(self, h5_file, word_json, h5_store_name,
                                break_point=10000, min_count_req=400,
