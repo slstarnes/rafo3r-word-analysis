@@ -1365,7 +1365,7 @@ to "revolution" in all subsequent editions.
 
 Ypres, where the British halted the German drive to the Channel. According
 to a letter Hitler wrote his Munich landlord, a tailor named Popp, his regiment
-was reduced in four days of combat from 3,500 to 600 men; only thirty officers
+was reduced in four days of combat from 3500 to 600 men; only thirty officers
 survived, and four companies had to be dissolved.
 During the war he was wounded twice, the first time on October 7, 1916,
 in the Battle of the Somme, when he was hit in the leg. After hospitalization
@@ -2440,13 +2440,13 @@ The voting, which took place on January 19, 1919, revealed that the middle
 and upper classes had regained some of their courage in the little more than
 two months which had elapsed since the "revolution." The Social Democrats
 (the Majority and Independent Socialists), who had governed alone because no
-other group would share the burden, received 13,800,000 votes out of 30,000,000
+other group would share the burden, received 13800000 votes out of 30000000
 cast and won 185 out of 421 seats in the Assembly, but this was considerably
 less than a majority. Obviously the new Germany was not going to be built by
 the working class alone. Two middle-class parties, the Center, representing the
 political movement of the Roman Catholic Church, and the Democratic Party,
 born of a fusion in December of the old Progressive Party and the left wing of the
-National Liberals, polled 11,500,000 votes between them and obtained 166 seats
+National Liberals, polled 11500000 votes between them and obtained 166 seats
 in the Assembly. Both parties professed support for a moderate, democratic
 Republic, though there was considerable sentiment for an eventual restoration
 of the monarchy.
@@ -2506,9 +2506,9 @@ German memories did not appear to stretch back as far as one year, to
 March 3, 1918, when the then victorious German Supreme Command had imposed on a defeated Russia at Brest Litovsk a peace treaty which to a British
 historian, writing two decades after the passions of war had cooled, was a "humiliation without precedent or equal in modern history,"90 It deprived Russia
 of a territory nearly as large as Austria-Hungary and Turkey combined, with
-56,000,000 inhabitants, or 32 per cent of her whole population; a third of her
+56000000 inhabitants, or 32 per cent of her whole population; a third of her
 railway mileage, 73 per cent of her total iron ore, 89 per cent of her total coal
-production; and more than 5,000 factories and industrial plants. Moreover,
+production; and more than 5000 factories and industrial plants. Moreover,
 Russia was obliged to pay Germany an indemnity of six billion marks.
 *There were flaws, to be sure, and in the end some of them proved disastrous. The system
 of proportional representation and voting by list may have prevented the wasting of votes,
@@ -2565,9 +2565,9 @@ In the event of a resumption of hostilities we can reconquer the
 province of Posen [in Poland] and defend our frontiers in the east.
 In the west, however, we can scarcely count upon being able to
 withstand a serious offensive on the part of the enemy in view of the
-*It restricted the Army to 100,000 long-term volunteers and prohibited it from having
+*It restricted the Army to 100000 long-term volunteers and prohibited it from having
 planes or tanks. The General Staff was also outlawed. The Navy was reduced to little more
-than a token force and forbidden to build submarines or vessels over 10,000 tons.
+than a token force and forbidden to build submarines or vessels over 10000 tons.
 VERSAILLES, WEIMAR AND THE BEER HALL PUTSCH 55
 numerical superiority of the Entente and their ability to outflank us
 on both wings.
@@ -2622,7 +2622,7 @@ before the ink on it was scarcely dry. And thanks to the timidity and shortsight
 the Army in its old Prussian traditions, as we have seen but to become the
 real center of political power in the new Germany. The Army did not, until
 the last days of the short-lived Republic, stake its fortunes on any one political movement. But under General Hans von Seeckt, the brilliant creator of
-the 100,000-man Reichswehr, the Army, small as it was in numbers, became
+the 100000-man Reichswehr, the Army, small as it was in numbers, became
 a state within a state, exerting an increasing influence on the nation's foreign
 and domestic policies until a point was reached where the Republic's continued
 existence depended on the will of the officer corps.
@@ -2667,7 +2667,7 @@ Adolf Hitler grasped the strength of the new nationalist, antidemocratic, antire
 events, two in particular: the fall of the mark and the French occupation of the
 Ruhr. The mark, as we have seen, had begun to slide in .1921, when it dropped
 to 75 to the dollar; the next year it fell to 400 and by the beginning of 1923 to
-7,000. Already in the fall of 1922 the German government had asked the Allies
+7000. Already in the fall of 1922 the German government had asked the Allies
 to grant a moratorium on reparation payments. This the French government of
 Poincare had bluntly refused. When Germany defaulted in deliveries of timber,
 the hardheaded French Premier, who had been the wartime President of France,
@@ -2679,8 +2679,8 @@ as they had not been united since 1914. The workers of the Ruhr declared a gener
 called for a campaign of passive resistance. With the help of the Army, sabotage and guerrilla warfare were organized. The French countered with arrests,
 deportations and even death sentences. But not a wheel in the Ruhr turned.
 The strangulation of Germany's economy hastened the final plunge of the
-mark. On the occupation of the Ruhr in January 1923, it fell to 18,000 to the
-dollar; by July 1 it had dropped to 160,000; by August 1 to a million. By
+mark. On the occupation of the Ruhr in January 1923, it fell to 18000 to the
+dollar; by July 1 it had dropped to 160000; by August 1 to a million. By
 November, when Hitler thought his hour had struck, it took four billion marks
 to buy a dollar, and thereafter the figures became trillions. German currency
 had become utterly worthless. Purchasing power of salaries and wages was
@@ -2830,7 +2830,7 @@ command of Major Buchrucker seized three forts to the east of Berlin. Seeckt
 ordered regular forces to besiege them, and after two days Buchrucker surrendered. He was tried for high treason and actually sentenced to ten years of
 fortress detention. The "Black Reichswehr," which had been set up by Seeckt
 himself under the cover name of Arbeitskommandos (Labor Commandos) to
-provide secret reinforcements for the 100,000-man Reichswehr, was dissolved. *
+provide secret reinforcements for the 100000-man Reichswehr, was dissolved. *
 Seeckt next turned his attention to the threats of Communist uprisings in
 Saxony, Thuringia, Hamburg and the Ruhr. In suppressing the Left the loyalty
 of the Army could be taken for granted. In Saxony the Socialist-Communist
@@ -3421,14 +3421,14 @@ word of the unsuccessful putsch in Mein_Kampf.
 The first volume was published in the autumn of 1925. A work of some
 four hundred pages, it was priced at twelve marks (three dollars), about twice
 the price of most books brought out in Germany at that time. It did not by
-any means become an immediate best seller. Amann boasted that it sold 23,000
+any means become an immediate best seller. Amann boasted that it sold 23000
 copies the first year and that sales continued upward – a claim that was received
 with skepticism in anti-Nazi circles.
 Thanks to the Allied seizure in 1945 of the royalty statements of the Eher
 Verlag, the Nazi publishing firm, the facts about the actual sale of Mein_Kampf
-can now be disclosed. In 1925 the book sold 9,473 copies, and thereafter for
-three years the sales decreased annually. They slumped to 6,913 in 1926, to
-5,607 in 1927 and to a mere 3,015 in 1928, counting both volumes. They were
+can now be disclosed. In 1925 the book sold 9473 copies, and thereafter for
+three years the sales decreased annually. They slumped to 6913 in 1926, to
+5607 in 1927 and to a mere 3015 in 1928, counting both volumes. They were
 *"It is useless," he wrote at the end of the second volume, "to reopen wounds that seem
 scarcely healed; . . . useless to speak of guilt regarding men who in the bottom of their hearts,
 perhaps, were all devoted to their nation with equal love, and who only missed or failed to
@@ -3439,15 +3439,15 @@ ability to restrain himself momentarily for tactical reasons. At any rate, he re
 recrimination.
 73
 74
-up a little – to 7,664 – in 1929, rose with the fortunes of the Nazi Party in 1930,
-when an inexpensive one-volume edition at eight marks appeared, to 54,086,
-dropped slightly to 50,808 the following year and jumped to 90,351 in 1932.
+up a little – to 7664 – in 1929, rose with the fortunes of the Nazi Party in 1930,
+when an inexpensive one-volume edition at eight marks appeared, to 54086,
+dropped slightly to 50808 the following year and jumped to 90351 in 1932.
 Hitler's royalties – his chief source of income from 1925 on – were considerable
 when averaged over those first seven years. But they were nothing compared
 to those received in 1933, the year he became Chancellor. In his first year of
 office Mein_Kampf sold a million copies, and Hitler's income from the royalties,
 which had been increased from 10 to 15 per cent after January 1, 1933, was over
-one million marks (some $300,000), making him the most prosperous author in
+one million marks (some $300000), making him the most prosperous author in
 Germany and for the first time a millionaire.* Except for the Bible, no other
 book sold as well during the Nazi regime, when few family households felt secure
 without a copy on the table. It was almost obligatory – and certainly politic
@@ -4522,9 +4522,9 @@ of a sensation and brought this strange Englishman sudden fame in Germany.
 Despite its frequent eloquence and its distinguished style – for Chamberlain was
 a dedicated artist – the book was not easy reading. But it was soon taken up
 by the upper classes, who seem to have found in it just what they wanted to
-believe. Within ten years it had gone through eight editions and sold 60,000
+believe. Within ten years it had gone through eight editions and sold 60000
 copies and by the time of the outbreak of the First World War in 1914 it had
-reached a sale of 100,000. It flourished again in the Nazi time and I remember
+reached a sale of 100000. It flourished again in the Nazi time and I remember
 an announcement of its twenty-fourth edition in 1938, by which time it had sold
 more than a quarter of a million copies.
 Among its first and most enthusiastic readers was Kaiser Wilhelm II. He
@@ -4775,7 +4775,7 @@ theaters, sport stadiums and fancy swimming pools. Industry, which had wiped
 out its debts in the inflation, borrowed billions to retool and to rationalize its
 productive processes. Its output, which in 1923 had dropped to 55 per cent of
 that in 1913, rose to 122 per cent by 1927. For the first time since the war
-unemployment fell below a million – to 650,000 – in 1928. That year retail sales
+unemployment fell below a million – to 650000 – in 1928. That year retail sales
 were up 20 per cent over 1925 and the next year real wages reached a figure 10
 per cent higher than four years before. The lower middle classes, all the millions
 of shopkeepers and small-salaried folk on whom Hitler had to draw for his mass
@@ -4801,7 +4801,7 @@ students, businessmen, labor leaders – struck you as being democratic, liberal
 even pacifist.
 One scarcely heard of Hitler or the Nazis except as butts of jokes – usually in
 connection with the Beer Hall Putsch, as it came to be known. In the elections
-of May 20, 1928, the Nazi Party polled only 810,000 votes out of a total of
+of May 20, 1928, the Nazi Party polled only 810000 votes out of a total of
 thirty-one million cast and had but a dozen of the Reichstag's 491 members.
 The conservative Nationalists also lost heavily, their vote falling from six million
 in 1924 to four million, and their seats in Parliament diminished from 103 to
@@ -4811,7 +4811,7 @@ in the Reichstag, made them easily the largest political party in Germany. Ten
 years after the end of the war the German Republic seemed at last to have found
 its feet.
 The membership of the National Socialist Party in that anniversary year –
-1928 – was 108,000. Small as the figure was, it was slowly growing. A fortnight
+1928 – was 108000. Small as the figure was, it was slowly growing. A fortnight
 after leaving prison at the end of 1924, Hitler had hurried to see Dr. Heinrich
 Held, the Prime Minister of Bavaria and the head of the Catholic Bavarian
 People's Party. On the strength of his promise of good behavior (Hitler was
@@ -4871,9 +4871,9 @@ as a spellbinder. Curbing his ire at being forbidden to speak in public, he set
 to work with furious intent to rebuild the National Socialist German Workers'
 Party and to make of it an organization such as Germany had never seen before.
 He meant to make it like the Army – a state within a state. The first job was to
-attract dues-paying members. By the end of 1925 they numbered just 27,000.
-The going was slow, but each year some progress was made: 49,000 members in
-1926; 72,000 in 1927; 108,000 in 1928; 178,000 in 1929.
+attract dues-paying members. By the end of 1925 they numbered just 27000.
+The going was slow, but each year some progress was made: 49000 members in
+1926; 72000 in 1927; 108000 in 1928; 178000 in 1929.
 More important was the building up of an intricate party structure which corresponded to the organization of the German government and indeed of German
 society. The country was divided into districts, or Gaue, which corresponded
 roughly with the thirty-four Reichstag electoral districts and at the head of
@@ -5415,8 +5415,8 @@ the author of Mein_Kampf became dictator of Germany and one day settled
 accounts with some of his old friends.
 The source of Hitler's income during those personally comfortable years when
 he acquired a villa at Obersalzberg and a luxurious apartment in Munich and
-drove about in a flashy, chauffeured automobile, for which he paid 20,000 marks
-($5,000), has never been established. But his income tax files, which turned up
+drove about in a flashy, chauffeured automobile, for which he paid 20000 marks
+($5000), has never been established. But his income tax files, which turned up
 after the war, shed some light on the subject.137 Until he became Chancellor
 and had himself declared exempt from taxation, he was in continual conflict
 with the tax authorities, and a considerable file accumulated in the Munich
@@ -5424,14 +5424,14 @@ Finance Office between 1925 and 1933.
 That office notified him on May 1, 1925, that he had failed to file a return
 for 1924 or for the first quarter of 1925. Hitler replied, "I had no income in 1924
 [when he was in prison], or in the first quarter of 1925. I have covered my living
-expenses by raising a bank loan." What about that $5,000 automobile? the tax
+expenses by raising a bank loan." What about that $5000 automobile? the tax
 collector shot back. Hitler answered that he had raised a bank loan for that
 too. In all his tax returns, Hitler listed his profession as "writer" and, as such,
 attempted to justify a high proportion of his income as deductible expenses –
 he doubtless was aware of the practice of writers everywhere. His first income
-tax declaration, for the third quarter of 1925, listed a gross income of 11,231
-R.M., deductible professional expenses of 6,540 R.M. and interest payments on
-loans of 2,245 R.M., which left a net taxable income of 2,446 R.M.
+tax declaration, for the third quarter of 1925, listed a gross income of 11231
+R.M., deductible professional expenses of 6540 R.M. and interest payments on
+loans of 2245 R.M., which left a net taxable income of 2446 R.M.
 In a three-page typewritten explanation Hitler defended his large deductions
 for professional expenses, arguing that though a large part of them appeared to
 be due to his political activities, such work provided him with the material he
@@ -5458,8 +5458,8 @@ appealed to the Review Board it upheld the original assessment. Thereafter
 only one half of his expense deductions were allowed by the tax authorities. He
 protested but paid.
 The Nazi leader's reported gross income in his tax returns correspond pretty
-accurately to his royalties from Mein_Kampf : 19,843 R.M. in 1925, 15,903 R.M.
-in 1926, 11,494 R.M. in 1927, 11,818 R.M. in 1928 and 15,448 R.M. in 1929.
+accurately to his royalties from Mein_Kampf : 19843 R.M. in 1925, 15903 R.M.
+in 1926, 11494 R.M. in 1927, 11818 R.M. in 1928 and 15448 R.M. in 1929.
 Since publishers' books were subject to inspection by the tax office, Hitler could
 not safely report an income less than his royalties. But what about other sources
 of income? These were never reported. It was known that he demanded, and
@@ -5483,7 +5483,7 @@ I have had to raise a loan." Later he claimed of that period that'"for years I l
 on Tyrolean apples. It's unbelievable what economies we had to make. Every
 mark saved was for the party." And between 1925 and 1928 he contended, to
 the tax collector, that he was going ever deeper in debt. In 1926 he reported
-expenditures of 31,209 R.M. against an income of 15,903 R.M. and stated the
+expenditures of 31209 R.M. against an income of 15903 R.M. and stated the
 deficit had been made up by further "bank loans."
 Then, miraculously, in 1929, though his declared income was considerably
 less than in 1925, the item of interest on or repayment of loans disappears from
@@ -5495,7 +5495,7 @@ THE ROAD TO POWER: 1925-31 119
 Hitler, it must be said in fairness, never seemed to care much about money
 – if he had enough to live on comfortably and if he did not have to toil for it
 in wages or a salary. At any rate, beginning with 1930, when his book royalties
-suddenly tripled from the previous year to some $12,000 and money started
+suddenly tripled from the previous year to some $12000 and money started
 pouring in from big business, any personal financial worries he may have had
 were over for good. He could now devote his fierce energies and all his talents
 to the task of fulfilling his destiny. The time for his final drive for power, for
@@ -5599,13 +5599,13 @@ to it that every German had a job and bread. To hopeless, hungry men seeking
 not only relief but new faith and new gods, the appeal was not without effect.
 Though his hopes were high, Hitler was surprised on the night of September
 14, 1930, when the election returns came in. Two years before, his party had
-polled 810,000 votes and elected 12 members to the Reichstag. This time he
+polled 810000 votes and elected 12 members to the Reichstag. This time he
 had counted on quadrupling the Nazi vote and securing perhaps 50 seats in
-Parliament. But on this day the vote of the N.S.D.A.P. rose to 6,409,600,
+Parliament. But on this day the vote of the N.S.D.A.P. rose to 6409600,
 entitling the party to 107 seats in the Reichstag and propelling it from the
 ninth and smallest party in Parliament to the second largest.
-At the other extreme, the Communists had also gained, from 3,265,000 votes
-in 1928 to 4,592,000, with their representation in the Reichstag increased from
+At the other extreme, the Communists had also gained, from 3265000 votes
+in 1928 to 4592000, with their representation in the Reichstag increased from
 54 to 77. The moderate middle-class parties, with the exception of the Catholic
 Center, lost over a million votes, as did the Social Democrats, despite the addition of four million new voters at the polls. The vote of the right-wing Nationalists of Hugenberg dropped from four to two million. It was clear that the
 Nazis had captured millions of adherents from the other middle-class parties. It
@@ -5648,7 +5648,7 @@ Relatively few persons heard the speech, but in order to propagate it in Army
 circles the Voelkischer Beobachter published it verbatim in a special Army edition and it was discussed at length in the columns of a Nazi monthly magazine,
 Deutscher Wehrgeist, a periodical devoted to military affairs which had recently
 appeared.
-In 1927 the Army had forbidden the recruitment of Nazis in the 100,000-
+In 1927 the Army had forbidden the recruitment of Nazis in the 100000-
 man Reichswehr and even banned their employment as civilians in the arsenals
 and supply depots. But by the beginning of 1930 it became obvious that Nazi
 propaganda was making headway in the Army, especially among the younger
@@ -5825,7 +5825,7 @@ was telling them more or less what they wanted to hear. The party needed
 large sums to finance election campaigns, pay the bill for its widespread and
 intensified propaganda, meet the payroll of hundreds of full-time officials and
 maintain the private armies of the S.A. and the SS, which by the end of 1930
-numbered more than 100,000 men – a larger force than the Reichswehr. The
+numbered more than 100000 men – a larger force than the Reichswehr. The
 businessmen and the bankers were not the only financial sources – the party
 raised sizable sums from dues, assessments, collections and the sale of party
 newspapers, books and periodicals – but they were the largest. And the more
@@ -5864,7 +5864,7 @@ in 1929. Fritz Thyssen, the head of the steel trust, who lived to regret his
 folly and to write about it in a book called I Paid Hitler, was an even earlier
 contributor. He had met the Nazi leader in Munich in 1923, been carried away
 by his eloquence and forthwith made, through Ludendorff, an initial gift of
-100,000 gold marks ($25,000) to the then obscure Nazi Party. Joining Thyssen
+100000 gold marks ($25000) to the then obscure Nazi Party. Joining Thyssen
 was Albert Voegler, also a power in the United Steel Works. In fact the coal
 and steel interests were the principal sources of the funds that came from the
 industrialists to help Hitler over his last hurdles to power in the period between
@@ -6170,7 +6170,7 @@ Bruening as Chancellor and encouraging him to rule by presidential decree, he
 had cracked the foundation of the Army's strength in the nation – its position
 above politics, the abandonment of which would lead to its own and Germany's
 ruin. And he had made a bad miscalculation about the voters. When six
-and a half million of them, against 810,000 two years before, voted for the
+and a half million of them, against 810000 two years before, voted for the
 Nazi Party on September 14, 1930, the political General realized that he must
 take a new tack. By the end of the year he was in touch with Roehm, who
 THE LAST DAYS OF THE REPUBLIC 1931-33 135
@@ -6436,10 +6436,10 @@ am defeated, I shall at least not have incurred the reproach that of
 my own accord I deserted my post in an hour of crisis . . . I ask for
 no votes from those who do not wish to vote for me.
 Those who voted for him fell .4 per cent short of the needed absolute majority. When the polls closed on March 13, 1932, the results were:
-Hindenburg 18,651,497 49.6%
-Hitler 11,339,446 30.1%
-Thaelmann 4,983,341 13.2%
-Duesterberg 2,557,729 6.8%
+Hindenburg 18651497 49.6%
+Hitler 11339446 30.1%
+Thaelmann 4983341 13.2%
+Duesterberg 2557729 6.8%
 The figures were a disappointment to both sides. The old President had
 led the Nazi demagogue by over seven million votes but had just failed to win
 the required absolute majority; this necessitated a second election, in which
@@ -6468,9 +6468,9 @@ Friedrich Wilhelm, fell into line. "I shall vote for Hitler," he announced.
 April 10, 1932, the day of the second election, was dark and rainy, and a
 million fewer citizens cast their votes. The results announced late that night
 were:
-Hindenburg 19,359,983 53%
-Hitler 13,418,547 36.8%
-Thaelmann 3,706,759 10.2%
+Hindenburg 19359983 53%
+Hitler 13418547 36.8%
+Thaelmann 3706759 10.2%
 Though Hitler had increased his total vote by two million and Hindenburg
 had gained only one million, the President was in by a clear, absolute majority.
 More than half the German people had thus given expression to their belief in
@@ -6492,7 +6492,7 @@ For more than a year the Reich government and various state governments
 had been coming into possession of documents which showed that a number of
 high Nazi leaders, especially in the S.A., were preparing to take over Germany by
 force and institute a reign of terror. On the eve of the first presidential elections
-the S.A., now 400,000 strong, had been fully mobilized and had thrown a cordon
+the S.A., now 400000 strong, had been fully mobilized and had thrown a cordon
 around Berlin. Though Captain Roehm, the S.A. chief, assured General von
 Schleicher that the measure was merely "precautionary," the Prussian police
 had seized documents at Nazi headquarters in Berlin which made it pretty clear
@@ -6762,11 +6762,11 @@ would support the Papen government, Goebbels unleashed bitter attacks on
 the Minister of the Interior and as early as July 9 Hitler went to Schleicher and
 complained bitterly of the government's policies. From the size of the crowds
 that turned out to see Hitler it was evident that the Nazis were gaining ground.
-In one day, July 27, he spoke to 60,000 persons in Brandenburg, to nearly as
-many in Potsdam, and that evening to 120,000 massed in the giant Grunewald
-Stadium in Berlin while outside an additional 100,000 heard his voice by loudspeaker.
+In one day, July 27, he spoke to 60000 persons in Brandenburg, to nearly as
+many in Potsdam, and that evening to 120000 massed in the giant Grunewald
+Stadium in Berlin while outside an additional 100000 heard his voice by loudspeaker.
 The polling on July 31 brought a resounding victory for the National Socialist
-Party, With 13,745,000 votes, the Nazis won 230 seats in the Reichstag, making
+Party, With 13745000 votes, the Nazis won 230 seats in the Reichstag, making
 them easily the largest party in Parliament though still far short of a majority
 in a house of 608 members. The Social Democrats, no doubt because of the
 timidity shown by their leaders in Prussia, lost ten seats and were reduced to
@@ -7011,7 +7011,7 @@ a whirlwind finish in the campaign. Goebbels noted lugubriously on November
 1: "Scarcity of money has become a chronic illness with us. We lack enough
 to really carry out a big campaign. Many bourgeois circles have been frightened off by our participation in the strike. Even many of our party comrades
 are beginning to have their doubts." On November 5, the eve of the elections:
-"Last attack. Desperate drive of the party against defeat. We succeed in getting 10,000 marks at the last minute. This will be thrown into the campaign
+"Last attack. Desperate drive of the party against defeat. We succeed in getting 10000 marks at the last minute. This will be thrown into the campaign
 Saturday afternoon. We have done everything that could be done. Now let fate
 decide."
 Fate, and the German electorate, decided on November 6 a number of things,
@@ -7315,8 +7315,8 @@ its economic feet. There would be no tax increase, no more wage cuts. In
 fact, he was canceling the last cut in wages and relief which Papen had made.
 Furthermore, he was ending the agricultural quotas which Papen had established
 for the benefit of the large landowners and instead was launching a scheme to
-take 800,000 acres from the bankrupt Junker estates in the East and give them
-to 25,000 peasant families. Also prices of such essentials as coal and meat would
+take 800000 acres from the bankrupt Junker estates in the East and give them
+to 25000 peasant families. Also prices of such essentials as coal and meat would
 be kept down by rigid control.
 This was a bid for the support of the very masses which he had hitherto
 opposed or disregarded, and Schleicher followed it up with conversations with
@@ -7363,8 +7363,8 @@ Hindenburg that he would. Both men soon turned to Hitler, Strasser to be
 turned down cold and Hugenberg with more success. On January 15, at the
 very moment when Schleicher was gloating to Schuschnigg about the end of
 Hitler, the Nazis scored a local success in the elections of little Lippe. It was
-not much of an achievement. The total vote was only 90,000, of which the Nazis
-obtained 38,000, or 39 per cent, an increase of some 17 per cent over their previous poll. But, led by Goebbels, the Nazi leaders beat the drums over their
+not much of an achievement. The total vote was only 90000, of which the Nazis
+obtained 38000, or 39 per cent, an increase of some 17 per cent over their previous poll. But, led by Goebbels, the Nazi leaders beat the drums over their
 "victory," and strangely enough it seems to have impressed a number of conservatives, including the men behind Hindenburg, of whom the principal ones
 were State Secretary Meissner and the President's son, Oskar.
 On the evening of January 22, these two gentlemen stole out of the presidential quarters, grabbed a taxi, as Meissner says, to avoid being noticed and
@@ -7754,8 +7754,8 @@ urged the police "to make use of firearms" and warned that those who didn't
 would be punished. This was an outright call for the shooting down of all who
 opposed Hitler by the police of a state (Prussia) which controlled two thirds of
 Germany. Just to make sure that the job would be ruthlessly done, Goering
-on February 22 established an auxiliary police force of 50,000 men, of whom
-40,000 were drawn from the ranks of the S.A. and the SS and the rest from the
+on February 22 established an auxiliary police force of 50000 men, of whom
+40000 were drawn from the ranks of the S.A. and the SS and the rest from the
 Stahlhelm. Police power in Prussia was thus largely carried out by Nazi thugs.
 It was a rash German who appealed to such a "police" for protection against
 the Nazi terrorists.
@@ -7936,17 +7936,17 @@ for the people, in their convulsion, to speak.
 On March 5, 1933, the day of the last democratic elections they were to
 know during Hitler's life, they spoke with their ballots. Despite all the terror
 and intimidation, the majority of them rejected Hitler. The Nazis led the polling
-with 17,277,180 votes – an increase of some five and a half million, but it comprised only 44 per cent of the total vote. A clear majority still eluded Hitler.
+with 17277180 votes – an increase of some five and a half million, but it comprised only 44 per cent of the total vote. A clear majority still eluded Hitler.
 All the persecution and suppression of the previous weeks did not prevent the
-Center Party from actually increasing its vote from 4,230,600 to 4,424,900; with
+Center Party from actually increasing its vote from 4230600 to 4424900; with
 its ally, the Catholic Bavarian People's Party, it obtained a total of five and a
 half million votes. Even the Social Democrats held their position as the second
-largest party, polling 7,181,629 votes, a drop of only 70,000. The Communists
-lost a million supporters but still polled 4,848,058 votes. The Nationalists, led
+largest party, polling 7181629 votes, a drop of only 70000. The Communists
+lost a million supporters but still polled 4848058 votes. The Nationalists, led
 174
 by Papen and Hugenberg, were bitterly disappointed with their own showing,
-a vote of 3,136,760, a mere 8 per cent of the votes cast and a gain of less than
-200,000.
+a vote of 3136760, a mere 8 per cent of the votes cast and a gain of less than
+200000.
 Still, the Nationalists' 52 seats, added to the 288 of the Nazis, gave the
 government a majority of 16 in the Reichstag. This was enough, perhaps, to
 carry on the day-to-day business of government but it was far short of the twothirds majority which Hitler needed to carry out a new, bold plan to establish
@@ -8189,7 +8189,7 @@ were unfurled acclaiming the Nazi regime's solidarity with the worker, and out
 at Tempelhof Field Goebbels prepared to stage the greatest mass demonstration Germany had ever seen. Before the massive rally, Hitler himself received
 the workers' delegates, declaring, "You will see how untrue and unjust is the
 statement that the revolution is directed against the German workers. On the
-contrary." Later in his speech to more than 100,000 workers at the airfield Hitler
+contrary." Later in his speech to more than 100000 workers at the airfield Hitler
 pronounced the motto, "Honor work and respect the worker!" and promised
 that May Day would be celebrated in honor of German labor "throughout the
 centuries."
@@ -8593,8 +8593,8 @@ of resentment against the consequences of a lost war, was almost unanimous.
 Some 96 per cent of the registered voters cast their ballots and 95 per cent of
 these approved Germany's withdrawal from Geneva. The vote for the single
 Nazi list for the Reichstag (which included Hugenberg and a half-dozen other
-non-Nazis) was 92 per cent. Even at the Dachau concentration camp 2,154 out
-of 2,242 inmates voted for the government which had incarcerated them! It is
+non-Nazis) was 92 per cent. Even at the Dachau concentration camp 2154 out
+of 2242 inmates voted for the government which had incarcerated them! It is
 true that in many communities threats were made against those who failed to
 vote or who voted the wrong way; and in some cases there was fear that anyone
 who cast his vote against the regime might be detected and punished. Yet even
@@ -9061,7 +9061,7 @@ Reichstag speech of July 13, Hitler announced that sixty-one persons were shot,
 including nineteen "higher S.A. leaders," that thirteen more died "resisting arrest" and that three "committed suicide" – a total of seventy-seven. The White
 Book of the Purge, published by emigres in Paris, stated that 401 had been
 slain, but it identified only 116 of them. At the Munich trial in 1957, the figure
-of "more than 1,000" was given.
+of "more than 1000" was given.
 Many were killed out of pure vengeance for having opposed Hitler in the
 past, others were murdered apparently because they knew too much, and at
 least one because of mistaken identity. The body of Gustav von Kahr, whose
@@ -9540,7 +9540,7 @@ it had brought about the "national revival" for which he himself had fought so
 long – for a time in the free corps, from which so many Nazi leaders had come.
 He was soon to experience a terrible disillusionment.
 The Protestants in Germany, as in the United_States, were a divided faith.
-Only a very few – some 150,000 out of forty-five million of them – belonged
+Only a very few – some 150000 out of forty-five million of them – belonged
 to the various Free Churches such as the Baptists and Methodists. The rest
 belonged to twenty-eight Lutheran and Reformed Churches of which the largest
 was the Church of the Old Prussian Union, with eighteen million members.
@@ -9876,7 +9876,7 @@ To Hitler, who considered himself a genuine artist despite his early failures as
 one in Vienna, all modern art was degenerate and senseless. In Mein_Kampf he
 had delivered a long tirade on the subject, and one of his first acts after coming
 to power was to "cleanse" Germany of its "decadent" art and to attempt to
-substitute a new "Germanic" art. Some 6,500 modern paintings – not only
+substitute a new "Germanic" art. Some 6500 modern paintings – not only
 the works of Germans such as Kokoschka and Grosz but those of Cezanne, Van
 Gogh, Gauguin, Matisse, Picasso and many others – were removed from German
 museums.
@@ -9956,7 +9956,7 @@ newspapers. Circulation declined even for the leading Nazi daily newspapers
 such as the morning Voelkischer Beobachter and the evening Der Angriff. And
 the total circulation of all journals fell off steeply as one paper after another
 went under or was taken over by Nazi publishers. In the first four years of the
-Third Reich the number of daily newspapers declined from 3,607 to 2,671.
+Third Reich the number of daily newspapers declined from 3607 to 2671.
 But the country's loss of a free and varied press was the party's gain – at
 least financially. Max Amann, Hitler's top sergeant during the First World War
 and head of the Eher Verlag, the party's publishing firm, became the financial
@@ -9983,7 +9983,7 @@ At one period in 1934 both Amann and Goebbels appealed to the obsequious editors
 "the present far-reaching uniformity of the press, which is not a product of government measures and does not conform to the will of the government." One
 rash editor, Ehm Welke of the weekly Gruene Post, made the mistake of taking
 Amann and Goebbels seriously. He chided the Propaganda Ministry for its red
-*Amann's own income skyrocketed from 108,000 marks in 1934 to 3,800,000 marks in 1942.
+*Amann's own income skyrocketed from 108000 marks in 1934 to 3800000 marks in 1942.
 (Letter to the author from Professor Oron J. Hale, who has made a study of the surviving
 records of the Nazi publishing firm.)
 LIFE IN THE THIRD REICH: 1933-37 219
@@ -10176,7 +10176,7 @@ It was surprising to some how many members of the university faculties
 knuckled under to the Nazification of higher learning after 1933. Though official
 LIFE IN THE THIRD REICH: 1933-37 223
 figures put the number of professors and instructors dismissed during the first
-five years of the regime at 2,800 – about one fourth of the total number – the
+five years of the regime at 2800 – about one fourth of the total number – the
 proportion of those who lost their posts through defying National Socialism was,
 as Professor Wilhelm Roepke, himself dismissed from the University of Marburg
 in 1933, said, "exceedingly small." Though small, there were names famous in
@@ -10196,9 +10196,9 @@ Ebbinghaus, looking back over the shambles in 1945, said, "The German universiti
 the destruction of knowledge and of the democratic state. They failed to keep
 the beacon of freedom and right burning during the night of tyranny."208
 The cost of such failure was great. After six years of Nazification the number
-of university students dropped by more than one half – from 127,920 to 58,325.
+of university students dropped by more than one half – from 127920 to 58325.
 The decline in enrollment at the institutes of technology, from which Germany
-got its scientists and engineers, was even greater – from 20,474 to 9,554. Academic standards fell dizzily. By 1937 there was not only a shortage of young men
+got its scientists and engineers, was even greater – from 20474 to 9554. Academic standards fell dizzily. By 1937 there was not only a shortage of young men
 in the sciences and engineering but a decline in their qualifications. Long before
 the outbreak of the war the chemical industry, busily helping to further Nazi
 rearmament, was complaining through its organ, Die Chemische Industrie, that
@@ -10218,7 +10218,7 @@ had dropped out so early in life, but the organizations of the Hitler Youth on
 which he counted to educate the youth of Germany for the ends he had in mind.
 In the years of the Nazi Party's struggle for power the Hitler Youth movement
 had not amounted to much. In 1932, the last year of the Republic, its total
-enrollment was only 107,956, compared to some ten million youths who belonged
+enrollment was only 107956, compared to some ten million youths who belonged
 to the various organizations united in the Reich Committee of German Youth
 Associations. In no country in the world had there been a youth movement of
 such vitality and numbers as in republican Germany. Hitler, realizing this, was
@@ -10314,7 +10314,7 @@ moral problems at all. On more than one occasion I listened to women leaders
 of the B.D.M. – they were invariably of the plainer type and usually unmarried
 – lecture their young charges on the moral and patriotic duty of bearing children
 for Hitler's Reich – within wedlock if possible, but without it if necessary.
-By the end of 1938 the Hitler Youth numbered 7,728,259. Large as this
+By the end of 1938 the Hitler Youth numbered 7728259. Large as this
 number was, obviously some four million youth had managed to stay out of the
 organization, and in March 1939 the government issued a law conscripting all
 youth into the Hitler Youth on the same basis as they were drafted into the
@@ -10539,7 +10539,7 @@ Militaer-Wochenblatt in its issue of January 22, 1937, hailed him as "the man
 who made the reconstruction of the Wehrmacht economically possible." And it
 added: "The Defense Force owes it to Schacht's skill and great ability that, in
 defiance of all currency difficulties, it has been able to grow up to its present
-strength from an army of 100,000 men."
+strength from an army of 100000 men."
 AH of Schacht's admitted wizardry in finance was put to work to pay for
 getting the Third Reich ready for war. Printing banknotes was merely one of his
 devices. He manipulated the currency with such legerdemain that at one time it
@@ -10573,7 +10573,7 @@ their work circumscribed by so many restrictions, by so many forms to fill out,
 that Dr. Funk, who succeeded Schacht in 1937 as Minister of Economics and in
 1939 as president of the Reichsbank, was forced to admit ruefully that "official
 communications now make up more than one half of a German manufacturer's
-entire correspondence" and that "Germany's export trade involves 40,000 separate transactions daily; yet for a single transaction as many as forty different
+entire correspondence" and that "Germany's export trade involves 40000 separate transactions daily; yet for a single transaction as many as forty different
 forms must be filled out."
 Buried under mountains of red tape, directed by the State as to what they
 could produce, how much and at what price, burdened by increasing taxation
@@ -10607,8 +10607,8 @@ who expected great things from Chancellor Hitler, soon found themselves, many
 of them, being exterminated and forced back into the ranks of wage earners.
 232
 Laws decreed in October 1937 simply dissolved all corporations with a capital
-under $40,000 and forbade the establishment of new ones with a capital less
-than $200,000. This quickly disposed of one fifth of all small business firms.
+under $40000 and forbade the establishment of new ones with a capital less
+than $200000. This quickly disposed of one fifth of all small business firms.
 On the other hand the great cartels, which even the Republic had favored, were
 further strengthened by the Nazis. In fact, under a law of July 15, 1933, they
 were made compulsory. The Ministry of Economics was empowered to organize
@@ -10635,7 +10635,7 @@ thought of confiscation. Actually most firms reinvested in their own businesses
 the undistributed profits, which rose from 175 million marks in 1932 to five
 billion marks in 1938, a year in which the total savings in the savings banks
 amounted to only two billions, or less than half the undistributed profits, and
-in which the distributed profits in form of dividends totaled only 1,200,000,000
+in which the distributed profits in form of dividends totaled only 1200000000
 marks. Besides his pleasant profits, the businessman was also cheered by the
 way the workers had been put in their place under Hitler. There were no more
 unreasonable wage demands. Actually, wages were reduced a little despite a 25
@@ -10723,7 +10723,7 @@ employer who bound them but the State. We have seen how the peasant in the
 Third Reich was bound to his land by the Hereditary Farm Law. Likewise the
 agricultural laborer, by law, was attached to the land and forbidden to leave it
 for work in the city. In practice, it must be said, this was one Nazi law which
-was not obeyed; between 1933 and 1939 more than a million (1,300,000) farm
+was not obeyed; between 1933 and 1939 more than a million (1300000) farm
 workers migrated to jobs in industry and trade. But for industrial laborers
 the law was enforced. Various government decrees beginning with the law of
 May 15, 1934, severely restricted a worker's freedom of movement from one job
@@ -10759,7 +10759,7 @@ Kraft durch Freude. To the ordinary German in the Third Reich this official
 all-embracing recreational organization no doubt was better than nothing at all,
 if one could not be trusted to be left to one's own devices. It provided members
 of the Labor Front, for instance, with dirt-cheap vacation trips on land and
-sea. Dr. Ley built two 25,000-ton ships, one of which he named after himself,
+sea. Dr. Ley built two 25000-ton ships, one of which he named after himself,
 and chartered ten others to handle ocean cruises for Kraft durch Freude. This
 writer once participated in such a cruise; though life aboard was organized by
 Nazi leaders to a point of excruciation (for him), the German workers seemed
@@ -10780,13 +10780,13 @@ symphony orchestra which continually toured the country, often playing in the
 smaller places where good music was not usually available. Finally, the organization took over the 200-odd adult education institutions which had flourished
 during the Republic – a movement which had originated in Scandinavia – and
 continued them, though adding a strong mixture of Nazi ideology to the instruction. In the end, of course, the workers paid for their circuses. The annual
-income from dues to the Labor Front came to $160,000,000 in 1937 and passed
-the $200,000,000 point by the time the war started, according to Dr. Ley –
+income from dues to the Labor Front came to $160000000 in 1937 and passed
+the $200000000 point by the time the war started, according to Dr. Ley –
 the accounting was exceedingly vague, being handled not by the State but by
 the Finance Office of the party, which never published its accounts. From the
 dues, 10 per cent was earmarked for Kraft durch Freude. But the fees paid by
 individuals for vacation trips and entertainment, cheap as they were, amounted
-in the year before the war to $1,250,000,000. There was another heavy cost to
+in the year before the war to $1250000000. There was another heavy cost to
 the wage earner. As the largest single party organization in the country, with
 twenty-five million members, the Labor Front became a swollen bureaucracy,
 with tens of thousands of full-time employees. In fact, it was estimated that
@@ -11060,7 +11060,7 @@ police, and by 1938 a new law gave it this function for the entire Reich.
 Under the expert hand of Heydrich, a former intelligence officer in the Navy
 who had been cashiered by Admiral Raeder in 1931 at the age of twenty-six for
 refusing to marry the daughter of a shipbuilder whom he had compromised, the
-SD soon spread its net over the country, employing some 100,000 part-time
+SD soon spread its net over the country, employing some 100000 part-time
 informers who were directed to snoop on every citizen in the land and report
 the slightest remark or activity which was deemed inimical to Nazi rule. No
 one – if he were not foolish – said or did anything that might be interpreted as
@@ -11154,8 +11154,8 @@ had seemed to be making genuine progress toward democracy, was also wiped
 out. A series of laws decreed between 1933 and 1935 deprived the municipalities
 of their local autonomy and brought them under the direct control of the Reich
 Minister of the Interior, who appointed their mayors – if they had a population
-of over 100,000 – and reorganized them on the leadership principle. In towns
-under 100,000, the mayors were named by the provincial governors. For Berlin,
+of over 100000 – and reorganized them on the leadership principle. In towns
+under 100000, the mayors were named by the provincial governors. For Berlin,
 Hamburg and Vienna (after 1938, when Austria was occupied) Hitler reserved
 the right to appoint the burgomasters.
 The offices through which Hitler exercised his dictatorial powers consisted of
@@ -11282,7 +11282,7 @@ THE BREACHING OF VERSAILLES
 In the meantime Hitler pursued with unflagging energy his program of build-
 THE FIRST STEPS: 1934-37 249
 ing up the armed services and procuring arms for them. The Army was ordered
-to treble its numerical strength – from 100,000 to 300,000 by October 1, 1934
+to treble its numerical strength – from 100000 to 300000 by October 1, 1934
 – and in April of that year General Ludwig Beck, Chief of the General Staff,
 was given to understand that by April 1 of the following year the Fuehrer would
 openly decree conscription and publicly repudiate the military restrictions of the
@@ -11296,10 +11296,10 @@ orally cannot be proven; they can be denied."228
 The Navy too was warned to keep its mouth shut. In June 1934 Raeder had
 a long conversation with Hitler and noted down:
 Fuehrer's instructions: No mention must be made of a displacement
-of 25-26,000 tons, but only of improved 10,000-ton ships . . . The
+of 25-26000 tons, but only of improved 10000-ton ships . . . The
 Fuehrer demands complete secrecy on the construction of the Uboats.229
 For the Navy had commenced the construction of two battle cruisers of
-26,000 tons (16,000 tons above the Versailles limit) which would eventually be
+26000 tons (16000 tons above the Versailles limit) which would eventually be
 known as the Scharnhorst and the Gneisenau. Submarines, the building of
 which Versailles had prohibited, had been secretly constructed in Finland, Holland and Spain during the German Republic, and recently Raeder had stored the
 frames and parts of a dozen of them at Kiel. When he saw Hitler in November
@@ -11334,12 +11334,12 @@ without which modern war could not be fought: gasoline and rubber, both of
 which had had to be imported. The problem of making synthetic gasoline from
 coal had actually been solved by the company's scientists in the mid-Twenties.
 After 1933, the Nazi government gave I. G. Farben the go-ahead with orders to
-raise its synthetic oil production to 300,000 tons a year by 1937. By that time
+raise its synthetic oil production to 300000 tons a year by 1937. By that time
 the company had also discovered how to make synthetic rubber from coal and
 other products of which Germany had a sufficiency, and the first of four plants
 was set up at Schkopau for large-scale production of buna, as the artificial rubber
 became known. By the beginning of 1934, plans were approved by the Working
-Committee of the Reich Defense Council for the mobilization of some 240,000
+Committee of the Reich Defense Council for the mobilization of some 240000
 plants for war orders. By the end of that year rearmament, in all its phases,
 had become so massive it was obvious that it could no longer be concealed from
 the suspicious and uneasy powers of Versailles.
@@ -11355,7 +11355,7 @@ his inability to comprehend the mind of Adolf Hitler, actually proposed equality
 of armaments to Germany. The French sharply rejected such an idea.
 But the proposals for a general settlement, including equality of armaments
 and an Eastern Locarno, were renewed jointly by the British and French governments early in February 1935. The month before, on January 13, the inhabitants
-of the Saar had voted overwhelmingly – 477,000 to 48,000 – to return their little
+of the Saar had voted overwhelmingly – 477000 to 48000 – to return their little
 coal-rich territory to the Reich and Hitler had taken the occasion to publicly
 proclaim that Germany had no further territorial claims on France, which meant
 the abandoning of German claims on Alsace and Lorraine. In the atmosphere
@@ -11723,7 +11723,7 @@ honor of our people . . . Secondly, we pledge that now, more than
 ever, we shall strive for an understanding between the European
 peoples, especially for one with our Western neighbor nations . . .
 *According to Jodl's testimony at Nuremberg, only three battalions crossed the Rhine,
-making for Aachen, Trier and Saarbruecken, and only one division was employed in the occupation of the entire territory. Allied intelligence estimates were considerably larger: 35,000
+making for Aachen, Trier and Saarbruecken, and only one division was employed in the occupation of the entire territory. Allied intelligence estimates were considerably larger: 35000
 men, or approximately three divisions. Hitler commented later, "The fact was, I had only
 four brigades."241
 THE FIRST STEPS: 1934-37 259
@@ -11810,7 +11810,7 @@ popularity* and his power, raising them to heights which no German ruler of
 the past had ever enjoyed. It assured his ascendancy over his generals, who
 *On March 7 Hitler had dissolved the Reichstag and called for a new "election" and a
 referendum on his move into the Rhineland. According to the official figures of the voting on
-March 29, some 99 per cent of the 45,453,691 registered voters went to the polls, and 98.8
+March 29, some 99 per cent of the 45453691 registered voters went to the polls, and 98.8
 per cent of them approved Hitler's action. Foreign correspondents who visited the polling
 places found some irregularities – especially, open instead of secret voting – and there was no
 doubt that some Germans feared (with justification, as we have seen) that a Nein vote might
@@ -11821,7 +11821,7 @@ total number of persons aboard by two. Nevertheless, this observer, who covered 
 from one corner of the Reich to the other, has no doubt that the vote of approval for Hitler's
 coup was overwhelming. And why not? The junking of Versailles and the appearance of
 German soldiers marching again into what was, after all, German territory were things that
-almost all Germans naturally approved. The "No" vote was given as 540,211.
+almost all Germans naturally approved. The "No" vote was given as 540211.
 THE FIRST STEPS: 1934-37 261
 had hesitated and weakened at a moment of crisis when he had held firm. It
 taught them that in foreign politics and even in military affairs his judgment
@@ -13945,7 +13945,7 @@ so long as a tramp, until the afternoon of Monday, March 14. He was delayed
 by two unforeseen developments. Despite the delirium of the Austrians at the
 prospect of seeing the Fuehrer in the capital, Himmler asked for an extra day
 to perfect security arrangements. He was already carrying out the arrest of
-thousands of "unreliables" – within a few weeks the number would reach 79,000
+thousands of "unreliables" – within a few weeks the number would reach 79000
 in Vienna alone. Also the vaunted German panzer units had broken down long
 before they got within sight of Vienna's hills. According to Jodl, some 70 per
 cent of the armored vehicles were stranded on the road from Salzburg and Passau
@@ -14084,7 +14084,7 @@ in the Plosslgasse, watched squads of SS men carting off silver, tapestries,
 paintings and other loot from the Rothschild palace next door. Baron Louis
 de Rothschild himself was later able to buy his way out of Vienna by turning
 over his steel mills to the Hermann Goering Works. Perhaps half of the city's
-180,000 Jews managed, by the time the war started, to purchase their freedom
+180000 Jews managed, by the time the war started, to purchase their freedom
 to emigrate by handing over what they owned to the Nazis.
 This lucrative trade in human freedom was handled by a special organization
 set up under the SS by Heydrich, the "Office for Jewish Emigration," which
@@ -14098,7 +14098,7 @@ the north bank of the Danube near Enns. It was too much trouble to continue
 to transport thousands of Austrians to the concentration camps of Germany.
 Austria, Himmler decided, needed one of its own. Before the Third Reich tumbled to its fall the non-Austrian prisoners were to outnumber the local inmates
 and Mauthausen was to achieve the dubious record as the German concentration camp (the extermination camps in the East were something else) with the
-largest number of officially listed executions – 35,318 in the six and a half years
+largest number of officially listed executions – 35318 in the six and a half years
 of its existence.
 Despite the Gestapo terror led by Himmler and Heydrich after the Anschluss
 Germans flocked by the hundreds of thousands to Austria, where they could pay
@@ -14373,7 +14373,7 @@ movement which asked for more. The Social Democrats and other democratic
 parties received most of the Sudeten votes.
 Then in 1933, when Hitler became Chancellor, the virus of National Socialism struck the Sudeten Germans. In that year was formed the Sudeten German
 Party (S.D.P.) under the leadership of a mild-mannered gymnastics teacher by
-the name of Konrad Henlein. By 1935, the party was being secretly subsidized by the German Foreign Office to the amount of 15,000 marks a month 328.
+the name of Konrad Henlein. By 1935, the party was being secretly subsidized by the German Foreign Office to the amount of 15000 marks a month 328.
 Within a couple of years it had captured the majority of the Sudeten Germans,
 only the Social Democrats and the Communists remaining outside it. By the
 time of the Anschluss Henlein's party, which for three years had been taking its
@@ -16053,7 +16053,7 @@ made about America in 1914.
 And Prague? Was there any sign of weakening there? In the evening came
 a telegram from Colonel Toussaint, the German military attache", to OKW:
 "Calm in Prague. Last mobilization measures carried out . . . Total estimated
-call-up is 1,000,000; field army 800,000 . . . "388 That was as many trained men as
+call-up is 1000000; field army 800000 . . . "388 That was as many trained men as
 Germany had for two fronts. Together the Czechs and the French outnumbered
 the Germans by more than two to one.
 Faced with these facts and developments and no doubt mindful of Wilson's
@@ -16885,10 +16885,10 @@ The Poles and the Hungarians, after threatening military action against the
 helpless nation, now swept down, like vultures, to get a slice of Czechoslovak
 territory. Poland, at the insistence of Foreign Minister Jozef Beck, who for the
 next twelve months will be a leading character in this narrative, took some 650
-square miles of territory around Teschen, comprising a population of 228,000
-inhabitants, of whom 133,000 were Czechs. Hungary got a larger slice in the
-award meted out on November 2 by Ribbentrop and Ciano: 7,500 square miles,
-with a population of 500,000 Magyars and 272,000 Slovaks.
+square miles of territory around Teschen, comprising a population of 228000
+inhabitants, of whom 133000 were Czechs. Hungary got a larger slice in the
+award meted out on November 2 by Ribbentrop and Ciano: 7500 square miles,
+with a population of 500000 Magyars and 272000 Slovaks.
 376
 Moreover, the truncated and now defenseless country was forced by Berlin
 to install a pro-German government of obvious fascist tendencies. It was clear
@@ -16898,8 +16898,8 @@ THE CONSEQUENCES OF MUNICH
 Under the terms of the Munich Agreement Hitler got substantially what he
 had demanded at Godesberg, and the "International Commission," bowing to
 his threats, gave him considerably more. The final settlement of November 20,
-1938, forced Czechoslovakia to cede to Germany 11,000 square miles of territory
-in which dwelt 2,800,000 Sudeten Germans and 800,000 Czechs. Within this
+1938, forced Czechoslovakia to cede to Germany 11000 square miles of territory
+in which dwelt 2800000 Sudeten Germans and 800000 Czechs. Within this
 area lay all the vast Czech fortifications which hitherto had formed the most
 formidable defensive line in Europe, with the possible exception of the Maginot
 Line in France.
@@ -17268,12 +17268,12 @@ The extent of the destruction of Jewish shops and houses cannot yet
 be verified by figures . . . 815 shops destroyed, 171 dwelling houses
 set on fire or destroyed only indicate a fraction of the actual damage
 so far as arson is concerned . . . 119 synagogues were set on fire, and
-another 76 completely destroyed . . . 20,000 Jews were arrested. 36
+another 76 completely destroyed . . . 20000 Jews were arrested. 36
 deaths were reported and those seriously injured were also numbered
 at 36. Those killed and injured are Jews. . . .
 The ultimate number of murders of Jews that night is believed to have
 been several times the preliminary figure. Heydrich himself a day after his
-preliminary report gave the number of Jewish shops looted as 7,500. There
+preliminary report gave the number of Jewish shops looted as 7500. There
 were also some cases of rape, which Major Buch's party court, judging by its
 own report, considered worse than murder, since they violated the Nuremberg
 racial laws which forbade sexual intercourse between Gentiles and Jews. Such
@@ -17295,7 +17295,7 @@ survives.
 A number of German insurance firms faced bankruptcy if they were to make
 good the policies on gutted buildings (most of which, though they harbored
 Jewish shops, were owned by Gentiles) and damaged goods. The destruction
-in broken window glass alone came to five million marks ($1,250,000) as a Herr
+in broken window glass alone came to five million marks ($1250000) as a Herr
 Hilgard, who had been called in to speak for the insurance companies, reminded
 Goering; and most of the glass replacements would have to be imported from
 abroad in foreign exchange, of which Germany was very short.
@@ -17493,7 +17493,7 @@ isolationists in the USA "so that there is nothing to fear from America."434
 ‡This fantastic retreat, built at great cost over three years, was difficult to reach – Ten miles
 of a hairpin road, cut into the mountainside, led up to a long underground passageway, drilled
 into the rock, from which an elevator carried one 370 feet to the cabin perched at an elevation
-of over 6,000 feet on the summit of a mountain. It afforded a breath-taking panorama of the
+of over 6000 feet on the summit of a mountain. It afforded a breath-taking panorama of the
 Alps. Salzburg could be seen in the distance. Describing it later, François-Poncet wondered,
 "Was this edifice the work of a normal mind or of one tormented by megalomania and haunted
 by visions of domination and solitude?"
@@ -19556,12 +19556,12 @@ sixteen years – from 1898 to 1914 – to increase its strength from forty-thre
 fifty divisions, the Army of the Third Reich had jumped from seven to fifty-one
 divisions in just four years. Among them were five heavy armored divisions and
 four light ones, a "modern battle cavalry" such as no other nation possessed. The
-Navy had built up from practically nothing a fleet of two battleships of 26,000
+Navy had built up from practically nothing a fleet of two battleships of 26000
 tons,* two heavy cruisers, seventeen destroyers and forty-seven submarines. It
-had already launched two battleships of 35,000 tons, one aircraft carrier, four
+had already launched two battleships of 35000 tons, one aircraft carrier, four
 heavy cruisers, five destroyers and seven submarines, and was planning to launch
 a great many more ships. From absolutely nothing, the Luftwaffe had built up a
-force of twenty-one squadrons with a personnel of 260,000 men. The armament
+force of twenty-one squadrons with a personnel of 260000 men. The armament
 industry, General Thomas said, was already producing more than it had during
 the peak of the last war and its output in most fields far exceeded that of any
 other country. In fact, total German rearmament, the General declared, was
@@ -19572,8 +19572,8 @@ summer of 1939, the prospect of success in the war which Hitler was planning
 the Foreign Office. An interesting German naval document 514 – dated more than a year
 before, February 18, 1938, notes that false figures on battleship tonnage had been furnished
 the British government under the Anglo-German naval agreement. It states that the actual
-tonnage of the 26,000-ton ships was 31,300 tons; that of the 35,000-ton battleships (the top
-level in the British and American navies) was actually 41,700 tons. It is a curious example of
+tonnage of the 26000-ton ships was 31300 tons; that of the 35000-ton battleships (the top
+level in the British and American navies) was actually 41700 tons. It is a curious example of
 Nazi deceit.
 438
 for the early fall depended on what kind of a war it was. Germany was still not
@@ -22532,7 +22532,7 @@ SHOT AT BY POLES – IN CORRIDOR MANY GERMAN FARMHOUSES IN FLAMES!"
 On my way to Broadcast House at midnight I picked up the Sunday edition
 (August 27) of the Voelkischer Beobachter. Across the whole top of the front
 page were inch-high headlines:
-WHOLE OF Poland IN WAR FEVER! 1,500,000 MEN MOBILIZED!
+WHOLE OF Poland IN WAR FEVER! 1500000 MEN MOBILIZED!
 UNINTERRUPTED TROOP TRANSPORT TOWARD THE FRONTIER!
 CHAOS IN UPPER SILESIA!
 There was no mention, of course, of any German mobilization, though, as
@@ -22982,7 +22982,7 @@ of the Corridor would satisfy him, together with a rectification in Silesia, whe
 ninety per cent of the population voted for Germany at the postwar plebiscite."
 This was not true nor was Hitler's rejoinder a moment later that a million
 Germans had been driven out of the Corridor after 1918. There had been only
-385,000 Germans there, according to the German census of 1910, but by this
+385000 Germans there, according to the German census of 1910, but by this
 time, of course, the Nazi dictator expected everyone to swallow his lies. For the
 last time in his crumbling mission to Berlin, the British ambassador swallowed a
 good deal, for, as he declared in his Final Report, "Herr Hitler on this occasion
@@ -24353,7 +24353,7 @@ The only solution . . . is to adhere to our engagements to Poland
 assumed before negotiations were started with the U.SSR.
 Having made up its mind, the French government began to act. Following
 this meeting on August 23, the alerte was sounded, which placed all frontier
-troops in their war stations. The next day 360,000 reservists were called up.
+troops in their war stations. The next day 360000 reservists were called up.
 On August 31 the cabinet published a communique saying France would "firmly
 fulfill" its obligations. And the next day, the first day of the German attack on
 Poland, Bonnet was persuaded by Halifax to associate France with Britain in
@@ -24863,7 +24863,7 @@ they can do no more than show that they know how to die gallantly
 Nevertheless at 9 P.M. on September 3,1939, at the moment Hitler was
 departing Berlin, the German Navy struck. Without warning, the submarine
 U-30 torpedoed and sank the British liner Athenia some two hundred miles
-west of the Hebrides as it was en route from Liverpool to Montreal with 1,400
+west of the Hebrides as it was en route from Liverpool to Montreal with 1400
 passengers, of whom 112, including twenty-eight Americans, lost their lives.
 World War II had begun.
 Book Four:
@@ -25101,7 +25101,7 @@ concluded which would put two Red Army divisions and an Air Force brigade
 "on Estonian territory, without, however, abolishing the Estonian system of
 government at this time." But the Fuehrer, an experienced hand at this sort of
 thing, knew how fleeting Estonia's time would be. The very next day Ribbentrop
-was informed that Hitler had ordered the evacuation of the 86,000 Volksdeutsche
+was informed that Hitler had ordered the evacuation of the 86000 Volksdeutsche
 in Estonia and Latvia.739
 Stalin was presenting his bill and Hitler, for the time being at least, had
 to pay it. He was instantly abandoning not only Estonia but Latvia, both of
@@ -25173,8 +25173,8 @@ strike such a hard bargain. But he did not forget the Soviet dictator's harsh
 dealings as he now turned his attention to the Western front.
 *Arnold Toynbee, in his various writings, calls it the fifth partition.
 †Though signed at 5 A.M. September 29, the treaty is officially dated September 28.
-‡German casualties in Poland were officially given as 10,572 killed, 30,322 wounded and
-3,400 missing.
+‡German casualties in Poland were officially given as 10572 killed, 30322 wounded and
+3400 missing.
 568
 Chapter 19
 SITZKRIEG IN THE
@@ -25225,7 +25225,7 @@ in 1941-2" – assuming, he had added, that France by that time had the "help
 of British troops and American equipment."
 In the first weeks of the war, to be sure, Britain had pitifully few troops
 to send to France. By October 11, three weeks after the fighting was over in
-Poland, it had four divisions – 158,000 men – in France. "A symbolic contribution," Churchill called it, and Fuller noted that the first British casualty – a
+Poland, it had four divisions – 158000 men – in France. "A symbolic contribution," Churchill called it, and Fuller noted that the first British casualty – a
 corporal shot dead on patrol – did not occur until December 9. "So bloodless a
 war," Fuller comments, "had not been seen since the Battles of Molinella and
 Zagonara."†
@@ -25282,12 +25282,12 @@ in Paris and London that payment might somehow be evaded by inaction.
 At sea there was action.
 The German Navy was not put under such wraps as the Army in the west,
 and during the first week of hostilities it sank eleven British ships with a total
-tonnage of 64,595 tons, which was nearly half the weekly tonnage sunk at the
+tonnage of 64595 tons, which was nearly half the weekly tonnage sunk at the
 peak of German submarine warfare in April 1917 when Great Britain had been
-brought to the brink of disaster. British losses tapered off thereafter: 53,561
-tons the second week, 12,750 the third week and only 4,646 the fourth week –
-for a total during September of twenty-six ships of 135,552 tons sunk by U-boats
-and three ships of 16,488 tons by mines.*
+brought to the brink of disaster. British losses tapered off thereafter: 53561
+tons the second week, 12750 the third week and only 4646 the fourth week –
+for a total during September of twenty-six ships of 135552 tons sunk by U-boats
+and three ships of 16488 tons by mines.*
 There was a reason, unknown to the British, for the sharp tapering off. On
 September 7, Admiral Raeder had a long conference with Hitler. The Fuehrer,
 jubilant over his initial victories in Poland and the failure of the French to
@@ -25315,7 +25315,7 @@ which will take about a week."749
 THE SINKING OF THE ATHENIA
 There was one other decision agreed upon by Hitler and Raeder at the meeting on September 7. The Admiral noted it in his diary: "No attempt shall be
 made to solve the Athenia affair until the submarines return home."
-The war at sea, as we have noted, had begun ten hours after Britain's declaration of war when the British liner Athenia, jammed with some 1,400 passengers,
+The war at sea, as we have noted, had begun ten hours after Britain's declaration of war when the British liner Athenia, jammed with some 1400 passengers,
 was torpedoed without warning at 9 P.M. on September 3 some two hundred
 miles west of the Hebrides, with the loss of 112 lives, including twenty-eight
 Americans. The German Propaganda Ministry checked the first reports from
@@ -25609,7 +25609,7 @@ into a fit. Brauchitsch and Haider, aided by several other generals, had consort
 to prove to the Leader that an immediate offensive was out of the question. It
 would take several months, they said, to refit the tanks used in Poland. General
 Thomas furnished figures to show that Germany had a monthly steel deficit of
-600,000 tons. General von Stuelpnagel, the Quartermaster General, reported
+600000 tons. General von Stuelpnagel, the Quartermaster General, reported
 there was ammunition on hand only "for about one third of our divisions for
 fourteen combat days" – certainly not long enough to win a battle against the
 French. But the Fuehrer would not listen to his Army Commander in Chief and
@@ -26386,7 +26386,7 @@ the meeting, as Frank noted in his journal, the chief of the Security Police gav
 a progress report. About two thousand men and several hundred women, he
 said, had been apprehended "at the beginning of the Extraordinary Pacification
 Action." Most of them already had been "summarily sentenced" – a Nazi euphemism for liquidation. A second batch of intellectuals was now being rounded
-up "for summary sentence." Altogether "about 3,500 persons," the most dangerous of the Polish intelligentsia, would thus be taken care of.781"
+up "for summary sentence." Altogether "about 3500 persons," the most dangerous of the Polish intelligentsia, would thus be taken care of.781"
 Frank did not neglect the Jews, even if the Gestapo had filched the direct
 task of extermination away from him. His journal is full of his thoughts and
 accomplishments on the subject. On October 7, 1940, it records a speech he
@@ -26414,11 +26414,11 @@ threatened Baltic lands and various outlying parts of Poland. Haider had heard
 of the plan a fortnight before, noting in his diary that "for every German moving
 into these territories, two people will be expelled to Poland."
 On October 9, two days after assuming the latest of his posts, Himmler
-decreed that 550,000 of the 650,000 Jews living in the annexed Polish provinces,
+decreed that 550000 of the 650000 Jews living in the annexed Polish provinces,
 together with all Poles not fit for "assimilation," should be moved into the
 territory of the General Government, east of the Vistula River. Within a year
-1,200,000 Poles and 300,000 Jews had been up-rooted and driven to the east.
-But only 497,000 Volksdeutsche had been settled in their place. This was a little
+1200000 Poles and 300000 Jews had been up-rooted and driven to the east.
+But only 497000 Volksdeutsche had been settled in their place. This was a little
 better than Haider's ratio: three Poles and Jews expelled to one German settled
 in their stead.
 It was an unusually severe winter, that of 1939-40, as this writer remembers,
@@ -26557,7 +26557,7 @@ moment, Hitler ordered that delivery of war material to the Russians should
 have priority even over that to the German armed forces.*791 At one point
 the Germans threw in the unfinished heavy cruiser Luetzow as part of current
 payments to Moscow. Earlier, on December 15, Admiral Raeder proposed selling
-the plans and drawings for the Bismarck, the world's biggest battleship (45,000
+the plans and drawings for the Bismarck, the world's biggest battleship (45000
 tons), then building, to the Russians if they paid "a very high price."792
 By the end of 1939 Stalin himself was personally participating in the negotiations at Moscow with the German trade delegation. The German economists
 found him a formidable trader. In the captured Wilhehnslrasse papers there are
@@ -26592,8 +26592,8 @@ Bismarck, heavy naval guns and other gear and some thirty of Germany's latest wa
 dive bombers. In addition the Soviets were to receive machines for their oil and
 electric industries, locomotives, turbines, generators, Diesel engines, ships, machine tools and samples of German artillery, tanks, explosives, chemical-warfare
 equipment and so on.794
-What the Germans got the first year was recorded by OKW – one million tons of cereals, half a million tons of wheat, 900,000 tons of oil, 100,000
-tons of cotton, 500,000 tons of phosphates, considerable amounts of numerous
+What the Germans got the first year was recorded by OKW – one million tons of cereals, half a million tons of wheat, 900000 tons of oil, 100000
+tons of cotton, 500000 tons of phosphates, considerable amounts of numerous
 other vital raw materials and the transit of a million tons of soybeans from
 Manchuria.795
 Back in Berlin, Dr. Schnurre, the Foreign Office's economic expert, who had
@@ -26630,7 +26630,7 @@ the big bombers carried only propaganda pamphlets, and badly written ones at
 that. Only at sea was there actual warfare. U-boats continued to take their toll
 of British and sometimes neutral shipping in the cruel, icy northern Atlantic.
 In the South Atlantic the Graf Spee, one of Germany's three pocket battleships, had emerged from its waiting area and in three months had sunk nine
-British cargo vessels totaling 50,000 tons. Then, a fortnight before the first
+British cargo vessels totaling 50000 tons. Then, a fortnight before the first
 Christmas of the war, on December 14, 1939, the German public was electrified by the news, splashed in flaming headlines and in bulletins flashed over the
 radio, of a great victory at sea. The Graf Spec, it was said, had engaged three
 British cruisers on the previous day four hundred miles off Montevideo and put
@@ -26987,8 +26987,8 @@ have added to his cautiousness about a Scandinavian adventure which would
 depend first of all on the Navy. According to Rosenberg, the Fuehrer emphasized to his visitor that "the most preferable attitude for Norway would be . . .
 complete neutrality." However, if the British were preparing to enter Norway
 the Germans would have to beat them to it. In the meantime he would provide Quisling with funds to combat British propaganda and strengthen his own
-pro-German movement. An initial sum of 200,000 gold marks was allotted in
-January, with the promise of 10,000 pounds sterling per month for three months
+pro-German movement. An initial sum of 200000 gold marks was allotted in
+January, with the promise of 10000 pounds sterling per month for three months
 beginning on March 15.810
 Shortly before Christmas Rosenberg dispatched a special agent, HansWilhelm Scheidt, to Norway to work with Quisling, and over the holidays the
 handful of officers at OKW who were in the know began working on "Study
@@ -27146,8 +27146,8 @@ and march across that country and Sweden to Finland to try to save the Finns.
 The threat of this was the main reason for Hitler's hurry.
 But on March 12 the Russo-Finnish War suddenly ended with Finland accepting Russia's harsh terms for peace. While this was generally welcomed in
 Berlin because it freed Germany from its unpopular championship of the Russians against the Finns and also brought an end, for the moment, of the Soviet
-*On March 7 General Ironside, Chief of the British General Staff, informed Marshal Mannerheim that an Allied expeditionary force of 57,000 men was ready to come to the aid of
-the Finns and that the first division, of 15,000 troops, could reach Finland by the end of
+*On March 7 General Ironside, Chief of the British General Staff, informed Marshal Mannerheim that an Allied expeditionary force of 57000 men was ready to come to the aid of
+the Finns and that the first division, of 15000 troops, could reach Finland by the end of
 March if Norway and Sweden would allow them transit. Actually five days before, on March
 2, as Mannerheim knew, both Norway and Sweden had again turned down the Franco-British
 request for transit privileges. This did not prevent Premier Daladier on March 8 from scolding
@@ -27376,7 +27376,7 @@ agreed that his place was at Hitler's side "on the firing line." The Nazi Foreig
 Minister, on his part, lost no time in buttering up his host. The Fuehrer, he
 said, was "deeply aroused by the latest British measures to block the shipment
 of coal from Germany to Italy by sea." How much coal did the Italians need?
-From 500,000 to 700,000 tons a month, Mussolini replied. Germany was now
+From 500000 to 700000 tons a month, Mussolini replied. Germany was now
 prepared, Ribbentrop answered glibly, to furnish a million tons a month and
 would provide most of the cars to haul it.
 There were two lengthy meetings between the two, with Ciano present, on
@@ -27938,7 +27938,7 @@ port was occupied by midafternoon. The Karlsruhe, however, on leaving port
 that evening was torpedoed by a British submarine and so badly damaged that
 it had to be sunk.
 By noon, then, or shortly afterward, the five principal Norwegian cities and
-ports and the one big airfield along the west and south coasts that ran for 1,500
+ports and the one big airfield along the west and south coasts that ran for 1500
 miles from the Skagerrak to the Arctic were in German hands. They had been
 taken by a handful of troops conveyed by a Navy vastly inferior to that of the
 THE CONQUEST OF DENMARK AND NORWAY 631
@@ -27961,9 +27961,9 @@ German squadron, however, continued on its way up the fjord. At a point some
 fifteen miles south of Oslo where the waters narrowed to fifteen miles, further
 trouble developed. Here stood the ancient fortress of Oskarsborg, whose defenders were more alert than the Germans suspected. Just before dawn the
 fort's 28-centimeter Krupp guns opened fire on the Luetzow and the Bluecher,
-and torpedoes were also launched from the shore. The 10,000-ton Bluecher,
+and torpedoes were also launched from the shore. The 10000-ton Bluecher,
 ablaze and torn by the explosions of its ammunition, went down, with the loss
-of 1,600 men, including several Gestapo and administrative officials (and all
+of 1600 men, including several Gestapo and administrative officials (and all
 their papers) who were to arrest the King and the government and take over
 the administration of the capital. The Luetzow was also damaged but not completely disabled. Rear Admiral Oskar Kummetz, commander of the squadron,
 and General Erwin Engelbrecht, who led the 163rd Infantry Division, who were
@@ -28199,7 +28199,7 @@ Arctic Circle and north of Narvik, where on May Day the provisional capital
 was set up.
 By then the southern half of Norway, comprising all the cities and main
 towns, had been irretrievably lost. But northern Norway seemed secure. On
-May 28 an Allied force of 25,000 men, including two brigades of Norwegians, a
+May 28 an Allied force of 25000 men, including two brigades of Norwegians, a
 brigade of Poles and two battalions of the French Foreign Legion, had driven
 the greatly outnumbered Germans out of Narvik. There seemed no reason to
 doubt that Hitler would be deprived of both his iron ore and his objective of
@@ -28268,7 +28268,7 @@ the British. It secured the winter iron ore route, gave added protection to the
 entrance to the Baltic, allowed the daring German Navy to break out into the
 North Atlantic and provided them with excellent port facilities there for submarines and surface ships in the sea war against Britain. It brought Hitler air
 bases hundreds of miles closer to the main enemy. And perhaps most imporgrounds of his old age and senility. He was, however, tried and convicted for "profiting from
-the Nazi regime," and fined $65,000. He died on February 19, 1952, at the age of ninety-three.
+the Nazi regime," and fined $65000. He died on February 19, 1952, at the age of ninety-three.
 General von Falkenhorst was tried as a war criminal before a mixed British and Norwegian
 military court on charges of having handed over captured Allied commandos to the SS for
 execution. He was sentenced to death on August 2, 1946, but the sentence was commuted to
@@ -28306,7 +28306,7 @@ the German Army which the Allies had lacked.
 There was one military result of the Scandinavian adventure which could
 not be evaluated at once, if only because it was not possible to look very far
 into the future. The losses in men in Norway on both sides were light. The
-Germans suffered 1,317 killed, 2,375 missing and 1,604 wounded, a total of 5,296
+Germans suffered 1317 killed, 2375 missing and 1604 wounded, a total of 5296
 casualties; those of the Norwegians, French and British were slightly less than
 *The Swedes, caught between Russia in Finland and the Baltic countries and Germany
 in possession of adjoining Denmark and Norway, meditated and decided there was no choice
@@ -28323,7 +28323,7 @@ direction should balance so that the German garrisons in Norway would not be str
 by the arrangement.
 This was of immense help to Germany. By transporting fresh troops and war material by
 land through Sweden Hitler avoided the risk of having them sunk at sea by the British. In
-the first six months of the accord, some 140,000 German troops in Norway were exchanged
+the first six months of the accord, some 140000 German troops in Norway were exchanged
 and the German forces there greatly strengthened by supplies. Later, just before the German
 onslaught on Russia, Sweden permitted the Nazi High Command to transport an entire army
 division, fully armed, from Norway across Sweden to Finland to be used to attack the Soviet
@@ -28332,7 +28332,7 @@ details of German pressure on Sweden and for the text of the exchange of letters
 King Gustav V and Hitler, see Documents on German Foreign Policy, IX. The author has
 covered the subject more thoroughly in The Challenge of Scandinavia.
 THE CONQUEST OF DENMARK AND NORWAY 639
-5,000. The British lost one aircraft carrier, one cruiser and seven destroyers
+5000. The British lost one aircraft carrier, one cruiser and seven destroyers
 and the Poles and the French one destroyer each. German naval losses were
 comparably much heavier: ten out of twenty destroyers, three of eight cruisers,
 while the battle cruisers Scharnhorst and Gneisenau and the pocket battleship
@@ -28732,7 +28732,7 @@ While surrender negotiations were under way – a Dutch officer had come to
 German headquarters near the bridge to discuss the details and was returning
 with the German terms – bombers appeared and wiped out the heart of the great
 city. Some eight hundred persons, almost entirely civilians, were massacred,
-several thousand wounded and 78,000 made homeless.* This bit of treachery,
+several thousand wounded and 78000 made homeless.* This bit of treachery,
 this act of calculated ruthlessness, would long be remembered by the Dutch,
 though at Nuremberg both Goering and Kesselring of the Luftwaffe defended it
 on the grounds that Rotterdam was not an open city but stoutly defended by
@@ -28744,7 +28744,7 @@ special OKW communiqué:
 Under the tremendous impression of the attacks of German dive
 bombers and the imminent attack of German tanks, the city of Rotterdam has capitulated and thus saved itself from destruction.
 Rotterdam surrendered, and then the Dutch armed forces. Queen Wilhelmina and the government members had fled to London on two British destroyers. At dusk on May 14 General H. G. Winkelmann, the Commander in
-*It was first reported and long believed that from 25,000 to 30,000 Dutch were killed,
+*It was first reported and long believed that from 25000 to 30000 Dutch were killed,
 and this is the figure given in the 1953 edition of the Encyclopaedia Britannica. However, at
 Nuremberg the Dutch government gave the figure as. 814 killed.852
 †There were no criminal convictions at Nuremberg for the bombing of Rotterdam.
@@ -28819,7 +28819,7 @@ They had even greater success in capturing Fort Eben Emael, which commanded the 
 strategically located fortress was regarded by both the Allies and the Germans
 as the most impregnable fortification in Europe, stronger than anything the
 French had built in the Maginot Line or the Germans in the West Wall. Constructed in a series of steel-and-concrete galleries deep underground, its gun
-turrets protected by heavy armor and manned by 1,200 men, it was expected to
+turrets protected by heavy armor and manned by 1200 men, it was expected to
 hold out indefinitely against the pounding of the heaviest bombs and artillery
 shells. It fell in thirty hours to eighty German soldiers who under the command
 of a sergeant had landed in nine gliders on its roof and whose total casualties
@@ -28844,7 +28844,7 @@ were driven off by Stuka attacks and by reinforcements of parachutists. By the
 morning of May 11 advance panzer units, which had raced over the two intact
 bridges to the north, arrived at the fort and surrounded it, and, after further
 Stuka bombings and hand-to-hand fighting in the underground tunnels, a white
-flag was hoisted at noon and the 1,200 dazed Belgian defenders filed out and
+flag was hoisted at noon and the 1200 dazed Belgian defenders filed out and
 surrendered.855
 This feat, along with the capture of the bridges and the violence of the
 attack mounted by General von Reichenau's Sixth Army, which was sustained
@@ -29253,10 +29253,10 @@ progress. In the meantime the evacuation began. An armada of 850 vessels of
 all sizes, shapes and methods of propulsion, from cruisers and destroyers to
 small sailboats and Dutch skoots, many of them manned by civilian volunteers
 from the English coastal towns, converged on Dunkirk. The first day, May 27,
-they took off 7,669 troops; the next day, 17,804; the following day, 47,310; and
-on May 30, 53,823, for a total of 126,606 during the first four days. This was
+they took off 7669 troops; the next day, 17804; the following day, 47310; and
+on May 30, 53823, for a total of 126606 during the first four days. This was
 far more than the Admiralty had hoped to get out. When the operation began
-it counted on evacuating only about 45,000 men in the two days' time it then
+it counted on evacuating only about 45000 men in the two days' time it then
 thought it would have.
 It was not until this fourth day of Operation Dynamo, on May 30, that the
 German High Command woke up to what was happening. For four days the
@@ -29285,8 +29285,8 @@ our noses.
 That was, in fact, what they watched. Despite increased pressure which was
 immediately applied by the Germans on all sides of the pocket, the British lines
 held and more troops were evacuated. The next day, May 31, was the biggest
-day of all. Some 68,000 men were embarked for England, a third of them from
-the beaches, the rest from the Dunkirk harbor. A total of 194,620 men had now
+day of all. Some 68000 men were embarked for England, a third of them from
+the beaches, the rest from the Dunkirk harbor. A total of 194620 men had now
 been taken out, more than four times the number originally hoped for.
 Where was the famed Luftwaffe? Part of the time, as Haider noted, it was
 grounded by bad weather. The rest of the time it encountered unexpected opposition from the Royal Air Force, which from bases just across the Channel
@@ -29308,13 +29308,13 @@ ports some of them insulted men in the blue R.A.F. uniforms. Churchill was much 
 at this and went out of his way to put them right when he spoke in the House on June 4. The
 deliverance at Dunkirk, he said, "was gained by the Air Force."
 662
-– 64,429 men. By dawn of the next day, only 4,000 British troops remained in
-the perimeter, protected by 100,000 French who now manned the defenses.
+– 64429 men. By dawn of the next day, only 4000 British troops remained in
+the perimeter, protected by 100000 French who now manned the defenses.
 Medium German artillery had in the meantime come within range and daytime evacuation operations had to be abandoned. The Luftwaffe at that time
 did not operate after dark and during the nights of June 2 and 3 the remainder
-of the B.E.F. and 60,000 French troops were successfully brought out. Dunkirk,
-still defended stubbornly by 40,000 French soldiers, held out until the morning
-of June 4. By that day 338,226 British and French soldiers had escaped the
+of the B.E.F. and 60000 French troops were successfully brought out. Dunkirk,
+still defended stubbornly by 40000 French soldiers, held out until the morning
+of June 4. By that day 338226 British and French soldiers had escaped the
 German clutches. They were no longer an army; most of them, understandably,
 were for the moment in a pitiful shape. But they were battle-tried; they knew
 that if properly armed and adequately covered from the air they could stand up
@@ -29750,14 +29750,14 @@ party conventions were being held that summer and Thomsen was bending every
 effort to influence their foreign-policy planks, especially that of the Republicans.
 On June 12, for example, he cabled Berlin in code "most urgent, top secret"
 that a "well-known Republican Congressman," who was working "closely" with
-the German Embassy, had offered, for $3,000, to invite fifty isolationist Republican Congressmen to the Republican convention "so that they may work on
+the German Embassy, had offered, for $3000, to invite fifty isolationist Republican Congressmen to the Republican convention "so that they may work on
 the delegates in favor of an isolationist foreign policy." The same individual,
-Thomsen reported, wanted $30,000 to help pay for full-page advertisements in
+Thomsen reported, wanted $30000 to help pay for full-page advertisements in
 the American newspapers, to be headed "Keep America Out of the War!"*874
 The next day Thomsen was wiring Berlin about a new project he said he
 was negotiating through an American literary agent to have five well-known
 American writers write books "from which I await great results." For this project
-he needed $20,000, a sum Ribbentrop okayed a few days later.†876
+he needed $20000, a sum Ribbentrop okayed a few days later.†876
 *Such an advertisement appeared in the New York Times June 25, 1940.
 †By July 5, 1940, Thomsen had become so apprehensive about his payments that he
 cabled Berlin for permission to destroy all receipts and accounts:
@@ -29765,7 +29765,7 @@ cabled Berlin for permission to destroy all receipts and accounts:
 One of Hitler's first public utterances about his hopes for peace with Britain
 had been given Karl von Wiegand, a Hearst correspondent, and published in the
 New York Journal-American on June 14. A fortnight later Thomsen informed
-the German Foreign Office that he had printed 100,000 extra copies of the
+the German Foreign Office that he had printed 100000 extra copies of the
 interview and that
 I was able furthermore through a confidential agent to induce the isolationist Representative Thorkelson [Republican of Montana] to have
 the Fuehrer interview inserted in the Congressional Record of June
@@ -30340,9 +30340,9 @@ would cross the Channel from the area of Le Havre and land between Brighton
 and the Isle of Wight. Farther to the west three divisions of Field Marshal
 von Reichenau's Sixth Army (from Field Marshal von Bock's Army Group B),
 taking off from the Cherbourg peninsula, would be put ashore in Lyme Bay,
-between Weymouth and Lyme Regis. Altogether 90,000 men would form the
+between Weymouth and Lyme Regis. Altogether 90000 men would form the
 first wave; by the third day the High Command planned on putting ashore a
-total of 260,000 men. Airborne forces would help out after being dropped at
+total of 260000 men. Airborne forces would help out after being dropped at
 Lyme Bay and other areas. An armored force of no less than six panzer divisions,
 reinforced by three motorized divisions, would follow in the second wave and in
 a few days it was planned to have ashore a total of thirty-nine divisions plus
@@ -30483,9 +30483,9 @@ planned . . . 906
 The last paragraph only served to inflame the feud between the Army and
 Navy over the question of a long or a short invasion front. A fortnight before,
 the Naval War Staff had estimated that to fulfill the demands of the Army for
-landing 100,000 men with equipment and supplies in the first wave, along a 200-
-mile front from Ramsgate to Lyme Bay, would necessitate rounding up 1,722
-barges, 1,161 motorboats, 471 tugs and 155 transports. Even if it were possible
+landing 100000 men with equipment and supplies in the first wave, along a 200-
+mile front from Ramsgate to Lyme Bay, would necessitate rounding up 1722
+barges, 1161 motorboats, 471 tugs and 155 transports. Even if it were possible
 to assemble such a vast amount of shipping, Raeder told Hitler on July 25, it
 would wreck the German economy, since taking away so many barges and tugs
 would destroy the whole inland-waterway transportation system, on which the
@@ -30856,12 +30856,12 @@ curtain raiser heavy attacks were made on the twelfth on enemy radar stations,
 five of which were actually hit and damaged and one knocked out, but the
 Germans at this stage did not realize how vital to Britain's defenses radar was
 and did not pursue the attack. On the thirteenth and fourteenth the Germans
-put in the air some 1,500 aircraft, mostly against R.A.F. fighter fields, and
+put in the air some 1500 aircraft, mostly against R.A.F. fighter fields, and
 though they claimed five of them had been "completely destroyed" the damage,
 was actually negligible and the Luftwaffe lost forty-seven planes against thirteen
 for the R.A.F.*
 August 15 brought the first great battle in the skies. The Germans threw in
-the bulk of their planes from all three air fleets, flying 801 bombing and 1,149
+the bulk of their planes from all three air fleets, flying 801 bombing and 1149
 fighter sorties. Luftflotten 5, operating from Scandinavia, met disaster. By
 sending some 800 planes in a massive attack on the south coast the Germans
 had expected to find the northeast coast defenseless. But a force of a hundred
@@ -31033,7 +31033,7 @@ madness would be stopped. Mr. Churchill took this for a sign of
 weakness. We are now answering night for night.
 When the British Air Force drops two or three or four thousand
 kilograms of bombs, then we will in one night drop 150-, 230-, 300-
-or 400,000 kilograms.
+or 400000 kilograms.
 At this point, according to my diary, Hitler had to pause because of the
 hysterical applause of the German women listeners.
 "When they declare," Hitler continued, "that they will increase their attacks
@@ -31069,7 +31069,7 @@ water. At 8:10 P.M., after dark, a second wave of 250 bombers arrived and
 resumed the attack, which was kept up by successive waves until dawn at 4:30
 on Sunday morning. The next evening at 7:30, the attack was renewed by two
 hundred bombers and continued throughout the night. Some 842 persons were
-killed and 2,347 wounded, according to the official British historian, during these
+killed and 2347 wounded, according to the official British historian, during these
 first two nights, and vast damage was inflicted on the sprawling city.927 The
 assault went on all the following week, night after night.†
 And then, stimulated by its successes, or what it thought were such, the
@@ -31108,7 +31108,7 @@ negligible.
 702
 fall off, as Hitler had so confidently expected. Just the opposite. Aircraft
 factories in England, one of the prime targets of the Luftwaffe bombers, actually
-outproduced the Germans in 1940 by 9,924 to 8,070 planes. Hitler's bomber
+outproduced the Germans in 1940 by 9924 to 8070 planes. Hitler's bomber
 losses over England had been so severe that they could never be made up, and
 in fact the Luftwaffe, as the German confidential records make clear, never fully
 recovered from the blow it received in the skies over Britain that late summer
@@ -31192,7 +31192,7 @@ the Security Service, or SD
 †Dr. Six was sentenced in 1948 at Nuremberg as a war criminal to twenty years in prison,
 but was released in 1952.
 704
-course it was not meant to be. It contains the names of some 2,300 prominent
+course it was not meant to be. It contains the names of some 2300 prominent
 persons in Great Britain, not all of them English, whom the Gestapo thought
 it important to incarcerate at once. Churchill is there, naturally, along with
 members of the cabinet and other well-known politicians of all parties. Leading
@@ -32571,14 +32571,14 @@ to bring the British down, and that Barbarossa ought to be postponed until
 "In view of present political developments and especially Russia's interference in Balkan affairs," Hitler said, "it is necessary to eliminate at all costs the
 *The Navy's italics.
 †By this time a ramshackle British desert force of one armored division, an Indian infantry
-division, two infantry brigades and a Royal Tank regiment – 31,000 men in all – had driven
-an Italian force three times as large out of Egypt and captured 38,000 prisoners at a cost
+division, two infantry brigades and a Royal Tank regiment – 31000 men in all – had driven
+an Italian force three times as large out of Egypt and captured 38000 prisoners at a cost
 of 133 killed, 387 wounded and 8 missing. The British counteroffensive, under the over-all
 command of General Sir Archibald Wavell, had begun on December 7 and in four days Marshal
 Graziani's army was routed. What had started as a five-day limited counterattack continued
 until February 7, by which time the British had pushed clear across Cyrenaica, a distance of
-500 miles, annihilated the entire Italian army of ten divisions in Libya, taken 130,000 prisoners,
-1,240 guns and 500 tanks and lost themselves 500 killed, 1,373 wounded and 55 missing. To
+500 miles, annihilated the entire Italian army of ten divisions in Libya, taken 130000 prisoners,
+1240 guns and 500 tanks and lost themselves 500 killed, 1373 wounded and 55 missing. To
 the skeptical British military writer General J. F. Fuller it was "one of the most audacious
 campaigns ever fought." (Fuller, The Second World War, p. 98.) The Italian Navy had also
 been dealt a lethal blow. On the night of November 11-12, bombers from the British carrier
@@ -32740,7 +32740,7 @@ as possible."
 BALKAN PRELUDE
 Before Barbarossa could get under way in the spring the southern flank,
 which lay in the Balkans, had to be secured and built up. By the third week in
-February 1941, the Germans had massed a formidable army of 680,000 troops
+February 1941, the Germans had massed a formidable army of 680000 troops
 in Rumania, which bordered the Ukraine for three hundred miles between the
 Polish border and the Black Sea.991
 But to the south, Greece still held the Italians at bay and Berlin had reason
@@ -32879,7 +32879,7 @@ of Bulgaria, Hungary and Germany itself with all their armor and advancing
 rapidly against poorly armed defenders dazed by the usual preliminary bombing
 from the Luftwaffe.
 Belgrade itself, as Hitler ordered, was razed to the ground. For three successive days and nights Goering's bombers ranged over the little capital at rooftop
-level – for the city had no antiaircraft guns – killing 17,000 civilians, wounding
+level – for the city had no antiaircraft guns – killing 17000 civilians, wounding
 many more and reducing the place to a mass of smoldering rubble. "Operation
 Punishment," Hitler called it, and he obviously was satisfied that his commands
 had been so effectively carried out. The Yugoslavs, who had not had time to
@@ -32891,7 +32891,7 @@ at Sarajevo, the King and the Prime Minister escaping by plane to Greece.
 The Greeks, who had humiliated the Italians in six months of fighting, could
 not stand up to Field Marshal List's Twelfth Army of fifteen divisions, four
 of which were armored. The British had hurriedly sent to Greece some four
-divisions from Libya – 53,000 men in all – but they, like the Greeks, were overwhelmed by the German panzers and by the murderous strikes of the Luftwaffe.
+divisions from Libya – 53000 men in all – but they, like the Greeks, were overwhelmed by the German panzers and by the murderous strikes of the Luftwaffe.
 The northern Greek armies surrendered to the Germans and – bitter pill – to
 the Italians on April 23. Four days later Nazi tanks rattled into Athens and
 hoisted the swastika over the Acropolis. By this time the British were desperately trying once again to evacuate their troops by sea – a minor Dunkirk and
@@ -32940,7 +32940,7 @@ not amount to much.998
 †Charles A. Lindbergh, the hero flyer, who had seemed to this writer to have fallen with
 startling naivete, during his visits to Germany, to Nazi propaganda boasts, was already consigning Britain to defeat in his speeches to large and enthusiastic audiences in America. On
 April 23, 1941, at the moment of the Nazi victories in the Balkans and North Africa, he
-addressed 30,000 persons in New York at the first mass meeting of the newly formed America First Committee. "The British government," he said, "has one last desperate plan: . . .
+addressed 30000 persons in New York at the first mass meeting of the newly formed America First Committee. "The British government," he said, "has one last desperate plan: . . .
 To persuade us to send another American Expeditionary Force to Europe and to share with
 England militarily, as well as financially, the fiasco of this war." He condemned England for
 having "encouraged the smaller nations of Europe to fight against hopeless odds." Apparently
@@ -33432,7 +33432,7 @@ nonferrous and precious metals."
 Transit traffic through Siberia [he added] is proceeding favorably
 as usual. At our request the Soviet Government even put a special
 freight train for rubber at our disposal at the Manchurian border.1027
-Six weeks later, on May 15, Schnurre was reporting that the obliging Russians had put on several special freight trains so that 4,000 tons of badly needed
+Six weeks later, on May 15, Schnurre was reporting that the obliging Russians had put on several special freight trains so that 4000 tons of badly needed
 raw rubber could be delivered to Germany over the Siberian railway.
 The quantities of raw materials contracted for are being delivered
 punctually by the Russians, despite the heavy burden this imposes
@@ -33663,7 +33663,7 @@ meeting on Barbarossa in Berlin on June 14.
 Despite the enormity of the task, not only Hitler but his generals were in
 a confident mood as they went over last-minute details of the most gigantic
 military operation in history – an all – out attack on a front stretching some
-1,500 miles from the Arctic Ocean at Petsamo to the Black Sea. The night
+1500 miles from the Arctic Ocean at Petsamo to the Black Sea. The night
 before, Brauchitsch had returned to Berlin from an inspection of the build-up
 in the East. Haider noted in his diary that the Army Commander in Chief was
 highly pleased. Officers and men, he said, were in top shape and ready.
@@ -34166,7 +34166,7 @@ In itself Rundstedt's offensive in the south, made possible by the reinforcement
 central front, was, as Guderian put it, a great tactical victory. Kiev itself fell
 on September 19 – German units had already penetrated 150 miles beyond it
 – and on the twenty-sixth the Battle of Kiev ended with the encirclement and
-surrender of 665,000 Russian prisoners, according to the German claim. To
+surrender of 665000 Russian prisoners, according to the German claim. To
 Hitler it was "the greatest battle in the history of the world," but though it was
 a singular achievement some of his generals were more skeptical of its strategic
 significance. Bock's armorless army group in the center had been forced to cool
@@ -34204,7 +34204,7 @@ The German drive along the old road which Napoleon had taken to Moscow
 at first rolled along with all the fury of a typhoon. In the first fortnight of
 October, in what later Blumentritt called a "textbook battle," the Germans
 encircled two Soviet armies between Vyazma and Bryansk and claimed to have
-taken 650,000 prisoners along with 5,000 guns and 1,200 tanks. By October 20
+taken 650000 prisoners along with 5000 guns and 1200 tanks. By October 20
 German armored spearheads were within forty miles of Moscow and the Soviet
 ministries and foreign embassies were hastily evacuating to Kuibyshev on the
 Volga. Even the sober Haider, who had fallen off his horse and broken a collarbone and was temporarily hospitalized, now believed that with bold leadership
@@ -34282,7 +34282,7 @@ in his ranks and on the thirteenth that the temperature had fallen to 8 degrees
 November 30 in describing Rundstedt's retreat to the Mius and Hitler's dismissal of the Field
 Marshal. "The Fuehrer calls in Brauchitsch and hurls reproaches and abuse at him." Haider
 had begun his diary that day by noting the figures of German casualties up to November 26.
-"Total losses of the Eastern armies (not counting the sick), 743,112 officers and men – 23 per
+"Total losses of the Eastern armies (not counting the sick), 743112 officers and men – 23 per
 cent of the entire force of 3.2 million."
 On December 1, Haider recorded the replacement of Rundstedt by Reichenau, who still
 commanded the Sixth Army, which he had led in France and which had been having a hard
@@ -34595,9 +34595,9 @@ driven back or forced by Russian encirclements and breakthroughs to retreat.
 By the end of February they found themselves from 75 to 200 miles from the
 capital. By the end of that freezing month Haider was noting in his diary the
 cost in men of the misfired Russian adventure. Total losses up to February
-28, he wrote down, were 1,005,636, or 31 per cent of his entire force. Of these
-202,251 had been killed, 725,642 wounded and 46,511 were missing. (Casualties
-from frostbite were 112,627.) This did not include the heavy losses among the
+28, he wrote down, were 1005636, or 31 per cent of his entire force. Of these
+202251 had been killed, 725642 wounded and 46511 were missing. (Casualties
+from frostbite were 112627.) This did not include the heavy losses among the
 Hungarians, Rumanians and Italians in Russia.
 With the coming of the spring thaws a lull came over the long front and
 Hitler and Haider began making plans for bringing up fresh troops and more
@@ -36208,7 +36208,7 @@ Caspian Sea and the Volga River over which the oil, as long as the Russians
 held the wells, could reach central Russia.
 Besides oil to propel his planes and tanks and trucks, Hitler needed men
 to fill out his thinned ranks. Total casualties at the end of the winter fighting
-were 1,167,835, exclusive of the sick, and there were not enough replacements
+were 1167835, exclusive of the sick, and there were not enough replacements
 available to make up for such losses. The High Command turned to Germany's
 allies – or, rather, satellites – for additional troops. During the winter General
 Keitel had scurried off to Budapest and Bucharest to drum up Hungarian and
@@ -36365,7 +36365,7 @@ and Suez! This was another opportunity lost, and one of the last which Hitler
 would be afforded by Providence and the fortunes of war.
 THE GERMAN SUMMER OFFENSIVE IN RUSSIA: 1942
 By the end of the summer of 1942 Adolf Hitler seemed to be once more on top
-of the world. German U-boats were sinking 700,000 tons of British-American
+of the world. German U-boats were sinking 700000 tons of British-American
 shipping a month in the Atlantic – more than could be replaced in the booming
 shipyards of the United_States, Canada and Scotland. Though the Fuehrer had
 denuded his forces in the West of most of their troops and tanks and planes
@@ -36400,7 +36400,7 @@ troops now stood guard from the Norwegian North Cape on the Arctic Ocean
 to Egypt, from the Atlantic at Brest to the southern reaches of the Volga River
 on the border of Central Asia.
 German troops of the Sixth Army had reached the Volga just north of Stalingrad on August 23. Two days before, the swastika had been hoisted on Mount
-Elbrus, the highest peak (18,481 feet) in the Caucasus Mountains. The Maikop
+Elbrus, the highest peak (18481 feet) in the Caucasus Mountains. The Maikop
 oil fields, producing annually two and a half million tons of oil, had been captured on August 8, though the Germans found them almost completely destroyed, and by the twenty-fifth Kleist's tanks had arrived at Mozdok, only fifty
 miles from the main Soviet oil center around Grozny and a bare hundred miles
 from the Caspian Sea. On the thirty-first Hitler was urging Field Marshal List,
@@ -36517,7 +36517,7 @@ in 1942 Stalin would be able to muster from one to one and a quarter
 million fresh troops in the region north of Stalingrad and west of the
 Volga, not to mention half a million men in the Caucasus, and which
 provided proof that Russian output of front-line tanks amounted to
-at least 1,200 a month, Hitler flew at the man who was reading with
+at least 1200 a month, Hitler flew at the man who was reading with
 clenched fists and foam in the corners of his mouth and forbade him
 to read any more of such idiotic twaddle.1138
 "You didn't have to have the gift of a prophet," says Haider, "to foresee what
@@ -36680,7 +36680,7 @@ November 5 came a curt message from the Fuehrer: "I agree to the withdrawal of
 your army into the Fuka position." But that position already had been overrun
 by Montgomery's tanks. Within fifteen days Rommel had fallen back seven
 hundred miles to beyond Benghazi with the remnants of his African army – some
-25,000 Italians, 10,000 Germans and sixty tanks – and there was no opportunity
+25000 Italians, 10000 Germans and sixty tanks – and there was no opportunity
 to stop even there.
 This was the beginning of the end for Adolf Hitler, the most decisive battle
 of the war yet won by his enemies, though a second and even more decisive one
@@ -36712,8 +36712,8 @@ On November 5, OKW was informed that one British naval force had sailed
 out of Gibraltar headed east. But it was not until the morning of November
 7, twelve hours before American and British troops began landing in North
 Africa, that Hitler gave the latest intelligence from Gibraltar some thought.
-*Rommel's losses at El Alamein were 59,000 killed, wounded and captured, of whom 34,000
-were Germans, out of a total force of 96,000 men.
+*Rommel's losses at El Alamein were 59000 killed, wounded and captured, of whom 34000
+were Germans, out of a total force of 96000 men.
 830
 The forenoon reports received at his headquarters in East Prussia were that
 British naval forces in Gibraltar and a vast fleet of transports and warships
@@ -36854,7 +36854,7 @@ there and also induce the French fleet in Toulon to make a dash for North Africa
 proved vain, although Darlan tried. To his message ordering Admiral de Laborde to bring the
 fleet over from Toulon he received an answer in one expressive – if indelicate – word: "Merde."
 (See the Procès du M. Petain.)
-†Some 125,000 Germans, according to General Eisenhower, out of a total of 240,000 Axis
+†Some 125000 Germans, according to General Eisenhower, out of a total of 240000 Axis
 troops, the rest being Italian. This number includes only those who surrendered during the
 last week of the campaign – May 5 to 12, 1943. (Crusade in Europe, p. 156.)
 THE GREAT TURNING POINT: 1942 STALINGRAD AND EL ALAMEIN 833
@@ -37039,13 +37039,13 @@ Within six days the German pocket had been reduced by half, to an area fifteen
 miles long and nine miles deep at its widest. By January 24 it had been split in
 two and the last small emergency airstrip lost. The planes which had brought
 in some supplies, especially medicines for the sick and wounded, and which had
-flown out 29,000 hospital cases, could no longer land.
+flown out 29000 hospital cases, could no longer land.
 Once more the Russians gave their courageous enemy a chance to surrender.
 Soviet emissaries arrived at the German lines on January 24 with a new offer.
 Again Paulus, torn between his duty to obey the mad Fuehrer and his obligation
 to save his own surviving troops from annihilation, appealed to Hitler.
 Troops without ammunition [he radioed on the twenty-fourth] or
-food . . . Effective command no longer possible . . . 18,000 wounded
+food . . . Effective command no longer possible . . . 18000 wounded
 without any supplies or dressings or drugs . . . Further defense senseless. Collapse inevitable. Army requests immediate permission to
 surrender in order to save lives of remaining troops.
 THE GREAT TURNING POINT: 1942 STALINGRAD AND EL ALAMEIN 837
@@ -37113,14 +37113,14 @@ superior forces. Long live Germany!"
 Silence at last settled on the snow-covered, blood-spattered shambles of the
 battlefield. At 2:46 P.M. on February 2 a German reconnaissance plane flew
 high over the city and radioed back: "No sign of any fighting at Stalingrad."
-By that time 91,000 German soldiers, including twenty-four generals, halfstarved, frostbitten, many of them wounded, all of them dazed and broken,
+By that time 91000 German soldiers, including twenty-four generals, halfstarved, frostbitten, many of them wounded, all of them dazed and broken,
 were hobbling over the ice and snow, clutching their blood-caked blankets over
 their heads against the 24-degrees-below-zero cold toward the dreary, frozen
-prisoner-of-war camps of Siberia. Except for some 20,000 Rumanians and the
-29,000 wounded who had been evacuated by air they were all that was left of
-a conquering army that had numbered 285,000 men two months before. The
-rest had been slaughtered. And of those 91,000 Germans who began the weary
-march into captivity that winter day, only 5,000 were destined ever to see the
+prisoner-of-war camps of Siberia. Except for some 20000 Rumanians and the
+29000 wounded who had been evacuated by air they were all that was left of
+a conquering army that had numbered 285000 men two months before. The
+rest had been slaughtered. And of those 91000 Germans who began the weary
+march into captivity that winter day, only 5000 were destined ever to see the
 Fatherland again.*
 Meanwhile back in the well-heated headquarters in East Prussia the Nazi
 warlord, whose stubbornness and stupidity were responsible for this disaster,
@@ -37238,7 +37238,7 @@ What the nations [Himmler continued] can offer in the way of good
 blood of our type, we will take, if necessary by kidnaping their children and raising them here with us. Whether nations live in prosperity or starve to death like cattle interests me only in so far as we
 need them as slaves to our Kultur; otherwise it is of no interest to
 me.
-Whether 10,000 Russian females fall down from exhaustion while
+Whether 10000 Russian females fall down from exhaustion while
 *As early as September 18, 1941, Hitler had specifically ordered that Leningrad was to be
 "wiped off the face of the earth." After being surrounded it was to be "razed to the ground"
 by bombardment and bombing and its population (three millions) was to be destroyed with
@@ -37440,10 +37440,10 @@ A great deal was taken out, not only in goods and services but in banknotes
 and gold. Whenever Hitler occupied a country, his financial agents seized the
 gold and foreign holdings of its national bank. That was a mere beginning. Staggering "occupation costs" were immediately assessed. By the end of February
 1944, Count Schwerin von Krosigk, the Nazi Minister of Finance, put the total
-take from such payments at some 48 billion marks (roughly $12,000,000,000),
+take from such payments at some 48 billion marks (roughly $12000000000),
 of which France, which was milked heavier than any other conquered country,
 furnished more than half. By the end of the war, receipts from occupation
-assessments amounted to an estimated 60 billion marks ($15,000,000,000).
+assessments amounted to an estimated 60 billion marks ($15000000000).
 France was forced to pay 31.5 billions of this total, its annual contributions of
 more than 7 billions coming to over four times the yearly sums which Germany
 had paid in reparations under the Dawes and Young plans after the first war
@@ -37464,7 +37464,7 @@ Nuremberg it was estimated that the Germans extracted in occupation costs
 and "credits" two thirds of Belgium's national income and a similar percentage
 from the Netherlands. Altogether, according to a study by the US Strategic
 Bombing Survey, Germany extracted in tribute from the conquered nations a
-total of 104 billion marks ($26,000,000,000).*
+total of 104 billion marks ($26000000000).*
 But the goods seized and transported to the Reich without even the formality of payment can never possibly be estimated. Figures kept pouring in at
 Nuremberg until they overwhelmed one; but no expert, so far as I know, was
 ever able to straighten them out and compute totals. In France, for example, it
@@ -37474,11 +37474,11 @@ cent of steel, and so on, for a grand total of 184.5 billion francs.
 Russia, devastated by warfare and German savagery, proved harder to milk.
 Nazi documents are full of reports of Soviet "deliveries." In 1943, for example,
 9 million tons of cereals, 2 million tons of fodder, 3 million tons of potatoes,
-662,000 tons of meat were listed by the Germans among the "deliveries," to
+662000 tons of meat were listed by the Germans among the "deliveries," to
 which the Soviet Committee of Investigation added – for the duration of the
 occupation – 9 million cattle, 12 million pigs, 13 million sheep, to mention a few
 items. But Russian "deliveries" proved much less than expected; the Germans
-calculated them as worth a net of only some 4 billion marks ($1,000,000,000).†
+calculated them as worth a net of only some 4 billion marks ($1000000000).†
 Everything possible was squeezed out of Poland by the greedy Nazi conquerors. "I shall endeavor," said Dr. Frank, the Governor General, "to squeeze
 out of this province everything that is still possible to squeeze out." This was
 at the end of 1942, and in the three years since the occupation he had already
@@ -37509,8 +37509,8 @@ reconstruct any industry in the Government General."1160
 By decree of Dr. Frank, all property in Poland belonging not only to Jews
 but to Poles was subject to confiscation without compensation. Hundreds of
 thousands of Polish-owned farms were simply grabbed and handed over to German settlers. By May 31, 1943, in the four Polish districts annexed to Germany
-(West Prussia, Posen, Zichenau, Silesia) some 700,000 estates comprising 15
-million acres were "seized" and 9,500 estates totaling 6.5 million acres "confiscated." The difference between "seizure" and "confiscation" is not explained in
+(West Prussia, Posen, Zichenau, Silesia) some 700000 estates comprising 15
+million acres were "seized" and 9500 estates totaling 6.5 million acres "confiscated." The difference between "seizure" and "confiscation" is not explained in
 the elaborate table prepared by the German "Central Estate Office,"1161 and to
 the dispossessed Poles it must not have mattered.
 Even the art treasures in the occupied lands were looted, and, as the captured
@@ -37555,8 +37555,8 @@ into the Fuehrer's possession and those which the Reich Marshal
 THE NEW ORDER 851
 claims for himself will be loaded into two railroad cars which will be
 attached to the Reich Marshal's special train . . . to Berlin.1165
-Many more carloads followed. According to a secret official German report some 137 freight cars loaded with 4,174 cases of art works comprising
-21,903 objects, including 10,890 paintings, made the journey from the West to
+Many more carloads followed. According to a secret official German report some 137 freight cars loaded with 4174 cases of art works comprising
+21903 objects, including 10890 paintings, made the journey from the West to
 Germany up to July 1944.1166 They included works of, among others, Rembrandt, Rubens, Hals, Vermeer, Velazquez, Murillo, Goya, Vecchio, Watteau,
 Fragonard, Reynolds and Gainsborough. As early as January 1941, Rosenberg
 estimated the art loot from France alone as worth a billion marks.1167
@@ -37628,8 +37628,8 @@ feeling of security of the inhabitants. Everybody is exposed to the
 danger of being seized anywhere and at any time by the police, suddenly and unexpectedly, and of being sent to an assembly camp.
 None of his relatives knows what has happened to him.1171
 But rounding up the slave workers was only the first step.† The condition of their transport to Germany left something to be desired. A certain
-*A captured record shows Field Marshal Milch of the Air Force in 1943 demanding 50,000
-more Russian war prisoners to be added to the 30,000 already manning antiaircraft artillery.
+*A captured record shows Field Marshal Milch of the Air Force in 1943 demanding 50000
+more Russian war prisoners to be added to the 30000 already manning antiaircraft artillery.
 "It is amusing," Milch laughed, "that Russians must work the guns."1169
 †The entire slave labor program was put in charge of Fritz Sauckel, who was given the
 title of Plenipotentiary General for the Allocation of Labor. A second-string Nazi, he had
@@ -37673,7 +37673,7 @@ disease, lack of enough food to keep a man alive, lack of water, lack of toilets
 might have been a butcher in a small-town meat market. One of his first directives laid it
 down that the foreign workers were "to be treated in such a way as to exploit them to the
 highest possible extent at the lowest conceivable degree of expenditure."1172 He admitted at
-Nuremberg that of ail the millions of foreign workers "not even 200,000 came voluntarily."
+Nuremberg that of ail the millions of foreign workers "not even 200000 came voluntarily."
 However at the trial he denied all responsibility for their ill-treatment. He was found guilty,
 sentenced to death, aid hanged in the Nuremberg jail on the night of October 15-16, 1946.
 854
@@ -37682,7 +37682,7 @@ had arrived from the East. Virtually all of them had no overcoats
 and were compelled to use their blankets as coats in cold and rainy
 weather. In view of the shortage of shoes many workers were forced
 to go to work in their bare feet, even in winter . . .
-Sanitary conditions were atrocious. At Kramerplatz only ten children's toilets were available for 1,200 inhabitants . . . Excretion contaminated the entire floors of these lavatories . . . The Tartars and
+Sanitary conditions were atrocious. At Kramerplatz only ten children's toilets were available for 1200 inhabitants . . . Excretion contaminated the entire floors of these lavatories . . . The Tartars and
 Kirghiz suffered most; they collapsed like flies [from] bad housing,
 the poor quality and insufficient quantity of food, overwork and insufficient rest.
 These workers were likewise afflicted with spotted fever. Lice, the
@@ -37718,7 +37718,7 @@ Alfried Krupp et al. case. On July 31, 1948, he was sentenced to twelve years im
 and confiscation of all his property. He was released from Landsberg prison (where Hitler
 had served his sentence in 1924) on February 4, 1951, in a general amnesty issued by John
 J. McCloy, the US High Commissioner. Not only was the confiscation of his corporate
-property annulled but his personal fortune of some $10,000,000 was returned to him. The
+property annulled but his personal fortune of some $10000000 was returned to him. The
 Allied governments had ordered the breakup of the vast Krupp empire but Alfried Krupp,
 who took over the active management of the firm after his release from prison, evaded the
 order and at the time of writing (1959) announced, with the approval of the Bonn government,
@@ -37792,9 +37792,9 @@ the POW camps in 1945, About a million had either been released during the
 war or allowed to serve in the collaborator units set up by the German Army.
 Two million Russian prisoners of war died in German captivity – from starvation, exposure and disease. The remaining million have never been accounted
 for and at Nuremberg a good case was made that most of them either had died
-from the above causes or had been exterminated by the SD (SS Security Service). According to the German records 67,000 were executed, but this is most
+from the above causes or had been exterminated by the SD (SS Security Service). According to the German records 67000 were executed, but this is most
 certainly a partial figure.1179
-The bulk of the Russian war prisoners – some 3,800,000 of them – were
+The bulk of the Russian war prisoners – some 3800000 of them – were
 taken by the Germans in the first phase of the Russian campaign, in the great
 battles of encirclement which were fought from June 21 to December 6, 1941.
 Admittedly it was difficult for an army in the midst of combat and rapid advance
@@ -37817,7 +37817,7 @@ failed and that just possibly, now that the USA had been added to Russia
 and Britain as their enemies, they might not win the war, in which case they
 would be held accountable for their war crimes.
 The fate of the Soviet prisoners of war in Germany [Rosenberg wrote
-Keitel] is a tragedy of the greatest extent. Of the 3,600,000 of them,
+Keitel] is a tragedy of the greatest extent. Of the 3600000 of them,
 only several hundred thousand are still able to work fully. A large
 part of them have starved, or died because of the hazards of the
 weather.
@@ -37881,7 +37881,7 @@ by reason of the Joss of labor, is that the prisoners died in tens and
 hundreds of thousands of exhaustion and hunger.1183
 They were now to be fed enough to enable them to work. By December
 1944, three quarters of a million of them, including many officers, were toiling
-in the armament factories, the mines (where 200,000 were assigned) and on the
+in the armament factories, the mines (where 200000 were assigned) and on the
 farms. Their treatment was harsh, but at least they were allowed to live. Even
 the branding of the Russian war captives, which General Keitel had proposed,
 was abandoned.*
@@ -37998,9 +37998,9 @@ Nuremberg ordering the taking – and shooting – of hostages. "It is important
 Keitel decreed on October 1, 1941, "that these should include well-known leading personalities or members of their families"; and General von Stuelpnagel, the
 German commander in France, a year later stressed that "the better known the
 hostages to be shot the greater will be the deterrent effect on the perpetrators."
-In all, 29,660 French hostages were executed by the Germans during the
-war and this figure did not include the 40,000 who "died" in French prisons.
-The figure for Poland was 8,000 and for Holland some 2,000. In Denmark
+In all, 29660 French hostages were executed by the Germans during the
+war and this figure did not include the 40000 who "died" in French prisons.
+The figure for Poland was 8000 and for Holland some 2000. In Denmark
 what became known as a system of "clearing murders" was substituted for the
 publicly proclaimed shooting of hostages. On Hitler's express orders reprisals
 for the killing of Germans in Denmark were to be carried out in secret "on the
@@ -38146,7 +38146,7 @@ But the gas vans, as Ohlendorf testified, could dispatch only from fifteen to
 twenty-five persons at a time, and this was entirely inadequate for the massacres
 on the scale which Hitler and Himmler had ordered. Inadequate, for example,
 for the job that was done at Kiev, the capital of the Ukraine, in just two days,
-September 29 and 30, 1941, when according to an official Einsatz report 33,771
+September 29 and 30, 1941, when according to an official Einsatz report 33771
 persons, mostly Jews, were "executed."1194 An eyewitness report by a German
 of how a comparatively minor mass execution was carried out in the Ukraine
 brought a hush of horror over the Nuremberg courtroom when it was read by
@@ -38155,14 +38155,14 @@ Hermann Graebe, the manager and engineer of a branch office in the Ukraine
 of a German construction firm. On October 5,1942, he witnessed the Einsatz
 commandos, supported by Ukrainian militia, in action at the execution pits at
 Dubno in the Ukraine. It was a matter, he reported, of liquidating the town's
-5,000 Jews.
+5000 Jews.
 . . . My foreman and I went directly to the pits. I heard rifle shots in
 quick succession from behind one of the earth mounds. The people
 who had got off the trucks – men, women and children of all ages –
 had to undress upon the order of an SS man, who carried a riding
 or dog whip. They had to put down their clothes in fixed places,
 sorted according to shoes, top clothing and underclothing. I saw a
-heap of shoes of about 800 to 1,000 pairs, great piles of under-linen
+heap of shoes of about 800 to 1000 pairs, great piles of under-linen
 and clothing.
 Without screaming or weeping these people undressed, stood around
 in family groups, kissed each other, said farewells and waited for a
@@ -38215,23 +38215,23 @@ before the Red Army drove the Germans out? The exact total could never be
 866
 computed at Nuremberg but Himmler's records, uncoordinated as they were,
 give a rough idea.
-Ohlendorf s Einsatzgruppen D, with its 90,000 victims, did not do as well
+Ohlendorf s Einsatzgruppen D, with its 90000 victims, did not do as well
 as some of the other groups. Group A, for instance, in the north reported on
-January 31, 1942, that it had "executed" 229,052 Jews in the Baltic region and
+January 31, 1942, that it had "executed" 229052 Jews in the Baltic region and
 in White Russia. Its commander, Franz Stahlecker, reported to Himmler that
 he was having difficulty in the latter province because of a late start "after the
-heavy frost set in, which made mass executions much more difficult. Nevertheless," he reported, "41,000 Jews [in White Russia] have been shot up to now."
+heavy frost set in, which made mass executions much more difficult. Nevertheless," he reported, "41000 Jews [in White Russia] have been shot up to now."
 Stahlecker, who was disposed of later in the year by Soviet partisans, enclosed
 with his report a handsome map showing the number of those done to death –
 symbolized by coffins – in each area under his command. In Lithuania, alone,
-the map showed, 136,421 Jews had been slain; some 34,000 had been spared for
+the map showed, 136421 Jews had been slain; some 34000 had been spared for
 the time being "as they were needed for labor." Estonia, which had relatively
 few Jews, was declared in this report to be "Jew-free."1196
 The Einsatzgruppen firing squads, after a letup during the severe winter,
-banged away all through the summer of 1942. Some 55,000 more Jews were
-exterminated in White Russia by July 1, and in October the remaining 16,200
+banged away all through the summer of 1942. Some 55000 more Jews were
+exterminated in White Russia by July 1, and in October the remaining 16200
 inhabitants of the Minsk ghetto were dispatched in one day. By November
-Himmler could report to Hitler that 363,211 Jews had been killed in Russia from
+Himmler could report to Hitler that 363211 Jews had been killed in Russia from
 August through October, though the figure was probably somewhat exaggerated
 to please the bloodthirsty Fuehrer.1197*
 All in all, according to Karl Eichmann, the head of the Jewish Office of the
@@ -38239,7 +38239,7 @@ Gestapo, two million persons, almost all Jews, were liquidated by the Einsatzgru
 but true that the SS bigwigs were so proud of their exterminations that they
 often reported swollen figures to please Himmler and Hitler. Himmler's own
 statistician, Dr. Richard Korherr, reported to his chief on March 23, 1943, that
-a total of 633,300 Jews in Russia had been "resettled" – a euphemism for massacre by the Einsatzgruppen.1199 Surprisingly enough this figure tallies fairly
+a total of 633300 Jews in Russia had been "resettled" – a euphemism for massacre by the Einsatzgruppen.1199 Surprisingly enough this figure tallies fairly
 well with exhaustive studies later made by a number of experts. Add another
 hundred thousand slain in the last two years of the war and the figure is probably
 as accurate as we will ever have.†
@@ -38256,8 +38256,8 @@ was an order from Himmler that henceforth the women and children should not be s
 dispatched in the gas vans.1198(See above, p. 863.)
 †The number of Soviet Communist party functionaries slain by the Einsatzgruppen has
 never even been estimated, as far as I know. Most SD reports lumped them together with
-the Jews. In one report of Group A, dated October 15, 1941, some 3,387 "Communists" are
-listed among the 121,817 executed, the rest being Jews. But the same report often lists the
+the Jews. In one report of Group A, dated October 15, 1941, some 3387 "Communists" are
+listed among the 121817 executed, the rest being Jews. But the same report often lists the
 two together.
 THE NEW ORDER 867
 One fine June day of 1946 at Nuremberg three members of the American
@@ -38341,7 +38341,7 @@ war was almost won and that Germany would shortly be ruling all of Europe,
 including England and Ireland. Therefore, Heydrich told the assembly of some
 fifteen high officials, "in the course of this Final Solution of the European Jewish
 problem, approximately eleven million Jews are involved." He then rattled off
-the figures for each country. There were only 131,800 Jews left in the original
+the figures for each country. There were only 131800 Jews left in the original
 Reich territory (out of a quarter of a million in 1939), but in the U.SSR.,
 he said, there were five million, in the Ukraine three million, in the General
 Government of Poland two and a quarter million, in France three quarters of a
@@ -38397,7 +38397,7 @@ Among ourselves it should be mentioned quite frankly, and yet we
 will never speak of it publicly . . .
 I mean . . . the extermination of the Jewish race . . . Most of you
 must know what it means when 100 corpses are lying side by side, or
-500, or 1,000. To have stuck it out and at the same time – apart from
+500, or 1000. To have stuck it out and at the same time – apart from
 exceptions caused by human weakness – to have remained decent
 fellows, that is what has made us hard. This is a page of glory in
 our history which has never been written and is never to be written
@@ -38415,12 +38415,12 @@ All the thirty odd principal Nazi concentration camps were death camps and
 millions of tortured, starved inmates perished in them.* Though the authorities
 kept records – each camp had its official Totenbuch (death book) – they were
 incomplete and in many cases were destroyed as the victorious Allies closed in.
-Part of one Totenbuch that survived at Mauthausen listed 35,318 deaths from
+Part of one Totenbuch that survived at Mauthausen listed 35318 deaths from
 January 1939 to April 1945.† At the end of 1942 when the need of slave labor
 began to be acute, Himmler ordered that the death rate in the concentration
 camps "must be reduced." Because of the labor shortage he had been displeased
-at a report received in his office that of the 136,700 commitments to concentration camps between June and November 1942, some 70,610 had died and that
-in addition 9,267 had been executed and 27,846 "transferred."1205 To the gas
+at a report received in his office that of the 136700 commitments to concentration camps between June and November 1942, some 70610 had died and that
+in addition 9267 had been executed and 27846 "transferred."1205 To the gas
 chamber, that is. This did not leave very many for labor duties.
 But it was in the extermination camps, the Vernichtungslager, where most
 progress was made toward the "final solution." The greatest and most renowned
@@ -38432,13 +38432,13 @@ gas.
 For a time there was quite a bit of rivalry among the SS leaders as to
 which was the most efficient gas to speed the Jews to their death. Speed was
 an important factor, especially at Auschwitz, where toward the end the camp
-was setting new records by gassing 6,000 victims a day. One of the camp's
+was setting new records by gassing 6000 victims a day. One of the camp's
 commanders for a period was Rudolf Hoess, an ex-convict once found guilty of
 murder, who deposed at Nuremberg on the superiority of the gas he employed.
 ‡
-*Kogon estimates the number at 7,125,000 out of a total of 7,820,000 inmates, but the
+*Kogon estimates the number at 7125000 out of a total of 7820000 inmates, but the
 figure undoubtedly is too high. (Kogon, The Theory and Practice of Hell, p. 227.)
-†The camp commander, Franz Ziereis, put the total number at 65,000.1204
+†The camp commander, Franz Ziereis, put the total number at 65000.1204
 ‡Born in 1900, the son of a small shopkeeper in Baden-Baden, Hoess was pressured by his
 pious Catholic father to become a priest. Instead he joined the Nazi Party in 1922. The next
 year he was implicated in the murder of a school teacher who allegedly had denounced Leo
@@ -38458,7 +38458,7 @@ extermination facilities at Auschwitz in June 1941. At that time
 there were already in the General Government of Poland three other
 extermination camps: Belzec, Treblinka and Wolzek . . .
 I visited Treblinka to find out how they carried out their extermination. The camp commandant at Treblinka told me that he had
-liquidated 80,000 in the course of half a year. He was principally
+liquidated 80000 in the course of half a year. He was principally
 concerned with liquidating all the Jews from the Warsaw ghetto.*
 He used monoxide gas and I did not think that his methods were very
 efficient. So when I set up the extermination building at Auschwitz,
@@ -38472,7 +38472,7 @@ the doors and removed the bodies. After the bodies were removed
 our special commandos took off the rings and extracted the gold
 from the teeth of the corpses.
 Another improvement we made over Treblinka was that we built our
-gas chambers to accommodate 2,000 people at one time, whereas
+gas chambers to accommodate 2000 people at one time, whereas
 at Treblinka their ten gas chambers only accommodated 200 people
 each.
 Hoess then explained how the victims were "selected" for the gas chambers,
@@ -38623,9 +38623,9 @@ C. H. KORI, G.M.B.H.1210
 In the end even the strenuous efforts of German free enterprise, using the best
 material and providing faultless workmanship, proved inadequate for burning
 the corpses. The well-constructed crematoria fell far behind at a number of
-camps but especially at Auschwitz in 1944 when as many as 6,000 bodies (Hoess
-put it at as many as 3 6,000) had to be burned daily. For instance, in forty-six
-days during the summer of 1944 between 250,000 and 300,000 Hungarian Jews
+camps but especially at Auschwitz in 1944 when as many as 6000 bodies (Hoess
+put it at as many as 3 6000) had to be burned daily. For instance, in forty-six
+days during the summer of 1944 between 250000 and 300000 Hungarian Jews
 alone were done to death at this camp. Even the gas chambers fell behind and
 THE NEW ORDER 875
 resort was made to mass shootings in the Einsatzkommando style. The bodies
@@ -38659,15 +38659,15 @@ the most prosaic and decent of men, pillars – like good businessmen everywhere
 How many hapless innocent people – mostly Jews but including a fairly
 large number of others, especially Russian prisoners of war – were slaughtered
 at the one camp of Auschwitz? The exact number will never be known. Hoess
-himself in his affidavit gave an estimate of "2,500,000 victims executed and
+himself in his affidavit gave an estimate of "2500000 victims executed and
 exterminated by gassing and burning, and at least another half million who
-succumbed to starvation and disease, making a total of about 3,000,000." Later
-at his own trial in Warsaw he reduced the figure to 1,135,000. The Soviet
+succumbed to starvation and disease, making a total of about 3000000." Later
+at his own trial in Warsaw he reduced the figure to 1135000. The Soviet
 government, which investigated the camp after it was overrun by the Red Army
 in January 1945, put the figure at four million. Reitlinger, on the basis of his
 own exhaustive study, doubts that the number gassed at Auschwitz was "even
-as high as three quarters of a million." He estimates that about 600,000 died in
-the gas chambers, to which he adds "the unknown proportion" of some 300,000
+as high as three quarters of a million." He estimates that about 600000 died in
+the gas chambers, to which he adds "the unknown proportion" of some 300000
 or more "missing," who were shot or who died of starvation and disease. By
 any estimate the figure is considerable.1212
 The bodies were burned, but the gold fillings in the teeth remained and these
@@ -38693,7 +38693,7 @@ With its vaults filled to overflowing as early as 1942, the bank's profit-minded
 directors sought to turn the holdings into cold cash by disposing of them through
 the municipal pawnshops. One letter from the Reichsbank to the Berlin municipal pawnshop dated September 15 speaks of a "second shipment" and begins,
 "We submit to you the following valuables with the request for the best possible
-utilization." The list is long and itemized and includes 154 gold watches, 1,601
+utilization." The list is long and itemized and includes 154 gold watches, 1601
 gold earrings, 132 diamond rings, 784 silver pocket watches and "160 diverse
 dentures, partly of gold." By the beginning of 1944 the Berlin pawnshop itself
 was overwhelmed by the flow of these stolen goods and informed the Reichsbank
@@ -38728,8 +38728,8 @@ THE NEW ORDER 877
 More than one eyewitness has commented on the spirit of resignation with
 which so many Jews met their deaths in the Nazi gas chambers or in the great
 execution pits of the Einsatz squads. Not all Jews submitted to extermination
-so gently. In the spring days of 1943 some 60,000 Jews walled up in the Warsaw
-ghetto – all that remained of 400,000 who had been herded into this place like
+so gently. In the spring days of 1943 some 60000 Jews walled up in the Warsaw
+ghetto – all that remained of 400000 who had been herded into this place like
 cattle in 1940 – turned on their Nazi tormentors and fought.
 Perhaps no one has left a more grisly – and authoritative – account of the
 Warsaw ghetto rebellion than the proud SS officer who put it down.* This
@@ -38738,24 +38738,24 @@ of Police. His eloquent official report, bound in leather, profusely illustrated
 and typed on seventy-five pages of elegant heavy bond paper has survived.† It
 is entitled The Warsaw Ghetto Is No More.1217
 By the late autumn of 1940, a year after the Nazi conquest of Poland, the
-SS had rounded up some 400,000 Jews and sealed them off within a high
+SS had rounded up some 400000 Jews and sealed them off within a high
 wall from the rest of Warsaw in an area approximately two and a half miles
 long and a mile wide around the old medieval ghetto. The district normally
-housed 160,000 persons, so there was overcrowding, but this was the least of
+housed 160000 persons, so there was overcrowding, but this was the least of
 the hardships. Governor Frank refused to allot enough food to keep even half of
-the 400,000 barely alive. Forbidden to leave the enclosure on the pain of being
+the 400000 barely alive. Forbidden to leave the enclosure on the pain of being
 shot on sight, the Jews had no employment except for a few armament factories
 within the wall run by the Wehrmacht or by rapacious German businessmen
 who knew how to realize large profits from the use of slave labor. At least
-100,000 Jews tried to survive on a bowl of soup a day, often boiled from straw,
+100000 Jews tried to survive on a bowl of soup a day, often boiled from straw,
 provided by the charity of the others. It was a losing struggle for life.
 But the ghetto population did not die fast enough from starvation and disease to suit Himmler, who in the summer of 1942 ordered the Jews in the
 Warsaw ghetto to be removed altogether "for security reasons." On July 22 a
-great "resettlement" action was instituted. Between then and October 3 a total of 310,322 Jews, according to Stroop, were "resettled." That is, they were
+great "resettlement" action was instituted. Between then and October 3 a total of 310322 Jews, according to Stroop, were "resettled." That is, they were
 transported to the extermination camps, most of them to Treblinka, where they
 were gassed.
 Still Himmler was not satisfied. When he paid a surprise visit to Warsaw
-in January 1943 and discovered that 60,000 Jews were still alive in the ghetto
+in January 1943 and discovered that 60000 Jews were still alive in the ghetto
 he ordered that the "resettlement" be completed by February 15. This proved
 to be a difficult task. The severe winter and the demands of the Army, whose
 disaster at Stalingrad and whose consequent retreats in southern Russia gave it
@@ -38772,17 +38772,17 @@ at Dachau on March 22, 1947, for the shooting of hostages in Greece, and then ex
 Poland, where he was tried for the slaughter of the Jews in the Warsaw ghetto. He was again
 sentenced to death and hanged at the scene of the crime on September 8, 1951.
 878
-The deportation of more than 300,000 Jews had enabled the Germans to
+The deportation of more than 300000 Jews had enabled the Germans to
 reduce the size of the walled-in ghetto and as SS General Stroop turned his
 tanks, artillery, flame throwers and dynamite squads on it on the morning of
-April 19, 1943, it comprised an area measuring only 1,000 by 300 yards, It
+April 19, 1943, it comprised an area measuring only 1000 by 300 yards, It
 was honeycombed, though, with sewers, vaults and cellars which the desperate
 Jews had converted into fortified points. Their arms were few: some pistols and
 rifles, a dozen or two machine guns that had been smuggled in, and homemade
 grenades. But they were now on that April morning determined to use them
 – the first time and the last in the history of the Third Reich that the Jews
 resisted their Nazi oppressors with arms.
-Stroop had 2,090 men, about half of them Regular Army or Waffen-SS
+Stroop had 2090 men, about half of them Regular Army or Waffen-SS
 troops, and the rest S.S, police reinforced by 335 Lithuanian militia and some
 Polish police and firemen. They ran into unexpected resistance the first day.
 Hardly had operation begun [Stroop reported in the first of his many
@@ -38828,11 +38828,11 @@ It was simply incomprehensible to a man of Stroop's stripe that men and
 women preferred to die in the flames fighting rather than to die peacefully in the
 gas chambers. For he was shipping off the captured whom he did not slaughter
 to Treblinka. On April 25 he sent a teletype to SS headquarters reporting that
-27,464 Jews had been captured.
+27464 Jews had been captured.
 I am going to try to obtain a train for T2 [Treblinka] tomorrow.
 Otherwise liquidation will be carried out here tomorrow.
 Often it was, on the spot. The next day Stroop informed his superiors:
-"1,330 Jews pulled out of dugouts and immediately destroyed; 362 Jews killed
+"1330 Jews pulled out of dugouts and immediately destroyed; 362 Jews killed
 in battle." Only thirty prisoners were "evacuated."
 Toward the end of the rebellion the defenders took to the sewers. Stroop
 tried to flush them out by flooding the mains but the Jews managed to stop
@@ -38852,19 +38852,19 @@ One hundred eighty Jews, bandits and subhumans were destroyed.
 The former Jewish quarter of Warsaw is no longer in existence. The
 large-scale action was terminated at 20:15 hours by blowing up the
 Warsaw synagogue . . .
-Total number of Jews dealt with: 56,065, including both Jews caught
+Total number of Jews dealt with: 56065, including both Jews caught
 and Jews whose extermination can be proved.
 A week later he was asked to explain that figure, and he replied:
-Of the total of 56,065 caught, about 7,000 were destroyed in the former ghetto during large-scale operation. 6,929 Jews were destroyed
+Of the total of 56065 caught, about 7000 were destroyed in the former ghetto during large-scale operation. 6929 Jews were destroyed
 by transporting them to Treblinka; the sum total of Jews destroyed
-is therefore 13,929. Beyond that, from five to six thousand Jews
+is therefore 13929. Beyond that, from five to six thousand Jews
 were destroyed by being blown up or by perishing in the flames.
 880
 General Stroop's arithmetic is not very clear since this report leaves some
-36,000 Jews unaccounted for. But there can be little doubt that he was telling
+36000 Jews unaccounted for. But there can be little doubt that he was telling
 the truth when he wrote in his handsomely bound final report that he had
-caught "a total of 56,065 Jews whose extermination can be proved." The gas
-chambers no doubt accounted for the 36,000.
+caught "a total of 56065 Jews whose extermination can be proved." The gas
+chambers no doubt accounted for the 36000.
 German losses, according to Stroop, were sixteen killed and ninety wounded.
 Probably the true figures were much higher, given the nature of the savage
 house-to-house fighting which the general himself described in such lurid detail,
@@ -38877,9 +38877,9 @@ at Nuremberg the total was put at between five and six millions by one of the
 great Nazi experts on the subject, Karl Eichmann, chief of the Jewish Office
 of the Gestapo, who carried out the "final solution" under the prodding hand
 of its originator, Heydrich.* The figure given in the Nuremberg indictment
-was 5,700,000 and it tallied with the calculations of the World Jewish Congress.
+was 5700000 and it tallied with the calculations of the World Jewish Congress.
 Reitlinger in his prodigious study of the Final Solution concluded that the figure
-was somewhat less – between 4,194,200 and 4,581,200.1219
+was somewhat less – between 4194200 and 4581200.1219
 There were some ten million Jews living in 1939 in the territories occupied
 by Hitler's forces. By any estimate it is certain that nearly half of them were
 exterminated by the Germans. This was the final consequence and the shattering cost of the aberration which came over the Nazi dictator in his youthful
@@ -39139,7 +39139,7 @@ the nearby Dachau concentration camp where human guinea pigs were readily
 available. Air was pumped out of the contraption so that the oxygen and air
 pressure at high altitudes could be simulated. Dr. Rascher then made his
 observations, of which the following one is typical.
-The third test was without oxygen at the equivalent of 29,400 feet
+The third test was without oxygen at the equivalent of 29400 feet
 altitude conducted on a 37-year-old Jew in good general condition.
 Respiration continued for 30 minutes. After four minutes the TP
 [test person] began to perspire and roll his head.
@@ -39167,7 +39167,7 @@ Himmler for Dr. Rascher's pioneer experiments. A little later, on October 10,
 was one omission in them. They had not taken into account the extreme cold
 which an aviator faces at high altitudes. To rectify this omission the Luftwaffe,
 he informed Himmler, was building a decompression chamber "equipped with
-full refrigeration and with a nominal altitude of 100,000 feet. Freezing experiments," he added, "along different lines are still under way at Dachau."1231
+full refrigeration and with a nominal altitude of 100000 feet. Freezing experiments," he added, "along different lines are still under way at Dachau."1231
 THE NEW ORDER 887
 Indeed they were. And again Dr. Rascher was in the vanguard. But some
 of his doctor colleagues were having qualms. Was it Christian to do what
@@ -39379,7 +39379,7 @@ were given refuge by the priests of the Karl Borromaeus Church in Prague.
 892
 Heydrich expired of his wounds on June 4 and a veritable hecatomb followed
 as the Germans took savage revenge, after the manner of the old Teutonic rites,
-for the death of their hero. According to one Gestapo report, 1,331 Czechs,
+for the death of their hero. According to one Gestapo report, 1331 Czechs,
 including 201 women, were immediately executed.1239 The actual assassins,
 along with 120 members of the Czech resistance who were hiding in the Karl
 Borromaeus Church, were besieged there by the SS and killed to the last man.*
@@ -39945,7 +39945,7 @@ Duce's erstwhile staunches! followers, Marshal Emilio de Bono, one of the quadru
 had led the march on Rome which put Mussolini in power.
 THE FALL OF MUSSOLINI 905
 Elsewhere, though, his fortunes continued to fall. On July 5, 1943, he had
-launched what was to prove his last great offensive of the war against the Russians. The flower of the German Army – some 500,000 men with no less than
+launched what was to prove his last great offensive of the war against the Russians. The flower of the German Army – some 500000 men with no less than
 seventeen panzer divisions outfitted with the new heavy Tiger tanks – was hurled
 against a large Russian salient west of Kursk. This was "Operation Citadel"
 and Hitter believed it would not only entrap the best of the Russian armies, one
@@ -39980,7 +39980,7 @@ This was not all.
 There were two other setbacks to Hitler's fortunes that year which also
 marked the turning of the tide: the loss of the Battle of the Atlantic and the
 intensification of the devastating air war day and night over Germany itself.
-In 1942, as we have seen, German submarines sank 6,250,000 tons of Allied
+In 1942, as we have seen, German submarines sank 6250000 tons of Allied
 shipping, most of it bound for Britain or the Mediterranean, a tonnage which far
 outstripped the capacity of the shipyards in the West to make good. But by the
 beginning of 1943 the Allies had gained the upper hand over the U-boats, thanks
@@ -40048,7 +40048,7 @@ Destruction is virtually total. Hardly a house is habitable . . .
 July 26. During the night a heavy raid on Hamburg . . . with most
 serious consequences both for the civilian population and for armaments production . . . It is a real catastrophe . . .
 July 29. During the night we had the heaviest raid yet made on
-Hamburg . . . with 800 to 1,000 bombers . . . Kaufmann [the local
+Hamburg . . . with 800 to 1000 bombers . . . Kaufmann [the local
 Gauleiter] gave me a first report . . . He spoke of a catastrophe the
 extent of which simply staggers the imagination. A city of a million
 inhabitants has been destroyed in a manner unparalleled in history.
@@ -40057,7 +40057,7 @@ Food must be found for this population of a million. Shelter must
 be secured. The people must be evacuated as far as possible. They
 must be given clothing. In short, we are facing problems there of
 which we had no conception even a few weeks ago . . . Kaufmann
-spoke of some 800,000 homeless people who are wandering up and
+spoke of some 800000 homeless people who are wandering up and
 down the streets not knowing what to do . . .
 Although considerable damage was done to specific German war plants, especially to those turning out fighter planes, ball bearings, naval ships, steel, and
 fuel for the new jets, and to the vital rocket experimental station at Peenemunde
@@ -40243,7 +40243,7 @@ German soldiers to such a ghastly end. A personal appeal from General Beck
 to Paulus to do this was flown into the beleaguered city by an Air Force officer.
 Paulus, as we have seen, responded by sending a flood of radio messages of de-
 *On his sixtieth birthday, October 30, 1942, Kluge received from the Fuehrer a check for
-250,000 marks ($100,000 at the official rate of exchange) and a special permit to spend half of
+250000 marks ($100000 at the official rate of exchange) and a special permit to spend half of
 it on the improvement of his estate. Notwithstanding this insult to his honesty and honor as a
 German officer, the Field Marshal accepted both. (Schlabrendorff, They Almost Killed Hitler,
 p. 40.) Later when Kluge turned against Hitler the Fuehrer told his officers at headquarters,
@@ -42136,7 +42136,7 @@ This was of the utmost importance, to be sure, since the plot had been better
 organized in France and was supported by more important Army officers than
 in any other place save Berlin. Actually Stuelpnagel was to show more energy
 than his fellow generals at the center of the revolt. Before dark he had arrested
-and locked up all 1,200 SS and SD officers and men in Paris, including their
+and locked up all 1200 SS and SD officers and men in Paris, including their
 redoubtable commander, SS Major General Karl Oberg. Had similar energy
 and similar direction of energy been shown in Berlin that afternoon, history
 might have taken a different turn.
@@ -42174,7 +42174,7 @@ where Major Ludwig von Leonrod was assigned to guard him.* The rebels took
 the precaution of cutting the telephone wires in the room.
 Stauffenberg returned to his office to find that Oberfuehrer Piffraeder, an SS
 ruffian who had distinguished himself recently by superintending the exhuming
-and destroying of 221,000 bodies of Jews murdered by the Einsatzgruppen in the
+and destroying of 221000 bodies of Jews murdered by the Einsatzgruppen in the
 Baltic regions before the advancing Russians got to them, had come to arrest
 him. Piffraeder and his two SD plain-clothes men were locked up in an adjacent
 empty office. Then General von Kortzfieisch, who had over-all command of the
@@ -42673,7 +42673,7 @@ died on the gallows August 10. General Fellgiebel, chief of signals at OKW,
 whose role at Rastenburg on July 20 we have recounted, was executed on the
 same day.
 The death roll is a long one. According to one source it numbered some
-4,980 names.1288 The Gestapo records list 7,000 arrests. Among those resistance leaders mentioned in these pages who were executed were General Fritz
+4980 names.1288 The Gestapo records list 7000 arrests. Among those resistance leaders mentioned in these pages who were executed were General Fritz
 Lindemann, Colonel von Boeselager, Pastor Dietrich Bonhoeffer, Colonel Georg
 Hansen of the Abwehr, Count von Helldorf, Colonel von Hofacker, Dr. Jens
 Peter Jessen, Otto Kiep, Dr, Carl Langbehn, Julius Leber, Major von Leonrod,
@@ -43152,7 +43152,7 @@ still, Patton's Third Army had taken Verdun, surrounded Metz, reached the
 Moselle River and linked up at the Belfort Gap with the Franco-American Seventh Army, which under the command of General Alexander Patch had landed
 on the Riviera in southern France on August 15 and pushed rapidly up the
 Rhone Valley. By the end of August the German armies in the West had lost
-500,000 men, half of them as prisoners, and almost all of their tanks, artillery
+500000 men, half of them as prisoners, and almost all of their tanks, artillery
 and trucks. There was very little left to defend the Fatherland. The muchpublicized Siegfried Line was virtually unmanned and without guns. Most of
 the German generals in the West believed that the end had come. "There were
 no longer any ground forces in existence, to say nothing of air forces," says
@@ -43188,7 +43188,7 @@ sacrifice of our most cherished ideals is too great a price," he said in March
 1943 when Speer wanted to draft women for industry.1303 Nazi ideology had
 taught that the place of the German woman was in the home and not in the
 factory – and in the home she stayed. In the first four years of the war, when in
-Great Britain two and a quarter million women had been placed in war production, only 182,000 women were similarly employed in Germany. The number of
+Great Britain two and a quarter million women had been placed in war production, only 182000 women were similarly employed in Germany. The number of
 peacetime domestic servants in Germany remained unchanged at a million and
 a half during the war.1304
 Now with the enemy at the gates, the Nazi leaders bestirred themselves.
@@ -43265,7 +43265,7 @@ THE CONQUEST OF GERMANY 977
 not know were there, and to the lack of adequate land forces pushing up from
 the south, it failed, and after ten days of savage fighting the Allies withdrew
 from Arnhem. The British 1st Airborne Division, which had been dropped near
-the city, lost all but 2,163 of some 9,000 men. To Eisenhower this setback "was
+the city, lost all but 2163 of some 9000 men. To Eisenhower this setback "was
 ample evidence that much bitter campaigning was to come."1306
 Yet he hardly expected the Germans to recover sufficiently to launch the
 stunning surprise that burst on the Western Front as Christmas approached
@@ -43323,10 +43323,10 @@ General Hasso von Manteuffel and SS General Sepp Dietrich (the last two were
 to command two great panzer armies for the breakthrough), who attended the
 meeting, were unable to shake Hitler's resolve. All through the late autumn
 he had been scraping the barrel in Germany for this last desperate gamble. In
-November he had managed to collect nearly 1,500 new or rebuilt tanks and
-assault guns, and in December another 1,000. He had assembled some twentyeight divisions, including nine panzer divisions, for the Ardennes breakthrough,
+November he had managed to collect nearly 1500 new or rebuilt tanks and
+assault guns, and in December another 1000. He had assembled some twentyeight divisions, including nine panzer divisions, for the Ardennes breakthrough,
 with another six divisions allotted for an attack in Alsace to follow the main
-offensive. Goering promised 3,000 fighter planes.
+offensive. Goering promised 3000 fighter planes.
 This was a considerable force, though far weaker than Rundstedt's army
 group on the same front in 1940. But raising it had meant denying the German forces in the East the reinforcements their commanders thought absolutely
 necessary to repel the expected Russian winter attack in January. When Guderian, the Chief of the General Staff, who was responsible for the Eastern front,
@@ -43523,9 +43523,9 @@ being entrapped at Houffalize, northeast of Bastogne, finally received permissio
 to withdraw. By January 16, just a month after the beginning of the offensive
 on which Hitler had staked his last reserves in men and guns and ammunition,
 the German forces were back to the line from which they had set out.
-They had lost some 120,000 men, killed, wounded and missing, 600 tanks and
-assault guns, 1,600 planes and 6,000 vehicles. American losses were also severe
-– 8,000 killed, 48,000 wounded, 21,000 captured or missing, and 733 tanks and
+They had lost some 120000 men, killed, wounded and missing, 600 tanks and
+assault guns, 1600 planes and 6000 vehicles. American losses were also severe
+– 8000 killed, 48000 wounded, 21000 captured or missing, and 733 tanks and
 tank destroyers.* But the Americans could make good their losses; the Germans
 could not. They had shot their last bolt. This was the last major offensive of the
 *Among the American dead were several prisoners shot in cold blood by Colonel Jochen
@@ -43681,8 +43681,8 @@ the catastrophe from one place to another." So the German armies, at Hitler's
 insistence, stood and fought – but not for long. By the end of the month
 the British and Americans had reached the Rhine at several places north of
 Duesseldorf, and a fortnight later they had firm possession of the left bank from
-the Moselle River northward. The Germans had lost another 350,000 men killed,
-wounded or captured (the prisoners numbered 293,000) and most of their arms
+the Moselle River northward. The Germans had lost another 350000 men killed,
+wounded or captured (the prisoners numbered 293000) and most of their arms
 and equipment.
 Hitler was in a fine fury. He sacked Rundstedt for the last time on March 10,
 replacing him with Field Marshal Kesselring, who had held out so stubbornly
@@ -43902,7 +43902,7 @@ and General Hodges' US First Army advanced rapidly past the Ruhr, the
 Ninth Army on its northern perimeter, the First Army to the south. On April
 1 they linked up at Lippstadt. Field Marshal Model's Army Group B, consisting of the Fifteenth and the Fifth Panzer armies – some twenty-one divisions –
 was trapped in the ruins of Germany's greatest industrial area. It held out for
-eighteen days, surrendering on April 18. Another 325,000 Germans, including
+eighteen days, surrendering on April 18. Another 325000 Germans, including
 thirty generals, were captured, but Model was not among them. Rather than
 become a prisoner he shot himself.
 The encirclement of Model's armies in the Ruhr had torn the German front
@@ -45406,7 +45406,7 @@ No one – not my publisher, my editor, my agent, my friends – believed that
 the public would buy a book so long, so full of footnotes, so expensive, and on
 such a subject. My lecture agent had told me there was no more interest in
 Hitler and the Third Reich and that 1 would have to talk about something else.
-My publisher printed only 12,500 copies in advance.
+My publisher printed only 12500 copies in advance.
 The fact that the book started at once to attract considerable readership
 was therefore a pleasant surprise to us all. I never kept track of the sales myself
 – either of the hardcover edition brought out by Simon and Schuster or the
