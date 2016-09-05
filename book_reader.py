@@ -178,11 +178,6 @@ class book_reader():
                        format='table',
                        append=False)
 
-        #TODO: simpler way
-        #occurances = rafo3r[rafo3r['Stop Word'] == False].groupby('Word').size()
-        #mega_words = occurances.index[occurances >= 1000]
-        #rafo3r.index = rafo3r['Word']
-
         return book_df
 
     def process_toc(self, book_df, h5_file):
