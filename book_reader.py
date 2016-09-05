@@ -178,8 +178,8 @@ class book_reader():
                        format='table',
                        append=False)
 
-        #simpler way
-        #occurances = rafo3r.groupby('Word').size()
+        #TODO: simpler way
+        #occurances = rafo3r[rafo3r['Stop Word'] == False].groupby('Word').size()
         #mega_words = occurances.index[occurances >= 1000]
         #rafo3r.index = rafo3r['Word']
 
@@ -485,24 +485,3 @@ class book_reader():
 
 if __name__ == "__main__":
   pass
-    # generate_book_df = False
-    # generate_toc_df = False
-    # book_short_name = 'rafo3r'
-    # my_reader = book_reader(book_short_name, generate_book_df, generate_toc_df)
-
-    # book_file = 'rafo3r.txt'
-    # h5_file = 'rafo3r.h5'
-
-    # #if running on pythonanywhere
-    # #book_file = os.getcwd() + os.sep + 'rafo3r' + os.sep + 'rafo3r.txt'
-    # #h5_file = os.getcwd() + os.sep + 'rafo3r' + os.sep + 'rafo3r.h5'
-
-    # rafo3r, toc = my_reader.main(book_file, h5_file)
-
-    # now = str(dt.datetime.now())
-    # now = now.replace(':', '')
-    # now = now.replace(' ', '')
-    # now = now.replace('-', '')
-    # now = now.replace('.', '')
-    # my_reader.csv_dump(rafo3r, 'rafo3r', now)
-    # my_reader.csv_dump(toc, 'toc', now)
