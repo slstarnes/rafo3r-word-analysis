@@ -8,7 +8,9 @@ Created on Fri Apr 29 15:29:48 2016
 import book_reader as br
 import book_viz as bv
 import datetime as dt
+import pandas as pd
 import os
+import re
 import json
 
 #TODO at the end:
@@ -26,6 +28,9 @@ generate_places_vs_range = False
 generate_people_vs_range = False
 generate_csvs = False
 generate_ents = False
+generate_wordclouds = True
+generate_matrix_wordclouds = True
+generate_plotly = False
 book_short_name = 'rafo3r'
 places_json = json.loads(open('places.json', 'r', encoding='utf-8').read())
 people_json = json.loads(open('people.json', 'r', encoding='utf-8').read())
@@ -87,31 +92,36 @@ rafo3r_viz = bv.book_viz(rafo3r, toc, rafo3r_wordvscount_pivot,
                          places_vs_range_df, people_vs_range_df,
                          places_json, people_json, rafo3r_reader.stopwords)
 
+if generate_plotly:
+  print (rafo3r_viz.book_grapher(places_vs_chapter_df, 10, 'place', False))
+  print (rafo3r_viz.book_grapher(people_vs_chapter_df, 10, 'person', False))
+  print (rafo3r_viz.book_grapher(places_vs_range_df, 10, 'place', False))
+  print (rafo3r_viz.book_grapher(people_vs_range_df, 10, 'person', False))
+  print (rafo3r_viz.people_table(people_vs_chapter_df, 5, False))
 
-#print (rafo3r_viz.book_grapher(places_vs_chapter_df, 10, 'place', True))
-#print (rafo3r_viz.book_grapher(people_vs_chapter_df, 10, 'person', True))
-#print (rafo3r_viz.book_grapher(places_vs_range_df, 10, 'place', False))
-#print (rafo3r_viz.book_grapher(people_vs_range_df, 10, 'person', False))
-#print (rafo3r_viz.people_table(people_vs_chapter_df, 7))
+if generate_wordclouds:
+  rafo3r_viz.make_word_clouds("rafo3r_full_cloud.png",
+                              "rafo3r_places_cloud.png",
+                              "rafo3r_people_cloud.png")
 
-rafo3r_viz.make_word_clouds("rafo3r_full_cloud.png",
-                            "rafo3r_places_cloud.png",
-                            "rafo3r_people_cloud.png")
+if generate_matrix_wordclouds:
+  rafo3r_viz.matrix_cloud_maker(img_per_side = (4,8), image_inches = 3,
+                                dpi = 400,
+                                book_dict = rafo3r_viz.book_full_dict,
+                                file_name = 'rafo3r_full_matrix_cloud.png',
+                                color = 'whitesmoke')
+  rafo3r_viz.matrix_cloud_maker(img_per_side = (4,8), image_inches = 3,
+                                dpi = 400,
+                                book_dict = rafo3r_viz.book_people_dict,
+                                file_name = 'rafo3r_people_matrix_cloud.png',
+                                color = 'tan')
+  rafo3r_viz.matrix_cloud_maker(img_per_side = (4,8), image_inches = 3,
+                                dpi = 400,
+                                book_dict = rafo3r_viz.book_places_dict,
+                                file_name = 'rafo3r_places_matrix_cloud.png',
+                                color = 'silver')
 
-rafo3r_viz.matrix_cloud_maker(img_per_side = (6,6), image_inches = 3,
-                              dpi = 400,
-                              book_dict = rafo3r_viz.book_full_dict,
-                              file_name = 'rafo3r_matrix_cloud.png')
-rafo3r_viz.matrix_cloud_maker(img_per_side = (6,6), image_inches = 3,
-                              dpi = 400,
-                              book_dict = rafo3r_viz.book_people_dict,
-                              file_name = 'rafo3r_people_matrix_cloud.png')
-rafo3r_viz.matrix_cloud_maker(img_per_side = (6,6), image_inches = 3,
-                              dpi = 400,
-                              book_dict = rafo3r_viz.book_places_dict,
-                              file_name = 'rafo3r_places_matrix_cloud.png')
-
-years_in_book = self.rafo3r.copy()
+years_in_book = rafo3r.copy()
 end_pos = max(years_in_book['Position'])
 def year_finder(s):
   if not re.search(r'^19(3[3-9]|4[0-5])$', s) == None:
@@ -126,5 +136,6 @@ toc_chapters['Chapter'] = pd.Series(toc_chapters.
                                     int(x.replace('Ch',''))).values
 toc_chapters['Loc as %'] = 100 * toc_chapters['Location'] / end_pos
 
-print (rafo3r_viz.delineator_vs_occurance(toc_chapters, years_in_book,
-                                          'chapter_vs_year', False))
+if generate_plotly:
+  print (rafo3r_viz.delineator_vs_occurance(toc_chapters, years_in_book,
+                                            'chapter_vs_year', False))
