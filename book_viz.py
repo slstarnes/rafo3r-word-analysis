@@ -148,6 +148,10 @@ class book_viz():
                                      xaxis=xaxis,
                                      plot_bgcolor='#eaeaea',
                                      paper_bgcolor='#eaeaea',
+                                     margin=dict(l=50,
+                                                 r=0,
+                                                 t=100,
+                                                 b=80),
                                      hovermode='x',
                                      yaxis=dict(
                                       title='Word Count')))
@@ -196,7 +200,7 @@ class book_viz():
                   x= (100* book_occurance['Position'] / end_pos),
                   y= book_occurance['Word'],
                   mode= 'markers',
-                  hoverinfo= 'y',
+                  hoverinfo= 'y',#'x+y',
                   marker= dict(size= 12,
                               line= dict(width=1),
                               color= 'darkred',
@@ -228,7 +232,7 @@ class book_viz():
                                 color='darkred')))
 
       layout= go.Layout(
-          title= "Occurrences of Specific Years",
+          title= "<b>Occurrences of Specific Years</b>",
           xaxis= dict(
               title= 'Book Location (Percentage)',
               zeroline= False,
@@ -238,6 +242,13 @@ class book_viz():
               zeroline= False,
               showline= False),
           showlegend= False,
+          plot_bgcolor='#eaeaea',
+          paper_bgcolor='#eaeaea',
+          margin=dict(l=50,
+                      r=0,
+                      t=100,
+                      b=80),
+          #hovermode='x',
           shapes=[dict(
                   type= 'line',
                   x0= row['Loc as %'],
