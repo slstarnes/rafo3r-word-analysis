@@ -123,9 +123,9 @@ class book_viz():
                      rangeslider=dict(thickness=0.2,
                                       bgcolor='#eaeaea'))
 
-        plot_title = ('<b>The Rise and Fall of the Third Reich: '
+        plot_title = ('<b>The Rise and Fall of the Third Reich:<br>'
                       'Occurances of %s vs %s of the Book</b>')%(s1,s2)
-        file_name = 'plotly/%s_vs_%s'%(s1.lower(),s2.lower())
+        file_name = '%s_vs_%s'%(s1.lower(),s2.lower())
 
         plotly_dict = dict(data=[{
                              'x': df.index,
