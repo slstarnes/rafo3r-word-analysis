@@ -115,13 +115,15 @@ class book_viz():
           xaxis=dict(title=s2,
                      tickvals=list(range(2, 36, 2)),
                      tickmode='array',
-                     rangeslider=dict(thickness=0.2))
+                     rangeslider=dict(thickness=0.2,
+                                      bgcolor='#eaeaea'))
         else:
           s2 = 'Percentage'
           xaxis=dict(title=s2,
-                     rangeslider=dict(thickness=0.2))
+                     rangeslider=dict(thickness=0.2,
+                                      bgcolor='#eaeaea'))
 
-        plot_title = 'RaFo3R %s vs %s'%(s1,s2)
+        plot_title = 'The Rise and Fall of the Third Reich: %s vs %s'%(s1,s2)
         file_name = 'plotly/%s_vs_%s'%(s1.lower(),s2.lower())
 
         plotly_dict = dict(data=[{
@@ -130,7 +132,7 @@ class book_viz():
                              'name': new_col_names[i],
                              'visible': visibility_list[i],
                              'fill': 'none',
-                             'hoverinfo': 'y+name',
+                             'hoverinfo': 'x+y+name',
                              'line': dict(color=(color_list[i]),
                                           width=4,
                                           smoothing=.8,
@@ -143,6 +145,9 @@ class book_viz():
                                      #width=1800,
                                      #height=600,
                                      xaxis=xaxis,
+                                     plot_bgcolor='#eaeaea',
+                                     paper_bgcolor='#eaeaea',
+                                     hovermode='x',
                                      yaxis=dict(
                                       title='Word Count')))
 
