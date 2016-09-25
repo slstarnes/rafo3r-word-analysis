@@ -54,20 +54,6 @@ class book_viz():
         assert (len(self.ch_list) == 32)
         self.word_cloud_init()
 
-
-    # def scat(self):
-    #     germany = self.book_file[self.book_file['Word'] == 'germany']
-    #     print (germany.head())
-    #     data = [go.Scatter(x= germany.index,
-    #                        y=germany['Running Count'],
-    #                        name='Germany')]
-    #     layout = go.Layout(title='scatter plot with pandas',
-    #                        yaxis=dict(title='random distribution'),
-    #                        xaxis=dict(title='linspace'))
-
-    #     url = py.plot(data, filename='pandas/basic-line-plot')
-    #     print (url)
-
     def _col_clean(self, name):
         return name.replace('_', ' ').title()
 
@@ -288,14 +274,12 @@ class book_viz():
                            [self.book['Count'] > 1].apply(
                            lambda x: x.title().replace('_', '')))
 
-        #book_people_df = self.book.copy()
         book_people_df = self.book.where(self.book['Word'].isin(
                     list(self.people_json.keys()))).where(
                     self.book['Count'] > 1).dropna()
         book_people_df['Word'] = book_people_df['Word'].apply(
                                                         lambda x: x.title())
 
-        #book_places_df = self.book.copy()
         book_places_df = self.book.where(self.book['Word'].isin(
                  self.places_list)).where(self.book['Count'] > 1).dropna()
         book_places_df['Word'] = book_places_df['Word'].apply(
@@ -352,56 +336,9 @@ class book_viz():
                                      stopwords = self.stopwords).generate(
                                      ' '.join(book_people))
 
-        #people_wordcloud.recolor(color_func=self._grey_color_func)
-
         book_wordcloud.to_file(full_cloud_filename)
         places_wordcloud.to_file(places_cloud_filename)
         people_wordcloud.to_file(people_cloud_filename)
-
-    # def word_cloud_matrix(self):
-    #     #TODO: determine if this is OBE and if so, remove it
-    #     book_df = self.book.copy()
-
-    #     people_list = self.people_list
-    #     places_list = self.places_list
-
-    #     book_full_list = self.book_full_list
-    #     book_people = self.book_people
-    #     book_places = self.book_places
-
-    #     for i, col in enumerate(people_vs_range_df.columns):
-    #         book_wordcloud = WordCloud(width=80,
-    #                                    height=80,
-    #                                    max_words=300,
-    #                                    min_font_size=8,
-    #                                    max_font_size=100,
-    #                                    color_func=get_single_color_func(
-    #                                                         'darkred'),
-    #                                    stopwords=self.stopwords).generate(
-    #                                    ' '.join(book_full_list))
-    #         places_wordcloud = WordCloud(width=1280, height=960,
-    #                                      max_words=200, min_font_size=8,
-    #                                      max_font_size=150,
-    #                                      color_func=get_single_color_func(
-    #                                                         'lightsteelblue'),
-    #                                      stopwords=self.stopwords).generate(
-    #                                      ' '.join(book_places))
-    #         people_wordcloud = WordCloud(width=1280, height=960,
-    #                                      max_words=300, min_font_size=8,
-    #                                      max_font_size=100,
-    #                                      color_func=get_single_color_func(
-    #                                                         'darkred'),
-    #                                      stopwords = self.stopwords).generate(
-    #                                      ' '.join(book_people))
-
-    #         people_wordcloud.recolor(color_func=self._grey_color_func)
-
-    #         #full_cloud_file = "full_cloud.png"
-    #         #places_cloud_file = "places_cloud.png"
-    #         #people_cloud_file = "people_cloud.png"
-    #         #book_wordcloud.to_file(full_cloud_file)
-    #         #places_wordcloud.to_file(places_cloud_file)
-    #         #people_wordcloud.to_file(people_cloud_file)
 
     def matrix_cloud_maker(self, img_per_side=(1,1), image_inches=1, dpi=96,
                            book_dict=[], file_name='', color='darkred'):
@@ -458,7 +395,6 @@ class book_viz():
                                    fig.get_size_inches()[1],
                                    str(fig.get_tight_layout()),
                                    len(fig.get_children())))
-        #print (fig.get_children())
         fig.subplots_adjust(wspace=0.025, hspace=0.025)
         fig.savefig(file_name, dpi=dpi)
         plt.close(fig)
