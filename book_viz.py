@@ -370,21 +370,6 @@ class book_viz():
         fig.set_figwidth(width)
         fig.set_figheight(height)
 
-        print ("""%s:
-                  img_side= %ix%i,
-                  img_inches= %i,
-                  width= %f,
-                  height= %f,
-                  width_wc= %f,
-                  height_wc= %f"""%(file_name,
-                                     img_per_side[0],
-                                     img_per_side[1],
-                                     image_inches,
-                                     width,
-                                     height,
-                                     image_inches * dpi,
-                                     image_inches * dpi))
-
         ax = [fig.add_subplot(img_per_side[0],
                               img_per_side[1],
                               i+1) for i in range(len(book_dict))]
@@ -402,16 +387,6 @@ class book_viz():
             ax[i].set_aspect('equal')
             ax[i].imshow(book_wordcloud.to_image())
 
-        print ("""FigWidth: %f,
-                  FigHeight: %f,
-                  Size: %fx%f,
-                  Tight: %s,
-                  Children: %i"""%(fig.get_figwidth(),
-                                   fig.get_figheight(),
-                                   fig.get_size_inches()[0],
-                                   fig.get_size_inches()[1],
-                                   str(fig.get_tight_layout()),
-                                   len(fig.get_children())))
         fig.subplots_adjust(wspace=0.025, hspace=0.025)
         fig.savefig(file_name, dpi=dpi)
         plt.close(fig)
