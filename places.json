@@ -19,7 +19,21 @@
 			"munich",
 			"nuremberg",
 			"oldenburg",
-			"potsdam"
+			"potsdam",
+			"brandenburg",
+			"godesberg",
+			"natzweiler",
+			"dachau",
+			"ravensbrueck",
+			"buchenwald",
+			"sachsenhausen",
+			"krefeld",
+			"freiburg",
+			"hanover",
+			"beelitz",
+			"bonn",
+			"coburg",
+			"cologne"
 		],
 	"austria":
 		[
@@ -27,7 +41,12 @@
 			"fischlham",
 			"klagenfurt",
 			"linz",
-			"vienna"
+			"vienna",
+			"mauthausen",
+			"salzburg",
+			"lambach",
+			"innsbruck",
+			"braunau"
 		],
 	"britain":
 		[
@@ -35,18 +54,28 @@
 			"glasgow",
 			"ireland",
 			"london",
-			"wales"
+			"wales",
+			"portsmouth",
+			"cornwall",
+			"brighton",
+			"bristol"
 		],
 	"poland":
 		[
 			"danzig",
 			"pomerania",
-			"warsaw"
+			"warsaw",
+			"rastenburg",
+			"auschwitz",
+			"treblinka"
 		],
 	"france":
 		[
 			"paris",
-			"versailles"
+			"versailles",
+			"brest",
+			"compiegne"
+
 		],
 	"soviet_union":
 		[
@@ -59,17 +88,18 @@
 	"united_states":
 		[
 			"america",
-			"us",
 			"usa",
 			"washington"
 		],
 	"italy":
 		[
-			"rome"
+			"rome",
+			"gardone"
 		],
 	"czechoslovakia":
 		[
-			"prague"
+			"prague",
+			"bohemia"
 		],
 	"norway":
 		[
@@ -100,21 +130,17 @@
 		],
 	"albania":[],
 	"balkans":[],
-	"beelitz":[],
-	"bohemia":[],
+
+
 	"bolivia":[],
-	"bonn":[],
-	"brandenburg":[],
-	"braunau":[],
-	"brighton":[],
-	"bristol":[],
+
+
 	"bulgaria":[],
 	"canada":[],
 	"china":[],
-	"coburg":[],
-	"cologne":[],
-	"compiegne":[],
-	"cornwall":[],
+
+
+
 	"sweeden":[],
 	"egypt":
 		[
@@ -122,19 +148,19 @@
 		],
 	"estonia":[],
 	"finland":[],
-	"freiburg":[],
-	"gardone":[],
+
+
 	"greece":[],
-	"hanover":[],
+
 	"iceland":
 		[
 			"reykjavik"
 		],
 	"india":[],
-	"innsbruck":[],
+
 	"israel":[],
-	"krefeld":[],
-	"lambach":[],
+
+
 	"latvia":[],
 	"luxembourg":[],
 	"macedonia":[],
@@ -149,15 +175,13 @@
 			"rotterdam"
 		],
 	"palestine":[],
-	"portsmouth":[],
+
 	"portugal":
 		[
 			"lisbon"
 		],
 	"prussia":[],
-	"salzburg":[],
 	"scandinavia":[],
-	"spital":[],
 	"sweden":
 		[
 			"stockholm"
@@ -167,19 +191,11 @@
 			"geneva"
 		],
 	"syria":[],
-	"troy":[],
-	"turkey":[],
+
+	"turkey":
+		[
+			"troy"
+		],
 	"yugoslavia":[],
 	"rumania":[],
-	"rastenburg":[],
-	"godesberg":[],
-	"brest":[],
-	"dachau":[],
-	"auschwitz":[],
-	"treblinka":[],
-	"buchenwald":[],
-	"sachsenhausen":[],
-	"mauthausen":[],
-	"ravensbrueck":[],
-	"natzweiler":[]
 }
