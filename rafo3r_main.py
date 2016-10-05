@@ -93,8 +93,8 @@ rafo3r_viz = bv.book_viz(rafo3r, toc, rafo3r_wordvscount_pivot,
                          places_json, people_json, rafo3r_reader.stopwords)
 
 if generate_plotly:
-  print (rafo3r_viz.book_grapher(places_vs_chapter_df, 10, 'place', False))
-  print (rafo3r_viz.book_grapher(people_vs_chapter_df, 10, 'person', False))
+  print (rafo3r_viz.book_grapher(places_vs_chapter_df, 10, 'place', True))
+  print (rafo3r_viz.book_grapher(people_vs_chapter_df, 10, 'person', True))
   print (rafo3r_viz.book_grapher(places_vs_range_df, 10, 'place', False))
   print (rafo3r_viz.book_grapher(people_vs_range_df, 10, 'person', False))
   print (rafo3r_viz.people_table(people_vs_chapter_df, 5, False))
