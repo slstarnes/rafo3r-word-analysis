@@ -130,37 +130,23 @@
 		],
 	"albania":[],
 	"balkans":[],
-
-
 	"bolivia":[],
-
-
 	"bulgaria":[],
 	"canada":[],
 	"china":[],
-
-
-
-	"sweeden":[],
 	"egypt":
 		[
 			"cairo"
 		],
 	"estonia":[],
 	"finland":[],
-
-
 	"greece":[],
-
 	"iceland":
 		[
 			"reykjavik"
 		],
 	"india":[],
-
 	"israel":[],
-
-
 	"latvia":[],
 	"luxembourg":[],
 	"macedonia":[],
@@ -175,7 +161,6 @@
 			"rotterdam"
 		],
 	"palestine":[],
-
 	"portugal":
 		[
 			"lisbon"
@@ -197,5 +182,5 @@
 			"troy"
 		],
 	"yugoslavia":[],
-	"rumania":[],
+	"rumania":[]
 }
